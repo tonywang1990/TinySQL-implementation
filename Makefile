@@ -1,17 +1,17 @@
 TARGET=Tiny
 
-CXX=g++
+CXX=g++ -g
 
-FLAGS=
+FLAGS= -Wall 
 
 LIB=
 
 
-HDRS= utility.h
+HDRS= utility.h Tiny.h query.h
 
-SRCS= utility.cpp Tiny.cpp
+SRCS= utility.cpp Tiny.cpp query.cpp
 
-OBJS= utility.o Tiny.o
+OBJS= utility.o Tiny.o query.o
 
 
 
