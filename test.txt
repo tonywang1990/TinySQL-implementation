@@ -1,0 +1,8 @@
+CREATE TABLE course (sid INT, homework INT, project INT, exam INT, grade STR20)
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "A")
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (2, 0, 100, 100, "E")
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (3, "E", 100, 100, 100)
+DELETE FROM course WHERE grade = "E"
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (4, 99, 100, 100, "B")
+DELETE FROM course
+DROP TABLE course
