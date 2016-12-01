@@ -1,7 +1,6 @@
 #include "utility.h"
 #include "lqp.h"
-
-enum TYPE {SELECT, PROJECT, PRODUCT, JOIN, THETA, DISTINCT, SORT, LEAF};
+#include<algorithm>
 
 map<TYPE, string> T;
 
@@ -68,12 +67,100 @@ void generateLQP(bool has_distinct, vector<string> select_list, vector<string> f
 	printLQP(head);
 
 	optimizeLQP(head);
+	printLQP(head);
 
 }
 
-// apply optimization logic plan
+// apply optimization to logic plan
 void optimizeLQP(Node *head){
+	// optimization array
+	// <destination, params>
+	map<string, vector<string> > select_opt;
+	preorder_traverse(head, select_opt);
+}
 
+void preorder_traverse(Node *N, map<string, vector<string> > &select_opt){
+	if (N->type == SELECT){
+		vector<string> params = N->param;
+		vector<string>::iterator it = find(params.begin(), params.end(), "OR");
+		// no OR statement, safe to push down selection
+		if (it == params.end()){
+			string clause, dest = "LEAF";
+
+			for (int i = 0; i < params.size(); i++){
+				if (params[i] != "AND"){
+					// collect one clause
+					clause += params[i] + " ";
+
+					// find destination of this clause
+					vector<string> decomp = splitBy(params[i], ".()");
+					// relation name is given
+					if (decomp.size() == 2){
+						if (dest == "LEAF"){
+							// remember this relation name
+							dest = decomp[0];
+						}
+						else{
+							// if different, can only pushed down to product
+							if (decomp[0] != dest){
+								dest = "PRODUCT";
+							}
+						}
+					}
+				}
+				else{
+					select_opt[dest].push_back(clause);
+					clause.clear();
+					dest = "LEAF";
+				}
+			}	
+			select_opt[dest].push_back(clause);
+		}
+		// has OR, push all to product
+		else{
+			string clause;
+			for (int i = 0; i < params.size(); i++){
+				clause += params[i] + " ";
+			}	
+			select_opt["PRODUCT"].push_back(clause);
+		}
+		// clear this select node
+		N->param.clear();
+
+		// output current select_opt array
+		for (map<string, vector<string> >::iterator iit = select_opt.begin(); iit != select_opt.end(); ++iit){
+			cout<<iit->first<<": ";
+			for (int i = 0; i < iit->second.size(); i++){
+				cout<<iit->second[i]<<" ";
+			}
+			cout<<endl;
+		}
+	}
+	else if (N->type == PRODUCT){
+		if (select_opt.find("PRODUCT") != select_opt.end()){
+			for (int i = 0; i < select_opt["PRODUCT"].size(); i++){
+				N->param.push_back(select_opt["PRODUCT"][i]);
+			}
+
+		}
+	}
+	else if (N->type == LEAF){
+		string relation_name = N->param[0];
+		if (select_opt.find(relation_name) != select_opt.end()){
+			// make a copy of N as L, set L as N's child
+			Node *L = new Node(N->type, N->param);
+			N->children.push_back(L);
+			// change N into a select node
+			N->type = SELECT;
+			N->param = select_opt[relation_name];
+			N = L;
+		}
+
+	}
+
+	for (int i = 0; i < N->children.size(); i++){
+		preorder_traverse(N->children[i], select_opt);
+	}
 }
 
 void printLQP(Node* head){
