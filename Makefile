@@ -7,11 +7,11 @@ FLAGS= -Wall
 LIB=
 
 
-HDRS= utility.h Tiny.h query.h
+HDRS= utility.h Tiny.h query.h lqp.h
 
-SRCS= utility.cpp Tiny.cpp query.cpp
+SRCS= utility.cpp Tiny.cpp query.cpp lqp.cpp
 
-OBJS= utility.o Tiny.o query.o
+OBJS= utility.o Tiny.o query.o lqp.o
 
 
 

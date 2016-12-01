@@ -1,5 +1,7 @@
 #include "utility.h"
 #include "query.h"
+#include "lqp.h"
+
 #include<algorithm>
 #include<cstdio>
 
@@ -52,8 +54,7 @@ void Delete(vector<string> &words, string &line, SchemaManager &schema_manager, 
 }
 
 void Select(vector<string> &words, string &line, SchemaManager &schema_manager, MainMemory &mem){
-	vector<string> select_list, from_list, where_list;
-	string order_list;
+	vector<string> select_list, from_list, where_list, order_list;
 	bool has_distinct = false, has_where = false, has_orderby = false;
 	int i = 1;
 	if (words[i] == "DISTINCT"){
@@ -82,15 +83,18 @@ void Select(vector<string> &words, string &line, SchemaManager &schema_manager, 
 		if (words[i] == "ORDER"){
 			has_orderby = true;
 			i = i + 2; // skip ORDER BY
-			order_list = words[i];
+			order_list.push_back(words[i]);
 			i++;
 		}
 	}
 
+	/*
 	print(select_list);
 	print(from_list);
 	print(where_list);
-	cout<<order_list<<endl;
+	print(order_list);
+	*/
+	generateLQP(has_distinct, select_list, from_list, where_list, order_list, schema_manager, mem);
 
 
 

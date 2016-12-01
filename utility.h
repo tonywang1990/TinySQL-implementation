@@ -1,4 +1,4 @@
-/* Global utility functions */
+/* Global utility functions and objects, also defines general inlcude libs*/
 #ifndef UTILITY
 #define UTILITY
 
