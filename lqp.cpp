@@ -10,14 +10,9 @@ public:
 	vector<string> param;
 	Relation* view;
 	vector<Node*> children;
-	Node(TYPE t, vector<string> p){
-		type = t;
-		param = p;
-		view = NULL;
+	Node(TYPE t, vector<string> p): type(t), param(p), view(NULL){
 	}
-	Node(TYPE t){
-		type = t;
-		view = NULL;
+	Node(TYPE t): type(t), view(NULL){
 	}
 };
 
