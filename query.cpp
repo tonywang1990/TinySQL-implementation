@@ -95,8 +95,5 @@ void Select(vector<string> &words, string &line, SchemaManager &schema_manager, 
 	print(order_list);
 	*/
 	generateLQP(has_distinct, select_list, from_list, where_list, order_list, schema_manager, mem);
-
-
-
 }
 

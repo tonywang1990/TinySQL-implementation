@@ -3,20 +3,6 @@
 #include<algorithm>
 #include<stack>
 
-map<TYPE, string> T;
-
-class Node{
-public:
-	TYPE type;
-	vector<string> param;
-	Relation* view;
-	vector<Node*> children;
-	Node(TYPE t, vector<string> p): type(t), param(p), view(NULL){
-	}
-	Node(TYPE t): type(t), view(NULL){
-	}
-};
-
 void generateLQP(bool has_distinct, vector<string> select_list, vector<string> from_list, vector<string> where_list, vector<string> order_list, SchemaManager &schema_manager, MainMemory &mem){
 
 	initMapT();
@@ -274,15 +260,5 @@ void printLQP(Node* head){
 	cout<<"*****End of LQP tree ******"<<endl;
 }
 
-void initMapT(){
-	// initialize T map
-	T[SELECT] = "SELECT";
-	T[PROJECT] = "PROJECT";
-	T[PRODUCT] = "PRODUCT";
-	T[JOIN] = "JOIN";
-	T[THETA] = "THETA";
-	T[DISTINCT] = "DISTINCT";
-	T[SORT] = "SORT";
-	T[LEAF] = "LEAF";
-}
+
 

@@ -1,6 +1,19 @@
 #include "utility.h"
 
 queue<int> free_blocks;
+map<TYPE, string> T;
+
+void initMapT(){
+	// initialize T map
+	T[SELECT] = "SELECT";
+	T[PROJECT] = "PROJECT";
+	T[PRODUCT] = "PRODUCT";
+	T[JOIN] = "JOIN";
+	T[THETA] = "THETA";
+	T[DISTINCT] = "DISTINCT";
+	T[SORT] = "SORT";
+	T[LEAF] = "LEAF";
+}
 
 string strip(string &str){
 	string newstr;
@@ -10,8 +23,6 @@ string strip(string &str){
 	}
 	return newstr;
 }
-
-
 
 vector<string> splitBy(string str, string delimiter) {
 	vector<string> words;

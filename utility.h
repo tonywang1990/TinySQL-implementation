@@ -27,7 +27,31 @@
 
 using namespace std;
 
+// list of node types
+enum TYPE{SELECT, PROJECT, PRODUCT, JOIN, THETA, DISTINCT, SORT, LEAF}; 
+
+// Node class
+class Node{
+public:
+	TYPE type;
+	vector<string> param;
+	Relation* view;
+	vector<Node*> children;
+	Node(TYPE t, vector<string> p): type(t), param(p), view(NULL){
+	}
+	Node(TYPE t): type(t), view(NULL){
+	}
+};
+
+
+// free blocks in memory
 extern queue<int> free_blocks;
+// map of type and its name
+extern map<TYPE, string> T;
+
+
+// global utiltity functions
+void initMapT();
 
 string strip(string &str);
 
