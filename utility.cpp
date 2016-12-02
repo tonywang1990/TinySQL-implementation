@@ -1,4 +1,5 @@
 #include "utility.h"
+#include<stack>
 
 queue<int> free_blocks;
 map<TYPE, string> T;
@@ -13,7 +14,7 @@ void initMapT(){
 	T[DISTINCT] = "DISTINCT";
 	T[SORT] = "SORT";
 	T[LEAF] = "LEAF";
-}
+};
 
 string strip(string &str){
 	string newstr;
@@ -22,7 +23,7 @@ string strip(string &str){
 			newstr.push_back(str[i]);
 	}
 	return newstr;
-}
+};
 
 vector<string> splitBy(string str, string delimiter) {
 	vector<string> words;
@@ -88,3 +89,9 @@ void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple
 };
 
 
+// evaluate the value of a postfix clause
+bool eval(vector<string> postfix, map<string, Tuple> tuples){
+	stack<string> stk;
+	string T = "_true_", F = "_false_";
+
+}
