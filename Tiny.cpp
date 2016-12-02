@@ -37,6 +37,9 @@ int main(){
 			istringstream iss(line);
 			string word;
 			if(line[0] == '#')	continue;
+			if(line.size() == 0)	continue;
+
+
 
 			// extract each word into vector words
 			while (iss >> word){

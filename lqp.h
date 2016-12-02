@@ -8,3 +8,6 @@ void printLQP(Node* head);
 void initMapT();
 void optimizeLQP(Node *head);
 void preorder_traverse(Node *N, map<string, vector<string> > &select_opt);
+void postfixLQP(Node *N);
+vector<string> postFixfy(vector<string> infix);
+int opPreced(string x);
