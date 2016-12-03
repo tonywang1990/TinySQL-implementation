@@ -120,10 +120,12 @@ class Eval{
 		Tuple doJoin(const Tuple & lt, const Tuple & rt);
 		bool evalTheta(const Tuple & tuple);
 
+
+		bool evalCond(const Tuple &left, const Tuple &right, bool isUnary);
+		int opType(string x);
+		string evalField(string name, const vector<Tuple> &tuples);
+		string findVal(string name, const Tuple &T);
 };
 
-bool eval(vector<string> postfix, Tuple &left, Tuple &right);
-int opType(string x);
-string findValBinary(string name, Tuple &left, Tuple &right);
-string findVal(string name, Tuple &T);
+
 #endif

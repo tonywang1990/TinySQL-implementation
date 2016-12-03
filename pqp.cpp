@@ -52,6 +52,8 @@ void reverse_postorder_traverse(Node * N, SchemaManager& schema_manager, MainMem
     cerr<<"You want to do the reverse_post_order but the children's relation ptr is not set!!"<<endl;
     exit(EXIT_FAILURE);
   }
+  cout<<T[N->type]<<endl;
+  cout<<*(N->view)<<endl;
 
 }
 
