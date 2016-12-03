@@ -24,6 +24,12 @@ string strip(string &str){
 	return newstr;
 }
 
+string to_string(int i){
+  stringstream ss;
+  ss<<i;
+  return ss.str();
+}
+
 vector<string> splitBy(string str, string delimiter) {
 	vector<string> words;
 	words.clear();
@@ -50,7 +56,24 @@ void resetFreeBlocks(){
 	}
 };
 
-// An example procedure of appending a tuple to the end of a relation
+vector<int> getNeededFields(const Schema & old, const vector<string>& conditions){
+  vector<int> indices;
+  for(int i = 0; i < conditions.size(); ++i){
+    int ind = old.getFieldOffset(conditions[i]);
+    vector<string> tmp = splitBy(conditions[i], ".");
+    if(ind == -1 && tmp.size() == 2){  
+      ind = old.getFieldOffset(tmp[1]);
+    }
+    if(ind == -1){
+      cerr<<"Cannot find the field name: "<<conditions[i]<<"!!"<<endl;
+      exit(EXIT_FAILURE);
+    }
+    indices.push_back(i);
+  }
+  return indices;
+}
+
+// AN example procedure of appending a tuple to the end of a relation
 // using memory block "memory_block_index" as output buffer
 void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple) {
 	assert(!free_blocks.empty());
@@ -130,7 +153,7 @@ bool Eval::evalDistinct(const Tuple & tuple){
 }
 
 Tuple Eval::evalProject(const Tuple & tuple){
-  Tuple ret(tuple);
+  Tuple ret = Tuple(tuple);
   return ret;
 }
 
@@ -159,4 +182,9 @@ bool Eval::evalTheta(const Tuple& tuple){
   return true;
 }
 
+
+// DUMMY
+bool Eval::eval(const Tuple & lt, const Tuple & rt, bool isUnary){
+  return true;
+}
 

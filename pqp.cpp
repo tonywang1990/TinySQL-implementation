@@ -7,6 +7,7 @@
 #include "utility.h"
 #include "pqp.h"
 #include "lqp.h"
+#include "algorithm.h"
 #include<algorithm>
 
 
@@ -37,10 +38,10 @@ void reverse_postorder_traverse(Node * N, SchemaManager& schema_manager, MainMem
   if(N->isChildrenLoaded()){
     if(N->children.size() == 1){ // unary operation
       // @param1: relation ptr, @param2: conditions for reading the table
-      N->view = unaryReadWrite(N->children[0]->view, N->param, mem, schema_manager, N->type);
+      N->view = unaryReadWrite(N->children[0]->view, N->param, mem, schema_manager, N->type, N->level);
     }
     else if(N->children.size() == 2){ // binary operation
-      N->view = binaryReadWrite(N->children[0]->view, N->children[1]->view, N->param, mem, schema_manager, N->type);
+      N->view = binaryReadWrite(N->children[0]->view, N->children[1]->view, N->param, mem, schema_manager, N->type, N->level);
     }
     else{
       cerr<<"Only binary/unary operation supported! But you have "<<N->children.size()<<"operands! "<<endl;
@@ -51,7 +52,8 @@ void reverse_postorder_traverse(Node * N, SchemaManager& schema_manager, MainMem
     cerr<<"You want to do the reverse_post_order but the children's relation ptr is not set!!"<<endl;
     exit(EXIT_FAILURE);
   }
-
+  cout<<T[N->type]<<endl;
+  cout<<*N->view<<endl;
 }
 
 // given the table name, load the relation ptr via schema manager
@@ -72,7 +74,7 @@ void loadRelationPtr(Node * N, SchemaManager& schema_mgr){
 }
 
 
-Relation * unaryReadWrite(Relation * relation_ptr, const vector<string> & conditions, MainMemory& mem, SchemaManager& schema_mgr, TYPE opType){
+Relation * unaryReadWrite(Relation * relation_ptr, const vector<string>& conditions, MainMemory& mem,  SchemaManager& schema_mgr, TYPE opType, int level){
   assert(relation_ptr);
 
   if(conditions.empty() && T[opType] != "DISTINCT"){
@@ -84,9 +86,16 @@ Relation * unaryReadWrite(Relation * relation_ptr, const vector<string> & condit
     cerr<<"Warning, the relation "<<relation_ptr->getRelationName()<<" is empty!"<<endl;
     return relation_ptr;
   }
+  bool isOnePass = (T[opType] == "SELECT" || T[opType] == "PROJECT" || dBlocks < mem.getMemorySize()) ? true : false;
 
+  Algorithm alg(isOnePass, conditions, opType, level);
+  Relation * newRelation = alg.RunUnary(relation_ptr, mem, schema_mgr);
+  assert(newRelation);
+  return newRelation;
+
+  /*
   // create a new table for the output:
-  string new_relation_name = relation_ptr->getRelationName() + T[opType];// + "," + catVectorToString(relation_ptr->getSchema().getFieldNames(), '.');
+  string new_relation_name = relation_ptr->getRelationName() + T[opType] + to_string(level);
 
   Relation * newRelation = schema_mgr.createRelation(new_relation_name, relation_ptr->getSchema());
   vector<Tuple> ret;
@@ -95,11 +104,15 @@ Relation * unaryReadWrite(Relation * relation_ptr, const vector<string> & condit
   // read the tuples by blocks
   int size = dBlocks-1;
 
+  
+
+
   assert(!free_blocks.empty());
   // get a available mem block
   int memory_block_index = free_blocks.front();
   free_blocks.pop();
 
+  
   Eval evaluate = Eval(conditions, opType);
 
   Block * block_ptr;// mem block
@@ -130,9 +143,10 @@ Relation * unaryReadWrite(Relation * relation_ptr, const vector<string> & condit
 
   
   return newRelation;
+  */
 }
 
 
-Relation * binaryReadWrite(Relation * left, Relation * right, const vector<string> & conditions, MainMemory& mem, SchemaManager& schema_mgr, TYPE opType){
+Relation * binaryReadWrite(Relation * left, Relation * right, const vector<string> & conditions, MainMemory& mem, SchemaManager& schema_mgr, TYPE opType, int level){
   return NULL;
 }

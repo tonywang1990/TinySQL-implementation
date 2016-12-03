@@ -37,9 +37,10 @@ public:
 	vector<string> param;
 	Relation* view;
 	vector<Node*> children;
-	Node(TYPE t, vector<string> p): type(t), param(p), view(NULL){
+	int level;
+        Node(TYPE t, vector<string> p, int l): type(t), param(p), view(NULL), level(l){
 	}
-	Node(TYPE t): type(t), view(NULL){
+        Node(TYPE t): type(t), view(NULL), level(0){
 	}
 	bool isChildrenLoaded(){
 	  for(int i = 0; i < children.size(); ++i){
@@ -61,6 +62,10 @@ extern map<TYPE, string> T;
 void initMapT();
 
 string strip(string &str);
+
+string to_string(int i);
+
+vector<int> getNeededFields(const Schema & old, const vector<string>& conditions);
 
 template <class T>
 void print(vector<T> V){
@@ -102,6 +107,7 @@ void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple
     }
   };
 
+
 class Eval{
 private:
   set<Tuple, myCompare> m_set;
@@ -119,7 +125,10 @@ public:
 
   Tuple doJoin(const Tuple & lt, const Tuple & rt);
   bool evalTheta(const Tuple & tuple);
-  
+
+  // finial function to call
+  bool eval(const Tuple & lt, const Tuple & rt, bool isUnary);
 };
+
 
 #endif
