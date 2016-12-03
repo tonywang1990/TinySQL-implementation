@@ -9,3 +9,4 @@ SELECT DISTINCT * FROM course
 #INSERT INTO course (sid, homework, project, exam, grade) VALUES (4, 99, 100, 100, "B")
 #DELETE FROM course
 #DROP TABLE course
+

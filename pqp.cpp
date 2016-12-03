@@ -17,6 +17,7 @@ void generatePQP(Node * head, SchemaManager& schema_manager, MainMemory& mem){
     return;
   }
   reverse_postorder_traverse(head, schema_manager, mem);
+
 }
 
 

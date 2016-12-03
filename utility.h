@@ -78,48 +78,52 @@ void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple
 
 
 
-  // wrapper for the operation evaluation 
-  struct myCompare{
-    bool operator()(const Tuple& l, const Tuple& r){
-      if(l.getNumOfFields() != r.getNumOfFields()) return false;
-      for(int i = 0; i < l.getNumOfFields(); i++){
-	union Field f1 = l.getField(i);
-	union Field f2 = r.getField(i);
-      
-	if(l.getSchema().getFieldType(i) != r.getSchema().getFieldType(i))
-	  return false;
-	if(l.getSchema().getFieldType(i) == 0){
-	  //ut<<"f1: "<<f1.integer<<"\tf2: "<<f2.integer<<endl;
-	  if(f1.integer == f2.integer)  continue;
-	  else return f1.integer < f2.integer;
+// wrapper for the operation evaluation 
+struct myCompare{
+	bool operator()(const Tuple& l, const Tuple& r){
+		if(l.getNumOfFields() != r.getNumOfFields()) return false;
+		for(int i = 0; i < l.getNumOfFields(); i++){
+			union Field f1 = l.getField(i);
+			union Field f2 = r.getField(i);
+
+			if(l.getSchema().getFieldType(i) != r.getSchema().getFieldType(i))
+				return false;
+			if(l.getSchema().getFieldType(i) == 0){
+				//ut<<"f1: "<<f1.integer<<"\tf2: "<<f2.integer<<endl;
+				if(f1.integer == f2.integer)  continue;
+				else return f1.integer < f2.integer;
+			}
+			else{
+				if (*(f1.str) == *(f2.str)) continue;
+				else return *(f1.str) < *(f2.str);
+			}
+		}
+		return true;
 	}
-	else{
-	  if (*(f1.str) == *(f2.str)) continue;
-	  else return *(f1.str) < *(f2.str);
-	}
-      }
-      return true;
-    }
-  };
-
-class Eval{
-private:
-  set<Tuple, myCompare> m_set;
-  vector<string> m_conditions;
-  TYPE m_type;
-
-public:
-  Eval(const vector<string>& conditions, TYPE type);
-  Tuple evalUnary(const Tuple & tuple, bool& isPassed);
-  Tuple evalBinary(const Tuple & lt, const Tuple & rt, bool& isPassed);
-
-  bool evalSelect(const Tuple & tuple);
-  bool evalDistinct(const Tuple & tuple);
-  Tuple evalProject(const Tuple & tuple);
-
-  Tuple doJoin(const Tuple & lt, const Tuple & rt);
-  bool evalTheta(const Tuple & tuple);
-  
 };
 
+class Eval{
+	private:
+		set<Tuple, myCompare> m_set;
+		vector<string> m_conditions;
+		TYPE m_type;
+
+	public:
+		Eval(const vector<string>& conditions, TYPE type);
+		Tuple evalUnary(const Tuple & tuple, bool& isPassed);
+		Tuple evalBinary(const Tuple & lt, const Tuple & rt, bool& isPassed);
+
+		bool evalSelect(const Tuple & tuple);
+		bool evalDistinct(const Tuple & tuple);
+		Tuple evalProject(const Tuple & tuple);
+
+		Tuple doJoin(const Tuple & lt, const Tuple & rt);
+		bool evalTheta(const Tuple & tuple);
+
+};
+
+bool eval(vector<string> postfix, Tuple &left, Tuple &right);
+int opType(string x);
+string findValBinary(string name, Tuple &left, Tuple &right);
+string findVal(string name, Tuple &T);
 #endif

@@ -1,5 +1,6 @@
 #include "utility.h"
 #include<stack>
+#include<sstream>
 
 queue<int> free_blocks;
 map<TYPE, string> T;
@@ -160,4 +161,128 @@ bool Eval::evalTheta(const Tuple& tuple){
   return true;
 }
 
+// evaluate the value of a postfix clause
+bool eval(vector<string> postfix, Tuple &left, Tuple &right){
+	stack<string> stk;
+	const string True = "_#true#_", False = "_#false#_";
+	for (int i = 0; i < postfix.size(); i++){
+		int type = opType(postfix[i]);
+		// is operand
+		if (type == 0){
+			string val = findValBinary(postfix[i], left, right);
+			stk.push(val);
+		}
+		// is operator
+		else{
+			string op2 = stk.top();
+			stk.pop();
+			string op1 = stk.top();
+			stk.pop();
+			// < >
+			if (type == 4){
+				int num1 = atoi(op1.c_str());
+				int num2 = atoi(op2.c_str());
+				bool ans = false;
+				if (postfix[i] == "<"){
+					ans = num1 < num2;
+				}
+				else{
+					ans = num1 > num2;
+				}
+				stk.push(ans == true ? True : False);
+			}
+			// int
+			if (type == 3){
+				int num1 = atoi(op1.c_str());
+				int num2 = atoi(op2.c_str());
+				int ans = 0;
+				if (postfix[i] == "+"){
+					ans = num1 + num2;
+				}
+				else if (postfix[i] == "-"){
+					ans = num1 - num2;
+				}
+				else{
+					ans = num1 * num2;
+				}
+				stringstream ss;
+				ss << ans;
+				string answer = ss.str(); 
+				stk.push(string(answer));
+			}
+			// bool
+			else if (type == 2){
+				bool b1 = op1 == True;
+				bool b2 = op2 == True;
+				if (postfix[i] == "AND"){
+					stk.push(b1 && b2 == 0 ? False : True);
+				}
+				else{
+					stk.push(b1 || b2 == 0 ? False : True);
+				}
+			}
+			// string
+			else{
+				stk.push(op1 == op2 ? True : False);
+			}
+		}
+	}
+	return stk.top() == True;
+}
+
+// find operator type
+int opType(string x){
+	// int -> bool
+	if (x == "<" || x == ">"){
+		return 4;
+	}
+	// int -> int
+	if (x == "+" || x == "-" || x == "*")
+		return 3;
+	// bool -> bool
+	else if (x == "AND" || x == "OR")
+		return 2;
+	// string -> bool
+	else if (x == "=")
+		return 1;
+	else 
+		return 0;
+}
+
+string findValBinary(string name, Tuple &left, Tuple &right){
+	const string null = "_#NULL#_";
+	string val = null;
+
+	// first pass, use postfix directly
+	if (val == null) val = findVal(name, left);
+	if (val == null) val = findVal(name, right);
+
+	// second pass, use only the field name
+	assert(splitBy(name, ".").size() == 2);
+	string field_name = splitBy(name, ".")[1];
+	if (val == null) val = findVal(field_name, left);
+	if (val == null) val = findVal(field_name, right);
+
+	// assert val is found
+	assert(val != null);
+	return val;
+}
+
+string findVal(string name, Tuple &T){
+	int size = T.getNumOfFields();
+	for (int i = 0; i < size; i++){
+		if (T.getSchema().fieldNameExists(name)){
+			union Field F = T.getField(name);
+			if (T.getSchema().getFieldType(name) == INT){
+				stringstream ss;
+				ss << F.integer;
+				return ss.str();
+			}
+			else{
+				return *(F.str);
+			}
+		}
+	}
+	return "_#NULL#_";
+}
 
