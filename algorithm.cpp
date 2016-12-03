@@ -30,8 +30,10 @@ Relation * Algorithm::RunUnary(Relation * relation_ptr, MainMemory & mem, Schema
     Project(relation_ptr, newRelation, mem, indices);
   }
   else if(T[m_type] == "DISTINCT"){
-    //Distinct(relation_ptr, newRelation, mem);
-    newRelation = relation_ptr;
+    if(m_isOnePass)
+      DistinctOnePass(relation_ptr, newRelation, mem);
+    else
+      newRelation = relation_ptr; // need to do later
   }
   else if(T[m_type] == "SORT"){
     Sort(relation_ptr, newRelation, mem);
@@ -145,15 +147,49 @@ void Algorithm::Project(Relation * oldR, Relation * newR, MainMemory& mem, vecto
 
 }
 
+// idea: the main memory is large enough, simply reading them in and do distinct
+void Algorithm::DistinctOnePass(Relation * oldR, Relation * newR, MainMemory & mem){
+  assert(!free_blocks.empty());
+  // get a available mem block
+  int memory_block_index = free_blocks.front();
+  free_blocks.pop();
 
-void Algorithm::Distinct(Relation * oldPtr, Relation * newPtr, MainMemory & mem){
-  set<Tuple, myCompare> m_set;
-  
-  newPtr = oldPtr;
+  int size =  oldR->getNumOfBlocks()-1;
+
+  assert(size < mem.getMemorySize()); // doing one pass here!
+
+  Block * block_ptr = NULL;
+
+  while(size >= 0){
+    // read the relatioin block by block
+    oldR->getBlock(size, memory_block_index);
+    block_ptr = mem.getBlock(memory_block_index);
+    assert(block_ptr);
+
+    vector<Tuple> tuples = block_ptr->getTuples();
+    if(tuples.empty()){
+      cerr<<"Warning: DistinctOnPass, No tuples in the current mem block!"<<endl;
+    }
+
+    for(int i = 0; i < tuples.size(); ++i){
+      Tuple t = tuples[i];
+      if(m_set.find(t) == m_set.end()){
+	m_set.insert(t);
+	appendTupleToRelation(newR, mem, t);
+      }
+    }
+    size--;
+  }
+  free_blocks.push(memory_block_index);
+
+
+}
+void Algorithm::DistinctTwoPass(Relation * oldR, Relation * newR, MainMemory & mem){  
+  newR = oldR;
   return;
 }
 
-void Algorithm::Sort(Relation * oldPtr, Relation * newPtr, MainMemory & mem){
+void Algorithm::Sort(Relation * oldR, Relation * newR, MainMemory & mem){
   return;
 }
 

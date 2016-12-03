@@ -12,16 +12,8 @@ void generateLQP(bool has_distinct, vector<string> select_list, vector<string> f
 	bool has_where = !where_list.empty();
 	bool has_order = !order_list.empty();
 	//construct lqp
-	// project 
-	Node *head = new Node(PROJECT, select_list, level++);
-	Node *N = head;
-	Node *child;
-	// sort 
-	if (has_order){
-	        child = new Node(SORT, order_list, level++);
-		N->children.push_back(child);
-		N = child;
-	}
+	Node *dummy = new Node(HEAD, vector<string> (), -1);
+	Node *N = dummy, *child;
 	// eliminate dup
 	if (has_distinct){
 		child = new Node(DISTINCT);
@@ -29,6 +21,20 @@ void generateLQP(bool has_distinct, vector<string> select_list, vector<string> f
 		N->children.push_back(child);
 		N = child;
 	}
+	// project 
+
+	child = new Node(PROJECT, select_list, level++);
+	child->level = level++;
+	N->children.push_back(child);
+	N = child;
+
+	// sort 
+	if (has_order){
+		child = new Node(SORT, order_list, level++);
+		N->children.push_back(child);
+		N = child;
+	}
+
 	// select
 	child = new Node(SELECT, where_list, level++);
 	N->children.push_back(child);
@@ -50,6 +56,10 @@ void generateLQP(bool has_distinct, vector<string> select_list, vector<string> f
 	child = new Node(LEAF, vector<string> (1, from_list[idx]), level++);
 	N->children.push_back(child);
 
+	assert(dummy && dummy->children.size() == 1);
+	Node* head = dummy->children[0];
+	assert(head);
+
 	cout<<"LQP tree:"<<endl;
 	printLQP(head);
 
@@ -60,7 +70,7 @@ void generateLQP(bool has_distinct, vector<string> select_list, vector<string> f
 	cout<<"after postfix:"<<endl;
 	postfixLQP(head);
 	printLQP(head);
-	
+
 	generatePQP(head, schema_manager, mem);
 }
 
@@ -214,7 +224,7 @@ void preorder_traverse(Node *N, map<string, vector<string> > &select_opt){
 		}
 		cout<<endl;
 		}
-		*/
+		 */
 	}
 	else if (N->type == PRODUCT){
 		// decide which condition to use for this PRODUCT node
@@ -267,7 +277,7 @@ void preorder_traverse(Node *N, map<string, vector<string> > &select_opt){
 		string relation_name = N->param[0];
 		if (select_opt.find(relation_name) != select_opt.end()){
 			// make a copy of N as L, set L as N's child
-		        Node *L = new Node(N->type, N->param, N->level+1);
+			Node *L = new Node(N->type, N->param, N->level+1);
 			N->children.push_back(L);
 			// change N into a select node
 			N->type = SELECT;

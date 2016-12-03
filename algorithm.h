@@ -25,9 +25,10 @@ class Algorithm{
   void Select(Relation * oldR, Relation * newR, MainMemory& mem);
   void Project(Relation * oldR, Relation * newR, MainMemory& mem, vector<int> indices);
 
-  void Distinct(Relation * oldPtr, Relation * newPtr, MainMemory & mem);
+  void DistinctOnePass(Relation * oldR, Relation * newR, MainMemory & mem);
+  void DistinctTwoPass(Relation * oldR, Relation * newR, MainMemory & mem);
 
-  void Sort(Relation * oldPtr, Relation * newPtr, MainMemory & mem);
+  void Sort(Relation * oldR, Relation * newR, MainMemory & mem);
 
   Relation * RunBinary(Relation * left, Relation * right, MainMemory & mem, SchemaManager & schema_mgr);
 

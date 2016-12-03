@@ -1,10 +1,11 @@
 CREATE TABLE course (sid INT, homework INT, project INT, exam INT, grade STR20)
 INSERT INTO course (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "A")
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "A")
 INSERT INTO course (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "B")
 INSERT INTO course (sid, homework, project, exam, grade) VALUES (2, 0, 100, 100, "E")
 INSERT INTO course (sid, grade, exam, project, homework) VALUES (3, "F", 100, 100, 100)
 #SELECT DISTINCT * FROM course WHERE grade = "E" AND course.homework = 0 OR course.grade = "A"
-SELECT DISTINCT sid, grade, homework, exam FROM course WHERE (((course.homework - course.exam) - 1) * (1 + 1)) = -4 
+SELECT DISTINCT sid, homework, exam FROM course WHERE (((course.homework - course.exam) - 1) * (1 + 1)) = -4 
 #SELECT DISTINCT course.grade, course2.grade FROM course, course2 WHERE course.sid = course2.sid AND course.grade = "A" AND course2.grade = "A" OR (course.homework + course.project) = 99 ORDER BY course.exam
 #SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
 #DELETE FROM course WHERE grade = "E"
