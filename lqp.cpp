@@ -1,5 +1,6 @@
 #include "utility.h"
 #include "lqp.h"
+#include "pqp.h"
 #include<algorithm>
 #include<stack>
 
@@ -53,7 +54,8 @@ void generateLQP(bool has_distinct, vector<string> select_list, vector<string> f
 	postfixLQP(head);
 
 	printLQP(head);
-
+	
+	generatePQP(head, schema_manager, mem);
 }
 
 void postfixLQP(Node *N){

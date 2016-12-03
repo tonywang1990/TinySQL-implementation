@@ -89,9 +89,75 @@ void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple
 };
 
 
-// evaluate the value of a postfix clause
-bool eval(vector<string> postfix, map<string, Tuple> tuples){
-	stack<string> stk;
-	string T = "_true_", F = "_false_";
-
+Eval::Eval(const vector<string> & conditions, TYPE type): m_conditions(conditions), m_type(type){
+  if(T.find(type) == T.end()){
+    cerr<<"Unsupported operation type: "<<type<<endl;
+    exit(EXIT_FAILURE);
+  }
 }
+
+Tuple Eval::evalUnary(const Tuple & tuple, bool& isPassed){
+  Tuple ret = tuple;
+  if(T[m_type] == "SELECT"){
+    isPassed = evalSelect(tuple);
+  }
+  else if(T[m_type] == "DISTINCT"){
+    isPassed = evalDistinct(tuple);
+  }
+  else if(T[m_type] == "PROJECT"){
+    // different here! a new tuple is generated
+    ret = evalProject(tuple);
+    isPassed = true;
+  }
+  else{
+    cerr<<"Unsupported unary operation: "<<T[m_type]<<endl;
+    exit(EXIT_FAILURE);
+  }
+  return ret;
+}
+
+
+//TODO: fill in the actual operations!
+bool Eval::evalSelect(const Tuple & tuple){
+  return true;
+}
+
+bool Eval::evalDistinct(const Tuple & tuple){
+  if(m_set.find(tuple) == m_set.end()){
+    m_set.insert(tuple);
+    return true;
+  }
+  return false;
+}
+
+Tuple Eval::evalProject(const Tuple & tuple){
+  Tuple ret(tuple);
+  return ret;
+}
+
+Tuple Eval::evalBinary(const Tuple & lt, const Tuple & rt, bool& isPassed){
+  Tuple ret(lt);
+  if(T[m_type] == "JOIN"){
+    ret = doJoin(lt, rt);
+    isPassed = true;
+  }
+  else if(T[m_type] == "THETA"){
+    ret = doJoin(lt, rt);
+    isPassed = evalTheta(ret);
+  }
+  else{
+    cout<<"Unsupported binary operation: "<<T[m_type]<<endl;
+  }
+  return ret;
+}
+
+// TODO: Do the join operation
+Tuple Eval::doJoin(const Tuple & lt, const Tuple & rt){
+  return Tuple(lt);
+}
+
+bool Eval::evalTheta(const Tuple& tuple){
+  return true;
+}
+
+
