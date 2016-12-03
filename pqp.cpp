@@ -86,7 +86,7 @@ Relation * unaryReadWrite(Relation * relation_ptr, const vector<string>& conditi
 
   int dBlocks = relation_ptr->getNumOfBlocks();
   if(dBlocks == 0){
-    cerr<<"Warning, the relation "<<relation_ptr->getRelationName()<<" is empty!"<<endl;
+    cerr<<"Warning, when doing the unary operation,  the relation "<<relation_ptr->getRelationName()<<" is empty!"<<endl;
     return relation_ptr;
   }
   bool isOnePass = (T[opType] == "SELECT" || T[opType] == "PROJECT" || dBlocks < mem.getMemorySize()) ? true : false;
@@ -96,60 +96,29 @@ Relation * unaryReadWrite(Relation * relation_ptr, const vector<string>& conditi
   assert(newRelation);
   return newRelation;
 
-  /*
-  // create a new table for the output:
-  string new_relation_name = relation_ptr->getRelationName() + T[opType] + to_string(level);
-
-  Relation * newRelation = schema_mgr.createRelation(new_relation_name, relation_ptr->getSchema());
-  vector<Tuple> ret;
-
-  // unary operation for project/selection/duplicate elimination
-  // read the tuples by blocks
-  int size = dBlocks-1;
-
-  
-
-
-  assert(!free_blocks.empty());
-  // get a available mem block
-  int memory_block_index = free_blocks.front();
-  free_blocks.pop();
-
-  
-  Eval evaluate = Eval(conditions, opType);
-
-  Block * block_ptr;// mem block
-  while(size >= 0){
-    // read the relatioin block by block
-    relation_ptr->getBlock(size, memory_block_index);
-    block_ptr = mem.getBlock(memory_block_index);
-    assert(block_ptr);
-
-    vector<Tuple> tuples = block_ptr->getTuples();
-    if(tuples.empty()){
-      cerr<<"Warning: No tuples in the current mem block!"<<endl;
-    }
-    // pick up the desired ones
-    for(int i = 0; i < tuples.size(); ++i){
-      bool isPassed = false;
-      Tuple tmp = evaluate.evalUnary(tuples[i], isPassed);
-      if(isPassed)  ret.push_back(tmp);
-    }
-    size--;
-  }
-  free_blocks.push(memory_block_index);
-
-  // write them back together as a whole:
-  for(int i = 0; i < ret.size(); ++i){
-    appendTupleToRelation(newRelation, mem, ret[i]);
-  }
-
-  
-  return newRelation;
-  */
 }
 
 
 Relation * binaryReadWrite(Relation * left, Relation * right, const vector<string> & conditions, MainMemory& mem, SchemaManager& schema_mgr, TYPE opType, int level){
-  return NULL;
+  assert(left && right);
+  
+  int dBlocks_left = left->getNumOfBlocks();
+  int dBlocks_right = right->getNumOfBlocks();
+
+  if(dBlocks_left == 0 || dBlocks_right == 0){
+    // either one of them is empty, handle here
+    if(dBlocks_left == 0)
+      cerr<<"Warning, when doing the binary operation, the relation "<<left->getRelationName()<<" is empty!"<<endl;
+    if(dBlocks_right == 0)
+      cerr<<"Warning, when doing the binary operation, the relation "<<right->getRelationName()<<" is empty!"<<endl;
+    return dBlocks_left == 0 ? left : right; // always return the empty one
+  }
+  
+  // TODO: for natural nature, this might not be true
+  bool isOnePass = (T[opType] == "PRODUCT") ? true : false;
+  
+  Algorithm alg(isOnePass, conditions, opType, level);
+  Relation * newRelation = alg.RunBinary(left, right, mem, schema_mgr);
+  assert(newRelation);
+  return newRelation;
 }

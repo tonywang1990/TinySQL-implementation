@@ -29,5 +29,7 @@ class Algorithm{
 
   void Sort(Relation * oldPtr, Relation * newPtr, MainMemory & mem);
 
+  Relation * RunBinary(Relation * left, Relation * right, MainMemory & mem, SchemaManager & schema_mgr);
+
 };
 #endif

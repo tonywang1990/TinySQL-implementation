@@ -110,27 +110,15 @@ struct myCompare{
 
 class Eval{
 	private:
-		set<Tuple, myCompare> m_set;
 		vector<string> m_conditions;
-		TYPE m_type;
-
-	public:
-		Eval(const vector<string>& conditions, TYPE type);
-		Tuple evalUnary(const Tuple & tuple, bool& isPassed);
-		Tuple evalBinary(const Tuple & lt, const Tuple & rt, bool& isPassed);
-
-		bool evalSelect(const Tuple & tuple);
-		bool evalDistinct(const Tuple & tuple);
-		Tuple evalProject(const Tuple & tuple);
-
-		Tuple doJoin(const Tuple & lt, const Tuple & rt);
-		bool evalTheta(const Tuple & tuple);
-
-
 		bool evalCond(const Tuple &left, const Tuple &right, bool isUnary);
 		int opType(string x);
 		string evalField(string name, const vector<Tuple> &tuples);
 		string findVal(string name, const Tuple &T);
+	public:
+		Eval(const vector<string>& conditions);
+		bool evalUnary(const Tuple & tuple);
+		bool evalBinary(const Tuple & lt, const Tuple & rt);
 };
 
 

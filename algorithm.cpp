@@ -80,7 +80,7 @@ void Algorithm::Select(Relation * oldR, Relation * newR, MainMemory& mem){
   free_blocks.pop();
   
   int size =  oldR->getNumOfBlocks()-1;
-  Eval evaluate = Eval(m_conditions, m_type);
+  Eval evaluate = Eval(m_conditions);
   Block * block_ptr = NULL;
   while(size >= 0){
     // read the relatioin block by block
@@ -94,9 +94,7 @@ void Algorithm::Select(Relation * oldR, Relation * newR, MainMemory& mem){
     }
     // pick up the desired ones
     for(int i = 0; i < tuples.size(); ++i){
-      bool isPassed = false;
-      Tuple tmp = evaluate.evalUnary(tuples[i], isPassed);
-      if(isPassed)  appendTupleToRelation(newR, mem, tmp);
+      if(evaluate.evalUnary(tuples[i]))  appendTupleToRelation(newR, mem, tuples[i]);
     }
     size--;
   }
@@ -149,10 +147,17 @@ void Algorithm::Project(Relation * oldR, Relation * newR, MainMemory& mem, vecto
 
 
 void Algorithm::Distinct(Relation * oldPtr, Relation * newPtr, MainMemory & mem){
+  set<Tuple, myCompare> m_set;
+  
   newPtr = oldPtr;
   return;
 }
 
 void Algorithm::Sort(Relation * oldPtr, Relation * newPtr, MainMemory & mem){
   return;
+}
+
+
+Relation * Algorithm::RunBinary(Relation * left, Relation * right, MainMemory & mem, SchemaManager & schema_mgr){
+  return NULL;
 }
