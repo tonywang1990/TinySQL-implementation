@@ -89,10 +89,10 @@ Relation * unaryReadWrite(Relation * relation_ptr, const vector<string>& conditi
     cerr<<"Warning, when doing the unary operation,  the relation "<<relation_ptr->getRelationName()<<" is empty!"<<endl;
     return relation_ptr;
   }
-  bool isOnePass = (T[opType] == "SELECT" || T[opType] == "PROJECT" || dBlocks < mem.getMemorySize()) ? true : false;
+  bool isOnePass = (T[opType] == "SELECT" || T[opType] == "PROJECT" || dBlocks <= mem.getMemorySize()) ? true : false;
 
   Algorithm alg(isOnePass, conditions, opType, level);
-  Relation * newRelation = alg.RunUnary(relation_ptr, mem, schema_mgr);
+  Relation * newRelation = alg.runUnary(relation_ptr, mem, schema_mgr);
   assert(newRelation);
   return newRelation;
 
@@ -118,7 +118,7 @@ Relation * binaryReadWrite(Relation * left, Relation * right, const vector<strin
   bool isOnePass = (T[opType] == "PRODUCT") ? true : false;
   
   Algorithm alg(isOnePass, conditions, opType, level);
-  Relation * newRelation = alg.RunBinary(left, right, mem, schema_mgr);
+  Relation * newRelation = alg.runBinary(left, right, mem, schema_mgr);
   assert(newRelation);
   return newRelation;
 }
