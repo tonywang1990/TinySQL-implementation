@@ -118,6 +118,7 @@ vector<string> postFixfy(vector<string> infix){
 	return postfix;
 }
 
+
 // return the precedence of the operator/operation
 // rule: 
 // 1. incoming operand with higher precedence than top of stack => push incoming operand
@@ -209,10 +210,50 @@ void preorder_traverse(Node *N, map<string, vector<string> > &select_opt){
 	}
 	else if (N->type == PRODUCT){
 		if (select_opt.find("PRODUCT") != select_opt.end()){
-			for (int i = 0; i < select_opt["PRODUCT"].size(); i++){
-				N->param.push_back(select_opt["PRODUCT"][i]);
+			vector<string> to_pro = select_opt["PRODUCT"];
+			// has OR
+			if (find(to_pro.begin(), to_pro.end(), "OR") != to_pro.end()){
+				N->param.insert(N->param.end(), to_pro.begin(), to_pro.end());
+				select_opt["PRODUCT"].clear();
 			}
-
+			// only has AND
+			else{
+				vector<string> remain;
+				int start_pos = 0;
+				int i = 0;
+				while (i < to_pro.size()){
+					vector<string> clause;
+					bool has_relation = false;
+					// colect a clause
+					while (i < to_pro.size() && to_pro[i] != "AND"){
+						clause.push_back(to_pro[i]);
+						string relation_name = splitBy(to_pro[i], ".")[0];
+						// check if clause has the children's relation name 
+						for (int j = 0; j < N->children.size(); j++){
+							if (N->children[j]->type == LEAF){
+								if (N->children[j]->param[0] == relation_name){
+									has_relation = true;
+								}
+							}
+						}
+						i++;
+					}
+					// output a clause
+					if (has_relation){
+						if (N->param.size() != 0) N->param.push_back("AND");
+						// push this clause to param
+						N->param.insert(N->param.end(), clause.begin(), clause.end());
+					}
+					else{
+						// push to new select_opt
+						if (remain.size() != 0) remain.push_back("AND");
+						// push this clause to param
+						remain.insert(remain.end(), clause.begin(), clause.end());
+					}
+					i++;
+				}
+				select_opt["PRODUCT"] = remain;
+			}
 		}
 	}
 	else if (N->type == LEAF){

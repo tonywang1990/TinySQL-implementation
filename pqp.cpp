@@ -12,7 +12,7 @@
 
 // run a reverse-order travseral for the right most lqp
 void generatePQP(Node * head){
-    	if(!head){
+	if(!head){
 		cout<<"The given physical query plan is empty!"<<endl;
 		return;
 	}

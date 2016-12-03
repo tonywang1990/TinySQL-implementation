@@ -69,4 +69,8 @@ void resetFreeBlocks();
 
 void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple);
 
+bool eval(vector<string> postfix, Tuple &left, Tuple &right);
+int opType(string x);
+string findValBinary(string name, Tuple &left, Tuple &right);
+string findVal(string name, Tuple &T);
 #endif
