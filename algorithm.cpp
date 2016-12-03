@@ -14,6 +14,10 @@ m_level(level)
 Relation * Algorithm::RunUnary(Relation * relation_ptr, MainMemory & mem, SchemaManager & schema_mgr)
 {
   assert(relation_ptr);
+  if(T[m_type] == "PROJECT" && m_conditions.size() == 1 && m_conditions[0] == "*"){
+    return relation_ptr;
+  }
+
   // create a new table for the output:
   string new_relation_name = relation_ptr->getRelationName() + T[m_type] + to_string(m_level);
   Relation * newRelation = schema_mgr.createRelation(new_relation_name, getNewSchema(relation_ptr));
@@ -129,7 +133,7 @@ void Algorithm::Project(Relation * oldR, Relation * newR, MainMemory& mem, vecto
       Tuple t = tuples[i];
       Tuple tmp = newR->createTuple();
       for(int j = 0; j < indices.size(); ++j){
-	if(t.getSchema().getFieldType(j) == 0)
+	if(tmp.getSchema().getFieldType(j) == 0)
 	  tmp.setField(j, t.getField(indices[j]).integer);
 	else
 	  tmp.setField(j, *(t.getField(indices[j]).str));

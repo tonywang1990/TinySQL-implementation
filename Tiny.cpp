@@ -34,17 +34,18 @@ int main(){
 	if (input.is_open()){
 		// for each command line
 		while(getline(input, line)){
-			istringstream iss(line);
-			string word;
+			//istringstream iss(line);
 			if(line[0] == '#')	continue;
 			if(line.size() == 0)	continue;
-
-
-
+			
 			// extract each word into vector words
+			words = splitBy(line," ");
+			/*
+			string word;
 			while (iss >> word){
 				words.push_back(word);
 			}
+			*/
 			if (words[0] == "CREATE"){
 				string relation_name = words[2];
 				vector<string> field_names;
@@ -76,11 +77,11 @@ int main(){
 
 			}
 			else if (words[0] == "DELETE"){
-				Delete(words, line, schema_manager, mem);
+				Delete(words, schema_manager, mem);
 			}
 
 			else if (words[0] == "SELECT"){
-				Select(words, line, schema_manager, mem);
+				Select(words, schema_manager, mem);
 			}
 			else{
 				cout<<"SQL command not recognized!"<<endl;

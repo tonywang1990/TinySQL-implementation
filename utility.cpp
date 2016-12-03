@@ -1,4 +1,6 @@
 #include "utility.h"
+#include<stack>
+#include<sstream>
 
 queue<int> free_blocks;
 map<TYPE, string> T;
@@ -13,7 +15,7 @@ void initMapT(){
 	T[DISTINCT] = "DISTINCT";
 	T[SORT] = "SORT";
 	T[LEAF] = "LEAF";
-}
+};
 
 string strip(string &str){
 	string newstr;
@@ -22,7 +24,7 @@ string strip(string &str){
 			newstr.push_back(str[i]);
 	}
 	return newstr;
-}
+};
 
 string to_string(int i){
   stringstream ss;
@@ -68,7 +70,7 @@ vector<int> getNeededFields(const Schema & old, const vector<string>& conditions
       cerr<<"Cannot find the field name: "<<conditions[i]<<"!!"<<endl;
       exit(EXIT_FAILURE);
     }
-    indices.push_back(i);
+    indices.push_back(ind);
   }
   return indices;
 }
@@ -112,79 +114,224 @@ void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple
 
 
 Eval::Eval(const vector<string> & conditions, TYPE type): m_conditions(conditions), m_type(type){
-  if(T.find(type) == T.end()){
-    cerr<<"Unsupported operation type: "<<type<<endl;
-    exit(EXIT_FAILURE);
-  }
+	if(T.find(type) == T.end()){
+		cerr<<"Unsupported operation type: "<<type<<endl;
+		exit(EXIT_FAILURE);
+	}
 }
 
 Tuple Eval::evalUnary(const Tuple & tuple, bool& isPassed){
-  Tuple ret = tuple;
-  if(T[m_type] == "SELECT"){
-    isPassed = evalSelect(tuple);
-  }
-  else if(T[m_type] == "DISTINCT"){
-    isPassed = evalDistinct(tuple);
-  }
-  else if(T[m_type] == "PROJECT"){
-    // different here! a new tuple is generated
-    ret = evalProject(tuple);
-    isPassed = true;
-  }
-  else{
-    cerr<<"Unsupported unary operation: "<<T[m_type]<<endl;
-    exit(EXIT_FAILURE);
-  }
-  return ret;
+	Tuple ret = tuple;
+	if(T[m_type] == "SELECT"){
+		isPassed = evalSelect(tuple);
+	}
+	else if(T[m_type] == "DISTINCT"){
+		isPassed = evalDistinct(tuple);
+	}
+	else if(T[m_type] == "PROJECT"){
+		// different here! a new tuple is generated
+		ret = evalProject(tuple);
+		isPassed = true;
+	}
+	else{
+		cerr<<"Unsupported unary operation: "<<T[m_type]<<endl;
+		exit(EXIT_FAILURE);
+	}
+	return ret;
 }
 
 
 //TODO: fill in the actual operations!
 bool Eval::evalSelect(const Tuple & tuple){
-  return true;
+	return evalCond(tuple, tuple, true);
 }
 
 bool Eval::evalDistinct(const Tuple & tuple){
-  if(m_set.find(tuple) == m_set.end()){
-    m_set.insert(tuple);
-    return true;
-  }
-  return false;
+	if(m_set.find(tuple) == m_set.end()){
+		m_set.insert(tuple);
+		return true;
+	}
+	return false;
 }
 
 Tuple Eval::evalProject(const Tuple & tuple){
-  Tuple ret = Tuple(tuple);
-  return ret;
+	Tuple ret(tuple);
+	return ret;
 }
 
 Tuple Eval::evalBinary(const Tuple & lt, const Tuple & rt, bool& isPassed){
-  Tuple ret(lt);
-  if(T[m_type] == "JOIN"){
-    ret = doJoin(lt, rt);
-    isPassed = true;
-  }
-  else if(T[m_type] == "THETA"){
-    ret = doJoin(lt, rt);
-    isPassed = evalTheta(ret);
-  }
-  else{
-    cout<<"Unsupported binary operation: "<<T[m_type]<<endl;
-  }
-  return ret;
+	Tuple ret(lt);
+	if(T[m_type] == "JOIN"){
+		ret = doJoin(lt, rt);
+		isPassed = true;
+	}
+	else if(T[m_type] == "THETA"){
+		ret = doJoin(lt, rt);
+		isPassed = evalTheta(ret);
+	}
+	else{
+		cout<<"Unsupported binary operation: "<<T[m_type]<<endl;
+	}
+	return ret;
 }
 
 // TODO: Do the join operation
 Tuple Eval::doJoin(const Tuple & lt, const Tuple & rt){
-  return Tuple(lt);
+	return Tuple(lt);
 }
 
 bool Eval::evalTheta(const Tuple& tuple){
-  return true;
+	return true;
 }
 
 
-// DUMMY
-bool Eval::eval(const Tuple & lt, const Tuple & rt, bool isUnary){
-  return true;
+
+// evaluate the value of a postfix clause
+bool Eval::evalCond(const Tuple &left, const Tuple &right, bool isUnary){
+	stack<string> stk;
+	const string True = "_#true#_", False = "_#false#_";
+	for (int i = 0; i < m_conditions.size(); i++){
+		int type = opType(m_conditions[i]);
+		// is column name 
+		if (type == 0){
+			string val;
+			vector<Tuple> tuples;
+			if (isUnary){
+				tuples.push_back(left);
+			} 
+			else{
+				tuples.push_back(left);
+				tuples.push_back(right);
+			}
+			val = evalField(m_conditions[i], tuples);
+			stk.push(val);
+		}
+		// is constant
+		else if (type == -1){
+			stk.push(m_conditions[i]);
+		}
+		// is operator
+		else{
+			string op2 = stk.top();
+			stk.pop();
+			string op1 = stk.top();
+			stk.pop();
+			// < >
+			if (type == 4){
+				int num1 = atoi(op1.c_str());
+				int num2 = atoi(op2.c_str());
+				bool ans = false;
+				if (m_conditions[i] == "<"){
+					ans = (num1 < num2);
+				}
+				else{
+					ans = (num1 > num2);
+				}
+				stk.push(ans == true ? True : False);
+			}
+			// int
+			else if (type == 3){
+				int num1 = atoi(op1.c_str());
+				int num2 = atoi(op2.c_str());
+				int ans = 0;
+				if (m_conditions[i] == "+"){
+					ans = num1 + num2;
+				}
+				else if (m_conditions[i] == "-"){
+					ans = num1 - num2;
+				}
+				else{
+					ans = num1 * num2;
+				}
+				stringstream ss;
+				ss << ans;
+				string answer = ss.str(); 
+				stk.push(string(answer));
+			}
+			// bool
+			else if (type == 2){
+				bool b1 = op1 == True;
+				bool b2 = op2 == True;
+				if (m_conditions[i] == "AND"){
+					stk.push((b1 && b2) == true ? True : False);
+				}
+				else{
+					stk.push((b1 || b2) == true ? True : False);
+				}
+			}
+			// string
+			else{
+				stk.push(op1 == op2 ? True : False);
+			}
+		}
+	}
+	return stk.top() == True;
 }
+
+// find operator type
+int Eval::opType(string x){
+	// int -> bool
+	if (x == "<" || x == ">"){
+		return 4;
+	}
+	// int -> int
+	if (x == "+" || x == "-" || x == "*")
+		return 3;
+	// bool -> bool
+	else if (x == "AND" || x == "OR")
+		return 2;
+	// string -> bool
+	else if (x == "=")
+		return 1;
+	// column name
+	else if (x.find('.') != string::npos)
+		return 0;
+	// constant e.g. 5, "A"
+	else 
+		return -1;
+}
+
+string Eval::evalField(string name, const vector<Tuple> &tuples){
+	const string null = "_#NULL#_";
+	string val = null;
+
+	// first pass, use postfix directly
+	for (int i = 0; i < tuples.size(); i++){
+		val = findVal(name, tuples[i]);
+		if (val != null) return val;
+	}
+
+	assert(splitBy(name, ".").size() == 2);
+
+	// second pass, use only the field name
+	string field_name = splitBy(name, ".")[1];
+	for (int i = 0; i < tuples.size(); i++){
+		val = findVal(field_name, tuples[i]);
+		if (val != null) return val;
+	}
+
+	cerr<<"No field name matches found for "<< name<<endl;
+    exit(EXIT_FAILURE);
+	return name;
+}
+
+string Eval::findVal(string name, const Tuple &T){
+	int size = T.getNumOfFields();
+	for (int i = 0; i < size; i++){
+		if (T.getSchema().fieldNameExists(name)){
+			union Field F = T.getField(name);
+			if (T.getSchema().getFieldType(name) == INT){
+				stringstream ss;
+				ss << F.integer;
+				return ss.str();
+			}
+			else{
+				return *(F.str);
+			}
+		}
+	}
+	return "_#NULL#_";
+}
+
+
 

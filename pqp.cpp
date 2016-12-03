@@ -18,6 +18,7 @@ void generatePQP(Node * head, SchemaManager& schema_manager, MainMemory& mem){
     return;
   }
   reverse_postorder_traverse(head, schema_manager, mem);
+
 }
 
 
@@ -53,7 +54,9 @@ void reverse_postorder_traverse(Node * N, SchemaManager& schema_manager, MainMem
     exit(EXIT_FAILURE);
   }
   cout<<T[N->type]<<endl;
-  cout<<*N->view<<endl;
+
+  cout<<*(N->view)<<endl;
+
 }
 
 // given the table name, load the relation ptr via schema manager

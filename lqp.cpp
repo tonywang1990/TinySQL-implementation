@@ -50,12 +50,15 @@ void generateLQP(bool has_distinct, vector<string> select_list, vector<string> f
 	child = new Node(LEAF, vector<string> (1, from_list[idx]), level++);
 	N->children.push_back(child);
 
+	cout<<"LQP tree:"<<endl;
 	printLQP(head);
 
+	cout<<"after optimize tree:"<<endl;
 	optimizeLQP(head);
+	printLQP(head);
 
+	cout<<"after postfix:"<<endl;
 	postfixLQP(head);
-
 	printLQP(head);
 	
 	generatePQP(head, schema_manager, mem);
@@ -82,6 +85,7 @@ vector<string> postFixfy(vector<string> infix){
 		if (infix[i][infix[i].size()-1] == ')'){
 			infix[i] = infix[i].substr(0, infix[i].size()-1);
 			infix.insert(infix.begin() + i + 1, ")");
+			i--;
 		}
 	}
 	stack<string> stk;
@@ -119,9 +123,9 @@ vector<string> postFixfy(vector<string> infix){
 		postfix.push_back(stk.top());
 		stk.pop();
 	}
-	print(postfix);
 	return postfix;
 }
+
 
 // return the precedence of the operator/operation
 // rule: 
@@ -213,11 +217,50 @@ void preorder_traverse(Node *N, map<string, vector<string> > &select_opt){
 		*/
 	}
 	else if (N->type == PRODUCT){
+		// decide which condition to use for this PRODUCT node
 		if (select_opt.find("PRODUCT") != select_opt.end()){
-			for (int i = 0; i < select_opt["PRODUCT"].size(); i++){
-				N->param.push_back(select_opt["PRODUCT"][i]);
+			vector<string> to_pro = select_opt["PRODUCT"];
+			// has OR
+			if (find(to_pro.begin(), to_pro.end(), "OR") != to_pro.end()){
+				N->param.insert(N->param.end(), to_pro.begin(), to_pro.end());
+				select_opt["PRODUCT"].clear();
 			}
-
+			// only has AND
+			else{
+				vector<string> remain;
+				int start_pos = 0;
+				int i = 0;
+				while (i < to_pro.size()){
+					vector<string> clause;
+					bool match_relation = false;
+					// colect a clause
+					while (i < to_pro.size() && to_pro[i] != "AND"){
+						clause.push_back(to_pro[i]);
+						string relation_name = splitBy(to_pro[i], ".")[0];
+						// check if clause has the children's relation name 
+						for (int j = 0; j < N->children.size(); j++){
+							if (N->children[j]->type == LEAF){
+								if (N->children[j]->param[0] == relation_name){
+									match_relation = true;
+								}
+							}
+						}
+						i++;
+					}
+					// if this condition matches the children column name, leave it here
+					if (match_relation){
+						if (N->param.size() != 0) N->param.push_back("AND");
+						N->param.insert(N->param.end(), clause.begin(), clause.end());
+					}
+					// otherwise, leave it in remain(select_opt)
+					else{
+						if (remain.size() != 0) remain.push_back("AND");
+						remain.insert(remain.end(), clause.begin(), clause.end());
+					}
+					i++;
+				}
+				select_opt["PRODUCT"] = remain;
+			}
 		}
 	}
 	else if (N->type == LEAF){
@@ -237,6 +280,11 @@ void preorder_traverse(Node *N, map<string, vector<string> > &select_opt){
 	for (int i = 0; i < N->children.size(); i++){
 		preorder_traverse(N->children[i], select_opt);
 	}
+
+	// handle exceptions 1: no product node
+	if (N->type == SELECT && !select_opt["PRODUCT"].empty()){
+		N->param.insert(N->param.end(), select_opt["PRODUCT"].begin(), select_opt["PRODUCT"].end());
+	}
 }
 
 void printLQP(Node* head){
@@ -250,12 +298,12 @@ void printLQP(Node* head){
 			Q.pop();
 		}
 		for (int i = 0; i < level.size(); i++){
-			cout<<T[level[i]->type]<<level[i]->children.size()<<" (";
+			cout<<T[level[i]->type]<<level[i]->children.size()<<" [ ";
 			for (int j = 0; j < level[i]->param.size(); j++){
 				cout<<level[i]->param[j];
-				if (j != level[i]->param.size()-1) cout<<" | ";
+				if (j != level[i]->param.size()-1) cout<<" ";
 			}
-			cout<<") ";
+			cout<<" ] ";
 			for (int k = 0; k < level[i]->children.size(); k++){
 				Q.push(level[i]->children[k]);
 			}
