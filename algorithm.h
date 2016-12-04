@@ -31,9 +31,9 @@ class Algorithm{
 
 		Relation * RunBinary(Relation * left, Relation * right, MainMemory & mem, SchemaManager & schema_mgr, bool left_is_leaf, bool right_is_leaf);
 
-		map<string, bool> findJoinField();
+		map<string, int> findJoinField();
 		set<string> findDupField(vector<Relation*> relations);
-		Schema getJoinSchema(Relation *left, Relation *right, bool left_is_leaf, bool right_is_leaf, vector<vector<int> > &mapping, vector<string> &join_fields);
+		Schema getJoinSchema(Relation *left, Relation *right, bool left_is_leaf, bool right_is_leaf, vector<vector<int> > &mapping);
 		void join1Pass(Relation *left, Relation *right, vector<int> left_map, vector<int> right_map, Relation *join, MainMemory& mem);
 };
 #endif

@@ -181,9 +181,9 @@ void Algorithm::Sort(Relation * oldPtr, Relation * newPtr, MainMemory & mem){
 	return;
 }
 
-map<string, bool> Algorithm::findJoinField(){
+map<string, int> Algorithm::findJoinField(){
 	stack<string> stk;
-	map<string, bool> fields;
+	map<string, int> fields;
 	for (int i = 0; i < m_conditions.size(); i++){
 		vector<string> column = splitBy(m_conditions[i], ".");
 		// column name
@@ -202,7 +202,7 @@ map<string, bool> Algorithm::findJoinField(){
 					return fields;
 				}
 				else 
-					fields[op1] = true;
+					fields[op1] = -1;
 			}
 			else if (m_conditions[i] != "AND"){
 				fields.clear();
@@ -231,15 +231,12 @@ set<string> Algorithm::findDupField(vector<Relation*> relations){
 }
 
 // get the new schema for Binary Op
-Schema Algorithm::getJoinSchema(Relation *left, Relation *right, bool left_is_leaf, bool right_is_leaf, vector<vector<int> > &mapping, vector<string> &join_fields){
+Schema Algorithm::getJoinSchema(Relation *left, Relation *right, bool left_is_leaf, bool right_is_leaf, vector<vector<int> > &mapping){
 	vector<pair<Relation*, bool> > relations;
 	relations.push_back(make_pair(left, left_is_leaf));
 	relations.push_back(make_pair(right, right_is_leaf));
 
-	map<string, bool> join_field = findJoinField();
-	for (map<string,bool>::iterator it = join_field.begin(); it != join_field.end(); ++it){
-		join_fields.push_back(it->first);
-	}
+	map<string, int> join_field = findJoinField();
 	//set<string> dup_field = findDupField(relations);
 	
 	int size = left->getSchema().getNumOfFields() + right->getSchema().getNumOfFields() - join_field.size();
@@ -269,15 +266,22 @@ Schema Algorithm::getJoinSchema(Relation *left, Relation *right, bool left_is_le
 				field = splitBy(field, ".")[1];
 
 			if (join_field.count(field) != 0){
-				if (join_field[field] == true){
+				// first time seeing this field
+				if (join_field[field] == -1){
 					new_names[idx] = field;
 					new_types[idx] = types[i];
-					// remove 
-					join_field[field] = false;
+					// save current postition
+					join_field[field] = idx;
+
 					//dup_field.erase(names[i]);
-					
+					//
 					// mapping i -> idx: names[i] is now new_names[idx]
 					mapping[r][i] = idx++;
+				}
+				// has been seen
+				else{
+					mapping[r][i] = join_field[field];
+					
 				}
 			}
 			/*
@@ -316,8 +320,7 @@ Relation * Algorithm::RunBinary(Relation * left, Relation * right, MainMemory & 
 	assert(left_size <= right_size);
 
 	vector<vector<int> > idx_map(2);
-	vector<string> joint_fields;
-	Schema join_schema = getJoinSchema(left, right, left_is_leaf, right_is_leaf, idx_map, joint_fields);
+	Schema join_schema = getJoinSchema(left, right, left_is_leaf, right_is_leaf, idx_map);
 	cout<<join_schema<<endl;
 	print(idx_map[0]);
 	print(idx_map[1]);
@@ -385,7 +388,7 @@ void Algorithm::join1Pass(Relation *left, Relation *right, vector<int> left_map,
 								}
 							}	
 							else{
-								if (join_tuple.getField(right_map[ri]).str!= right_tuple.getField(ri).str){
+								if (*(join_tuple.getField(right_map[ri]).str) != *(right_tuple.getField(ri).str)){
 									valid_tuple = false;
 									break;
 								} 

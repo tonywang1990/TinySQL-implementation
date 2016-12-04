@@ -15,8 +15,24 @@ INSERT INTO course3 (quiz1, quiz2, grade) VALUES (70, 80, "A")
 INSERT INTO course3 (quiz1, quiz2, grade) VALUES (60, 90, "C")
 INSERT INTO course3 (quiz1, quiz2, grade) VALUES (20, 30, "F")
 
-SELECT DISTINCT course1.sid course2.exam FROM course1, course2 WHERE course1.sid = course2.sid
-#SELECT DISTINCT * FROM course1, course2, course3 WHERE course2.sid = 1 AND course1.sid = course2.sid AND course2.grade = course3.grade
+CREATE TABLE r (a INT, b INT)
+CREATE TABLE s (b INT, c INT)
+CREATE TABLE t (a INT, c INT)
+
+INSERT INTO r (a, b) VALUES (0, 0)
+INSERT INTO r (a, b) VALUES (1, 1)
+INSERT INTO r (a, b) VALUES (1, 1)
+INSERT INTO s (b, c) VALUES (1, 101)
+INSERT INTO s (b, c) VALUES (1, 102)
+INSERT INTO s (b, c) VALUES (1, 103)
+INSERT INTO t (a, c) VALUES (0, 101)
+INSERT INTO t (a, c) VALUES (1, 101)
+INSERT INTO t (a, c) VALUES (2, 102)
+
+SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
+
+#SELECT DISTINCT FROM course1, course2 WHERE course1.grade = course2.grade AND course1.exam = course2.exam
+#SELECT DISTINCT * FROM course1, course2, course3 WHERE course1.course2.grade = course3.grade
 #SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
 
 #SELECT DISTINCT * FROM course WHERE grade = "E" AND course.homework = 0 OR course.grade = "A"
