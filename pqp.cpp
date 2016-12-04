@@ -93,10 +93,9 @@ Relation * unaryReadWrite(Node *N, const vector<string>& conditions, MainMemory&
 	bool isOnePass = (T[opType] == "SELECT" || T[opType] == "PROJECT" || dBlocks < mem.getMemorySize()) ? true : false;
 
 	Algorithm alg(isOnePass, conditions, opType, level);
-	Relation * newRelation = alg.RunUnary(relation_ptr, mem, schema_mgr, N->type == LEAF);
+	Relation * newRelation = alg.runUnary(relation_ptr, mem, schema_mgr, N->type == LEAF);
 	assert(newRelation);
 	return newRelation;
-
 }
 
 
@@ -120,7 +119,7 @@ Relation * binaryReadWrite(Node* left_node, Node* right_node, const vector<strin
 	bool isOnePass = (T[opType] == "PRODUCT") ? true : false;
 
 	Algorithm alg(isOnePass, conditions, opType, level);
-	Relation * newRelation = alg.RunBinary(left, right, mem, schema_mgr, left_node->type == LEAF, right_node->type == LEAF);
+	Relation * newRelation = alg.runBinary(left, right, mem, schema_mgr, left_node->type == LEAF, right_node->type == LEAF);
 	assert(newRelation);
 	return newRelation;
 }

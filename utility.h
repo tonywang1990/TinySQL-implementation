@@ -9,6 +9,7 @@
 #include<iterator>
 #include<cstdlib>
 #include<ctime>
+#include<cmath>
 #include "Block.h"
 #include "Config.h"
 #include "Disk.h"
@@ -20,15 +21,17 @@
 #include "Tuple.h"
 
 #include<vector>
+#include <queue>
 #include<ctype.h>
 #include<cassert>
 #include<queue>
+#include<utility>
 
 
 using namespace std;
 
 // list of node types
-enum TYPE{SELECT, PROJECT, PRODUCT, JOIN, THETA, DISTINCT, SORT, LEAF}; 
+enum TYPE{SELECT, PROJECT, PRODUCT, JOIN, THETA, DISTINCT, SORT, LEAF, HEAD}; 
 
 // Node class
 class Node{
@@ -87,23 +90,26 @@ void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple
 struct myCompare{
 	bool operator()(const Tuple& l, const Tuple& r){
 		if(l.getNumOfFields() != r.getNumOfFields()) return false;
+		string s1, s2;
 		for(int i = 0; i < l.getNumOfFields(); i++){
 			union Field f1 = l.getField(i);
 			union Field f2 = r.getField(i);
 
-			if(l.getSchema().getFieldType(i) != r.getSchema().getFieldType(i))
-				return false;
+			if(l.getSchema().getFieldType(i) != r.getSchema().getFieldType(i)){
+				cerr<<"Fatal error! tuples with different schema!!"<<endl;
+				exit(EXIT_FAILURE);
+			}
 			if(l.getSchema().getFieldType(i) == 0){
-				//ut<<"f1: "<<f1.integer<<"\tf2: "<<f2.integer<<endl;
-				if(f1.integer == f2.integer)  continue;
-				else return f1.integer < f2.integer;
+			  s1 += to_string(f1.integer);
+			  s2 += to_string(f2.integer);
 			}
 			else{
-				if (*(f1.str) == *(f2.str)) continue;
-				else return *(f1.str) < *(f2.str);
+			  s1 += *f1.str;
+			  s2 += *f2.str;
 			}
 		}
-		return true;
+		return s1 < s2;
+		//		return true;
 	}
 };
 

@@ -31,6 +31,7 @@ int main(){
 	string line;
 	vector<string> words;
 	ifstream input("test.txt");
+	//ifstream input("test_large.txt");
 	if (input.is_open()){
 		// for each command line
 		while(getline(input, line)){
