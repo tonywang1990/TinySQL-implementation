@@ -59,6 +59,8 @@ public:
 extern queue<int> free_blocks;
 // map of type and its name
 extern map<TYPE, string> T;
+// counter
+extern int _g_relation_counter;
 
 
 // global utiltity functions

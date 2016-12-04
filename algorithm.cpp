@@ -166,7 +166,7 @@ Relation * Algorithm::runUnary(Relation * relation_ptr, MainMemory & mem, Schema
 	}
 
 	// create a new table for the output:
-	string new_relation_name = relation_ptr->getRelationName() + T[m_type] + to_string(m_level);
+	string new_relation_name = relation_ptr->getRelationName() + T[m_type] + to_string(m_level) + to_string(_g_relation_counter++);
 	Relation * newRelation = schema_mgr.createRelation(new_relation_name, getNewSchema(relation_ptr, is_leaf));
 	assert(relation_ptr && newRelation);
 
@@ -553,7 +553,7 @@ void Algorithm::sortTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem,
 	//schema_mgr.deleteRelation(table_name); // this might cause bugs!
 
 	// get an new table, whose name is the same as the original one
-	Relation * newRR = schema_mgr.createRelation(table_name+"SORT", newR->getSchema());
+	Relation * newRR = schema_mgr.createRelation(table_name+"SORT"+to_string(_g_relation_counter++), newR->getSchema());
 	
 	// @param1:relation ptr, @param2: mem, @param3: head of the sublists, 
 	// @param4: the vector of multiple/single target sort column
@@ -717,17 +717,10 @@ Relation * Algorithm::runBinary(Relation * left, Relation * right, MainMemory & 
 	print(idx_map[0]);
 	print(idx_map[1]);
 
-	string new_relation_name = left->getRelationName() + "_" + left->getRelationName();
+	string new_relation_name = left->getRelationName() + "_" + left->getRelationName() + to_string(_g_relation_counter++);
 	Relation * join_relation = schema_mgr.createRelation(new_relation_name, join_schema);
 
-	if (left_size <= num_blocks-2){ // one for right, one for output
-		join1Pass(left, right, idx_map[0], idx_map[1], join_relation, mem);
-	}
-	else{
-		cout<<"use 2Pass algorithm!"<<endl;
-		abort();
-	}
-
+	join1Pass(left, right, idx_map[0], idx_map[1], join_relation, mem);
 
 	return join_relation;
 }
@@ -735,72 +728,82 @@ Relation * Algorithm::runBinary(Relation * left, Relation * right, MainMemory & 
 void Algorithm::join1Pass(Relation *left, Relation *right, vector<int> left_map, vector<int> right_map, Relation *join, MainMemory& mem){
 	int num_blocks = free_blocks.size();
 	int left_size =  left->getNumOfBlocks();
+	int p_left_size = num_blocks - 2;
 	int right_size =  right->getNumOfBlocks();
 	assert(left_size <= right_size && left_size < num_blocks);
 
-	Eval evaluate = Eval(m_conditions);
-
-	int p_left = free_blocks.front();
-	for (int i = 0; i < left_size; i++){
-		left->getBlock(i, p_left + i);
+	// chekcout free mem blocks
+	vector<int> p_left;
+	for (int i = 0; i < p_left_size; i++){
+		p_left.push_back(free_blocks.front());
 		free_blocks.pop();
 	}
-
 	int p_right = free_blocks.front();
 	free_blocks.pop();
-	for (int j = 0; j < right_size; j++){
-		right->getBlock(j, p_right);
-		Block *right_ptr = mem.getBlock(p_right);
-		vector<Tuple> right_tuples = right_ptr->getTuples();
-		for(int r = 0; r < right_tuples.size(); ++r){
-			Tuple right_tuple = right_tuples[r];
 
-			for (int i = p_left; i < p_left + left_size; i++){
-				Block *left_ptr = mem.getBlock(i);
-				vector<Tuple> left_tuples = left_ptr->getTuples();
-				for(int l = 0; l < left_tuples.size(); ++l){
-					Tuple left_tuple = left_tuples[l];
-					Tuple join_tuple = join->createTuple();
-					vector<bool> is_written(join_tuple.getNumOfFields(), false);
-					bool valid_tuple = true;
-					for (int li = 0; li < left_map.size(); li++){
-						is_written[left_map[li]] = true;
-						if (join_tuple.getSchema().getFieldType(left_map[li]) == INT)	
-							join_tuple.setField(left_map[li], left_tuple.getField(li).integer);
-						else 
-							join_tuple.setField(left_map[li], *(left_tuple.getField(li).str));
-					}
-					for (int ri = 0; ri < right_map.size(); ri++){
-						// collision: check is valid natural join tuple
-						if (is_written[right_map[ri]] == true){
-							if (join_tuple.getSchema().getFieldType(right_map[ri]) == INT){
-								if (join_tuple.getField(right_map[ri]).integer != right_tuple.getField(ri).integer){
-									valid_tuple = false;
-									break;
-								}
-							}	
-							else{
-								if (*(join_tuple.getField(right_map[ri]).str) != *(right_tuple.getField(ri).str)){
-									valid_tuple = false;
-									break;
-								} 
-							}
+	Eval evaluate = Eval(m_conditions);
+	int left_idx = 0;
+	while (left_idx < left_size){
+		int i = 0;
+		for (; i < p_left_size && left_idx < left_size; i++, left_idx++){
+			left->getBlock(left_idx, p_left[i]);
+		}
+		int p_left_in_use = i;
+
+		for (int j = 0; j < right_size; j++){
+			right->getBlock(j, p_right);
+			Block *right_ptr = mem.getBlock(p_right);
+			vector<Tuple> right_tuples = right_ptr->getTuples();
+			for(int r = 0; r < right_tuples.size(); ++r){
+				Tuple right_tuple = right_tuples[r];
+
+				for (int i = 0; i < p_left_in_use; i++){
+					Block *left_ptr = mem.getBlock(p_left[i]);
+					vector<Tuple> left_tuples = left_ptr->getTuples();
+					for(int l = 0; l < left_tuples.size(); ++l){
+						Tuple left_tuple = left_tuples[l];
+						Tuple join_tuple = join->createTuple();
+						vector<bool> is_written(join_tuple.getNumOfFields(), false);
+						bool valid_tuple = true;
+						for (int li = 0; li < left_map.size(); li++){
+							is_written[left_map[li]] = true;
+							if (join_tuple.getSchema().getFieldType(left_map[li]) == INT)	
+								join_tuple.setField(left_map[li], left_tuple.getField(li).integer);
+							else 
+								join_tuple.setField(left_map[li], *(left_tuple.getField(li).str));
 						}
-						if (join_tuple.getSchema().getFieldType(right_map[ri]) == INT)	
+						for (int ri = 0; ri < right_map.size(); ri++){
+							// collision: check is valid natural join tuple
+							if (is_written[right_map[ri]] == true){
+								if (join_tuple.getSchema().getFieldType(right_map[ri]) == INT){
+									if (join_tuple.getField(right_map[ri]).integer != right_tuple.getField(ri).integer){
+										valid_tuple = false;
+										break;
+									}
+								}	
+								else{
+									if (*(join_tuple.getField(right_map[ri]).str) != *(right_tuple.getField(ri).str)){
+										valid_tuple = false;
+										break;
+									} 
+								}
+							}
+							if (join_tuple.getSchema().getFieldType(right_map[ri]) == INT)	
 
-							join_tuple.setField(right_map[ri], right_tuple.getField(ri).integer);
-						else 
-							join_tuple.setField(right_map[ri], *(right_tuple.getField(ri).str));
+								join_tuple.setField(right_map[ri], right_tuple.getField(ri).integer);
+							else 
+								join_tuple.setField(right_map[ri], *(right_tuple.getField(ri).str));
+						}
+						if (valid_tuple == true && evaluate.evalUnary(join_tuple) == true) 
+							appendTupleToRelation(join, mem, join_tuple);
 					}
-					if (valid_tuple == true && evaluate.evalUnary(join_tuple) == true) 
-						appendTupleToRelation(join, mem, join_tuple);
 				}
 			}
 		}
 	}
 
-	for (int i = 0; i < left_size; i++){
-		free_blocks.push(p_left + i);
+	for (int i = 0; i < p_left_size; i++){
+		free_blocks.push(p_left[i]);
 	}
 	free_blocks.push(p_right);
 }

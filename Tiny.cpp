@@ -30,8 +30,8 @@ int main(){
 	//=======================Read Input=========================
 	string line;
 	vector<string> words;
-	//ifstream input("test.txt");
-	ifstream input("test_large.txt");
+	ifstream input("test.txt");
+	//ifstream input("test_large.txt");
 	if (input.is_open()){
 		// for each command line
 		while(getline(input, line)){
@@ -41,12 +41,10 @@ int main(){
 			
 			// extract each word into vector words
 			words = splitBy(line," ");
-			/*
-			string word;
-			while (iss >> word){
-				words.push_back(word);
-			}
-			*/
+
+			// prepare memory
+			resetFreeBlocks();
+	
 			if (words[0] == "CREATE"){
 				string relation_name = words[2];
 				vector<string> field_names;
