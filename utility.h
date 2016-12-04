@@ -114,11 +114,11 @@ class Eval{
 		bool evalCond(const Tuple &left, const Tuple &right, bool isUnary);
 		int opType(string x);
 		string evalField(string name, const vector<Tuple> &tuples);
-		string findVal(string name, const Tuple &T);
 	public:
 		Eval(const vector<string>& conditions);
 		bool evalUnary(const Tuple & tuple);
 		bool evalBinary(const Tuple & lt, const Tuple & rt);
+		string findVal(string name, const Tuple &T);
 };
 
 

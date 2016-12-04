@@ -27,9 +27,9 @@ string strip(string &str){
 };
 
 string to_string(int i){
-  stringstream ss;
-  ss<<i;
-  return ss.str();
+	stringstream ss;
+	ss<<i;
+	return ss.str();
 }
 
 vector<string> splitBy(string str, string delimiter) {
@@ -59,20 +59,20 @@ void resetFreeBlocks(){
 };
 
 vector<int> getNeededFields(const Schema & old, const vector<string>& conditions){
-  vector<int> indices;
-  for(int i = 0; i < conditions.size(); ++i){
-    int ind = old.getFieldOffset(conditions[i]);
-    vector<string> tmp = splitBy(conditions[i], ".");
-    if(ind == -1 && tmp.size() == 2){  
-      ind = old.getFieldOffset(tmp[1]);
-    }
-    if(ind == -1){
-      cerr<<"Cannot find the field name: "<<conditions[i]<<"!!"<<endl;
-      exit(EXIT_FAILURE);
-    }
-    indices.push_back(ind);
-  }
-  return indices;
+	vector<int> indices;
+	for(int i = 0; i < conditions.size(); ++i){
+		int ind = old.getFieldOffset(conditions[i]);
+		vector<string> tmp = splitBy(conditions[i], ".");
+		if(ind == -1 && tmp.size() == 2){  
+			ind = old.getFieldOffset(tmp[1]);
+		}
+		if(ind == -1){
+			cerr<<"Cannot find the field name: "<<conditions[i]<<"!!"<<endl;
+			exit(EXIT_FAILURE);
+		}
+		indices.push_back(ind);
+	}
+	return indices;
 }
 
 // AN example procedure of appending a tuple to the end of a relation
@@ -84,28 +84,28 @@ void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple
 	free_blocks.pop();
 	Block* block_ptr;
 	if (relation_ptr->getNumOfBlocks()==0) {
-		cout << "The relation is empty" << endl;
-		cout << "Get the handle to the memory block " << memory_block_index << " and clear it" << endl;
+		//cout << "The relation is empty" << endl;
+		//cout << "Get the handle to the memory block " << memory_block_index << " and clear it" << endl;
 		block_ptr=mem.getBlock(memory_block_index);
 		block_ptr->clear(); //clear the block
 		block_ptr->appendTuple(tuple); // append the tuple
-		cout << "Write to the first block of the relation" << endl;
+		//cout << "Write to the first block of the relation" << endl;
 		relation_ptr->setBlock(relation_ptr->getNumOfBlocks(),memory_block_index);
 	} else {
-		cout << "Read the last block of the relation into memory block:" << endl;
+		//cout << "Read the last block of the relation into memory block:" << endl;
 		relation_ptr->getBlock(relation_ptr->getNumOfBlocks()-1,memory_block_index);
 		block_ptr=mem.getBlock(memory_block_index);
 
 		if (block_ptr->isFull()) {
-			cout << "(The block is full: Clear the memory block and append the tuple)" << endl;
+		//	cout << "(The block is full: Clear the memory block and append the tuple)" << endl;
 			block_ptr->clear(); //clear the block
 			block_ptr->appendTuple(tuple); // append the tuple
-			cout << "Write to a new block at the end of the relation" << endl;
+		//	cout << "Write to a new block at the end of the relation" << endl;
 			relation_ptr->setBlock(relation_ptr->getNumOfBlocks(),memory_block_index); //write back to the relation
 		} else {
-			cout << "(The block is not full: Append it directly)" << endl;
+		//	cout << "(The block is not full: Append it directly)" << endl;
 			block_ptr->appendTuple(tuple); // append the tuple
-			cout << "Write to the last block of the relation" << endl;
+		//	cout << "Write to the last block of the relation" << endl;
 			relation_ptr->setBlock(relation_ptr->getNumOfBlocks()-1,memory_block_index); //write back to the relation
 		}
 	}  
@@ -118,17 +118,18 @@ Eval::Eval(const vector<string> & conditions): m_conditions(conditions){
 
 bool Eval::evalUnary(const Tuple & tuple){
 	//  only select is called here!
-        return evalCond(tuple,  tuple, true);
+	return evalCond(tuple,  tuple, true);
 }
 
 bool Eval::evalBinary(const Tuple & lt, const Tuple & rt){
-        // only theta should be here!
-        return evalCond(lt, rt, false);
+	// only theta should be here!
+	return evalCond(lt, rt, false);
 }
 
 
 // evaluate the value of a postfix clause
 bool Eval::evalCond(const Tuple &left, const Tuple &right, bool isUnary){
+	if (m_conditions.empty()) return true;
 	stack<string> stk;
 	const string True = "_#true#_", False = "_#false#_";
 	for (int i = 0; i < m_conditions.size(); i++){
@@ -252,7 +253,7 @@ string Eval::evalField(string name, const vector<Tuple> &tuples){
 	}
 
 	cerr<<"No field name matches found for "<< name<<endl;
-    exit(EXIT_FAILURE);
+	exit(EXIT_FAILURE);
 	return name;
 }
 

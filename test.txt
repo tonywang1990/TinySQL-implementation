@@ -1,12 +1,27 @@
-CREATE TABLE course (sid INT, homework INT, project INT, exam INT, grade STR20)
-INSERT INTO course (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "A")
-INSERT INTO course (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "B")
-INSERT INTO course (sid, homework, project, exam, grade) VALUES (2, 0, 100, 100, "E")
-INSERT INTO course (sid, grade, exam, project, homework) VALUES (3, "F", 100, 100, 100)
-#SELECT DISTINCT * FROM course WHERE grade = "E" AND course.homework = 0 OR course.grade = "A"
-SELECT DISTINCT sid, grade, homework, exam FROM course WHERE (((course.homework - course.exam) - 1) * (1 + 1)) = -4 
-#SELECT DISTINCT course.grade, course2.grade FROM course, course2 WHERE course.sid = course2.sid AND course.grade = "A" AND course2.grade = "A" OR (course.homework + course.project) = 99 ORDER BY course.exam
+
+CREATE TABLE course1 (sid INT, homework INT, project INT, exam INT, grade STR20)
+INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "A")
+INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "B")
+INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (2, 0, 100, 100, "E")
+INSERT INTO course1 (sid, grade, exam, project, homework) VALUES (3, "F", 100, 100, 100)
+
+CREATE TABLE course2 (sid INT, exam INT, grade STR20)
+INSERT INTO course2 (sid, exam, grade) VALUES (1, 100, "A")
+INSERT INTO course2 (sid, exam, grade) VALUES (2, 25, "E")
+INSERT INTO course2 (sid, exam, grade) VALUES (17, 0, "A")
+
+CREATE TABLE course3 (quiz1 INT, quiz2 INT, grade STR20)
+INSERT INTO course3 (quiz1, quiz2, grade) VALUES (70, 80, "A")
+INSERT INTO course3 (quiz1, quiz2, grade) VALUES (60, 90, "C")
+INSERT INTO course3 (quiz1, quiz2, grade) VALUES (20, 30, "F")
+
+SELECT DISTINCT course1.sid course2.exam FROM course1, course2 WHERE course1.sid = course2.sid
+#SELECT DISTINCT * FROM course1, course2, course3 WHERE course2.sid = 1 AND course1.sid = course2.sid AND course2.grade = course3.grade
 #SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
+
+#SELECT DISTINCT * FROM course WHERE grade = "E" AND course.homework = 0 OR course.grade = "A"
+#SELECT DISTINCT sid, grade, homework, exam FROM course WHERE (((course.homework - course.exam) - 1) * (1 + 1)) = -4 
+#SELECT DISTINCT course.grade, course2.grade FROM course, course2 WHERE course.sid = course2.sid AND course.grade = "A" AND course2.grade = "A" OR (course.homework + course.project) = 99 ORDER BY course.exam
 #DELETE FROM course WHERE grade = "E"
 #INSERT INTO course (sid, homework, project, exam, grade) VALUES (4, 99, 100, 100, "B")
 #DELETE FROM course
