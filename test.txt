@@ -31,7 +31,7 @@ INSERT INTO t (a, c) VALUES (2, 102)
 
 SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
 
-#SELECT DISTINCT FROM course1, course2 WHERE course1.grade = course2.grade AND course1.exam = course2.exam
+SELECT DISTINCT FROM course1, course2 WHERE course1.grade = course2.grade
 #SELECT DISTINCT * FROM course1, course2, course3 WHERE course1.course2.grade = course3.grade
 #SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
 

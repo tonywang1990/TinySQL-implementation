@@ -4,6 +4,7 @@
 
 queue<int> free_blocks;
 map<TYPE, string> T;
+int _g_relation_counter;
 
 void initMapT(){
 	// initialize T map

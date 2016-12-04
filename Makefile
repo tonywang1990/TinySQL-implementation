@@ -26,4 +26,4 @@ StorageManager.o: Block.h Disk.h Field.h MainMemory.h Relation.h Schema.h Schema
 
 
 clean:
-	rm $(OBJS) $(TARGET)
+	rm $(OBJS) $(TARGET) StorageManager.o
