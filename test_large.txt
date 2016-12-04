@@ -13,8 +13,27 @@ INSERT INTO course (sid, homework, project, exam, grade) VALUES (11, 0, 30, 100,
 INSERT INTO course (sid, homework, project, exam, grade) VALUES (12, 0, 51, 100, "A")
 INSERT INTO course (sid, homework, project, exam, grade) VALUES (13, 0, 33, 100, "C")
 INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (14, "F", 100, 100, 100)
 #SELECT DISTINCT * FROM course WHERE grade = "E" AND course.homework = 0 OR course.grade = "A"
-SELECT sid, homework, exam, grade FROM course ORDER BY course.grade
+SELECT DISTINCT sid, homework, exam, grade FROM course ORDER BY course.grade
+#SELECT DISTINCT * FROM course 
 
 #SELECT DISTINCT course.grade, course2.grade FROM course, course2 WHERE course.sid = course2.sid AND course.grade = "A" AND course2.grade = "A" OR (course.homework + course.project) = 99 ORDER BY course.exam
 #SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c

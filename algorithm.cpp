@@ -45,13 +45,24 @@ vector<Tuple> HeapBlock::getTuples(MainMemory & mem)
 }
 
 // wrapper for heap manager:
-HeapManager::HeapManager(Relation * r, MainMemory &mm, priority_queue<pair<int, pair<Tuple, int> >, vector<pair<int, pair<Tuple, int> > >, pqCompare> h, const vector<int>& diskHeadPtrs, int field):
+HeapManager::HeapManager(Relation * r, MainMemory &mm, const vector<int>& diskHeadPtrs, vector<int> fields):
 	relation_ptr(r),
-	heap(h),
 	sublists(diskHeadPtrs.size()),
-	sField(field)	  
+	sFields(fields)
 {
-	_init(diskHeadPtrs, mm);
+
+  if(sFields.size() == 1){
+    isMultiple = false;
+    sField = sFields[0];
+  }
+  else{
+    assert(sFields.size() > 1);
+    isMultiple = true;
+    sField = -1;
+  }
+
+  _init(diskHeadPtrs, mm);
+
 }
 
 void HeapManager::_init(const vector<int>& diskHeadPtrs, MainMemory& mem)
@@ -82,21 +93,54 @@ void HeapManager::_init(const vector<int>& diskHeadPtrs, MainMemory& mem)
 void HeapManager::putTuplesToHeap(const vector<Tuple>& tuples, int hp_block_index)
 {
 	for(int i = 0; i < tuples.size(); ++i){
-		// index of the heap block - tuple - selected sort field:
-		heap.push(make_pair(hp_block_index, make_pair(tuples[i], sField)));
+		// index of the heap block - tuple - selected sort field(s):
+	        if(isMultiple){
+		  string key = encodeFields(tuples[i], sFields);
+	          heapMp.push(make_pair(hp_block_index, make_pair(tuples[i], key)));
+                }
+		else{
+		  heapSg.push(make_pair(hp_block_index, make_pair(tuples[i], sField)));
+		}
 	}
 }
 
 Tuple HeapManager::top(){
-	return heap.top().second.first;
+  return isMultiple ? heapMp.top().second.first : heapSg.top().second.first; 
+}
+
+bool HeapManager::empty(){
+  return isMultiple ? heapMp.empty() : heapSg.empty();
+}
+
+int HeapManager::size(){
+  return isMultiple ? heapMp.size() : heapSg.size();
+}
+
+vector<Tuple> HeapManager::popTopMins(MainMemory & mem){
+  if(this->empty())  vector<Tuple>();
+
+  vector<Tuple> tuples(1, this->top());
+  this->pop(mem);
+
+  while(!(this->empty()) && compareTuples(this->top(), tuples.back())){
+      tuples.push_back(this->top());
+      this->pop(mem);
+  }
+  return tuples;
 }
 
 void HeapManager::pop(MainMemory & mem){
-	pair<int, pair<Tuple, int> > p = heap.top();
-	heap.pop();
-	Tuple & tuple = p.second.first;
-	int hp_block_index = p.first;
-
+        int hp_block_index = -1;
+	if(isMultiple){
+	  pair<int, pair<Tuple, string> > p = heapMp.top();
+	  heapMp.pop();
+	  hp_block_index = p.first;
+	}
+	else{
+	  pair<int, pair<Tuple, int> > p = heapSg.top();
+	  heapSg.pop();
+	  hp_block_index = p.first;
+	}
 	assert(hp_block_index >= 0 && hp_block_index < heap_blocks.size());
 
 	HeapBlock & heap_block = heap_blocks[hp_block_index];
@@ -105,6 +149,7 @@ void HeapManager::pop(MainMemory & mem){
 		putTuplesToHeap(tuples, hp_block_index);
 	}
 }
+
 Algorithm::Algorithm(bool isOnePass, const vector<string>& conditions, TYPE type, int level):
 	m_isOnePass(isOnePass), 
 	m_conditions(conditions), 
@@ -123,6 +168,7 @@ Relation * Algorithm::runUnary(Relation * relation_ptr, MainMemory & mem, Schema
 	// create a new table for the output:
 	string new_relation_name = relation_ptr->getRelationName() + T[m_type] + to_string(m_level);
 	Relation * newRelation = schema_mgr.createRelation(new_relation_name, getNewSchema(relation_ptr, is_leaf));
+	assert(relation_ptr && newRelation);
 
 	if(T[m_type] == "SELECT"){
 		Select(relation_ptr, newRelation, mem);
@@ -135,7 +181,8 @@ Relation * Algorithm::runUnary(Relation * relation_ptr, MainMemory & mem, Schema
 		if(m_isOnePass)
 			distinctOnePass(relation_ptr, newRelation, mem);
 		else
-			newRelation = relation_ptr; // need to do later
+		        distinctTwoPass(relation_ptr, newRelation, mem, schema_mgr); 
+		        // for both two-pass, the new relation is passed by reference!!!
 	}
 	else if(T[m_type] == "SORT"){
 		if(m_isOnePass)
@@ -149,6 +196,7 @@ Relation * Algorithm::runUnary(Relation * relation_ptr, MainMemory & mem, Schema
 	}
 	return newRelation;
 }
+
 
 // get the new schema for projection
 Schema Algorithm::getNewSchema(Relation * relation_ptr, bool is_leaf){
@@ -310,12 +358,63 @@ void Algorithm::distinctOnePass(Relation * oldR, Relation * newR, MainMemory & m
 	free_blocks.push(memory_block_index);
 
 }
-void Algorithm::distinctTwoPass(Relation * oldR, Relation * newR, MainMemory & mem){  
-	newR = oldR;
+
+// using sort-based two pass alg:
+void Algorithm::distinctTwoPass(Relation * oldR, Relation * & newR, MainMemory & mem, SchemaManager & schema_mgr){  
+	int dBlocks=  oldR->getNumOfBlocks();
+	const int mSize = mem.getMemorySize();
+	assert(dBlocks > mSize); // doing one pass here!
+	if(sqrt(dBlocks) > double(mSize)){
+	        cerr<<"Fatal Error: The memory condition: M >= sqrt(B(R)) is not satisfied!! Cannot use the two-passed algorithms!"<<endl;
+		return;
+	}
+
+	vector<int> inds; // indices of all the columns of the tuple
+	if(m_conditions.empty()){ 
+	  // distinct order will be set if sort exist in lpq
+	  // then we should use that order!
+	  for(int i = 0; i < newR->getSchema().getNumOfFields(); ++i)  inds.push_back(i);
+	}
+
+	int sublists = 0;
+	vector<int> subHeads;
+	// first pass, make sorted sublists:
+	int cnt = 0, start = 0;
+	for(start = 0; start < dBlocks; start += cnt){
+		subHeads.push_back(start);
+		// sort the subchunk first and write back, now sort with full field!
+		cnt = sortByChunkWB(oldR, newR, mem, start, inds);
+		sublists++;
+	}
+	cout<<"Now have you have "<<sublists<<" sublists to merge for distinct"<<endl;
+	cout<<*newR<<endl;
+
+	// second pass, merge the sorted sublists:
+	string table_name = oldR->getRelationName(); 
+	Relation * newRR = schema_mgr.createRelation(table_name+"DISTINCT", newR->getSchema());
+	
+	// handle exception 2 in lpq that is if sort exists, stick with the same order
+
+	// to be careful about deleting the relations!
+	inds.push_back(getNeededOrder(newR));
+	
+	// @param1:relation ptr, @param2: mem, @param3: head of the sublists, 
+	// @param4: the vector of multiple/single target sort column
+	HeapManager heapMgr(newR, mem, subHeads, inds);
+
+	while(!heapMgr.empty()){
+	  vector<Tuple> tuples = heapMgr.popTopMins(mem); 
+	  appendTupleToRelation(newRR, mem, tuples[0]);
+	}
+	resetFreeBlocks();
+
+	// very ugly!
+	newR = newRR;
 	return;
-}
+} 
 
 // return the indices of the overlapped fields between the given condition and schema
+// ONLY for sort single column!!
 int Algorithm::getNeededOrder(Relation * relation_ptr){
 	// get the schema:
 	Schema schema = relation_ptr->getSchema();
@@ -334,7 +433,7 @@ int Algorithm::getNeededOrder(Relation * relation_ptr){
 // until the mm is full or we exhaust the oldR
 // sort these tuples in the memory and write them back to the disk from the start index
 // @ret: the total number of blocks read and write back to disk
-int Algorithm::sortByChunkWB(Relation * oldR, Relation * newR, MainMemory & mem, int start){
+int Algorithm::sortByChunkWB(Relation * oldR, Relation * newR, MainMemory & mem, int start, vector<int> indices){
 	assert(!free_blocks.empty());
 	// get a available mem block
 	resetFreeBlocks();
@@ -344,9 +443,13 @@ int Algorithm::sortByChunkWB(Relation * oldR, Relation * newR, MainMemory & mem,
 
 	int cnt = 0; // how many disk block you bring into the main memory at the end
 
-	// get the overlapped field (only have one) between the order and the schema for later key forming!
-	int indField = getNeededOrder(oldR);
-
+	// get the overlapped field between the order and the schema only for SORT!
+	// else use the given indices to do sort for DISTINCT/NATURAL JOIN!
+	if(indices.empty()){
+	  int indField = getNeededOrder(oldR);
+	  indices.push_back(indField);
+	}
+	
 	// bring the disk blocks into the main memory until mm is full or we have read
 	// all the disk blocks
 	vector<pair<int, Tuple> > sortListInt; // field->tuple
@@ -366,12 +469,19 @@ int Algorithm::sortByChunkWB(Relation * oldR, Relation * newR, MainMemory & mem,
 
 		// push the tuples into the list:
 		for(int j = 0; j < tuples.size(); ++j){
-			union Field f = tuples[j].getField(indField);
-
-			if(tuples[j].getSchema().getFieldType(indField) == 0) // if is int
+		  	
+			if(indices.size() > 1){ // for mul columns
+			        string key = encodeFields(tuples[j], indices);
+			        sortListStr.push_back(make_pair(key, tuples[j]));
+			}
+			else if(tuples[j].getSchema().getFieldType(indices[0]) == INT){
+			        union Field f = tuples[j].getField(indices[0]);
 				sortListInt.push_back(make_pair(f.integer, tuples[j]));
-			else
+			}
+			else{
+			        union Field f = tuples[j].getField(indices[0]);
 				sortListStr.push_back(make_pair(*f.str, tuples[j]));
+			}
 		}
 
 	}
@@ -404,7 +514,8 @@ void Algorithm::sortOnePass(Relation * oldR, Relation * newR, MainMemory & mem){
 
 	// read all the disk block (<= 10) into the memory, sort them,
 	// and put them back to disk starts from a disk index:
-	int cnt = sortByChunkWB(oldR, newR, mem, 0);
+	// give a empty vector of pre-selected columns
+	int cnt = sortByChunkWB(oldR, newR, mem, 0, vector<int>());
 	assert(cnt == dBlocks);
 	return;
 
@@ -426,7 +537,7 @@ void Algorithm::sortTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem,
 	for(start = 0; start < dBlocks; start += cnt){
 		subHeads.push_back(start);
 		// sort the subchunk first and write back
-		cnt = sortByChunkWB(oldR, newR, mem, start);
+		cnt = sortByChunkWB(oldR, newR, mem, start, vector<int>());
 		sublists++;
 	}
 	cout<<"Now have you have "<<sublists<<" sublists to merge "<<endl;
@@ -434,24 +545,26 @@ void Algorithm::sortTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem,
 
 	// second pass, merge the sorted sublists, note that the to-be-merged one is in the newR  
 	int indField = getNeededOrder(oldR); // is supposed to ordered by this field!
-
 	// index in the heap block vector-> tuple-> selected field
-	priority_queue<pair<int, pair<Tuple, int> >, vector<pair<int, pair<Tuple, int> > >, pqCompare> pq;
-	// this might cause bugs!
+	//priority_queue<pair<int, pair<Tuple, int> >, vector<pair<int, pair<Tuple, int> > >, pqCompare> pq;
+	
 
 	string table_name = oldR->getRelationName(); 
-	//schema_mgr.deleteRelation(table_name);
+	//schema_mgr.deleteRelation(table_name); // this might cause bugs!
+
 	// get an new table, whose name is the same as the original one
 	Relation * newRR = schema_mgr.createRelation(table_name+"SORT", newR->getSchema());
-
-	HeapManager heapMgr(newR, mem, pq, subHeads, indField);
+	
+	// @param1:relation ptr, @param2: mem, @param3: head of the sublists, 
+	// @param4: the vector of multiple/single target sort column
+	HeapManager heapMgr(newR, mem, subHeads, vector<int>(1, indField));
 
 	while(!heapMgr.empty()){
-		Tuple t = heapMgr.top();
-		heapMgr.pop(mem);
-		appendTupleToRelation(newRR, mem, t);
+		vector<Tuple> tuples = heapMgr.popTopMins(mem);
+		for(int j = 0; j < tuples.size(); ++j){
+		  appendTupleToRelation(newRR, mem, tuples[j]);
+		}
 	}
-
 	resetFreeBlocks();
 
 	// very ugly!

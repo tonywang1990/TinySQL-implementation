@@ -6,7 +6,8 @@
 
 using namespace std;
 
-  class pqCompare{   
+// compare for single column based sorting (support two-pass sorting alg)
+class pqCompareSingle{   
   public: 
     bool operator()(const pair<int, pair<Tuple, int> >& l, const pair<int, pair<Tuple, int> >& r){
       int ind = l.second.second;
@@ -17,9 +18,17 @@ using namespace std;
       else 
 	return *f1.str > *f2.str;
     }
-  };
+};
 
-// wrapper for heap manager for the two pass sorted based alg:
+class pqCompareMultiple{
+ public:
+    bool operator()(const pair<int, pair<Tuple, string> >& l, const pair<int, pair<Tuple, string> >& r){
+      return l.second.second > r.second.second;
+    }
+};
+
+// wrapper for heap block for the two-pass alg:
+// heap block takes care of reading disk blocks from disk to mem and bring out the tuples
 class HeapBlock{
  private:
   Relation * relation_ptr;
@@ -30,14 +39,11 @@ class HeapBlock{
   int tuple_cnt;
   int max_tuple_cnt; // the number of the tuples in the disk block
 
-  // bring one disk from mem 
-
  public:
   HeapBlock(Relation * relation, int start, int mm_ind);
   bool popOneOut();
   bool isExhausted(){return dStart == dEnd;}
   vector<Tuple> getTuples(MainMemory & mem); 
-
 };
 
 
@@ -45,19 +51,27 @@ class HeapBlock{
 class HeapManager{
  private:
   Relation * relation_ptr;
-  priority_queue<pair<int, pair<Tuple, int> >, vector<pair<int, pair<Tuple, int> > >, pqCompare> heap;
+  priority_queue<pair<int, pair<Tuple, int> >, vector<pair<int, pair<Tuple, int> > >, pqCompareSingle> heapSg; // for single column based
+  priority_queue<pair<int, pair<Tuple, string> >, vector<pair<int, pair<Tuple, string> > >, pqCompareMultiple> heapMp; // for multiple column based
+
   int sublists;
-  int sField; // the selected ordered field
+  int sField; // the index of selected single column, -1 means multiple columns selected
+  int isMultiple;
+  vector<int> sFields; // indices of selected single/multiple columns
+
   vector<HeapBlock> heap_blocks;
   void _init(const vector<int>& diskHeadPtrs, MainMemory& mem);
+
   void putTuplesToHeap(const vector<Tuple>& tuples, int ind);
+  Tuple top();
+  void pop(MainMemory& mem);
 
  public:
-  HeapManager(Relation * r, MainMemory & mm, priority_queue<pair<int, pair<Tuple, int> >, vector<pair<int, pair<Tuple, int> > >, pqCompare> h, const vector<int>& diskHeadPtrs, int field);
-  Tuple top();
-  void pop(MainMemory & mem);
-  int size(){return heap.size();}
-  bool empty(){return heap.empty();}
+  HeapManager(Relation * r, MainMemory & mm, const vector<int>& diskHeadPtrs, vector<int> fields);
+
+  vector<Tuple> popTopMins(MainMemory & mem); // return all the min tuples (including the same ones!)
+  int size();
+  bool empty();
 };
 
 
@@ -86,6 +100,7 @@ class Algorithm{
 		Algorithm(bool isOnePass, const vector<string>& condition, TYPE type, int level);
 		Relation * runUnary(Relation * relation_ptr, MainMemory & mem, SchemaManager & schema_mgr, bool is_leaf);
 
+		
 		// get new schema for projection
 		Schema getNewSchema(Relation * relation_ptr, bool is_leaf);
 
@@ -94,11 +109,11 @@ class Algorithm{
 
 		// for duplicate elimination:
 		void distinctOnePass(Relation * oldR, Relation * newR, MainMemory & mem);
-		void distinctTwoPass(Relation * oldR, Relation * newR, MainMemory & mem);
+		void distinctTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem, SchemaManager & schema_mgr);
 
 		// for sorting:
 		int getNeededOrder(Relation * relation_ptr);
-		int sortByChunkWB(Relation * oldR, Relation * newR, MainMemory & mem, int start);
+		int sortByChunkWB(Relation * oldR, Relation * newR, MainMemory & mem, int start, vector<int> indices);
 		void sortOnePass(Relation * oldR, Relation * newR, MainMemory & mem);
 		void sortTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem, SchemaManager & schema_mgr);
 

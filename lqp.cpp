@@ -163,7 +163,11 @@ void optimizeLQP(Node *head){
 }
 
 void preorder_traverse(Node *N, map<string, vector<string> > &select_opt){
-	if (N->type == SELECT){
+	// if both distinct and sort exist, set the order of distinct to be the same as sort!
+	if (N->type == SORT){
+		select_opt["DISTINCT"].push_back(N->param[0]);	
+	}
+	else if (N->type == SELECT){
 		vector<string> params = N->param;
 		vector<string>::iterator it = find(params.begin(), params.end(), "OR");
 		// no OR statement, safe to push down selection
@@ -295,6 +299,13 @@ void preorder_traverse(Node *N, map<string, vector<string> > &select_opt){
 	if (N->type == SELECT && !select_opt["PRODUCT"].empty()){
 		N->param.insert(N->param.end(), select_opt["PRODUCT"].begin(), select_opt["PRODUCT"].end());
 	}
+	// handle exceptions 2: both distinct and sort exist, set the order of distinct to be the same as sort!
+	if (N->type == DISTINCT && !select_opt["DISTINCT"].empty()){
+		N->param.insert(N->param.end(), select_opt["DISTINCT"].begin(), select_opt["DISTINCT"].end());
+	}
+
+
+
 }
 
 void printLQP(Node* head){
