@@ -3,6 +3,106 @@
 #include<algorithm>
 using namespace std;
 
+// the heap block class:
+HeapBlock::HeapBlock(Relation * relation,int start, int mm_ind):
+  relation_ptr(relation),
+  dStart(start),
+  dEnd(0),
+  block_ptr(NULL),
+  mm_index(mm_ind),
+  tuple_cnt(0)
+{
+  int dBlocks = relation_ptr->getNumOfBlocks();
+  dEnd = dStart + 10 < dBlocks ? dStart + 10 : dBlocks; // set end of the disk block range
+  assert(relation_ptr);
+
+  max_tuple_cnt = relation->getSchema().getTuplesPerBlock();
+  
+}
+
+bool HeapBlock::popOneOut(){
+  if(tuple_cnt == max_tuple_cnt) return true;
+  tuple_cnt++;
+  if(tuple_cnt == max_tuple_cnt) return true;
+  else return false;
+}
+
+vector<Tuple> HeapBlock::getTuples(MainMemory & mem)
+{
+  if(dStart < dEnd){
+    relation_ptr->getBlock(dStart++, mm_index);
+    block_ptr = mem.getBlock(mm_index);
+    vector<Tuple> tuples = block_ptr->getTuples();
+    tuple_cnt = 0;
+
+    assert(block_ptr);
+    return tuples;
+  }
+  else 
+    return vector<Tuple>();
+}
+
+// wrapper for heap manager:
+HeapManager::HeapManager(Relation * r, MainMemory &mm, priority_queue<pair<int, pair<Tuple, int> >, vector<pair<int, pair<Tuple, int> > >, pqCompare> h, const vector<int>& diskHeadPtrs, int field):
+relation_ptr(r),
+heap(h),
+sublists(diskHeadPtrs.size()),
+sField(field)	  
+{
+  _init(diskHeadPtrs, mm);
+}
+
+void HeapManager::_init(const vector<int>& diskHeadPtrs, MainMemory& mem)
+{
+  resetFreeBlocks();
+  
+  assert(diskHeadPtrs.size() == sublists);
+  // 1. create a vector of heap blocks:
+  for(int i = 0; i < sublists; ++i){
+    assert(!free_blocks.empty());
+    int memory_block_index = free_blocks.front();
+    free_blocks.pop();
+    heap_blocks.push_back(HeapBlock(relation_ptr, diskHeadPtrs[i], memory_block_index));
+  }
+  
+  // 2. for each heap blocks, read one blocks from disk through mem into the heap
+  for(int i = 0; i < heap_blocks.size(); ++i){
+    HeapBlock & heap_block = heap_blocks[i];
+    if(!heap_block.isExhausted()){
+      vector<Tuple> tuples = heap_block.getTuples(mem);
+      // put those tuples into the heap 
+      putTuplesToHeap(tuples, i);
+    }
+  }
+}
+
+// put the tuples into the heap:
+void HeapManager::putTuplesToHeap(const vector<Tuple>& tuples, int hp_block_index)
+{
+  for(int i = 0; i < tuples.size(); ++i){
+    // index of the heap block - tuple - selected sort field:
+    heap.push(make_pair(hp_block_index, make_pair(tuples[i], sField)));
+  }
+}
+
+Tuple HeapManager::top(){
+  return heap.top().second.first;
+}
+
+void HeapManager::pop(MainMemory & mem){
+  pair<int, pair<Tuple, int> > p = heap.top();
+  heap.pop();
+  Tuple & tuple = p.second.first;
+  int hp_block_index = p.first;
+  
+  assert(hp_block_index >= 0 && hp_block_index < heap_blocks.size());
+
+  HeapBlock & heap_block = heap_blocks[hp_block_index];
+  if(heap_block.popOneOut() && !heap_block.isExhausted()){ // last one poped out from hb
+    vector<Tuple> tuples = heap_block.getTuples(mem);
+    putTuplesToHeap(tuples, hp_block_index);
+  }
+}
 Algorithm::Algorithm(bool isOnePass, const vector<string>& conditions, TYPE type, int level):
 m_isOnePass(isOnePass), 
 m_conditions(conditions), 
@@ -20,7 +120,8 @@ Relation * Algorithm::runUnary(Relation * relation_ptr, MainMemory & mem, Schema
 
   // create a new table for the output:
   string new_relation_name = relation_ptr->getRelationName() + T[m_type] + to_string(m_level);
-  Relation * newRelation = schema_mgr.createRelation(new_relation_name, getNewSchema(relation_ptr));
+  Schema schema = getNewSchema(relation_ptr);
+  Relation * newRelation = schema_mgr.createRelation(new_relation_name, schema);
 
   if(T[m_type] == "SELECT"){
     Select(relation_ptr, newRelation, mem);
@@ -39,7 +140,7 @@ Relation * Algorithm::runUnary(Relation * relation_ptr, MainMemory & mem, Schema
     if(m_isOnePass)
       sortOnePass(relation_ptr, newRelation, mem);
     else
-      newRelation = relation_ptr; // need to do later
+      sortTwoPass(relation_ptr, newRelation, mem, schema_mgr);
   }
   else{
     cerr<<"Unsupport unary operation! "<<m_type<<endl;
@@ -290,7 +391,52 @@ void Algorithm::sortOnePass(Relation * oldR, Relation * newR, MainMemory & mem){
 
 }
 
-void Algorithm::sortTwoPass(Relation * oldR, Relation * newR, MainMemory & mem){
+void Algorithm::sortTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem, SchemaManager& schema_mgr){
+  int dBlocks=  oldR->getNumOfBlocks();
+  const int mSize = mem.getMemorySize();
+  assert(dBlocks > mem.getMemorySize()); // doing one pass here!
+  if(sqrt(dBlocks) > double(mSize)){
+    cerr<<"Fatal Error: The memory condition: M >= sqrt(B(R)) is not satisfied!! Cannot use the two-passed algorithms!"<<endl;
+    return;
+  }
+  
+  int sublists = 0;
+  vector<int> subHeads;
+  // first pass, make sorted sublists:
+  int cnt = 0, start = 0;
+  for(start = 0; start < dBlocks; start += cnt){
+    subHeads.push_back(start);
+    // sort the subchunk first and write back
+    cnt = sortByChunkWB(oldR, newR, mem, start);
+    sublists++;
+  }
+  cout<<"Now have you have "<<sublists<<" sublists to merge "<<endl;
+  cout<<*newR<<endl;
+
+  // second pass, merge the sorted sublists, note that the to-be-merged one is in the newR  
+  int indField = getNeededOrder(oldR); // is supposed to ordered by this field!
+
+  // index in the heap block vector-> tuple-> selected field
+  priority_queue<pair<int, pair<Tuple, int> >, vector<pair<int, pair<Tuple, int> > >, pqCompare> pq;
+  // this might cause bugs!
+
+  string table_name = oldR->getRelationName(); 
+  //schema_mgr.deleteRelation(table_name);
+  // get an new table, whose name is the same as the original one
+  Relation * newRR = schema_mgr.createRelation(table_name+"SORT", newR->getSchema());
+  
+  HeapManager heapMgr(newR, mem, pq, subHeads, indField);
+  
+  while(!heapMgr.empty()){
+    Tuple t = heapMgr.top();
+    heapMgr.pop(mem);
+    appendTupleToRelation(newRR, mem, t);
+  }
+  
+  resetFreeBlocks();
+
+  // very ugly!
+  newR = newRR;
   return;
 }
 

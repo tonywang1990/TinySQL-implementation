@@ -9,6 +9,7 @@
 #include<iterator>
 #include<cstdlib>
 #include<ctime>
+#include<cmath>
 #include "Block.h"
 #include "Config.h"
 #include "Disk.h"
@@ -20,6 +21,7 @@
 #include "Tuple.h"
 
 #include<vector>
+#include <queue>
 #include<ctype.h>
 #include<cassert>
 #include<queue>
