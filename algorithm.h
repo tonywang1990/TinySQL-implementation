@@ -104,7 +104,7 @@ class Algorithm{
 		// get new schema for projection
 		Schema getNewSchema(Relation * relation_ptr, bool is_leaf);
 
-		void Select(Relation * oldR, Relation * newR, MainMemory& mem);
+		void Select(Relation * oldR, Relation * newR, MainMemory& mem, bool isInvert);
 		void Project(Relation * oldR, Relation * newR, MainMemory& mem, vector<int> indices);
 
 		// for duplicate elimination:

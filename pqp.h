@@ -1,6 +1,7 @@
 
 extern queue<int> free_blocks;
 
+void generateDPQP(Node * head, SchemaManager& schema_manager, MainMemory& mem);
 void generatePQP(Node * head, SchemaManager& schema_manager, MainMemory& mem);
 
 void reverse_postorder_traverse(Node * N, SchemaManager& schema_manager, MainMemory& mem);

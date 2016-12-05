@@ -171,7 +171,7 @@ Relation * Algorithm::runUnary(Relation * relation_ptr, MainMemory & mem, Schema
 	assert(relation_ptr && newRelation);
 
 	if(T[m_type] == "SELECT"){
-		Select(relation_ptr, newRelation, mem);
+	        Select(relation_ptr, newRelation, mem, false);
 	}
 	else if(T[m_type] == "PROJECT"){
 		vector<int> indices = getNeededFields(relation_ptr->getSchema(), m_conditions);
@@ -189,6 +189,9 @@ Relation * Algorithm::runUnary(Relation * relation_ptr, MainMemory & mem, Schema
 			sortOnePass(relation_ptr, newRelation, mem);
 		else
 			sortTwoPass(relation_ptr, newRelation, mem, schema_mgr);
+	}
+	else if(T[m_type] == "DELETE"){
+	        Select(relation_ptr, newRelation, mem, true);
 	}
 	else{
 		cerr<<"Unsupport unary operation! "<<m_type<<endl;
@@ -240,8 +243,8 @@ Schema Algorithm::getNewSchema(Relation * relation_ptr, bool is_leaf){
 
 }
 
-
-void Algorithm::Select(Relation * oldR, Relation * newR, MainMemory& mem){
+// @param4: will be true for delete!
+void Algorithm::Select(Relation * oldR, Relation * newR, MainMemory& mem, bool isInvert){
 	assert(!free_blocks.empty());
 	// get a available mem block
 	int memory_block_index = free_blocks.front();
@@ -262,7 +265,7 @@ void Algorithm::Select(Relation * oldR, Relation * newR, MainMemory& mem){
 		}
 		for(int i = 0; i < tuples.size(); ++i){
 			Tuple t = tuples[i];
-			if (evaluate.evalUnary(t) == false) continue;
+			if (evaluate.evalUnary(t) == isInvert) continue;
 			Tuple tmp = newR->createTuple();
 			for(int j = 0; j < tmp.getSchema().getNumOfFields(); ++j){
 				if(tmp.getSchema().getFieldType(j) == 0)

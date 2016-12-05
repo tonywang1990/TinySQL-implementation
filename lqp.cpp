@@ -4,6 +4,23 @@
 #include<algorithm>
 #include<stack>
 
+// do this only for delete!
+Relation* generateDLQP(vector<string> where_list, string relation_name, SchemaManager & schema_manager, MainMemory & mem){
+  Node * head = new Node(DELETE, where_list, 0);
+  Node * node = new Node(LEAF, vector<string>(1, relation_name), 1);
+  assert(head && node);
+  head->children.push_back(node);
+
+  // change conditions to post fix expression
+  postfixLQP(head);
+  
+  generateDPQP(head, schema_manager, mem);
+  
+  assert(head->view);
+  return head->view;
+
+}
+
 Relation* generateLQP(bool has_distinct, vector<string> select_list, vector<string> from_list, vector<string> where_list, vector<string> order_list, SchemaManager &schema_manager, MainMemory &mem){
 
 	initMapT();

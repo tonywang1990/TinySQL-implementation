@@ -16,6 +16,7 @@ void initMapT(){
 	T[DISTINCT] = "DISTINCT";
 	T[SORT] = "SORT";
 	T[LEAF] = "LEAF";
+	T[DELETE] = "DELETE";
 };
 
 string strip(string &str){

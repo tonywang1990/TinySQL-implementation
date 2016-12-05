@@ -102,7 +102,7 @@ void Insert(vector<string> &words, string &line, SchemaManager &schema_manager, 
 void Delete(vector<string> &words, SchemaManager &schema_manager, MainMemory &mem){
 
 	Relation* relation_ptr = schema_manager.getRelation(words[2]);
-	vector<string>::iterator it = find(words.begin(), words.end(), "SELECT");
+	vector<string>::iterator it = find(words.begin(), words.end(), "WHERE");
 	// no WHERE, delete everything
 	if (it == words.end()){
 		relation_ptr->deleteBlocks(0);	
@@ -111,6 +111,38 @@ void Delete(vector<string> &words, SchemaManager &schema_manager, MainMemory &me
 	else{
 		vector<string> where_list(it, words.end());
 		preProcess(vector<string> (1, words[2]), where_list, schema_manager);
+		Relation * new_relation = generateDLQP(where_list, words[2], schema_manager, mem);
+		// very ....
+		schema_manager.deleteRelation(words[2]);
+		Relation* newRR = schema_manager.createRelation(words[2], new_relation->getSchema());		
+		assert(!free_blocks.empty());
+		int memory_block_index = free_blocks.front();
+		free_blocks.pop();
+
+		int dBlocks = new_relation->getNumOfBlocks();
+
+		int size =  0;
+		Block * block_ptr = NULL;
+		while(size < dBlocks){
+		  // read the relatioin block by block
+		  new_relation->getBlock(size, memory_block_index);
+		  block_ptr = mem.getBlock(memory_block_index);
+
+		  vector<Tuple> tuples = block_ptr->getTuples();
+		  if(tuples.empty()){
+			cerr<<"Warning In Delete: No tuples in the current mem block!"<<endl;
+		  }
+		  for(int i = 0; i < tuples.size(); ++i){
+			Tuple t = tuples[i];
+			appendTupleToRelation(newRR, mem, t);
+		  }
+		  size++;
+		}
+		free_blocks.push(memory_block_index);
+		
+		cout<<newRR->getRelationName()<<endl;
+		cout<<*newRR<<endl;
+		
 
 	}
 

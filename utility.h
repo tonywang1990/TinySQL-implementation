@@ -31,7 +31,7 @@
 using namespace std;
 
 // list of node types
-enum TYPE{SELECT, PROJECT, PRODUCT, JOIN, THETA, DISTINCT, SORT, LEAF, HEAD}; 
+enum TYPE{SELECT, PROJECT, PRODUCT, JOIN, THETA, DISTINCT, SORT, LEAF, HEAD, DELETE}; 
 
 // Node class
 class Node{

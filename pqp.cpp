@@ -10,6 +10,22 @@
 #include "algorithm.h"
 #include<algorithm>
 
+// do this only for delete! fixed tree structure!!!
+void generateDPQP(Node * head, SchemaManager& schema_manager, MainMemory& mem){
+        if(!head){
+		cout<<"The given physical query plan is empty!"<<endl;
+		return;
+	}
+	
+	assert(head->children.size() == 1);
+	// load the child
+	loadRelationPtr(head->children[0], schema_manager);
+	// simple do the job!
+	head->view = unaryReadWrite(head->children[0], head->param, mem, schema_manager, head->type, head->level);
+	
+	return;
+  
+}
 
 // run a reverse-order travseral for the right most lqp
 void generatePQP(Node * head, SchemaManager& schema_manager, MainMemory& mem){
@@ -90,7 +106,7 @@ Relation * unaryReadWrite(Node *N, const vector<string>& conditions, MainMemory&
 		cerr<<"Warning, when doing the unary operation,  the relation "<<relation_ptr->getRelationName()<<" is empty!"<<endl;
 		return relation_ptr;
 	}
-	bool isOnePass = (T[opType] == "SELECT" || T[opType] == "PROJECT" || dBlocks < mem.getMemorySize()) ? true : false;
+	bool isOnePass = (T[opType] == "SELECT" || T[opType] == "PROJECT" || T[opType] == "DELETE" || dBlocks < mem.getMemorySize()) ? true : false;
 
 	Algorithm alg(isOnePass, conditions, opType, level);
 	Relation * newRelation = alg.runUnary(relation_ptr, mem, schema_mgr, N->type == LEAF);
