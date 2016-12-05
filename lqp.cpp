@@ -78,15 +78,15 @@ Relation* generateLQP(bool has_distinct, vector<string> select_list, vector<stri
 	assert(head);
 
 	//cout<<"LQP tree:"<<endl;
-	//printLQP(head);
+	printLQP(head);
 
 	//cout<<"after optimize tree:"<<endl;
 	optimizeLQP(head);
-	//printLQP(head);
+	printLQP(head);
 
 	//cout<<"after postfix:"<<endl;
 	postfixLQP(head);
-	//printLQP(head);
+	printLQP(head);
 
 	generatePQP(head, schema_manager, mem);
 	return head->view;

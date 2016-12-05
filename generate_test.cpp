@@ -7,26 +7,43 @@
 #include <fstream>
 #include <cstdlib>
 #include <unordered_set>
+#include <algorithm>
+
 
 using namespace std;
+
+void strip_comma(string & str){
+	auto it = str.begin();
+	while(it != str.end()){
+		if(*it == ',')	it = str.erase(it);
+		else it++;
+	}
+}
 
 void append_3rd_table(ofstream& f_out){
 	int i = 0;
 	ifstream f_in("research.txt");
 	while(f_in.is_open() && i++ < 10){
 		string line;
-		f_in>>line;
+		getline(f_in,line);
 		string name;
 		string field;
 		istringstream iss(line);
 		getline(iss, name, '\t');
 		getline(iss, name, '\t');
+		while(name.back() == ' ') name.pop_back();
 		getline(iss, field, '\t');
-		string output = "INSERT INTO research (name, area) VALUES (\""+ name + "\", " + "\" " + field + "\")";
+		while(field.back() == ' ') field.pop_back();
+		reverse(field.begin(), field.end());
+		while(field.back() == ' ') field.pop_back();
+		reverse(field.begin(), field.end());
+		strip_comma(name);
+		strip_comma(field);
+		string output = "INSERT INTO research (name, area) VALUES (\""+ name + "\", " + "\"" + field + "\")";
 		f_out<<output<<endl;  
 	}
 	f_out<<"# Test cross product first"<<endl;
-	f_out<<"SELECT * FROM research, basic"<<endl;
+	f_out<<"SELECT * FROM research, professor"<<endl;
 	f_out<<"# Test select and project"<<endl;
 	f_out<<"SELECT pid, professor.name FROM professor"<<endl;
 	f_out<<"# Test select from where"<<endl;
@@ -65,25 +82,29 @@ int main(int argc, char ** argv){
 			
 			int field = 0;
 			string value_p = "VALUES (";
-			string value_a = "VALUES A";
+			string value_a = "VALUES (";
 			string token_p, token_a;
 			while(getline(iss_p, token_p, '\t') && getline(iss_a, token_a, '\t') && field < 3){
+				strip_comma(token_a);
+				strip_comma(token_p);
 				if(field == 0){
 					value_p += token_p + ", ";
 					value_a += token_a + ", ";
 				}
 				else if(field == 1){
+					while(token_p.back() == ' ')	token_p.pop_back();
+					while(token_a.back() == ' ')	token_a.pop_back();
 					value_p +=  "\"" + token_p + "\", ";
 					value_a +=  "\"" + token_a + "\", ";
 				}
 				else if(field  == 2){
 					value_p += to_string(rand()%100) + ")";
-					value_a += token_a.empty() ? "\"dummy\", " : "\"" + token_a + "\", ";
+					value_a += token_a.empty() ? "\"dummy\", " : "\"" + token_a + "\")";
 				}
 				field++;
 			}
-			string output_p = "INSERT INTO professor (pid, name, score) " + value_a;
-			string output_a = "INSERT INTO academic (pid, name, website) " + value_p;
+			string output_p = "INSERT INTO professor (pid, name, score) " + value_p;
+			string output_a = "INSERT INTO academic (pid, name, website) " + value_a;
 			cout<<output_p<<endl;
 			cout<<output_a<<endl;
 			out<<output_p<<endl;

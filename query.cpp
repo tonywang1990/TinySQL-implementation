@@ -16,7 +16,7 @@ void Insert(vector<string> &words, string &line, SchemaManager &schema_manager, 
 		// get insert vals
 		vector<string> content = splitBy(line, "()");
 		vector<string> fields = splitBy(content[1], ", ");
-		vector<string> vals = splitBy(content[3], ", ");
+		vector<string> vals = splitBy(content[3], ",");
 		//preProcess(vector<string>(1, words[2]), fields, schema_manager);
 		preProcess(vector<string>(1, words[2]), vals, schema_manager);
 
@@ -211,6 +211,13 @@ void preProcess(const vector<string> &tables, vector<string> &words, SchemaManag
 				// term or value
 				if (!is_column){
 					string legal_word;
+					// removing tailing and head spaces for our custom test case
+					string::iterator it = words[i].begin();
+					while(it != words[i].end() && *it == ' ') words[i].erase(it++);
+					reverse(words[i].begin(), words[i].end());
+					it = words[i].begin();
+					reverse(words[i].begin(), words[i].end());
+					while(it != words[i].end() && *it == ' ') words[i].erase(it++);
 					for (int k = 0; k < words[i].size(); k++){
 						if (words[i][k] != '"'){
 							legal_word.push_back(words[i][k]);

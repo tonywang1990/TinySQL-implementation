@@ -7,7 +7,7 @@ using namespace std;
 
 extern queue<int> free_blocks;
 
-int main(){
+int main(int argc, char ** argv){
 	//=======================Initialization=========================
 	cout << "=======================Initialization=========================" << endl;
 
@@ -29,9 +29,18 @@ int main(){
 
 	//=======================Read Input=========================
 	string line;
+	string filename;
 	vector<string> words;
+	assert(argv && argc >= 1);
+	if(argc == 2){
+	  filename = argv[1];
+	}
+	else{
+	  cout<<"More than one or no input argument! Read the default test case."<<endl;
+	  filename = "TinySQL_linux_updated.txt";
+	}
 	//ifstream input("TinySQL_linux_updated.txt");
-	ifstream input("test.txt");
+	ifstream input(filename.c_str());
 	//ifstream input("test_large.txt");
 	if (input.is_open()){
 		// for each command line
@@ -89,9 +98,12 @@ int main(){
 			words.clear();
 		}
 		input.close();
+		cout << "Real elapse time = " << ((double)(clock()-start_time)/CLOCKS_PER_SEC*1000) << " ms" << endl;
+		cout << "Calculated elapse time = " << disk.getDiskTimer() << " ms" << endl;
+		cout << "Calculated Disk I/Os = " << disk.getDiskIOs() << endl;
 	}
 	else{
-		cout<<"Cannot Open file"<<endl;
+	  cout<<"Cannot Open file: "<<filename<<endl;
 	}
 	return 0;
 }

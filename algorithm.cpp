@@ -577,14 +577,14 @@ void Algorithm::sortTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem,
 }
 
 
-map<string, int> Algorithm::findJoinField(){
+vector<pair<string, string> > Algorithm::findJoinField(){
 	stack<string> stk;
-	map<string, int> fields;
+	vector< pair<string, string> > fields;
 	for (int i = 0; i < m_conditions.size(); i++){
 		vector<string> column = splitBy(m_conditions[i], ".");
 		// column name
 		if (column.size() == 2){
-			stk.push(column[1]);
+			stk.push(m_conditions[i]);
 		}
 		// operator: only "=" "AND" is allowed
 		else{
@@ -593,12 +593,21 @@ map<string, int> Algorithm::findJoinField(){
 				stk.pop();
 				string op2 = stk.top();
 				stk.pop();
-				if (op1 != op2){
+				
+				string op1_column = op1;
+				if (splitBy(op1_column, ".").size() == 2)
+					op1_column = splitBy(op1_column, ".")[1];
+
+				string op2_column = op2;
+				if (splitBy(op2_column, ".").size() == 2)
+					op2_column = splitBy(op2_column, ".")[1];
+
+				if (op1_column != op2_column){
 					fields.clear();
 					return fields;
 				}
 				else 
-					fields[op1] = -1;
+					fields.push_back(make_pair(op1, op2));
 			}
 			else if (m_conditions[i] != "AND"){
 				fields.clear();
@@ -606,6 +615,7 @@ map<string, int> Algorithm::findJoinField(){
 			}
 		}
 	}
+	return fields;
 }
 
 set<string> Algorithm::findDupField(vector<Relation*> relations){
@@ -632,7 +642,7 @@ Schema Algorithm::getJoinSchema(Relation *left, Relation *right, bool left_is_le
 	relations.push_back(make_pair(left, left_is_leaf));
 	relations.push_back(make_pair(right, right_is_leaf));
 
-	map<string, int> join_field = findJoinField();
+	vector< pair<string, string> > join_field = findJoinField();
 	is_natural = !join_field.empty();
 	//set<string> dup_field = findDupField(relations);
 
@@ -642,6 +652,7 @@ Schema Algorithm::getJoinSchema(Relation *left, Relation *right, bool left_is_le
 	vector<enum FIELD_TYPE> new_types(size), types;
 	//vector<vector<int> > mapping(relations.size());
 
+	vector<int> field_idx(join_field.size(), -1);
 	int idx = 0;
 	for (int r = 0; r < relations.size(); r++){
 		Relation *rel = relations[r].first;
@@ -657,37 +668,53 @@ Schema Algorithm::getJoinSchema(Relation *left, Relation *right, bool left_is_le
 		}
 
 		mapping[r].resize(names.size());
-		for (int i = 0; i < names.size(); i++){
-			string field = names[i];
-			if (splitBy(field, ".").size() == 2)
-				field = splitBy(field, ".")[1];
 
-			if (join_field.count(field) != 0){
-				// first time seeing this field
-				if (join_field[field] == -1){
-					new_names[idx] = field;
-					new_types[idx] = types[i];
-					// save current postition
-					join_field[field] = idx;
+		if (is_natural){
+			for (int i = 0; i < names.size(); i++){
+				string field = names[i];
+				/*
+				   if (splitBy(field, ".").size() == 2)
+				   field = splitBy(field, ".")[1];
+				 */
+				// check if field name match join_field
+				for (int j = 0; j < join_field.size(); j++){
+					// a joint field
+					if (field == join_field[j].first || field == join_field[j].second){
+						// first time seeing this field
+						if (field_idx[j] == -1){
+							// must have table name in field
+							assert(splitBy(field, ".").size() == 2);
+							if (splitBy(field, ".").size() == 2)
+								field = splitBy(field, ".")[1];
+							new_names[idx] = field;
+							new_types[idx] = types[i];
+							// save current postition
+							field_idx[j] = idx;
 
-					//dup_field.erase(names[i]);
-					//
-					// mapping i -> idx: names[i] is now new_names[idx]
-					mapping[r][i] = idx++;
-				}
-				// has been seen
-				else{
-					mapping[r][i] = join_field[field];
+							//dup_field.erase(names[i]);
+							//
+							// mapping i -> idx: names[i] is now new_names[idx]
+							mapping[r][i] = idx++;
+						}
+						// has been seen
+						else{
+							mapping[r][i] = field_idx[j];
 
+						}
+					}
+					// an seperate field: copy to new schema
+					else{
+						new_names[idx] = names[i];
+						new_types[idx] = types[i];
+						// mapping i -> idx: names[i] is now new_names[idx]
+						mapping[r][i] = idx++;
+					}
 				}
 			}
-			/*
-			   else if (dup_field.count(names[i]) != 0){
-			   new_names.push_back(rel->getRelationName() + "." + names[i]);
-			   new_types.push_back(types[i]);
-			   }
-			 */
-			else{
+		}
+		// theta join or cross join: just copy all the fields
+		else{
+			for (int i = 0; i < names.size(); i++){
 				new_names[idx] = names[i];
 				new_types[idx] = types[i];
 				// mapping i -> idx: names[i] is now new_names[idx]
@@ -720,12 +747,12 @@ Relation * Algorithm::runBinary(Relation * left, Relation * right, MainMemory & 
 	bool is_natural = false;
 	Schema join_schema = getJoinSchema(left, right, left_is_leaf, right_is_leaf, idx_map, is_natural);
 	/*
-	cout<<join_schema<<endl;
-	print(idx_map[0]);
-	print(idx_map[1]);
-	*/
+	   cout<<join_schema<<endl;
+	   print(idx_map[0]);
+	   print(idx_map[1]);
+	 */
 
-	string new_relation_name = left->getRelationName() + "_" + left->getRelationName() + to_string(_g_relation_counter++);
+	string new_relation_name = left->getRelationName() + "_" + right->getRelationName() + to_string(_g_relation_counter++);
 	Relation * join_relation = schema_mgr.createRelation(new_relation_name, join_schema);
 
 	int cost1pass = ( left_size / num_blocks ) * right_size + left_size;

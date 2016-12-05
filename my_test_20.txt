@@ -1,0 +1,71 @@
+CREATE TABLE professor (pid INT, name STR20, score INT)
+CREATE TABLE academic (pid INT, name STR20, website STR20)
+CREATE TABLE research (name STR20, area STR20)
+INSERT INTO professor (pid, name, score) VALUES (0, "Robert Balog", 83)
+INSERT INTO academic (pid, name, website) VALUES (0, "Robert Balog", "http://energy.ece.tamu.edu/BalogResearchLab/index.php")
+INSERT INTO professor (pid, name, score) VALUES (1, "Miroslav M. Begovic", 86)
+INSERT INTO academic (pid, name, website) VALUES (1, "Miroslav M. Begovic", "http://engineering.tamu.edu/electrical/people/begovic-miroslav")
+INSERT INTO professor (pid, name, score) VALUES (2, "Shankar P. Bhattacharyya", 77)
+INSERT INTO academic (pid, name, website) VALUES (2, "Shankar P. Bhattacharyya", "http://ece.tamu.edu/~bhatt/index.htm")
+INSERT INTO professor (pid, name, score) VALUES (3, "Ulisses Braga Neto", 15)
+INSERT INTO academic (pid, name, website) VALUES (3, "Ulisses Braga Neto", "http://ece.tamu.edu/~ulisses/index.html")
+INSERT INTO professor (pid, name, score) VALUES (4, "Karen Butler-Purry", 93)
+INSERT INTO academic (pid, name, website) VALUES (4, "Karen Butler-Purry", "http://psalserver.tamu.edu/")
+INSERT INTO professor (pid, name, score) VALUES (5, "Pierce Cantrell Jr.", 35)
+INSERT INTO academic (pid, name, website) VALUES (5, "Pierce Cantrell Jr.", "http://engineering.tamu.edu/electrical/people/pcantrell")
+INSERT INTO professor (pid, name, score) VALUES (6, "Jean-Francois Chamberland", 86)
+INSERT INTO academic (pid, name, website) VALUES (6, "Jean-Francois Chamberland", "http://ece.tamu.edu/~chmbrlnd/index.html")
+INSERT INTO professor (pid, name, score) VALUES (7, "Kai Chang", 92)
+INSERT INTO academic (pid, name, website) VALUES (7, "Kai Chang", "http://engineering.tamu.edu/electrical/people/kchang")
+INSERT INTO professor (pid, name, score) VALUES (8, "Gwan Choi", 49)
+INSERT INTO academic (pid, name, website) VALUES (8, "Gwan Choi", "http://cesg.tamu.edu/faculty/gwan-choi/")
+INSERT INTO professor (pid, name, score) VALUES (9, "Aniruddha Datta", 21)
+INSERT INTO academic (pid, name, website) VALUES (9, "Aniruddha Datta", "http://gsp.tamu.edu/")
+INSERT INTO professor (pid, name, score) VALUES (10, "Edward R. Dougherty", 62)
+INSERT INTO academic (pid, name, website) VALUES (10, "Edward R. Dougherty", "http://gsp.tamu.edu/")
+INSERT INTO professor (pid, name, score) VALUES (11, "Nick Duffield", 27)
+INSERT INTO academic (pid, name, website) VALUES (11, "Nick Duffield", "http://cesg.tamu.edu/faculty/nick-duffield/")
+INSERT INTO professor (pid, name, score) VALUES (12, "Mehrdad Ehsani", 90)
+INSERT INTO academic (pid, name, website) VALUES (12, "Mehrdad Ehsani", "http://www.ece.tamu.edu/~pemdl/")
+INSERT INTO professor (pid, name, score) VALUES (13, "Ohannes Eknoyan", 59)
+INSERT INTO academic (pid, name, website) VALUES (13, "Ohannes Eknoyan", "http://engineering.tamu.edu/electrical/people/oeknoyan")
+INSERT INTO professor (pid, name, score) VALUES (14, "Prasad Enjeti", 63)
+INSERT INTO academic (pid, name, website) VALUES (14, "Prasad Enjeti", "http://engineering.tamu.edu/electrical/people/penjeti")
+INSERT INTO professor (pid, name, score) VALUES (15, "Kamran Entesari", 26)
+INSERT INTO academic (pid, name, website) VALUES (15, "Kamran Entesari", "http://ece.tamu.edu/~kentesar/index.html")
+INSERT INTO professor (pid, name, score) VALUES (16, "Costas N. Georghiades", 40)
+INSERT INTO academic (pid, name, website) VALUES (16, "Costas N. Georghiades", "http://www.ece.tamu.edu/~georghiades/")
+INSERT INTO professor (pid, name, score) VALUES (17, "Paul Gratz", 26)
+INSERT INTO academic (pid, name, website) VALUES (17, "Paul Gratz", "http://cesg.tamu.edu/faculty/paul-gratz/")
+INSERT INTO professor (pid, name, score) VALUES (18, "Arum Han", 72)
+INSERT INTO academic (pid, name, website) VALUES (18, "Arum Han", "http://biomems.tamu.edu/")
+INSERT INTO professor (pid, name, score) VALUES (19, "H. Rusty Harris", 36)
+INSERT INTO academic (pid, name, website) VALUES (19, "H. Rusty Harris", "http://ece.tamu.edu/~rharris/index.html")
+
+INSERT INTO research (name, area) VALUES ("Robert Balog", "Advanced Energy Systems")
+INSERT INTO research (name, area) VALUES ("Robert Balog", "Distributed dc power systems with emphasis on local/distributed control")
+INSERT INTO research (name, area) VALUES ("Robert Balog", "Low cost inverter system for use with alternative fuel sources (ex Fuel Cell)")
+INSERT INTO research (name, area) VALUES ("Robert Balog", "Auto-tuning coupled inductor filters")
+INSERT INTO research (name, area) VALUES ("Robert Balog", "High quality PWM amplifiers with focus on application as an audio amplifiers")
+INSERT INTO research (name, area) VALUES ("Robert Balog", "Battery life management")
+INSERT INTO research (name, area) VALUES ("Robert Balog", "Non-linear control techniques")
+INSERT INTO research (name, area) VALUES ("Miroslav M. Begovic", "His research interests lie in wide area monitoring protection and emergency control using smart grid apparatus; sustainable and resilient energy infrastructures; and managing large assets in energy infrastructure.")
+INSERT INTO research (name, area) VALUES ("Shankar P. Bhattacharyya", "Automatic Control SystemsMultivariable Control System Analysis and DesignComputer Aided Control System Design (CACSD)Robust Stability and Control Theory and Applications")
+INSERT INTO research (name, area) VALUES ("Ulisses Braga Neto", "Optimal State and Parameter Estimation for Boolean Dynamical Systems")
+# Test cross product first
+#SELECT * FROM research, professor
+# Test select and project
+#SELECT pid, professor.name FROM professor
+# Test select from where
+#SELECT professor.name score FROM professor WHERE score > 50
+# Test natural join
+#SELECT professor.name score area FROM professor, research WHERE professor.name = research.name 
+# Test theta join might break the code
+SELECT professor.name score website FROM professor, research, academic WHERE professor.name = research.name AND score > 50 OR professor.name = "Robert Balog"
+# Test theta join
+#SELECT professor.name score website FROM professor, research, academic WHERE professor.name = research.name AND score > 50
+#SELECT * FROM professor, research, academic WHERE professor.name = research.name AND academic.name = research.name AND academic.pid + professor.pid < 20
+# Test sorting
+#SELECT professor.name score, website FROM professor, academic WHERE score > 50 ORDER BY score
+# Add distinct case manually!
+DROP TABLE research

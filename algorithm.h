@@ -125,7 +125,7 @@ class Algorithm{
 		void join2Pass(Relation *old_left, Relation *old_right, vector<int> left_map, vector<int> right_map, Relation *join, MainMemory& mem, SchemaManager & schema_mgr);
 
 		// helper functions for binary operations
-		map<string, int> findJoinField(); 
+		vector< pair<string, string> > findJoinField(); 
 		set<string> findDupField(vector<Relation*> relations);
 		Schema getJoinSchema(Relation *left, Relation *right, bool left_is_leaf, bool right_is_leaf, vector<vector<int> > &mapping, bool &is_natural);
 		vector<int> subSortForJoin(Relation* oldR, Relation* &newR, MainMemory &mem, SchemaManager & schema_mgr, vector<int> indices);
