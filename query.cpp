@@ -7,7 +7,31 @@
 
 extern queue<int> free_blocks;
 
-void Insert(vector<string> &words, string &line, SchemaManager &schema_manager, MainMemory &mem){
+Relation* Create(vector<string> &words, SchemaManager &schema_manager, MainMemory &mem){
+	string relation_name = words[2];
+	vector<string> field_names;
+	vector<enum FIELD_TYPE> field_types;
+
+	for (int i = 3; i < words.size(); i=i+2){
+		field_names.push_back(strip(words[i]));
+		if (strip(words[i+1]) == "INT"){
+			field_types.push_back(INT);
+		}
+		else{
+			field_types.push_back(STR20);
+		}
+	}
+
+	Schema schema(field_names,field_types); 
+
+	Relation* relation_ptr=schema_manager.createRelation(relation_name,schema);
+
+	cout<< relation_ptr <<endl;
+
+	return relation_ptr;
+}
+
+Relation* Insert(vector<string> &words, string &line, SchemaManager &schema_manager, MainMemory &mem){
 	Relation* relation_ptr = schema_manager.getRelation(words[2]);
 
 	vector<string>::iterator it = find(words.begin(), words.end(), "SELECT");
@@ -18,18 +42,28 @@ void Insert(vector<string> &words, string &line, SchemaManager &schema_manager, 
 		vector<string> fields = splitBy(content[1], ", ");
 		vector<string> vals = splitBy(content[3], ", ");
 		//preProcess(vector<string>(1, words[2]), fields, schema_manager);
-		preProcess(vector<string>(1, words[2]), vals, schema_manager);
+		//preProcess(vector<string>(1, words[2]), vals, schema_manager);
 
 		assert(fields.size() == vals.size());
 
 		Tuple tuple = relation_ptr->createTuple();
 
-		for (int i = 0; i < vals.size(); i++){
-			if (tuple.getSchema().getFieldType(fields[i]) == INT){
-				tuple.setField(fields[i], atoi(vals[i].c_str()));
-			}
-			else{
-				tuple.setField(fields[i], vals[i]);
+		// standard insert doesn't have table names
+		vector<string> col_names = nakedFieldNames(relation_ptr);
+
+		// comparing 
+		for (int i = 0; i < fields.size(); i++){
+			for (int j = 0; j < col_names.size(); j++){
+				// this is a match
+				if (fields[i] == col_names[j]){
+					if (tuple.getSchema().getFieldType(j) == INT){
+						tuple.setField(j, atoi(vals[i].c_str()));
+					}
+					else{
+						tuple.setField(j, vals[i]);
+					}
+					break;
+				}
 			}
 		}
 		appendTupleToRelation(relation_ptr, mem, tuple);
@@ -95,11 +129,12 @@ void Insert(vector<string> &words, string &line, SchemaManager &schema_manager, 
 			}
 			appendTupleToRelation(relation_ptr, mem, tuple);
 		}
-		cout<<*relation_ptr<<endl;
 	}
+	cout<<*relation_ptr<<endl;
+	return relation_ptr;
 }
 
-void Delete(vector<string> &words, SchemaManager &schema_manager, MainMemory &mem){
+Relation* Delete(vector<string> &words, SchemaManager &schema_manager, MainMemory &mem){
 
 	Relation* relation_ptr = schema_manager.getRelation(words[2]);
 	vector<string>::iterator it = find(words.begin(), words.end(), "WHERE");
@@ -124,28 +159,28 @@ void Delete(vector<string> &words, SchemaManager &schema_manager, MainMemory &me
 		int size =  0;
 		Block * block_ptr = NULL;
 		while(size < dBlocks){
-		  // read the relatioin block by block
-		  new_relation->getBlock(size, memory_block_index);
-		  block_ptr = mem.getBlock(memory_block_index);
+			// read the relatioin block by block
+			new_relation->getBlock(size, memory_block_index);
+			block_ptr = mem.getBlock(memory_block_index);
 
-		  vector<Tuple> tuples = block_ptr->getTuples();
-		  if(tuples.empty()){
-			cerr<<"Warning In Delete: No tuples in the current mem block!"<<endl;
-		  }
-		  for(int i = 0; i < tuples.size(); ++i){
-			Tuple t = tuples[i];
-			appendTupleToRelation(newRR, mem, t);
-		  }
-		  size++;
+			vector<Tuple> tuples = block_ptr->getTuples();
+			if(tuples.empty()){
+				cerr<<"Warning In Delete: No tuples in the current mem block!"<<endl;
+			}
+			for(int i = 0; i < tuples.size(); ++i){
+				Tuple t = tuples[i];
+				appendTupleToRelation(newRR, mem, t);
+			}
+			size++;
 		}
 		free_blocks.push(memory_block_index);
-		
-		cout<<newRR->getRelationName()<<endl;
-		cout<<*newRR<<endl;
-		
 
+		//	cout<<newRR->getRelationName()<<endl;
+		//	cout<<*newRR<<endl;
 	}
-
+	relation_ptr = schema_manager.getRelation(words[2]);
+	cout<<relation_ptr<<endl;
+	return relation_ptr;
 }
 
 Relation* Select(vector<string> &words, SchemaManager &schema_manager, MainMemory &mem){
@@ -193,8 +228,10 @@ Relation* Select(vector<string> &words, SchemaManager &schema_manager, MainMemor
 	   print(where_list);
 	   print(order_list);
 	   */
-	return generateLQP(has_distinct, select_list, from_list, where_list, order_list, schema_manager, mem);
+	Relation* view =  generateLQP(has_distinct, select_list, from_list, where_list, order_list, schema_manager, mem);
 
+	cout<<*view<<endl;
+	return view;
 }
 
 void preProcess(const vector<string> &tables, vector<string> &words, SchemaManager &schema_manager){

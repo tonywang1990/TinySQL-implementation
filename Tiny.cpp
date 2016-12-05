@@ -30,8 +30,8 @@ int main(){
 	//=======================Read Input=========================
 	string line;
 	vector<string> words;
-	//ifstream input("TinySQL_linux_updated.txt");
-	ifstream input("test.txt");
+	ifstream input("TinySQL_linux_updated.txt");
+	//ifstream input("test.txt");
 	//ifstream input("test_large.txt");
 	if (input.is_open()){
 		// for each command line
@@ -47,29 +47,13 @@ int main(){
 			resetFreeBlocks();
 	
 			if (words[0] == "CREATE"){
-				string relation_name = words[2];
-				vector<string> field_names;
-				vector<enum FIELD_TYPE> field_types;
-
-				for (int i = 3; i < words.size(); i=i+2){
-					field_names.push_back(strip(words[i]));
-					if (strip(words[i+1]) == "INT"){
-						field_types.push_back(INT);
-					}
-					else{
-						field_types.push_back(STR20);
-					}
-				}
-
-				Schema schema(field_names,field_types); 
-
-				Relation* relation_ptr=schema_manager.createRelation(relation_name,schema);
-				//cout << schema_manager << endl << endl;
-
+				Create(words, schema_manager, mem);
+				cout<<schema_manager<<endl;
 			}
 			else if (words[0] == "DROP"){
 				string relation_name = words[2];
 				schema_manager.deleteRelation(relation_name);
+				cout<<schema_manager<<endl;
 			}
 			else if (words[0] == "INSERT"){
 				Insert(words, line, schema_manager, mem);

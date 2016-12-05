@@ -63,39 +63,44 @@ void resetFreeBlocks(){
 vector<int> getNeededFields(const Schema & old, const vector<string>& conditions){
 	vector<int> indices;
 	for(int i = 0; i < conditions.size(); ++i){
-		int ind = old.getFieldOffset(conditions[i]);
-		vector<string> tmp = splitBy(conditions[i], ".");
-		if(ind == -1 && tmp.size() == 2){  
-			ind = old.getFieldOffset(tmp[1]);
+		if (old.fieldNameExists(conditions[i])){
+			int ind = old.getFieldOffset(conditions[i]);
+			indices.push_back(ind);
 		}
-		if(ind == -1){
-			cerr<<"Cannot find the field name: "<<conditions[i]<<"!!"<<endl;
-			exit(EXIT_FAILURE);
+		else{
+			vector<string> tmp = splitBy(conditions[i], ".");
+			if (tmp.size() == 2 && old.fieldNameExists(tmp[1])){
+				int ind = old.getFieldOffset(tmp[1]);
+				indices.push_back(ind);
+			}
+			else{
+				cerr<<"Cannot find the field name: "<<conditions[i]<<"!!"<<endl;
+				exit(EXIT_FAILURE);
+			}
 		}
-		indices.push_back(ind);
 	}
 	return indices;
 }
 
 // cat(encode) the field of a given tuple into a string
 string encodeFields(const Tuple& tuple, const vector<int> & indices){
-  string key;
-  int maxIndexField = tuple.getNumOfFields();
-  if(maxIndexField < indices.size()){
-    cerr<<"Function encodeFields. Too many indices given!"<<endl;
-    exit(EXIT_FAILURE);
-  }
+	string key;
+	int maxIndexField = tuple.getNumOfFields();
+	if(maxIndexField < indices.size()){
+		cerr<<"Function encodeFields. Too many indices given!"<<endl;
+		exit(EXIT_FAILURE);
+	}
 
-  for(int i = 0; i < indices.size(); ++i){
-    int index = indices[i];
-    assert(index < maxIndexField);
+	for(int i = 0; i < indices.size(); ++i){
+		int index = indices[i];
+		assert(index < maxIndexField);
 
-    union Field f = tuple.getField(index);
-    if(tuple.getSchema().getFieldType(index) == 0)  key += to_string(f.integer);
-    else key += *f.str;
-  }
-  
-  return key;
+		union Field f = tuple.getField(index);
+		if(tuple.getSchema().getFieldType(index) == 0)  key += to_string(f.integer);
+		else key += *f.str;
+	}
+
+	return key;
 }
 
 // AN example procedure of appending a tuple to the end of a relation
@@ -120,15 +125,15 @@ void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple
 		block_ptr=mem.getBlock(memory_block_index);
 
 		if (block_ptr->isFull()) {
-		//	cout << "(The block is full: Clear the memory block and append the tuple)" << endl;
+			//	cout << "(The block is full: Clear the memory block and append the tuple)" << endl;
 			block_ptr->clear(); //clear the block
 			block_ptr->appendTuple(tuple); // append the tuple
-		//	cout << "Write to a new block at the end of the relation" << endl;
+			//	cout << "Write to a new block at the end of the relation" << endl;
 			relation_ptr->setBlock(relation_ptr->getNumOfBlocks(),memory_block_index); //write back to the relation
 		} else {
-		//	cout << "(The block is not full: Append it directly)" << endl;
+			//	cout << "(The block is not full: Append it directly)" << endl;
 			block_ptr->appendTuple(tuple); // append the tuple
-		//	cout << "Write to the last block of the relation" << endl;
+			//	cout << "Write to the last block of the relation" << endl;
 			relation_ptr->setBlock(relation_ptr->getNumOfBlocks()-1,memory_block_index); //write back to the relation
 		}
 	}  
