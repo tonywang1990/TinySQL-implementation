@@ -1,57 +1,26 @@
-
-CREATE TABLE course1 (sid INT, homework INT, project INT, exam INT, grade STR20)
-INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "F")
-INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "B")
-INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (2, 0, 100, 100, "A")
-INSERT INTO course1 (sid, grade, exam, project, homework) VALUES (3, "F", 100, 100, 100)
-
-CREATE TABLE course2 (sid INT, exam INT, grade STR20)
-INSERT INTO course2 (sid, exam, grade) VALUES (1, 100, "B")
-INSERT INTO course2 (sid, exam, grade) VALUES (2, 25, "E")
-INSERT INTO course2 (sid, exam, grade) VALUES (17, 0, "A")
-INSERT INTO course2 (sid, exam, grade) SELECT * FROM course1 WHERE project = 100
-
-CREATE TABLE course3 (quiz1 INT, quiz2 INT, grade STR20)
-INSERT INTO course3 (quiz1, quiz2, grade) VALUES (70, 80, "A")
-INSERT INTO course3 (quiz1, quiz2, grade) VALUES (60, 90, "C")
-INSERT INTO course3 (quiz1, quiz2, grade) VALUES (20, 30, "F")
-INSERT INTO course3 (quiz1, quiz2, grade) SELECT * FROM course3 WHERE grade = "A"
-
 CREATE TABLE r (a INT, b INT)
 CREATE TABLE s (b INT, c INT)
 CREATE TABLE t (a INT, c INT)
-
 INSERT INTO r (a, b) VALUES (0, 0)
 INSERT INTO r (a, b) VALUES (1, 1)
 INSERT INTO r (a, b) VALUES (1, 1)
-INSERT INTO s (b, c) VALUES (1, 101)
-INSERT INTO s (b, c) VALUES (1, 102)
-INSERT INTO s (b, c) VALUES (1, 103)
-INSERT INTO t (a, c) VALUES (0, 101)
-INSERT INTO t (a, c) VALUES (1, 101)
-INSERT INTO t (a, c) VALUES (2, 102)
+INSERT INTO r (a, b) VALUES (2, 2)
+INSERT INTO r (a, b) VALUES (3, 3)
+INSERT INTO r (a, b) VALUES (0, 0)
+INSERT INTO r (a, b) VALUES (1, 1)
+INSERT INTO r (a, b) VALUES (2, 2)
 
-DELETE FROM course3 WHERE grade = "A"
-#SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
+INSERT INTO s (b, c) VALUES (0, 0)
+INSERT INTO s (b, c) VALUES (2, 2)
 
-#SELECT DISTINCT FROM course1, course2 WHERE course1.grade = course2.grade
-#SELECT DISTINCT * FROM course1, course2, course3 WHERE course1.course2.grade = course3.grade
-#SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
-
-#SELECT DISTINCT * FROM course WHERE grade = "E" AND course.homework = 0 OR course.grade = "A"
-#SELECT DISTINCT sid, grade, homework, exam FROM course WHERE (((course.homework - course.exam) - 1) * (1 + 1)) = -4 
-#CREATE TABLE course (sid INT, homework INT, project INT, exam INT, grade STR20)
-#INSERT INTO course (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "A")
-#INSERT INTO course (sid, homework, project, exam, grade) VALUES (2, 97, 100, 100, "A")
-#INSERT INTO course (sid, homework, project, exam, grade) VALUES (3, 12, 100, 100, "B")
-#INSERT INTO course (sid, homework, project, exam, grade) VALUES (4, 0, 100, 100, "E")
-#INSERT INTO course (sid, grade, exam, project, homework) VALUES (5, "F", 100, 100, 100)
-##SELECT DISTINCT * FROM course WHERE grade = "E" AND course.homework = 0 OR course.grade = "A"
-#SELECT sid, homework, exam, grade FROM course WHERE homework > 50 ORDER BY course.grade
-
-#SELECT DISTINCT course.grade, course2.grade FROM course, course2 WHERE course.sid = course2.sid AND course.grade = "A" AND course2.grade = "A" OR (course.homework + course.project) = 99 ORDER BY course.exam
-#DELETE FROM course WHERE grade = "E"
-#INSERT INTO course (sid, homework, project, exam, grade) VALUES (4, 99, 100, 100, "B")
-#DELETE FROM course
-#DROP TABLE course
+INSERT INTO t (a, c) VALUES (0, 0)
+INSERT INTO t (a, c) VALUES (1, 1)
+INSERT INTO t (a, c) VALUES (2, 2)
+INSERT INTO t (a, c) VALUES (0, 0)
+INSERT INTO t (a, c) VALUES (1, 1)
+INSERT INTO t (a, c) VALUES (1, 1)
+INSERT INTO t (a, c) VALUES (2, 2)
+INSERT INTO t (a, c) VALUES (3, 3)
+SELECT * FROM s, t WHERE s.c = t.c
+SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
 

@@ -669,46 +669,51 @@ Schema Algorithm::getJoinSchema(Relation *left, Relation *right, bool left_is_le
 
 		mapping[r].resize(names.size());
 
+		// natural join
 		if (is_natural){
 			for (int i = 0; i < names.size(); i++){
-				string field = names[i];
 				/*
 				   if (splitBy(field, ".").size() == 2)
 				   field = splitBy(field, ".")[1];
 				 */
 				// check if field name match join_field
-				for (int j = 0; j < join_field.size(); j++){
+				string field = names[i];
+				bool is_match = false;
+				int j = 0;
+				for (j = 0; j < join_field.size(); j++){
 					// a joint field
 					if (field == join_field[j].first || field == join_field[j].second){
-						// first time seeing this field
-						if (field_idx[j] == -1){
-							// must have table name in field
-							assert(splitBy(field, ".").size() == 2);
-							if (splitBy(field, ".").size() == 2)
-								field = splitBy(field, ".")[1];
-							new_names[idx] = field;
-							new_types[idx] = types[i];
-							// save current postition
-							field_idx[j] = idx;
-
-							//dup_field.erase(names[i]);
-							//
-							// mapping i -> idx: names[i] is now new_names[idx]
-							mapping[r][i] = idx++;
-						}
-						// has been seen
-						else{
-							mapping[r][i] = field_idx[j];
-
-						}
+						is_match = true;
+						break;
 					}
-					// an seperate field: copy to new schema
-					else{
-						new_names[idx] = names[i];
+				}
+				// this is a joint field
+				if (is_match){
+					// first time seeing this field
+					if (field_idx[j] == -1){
+						// must have table name in field
+						assert(splitBy(field, ".").size() == 2);
+						if (splitBy(field, ".").size() == 2)
+							field = splitBy(field, ".")[1];
+						new_names[idx] = field;
 						new_types[idx] = types[i];
+						// save current postition
+						field_idx[j] = idx;
+
 						// mapping i -> idx: names[i] is now new_names[idx]
 						mapping[r][i] = idx++;
 					}
+					// has been seen
+					else{
+						mapping[r][i] = field_idx[j];
+					}
+				}
+				// not a joint field: copy to new schema
+				else{
+					new_names[idx] = names[i];
+					new_types[idx] = types[i];
+					// mapping i -> idx: names[i] is now new_names[idx]
+					mapping[r][i] = idx++;
 				}
 			}
 		}
@@ -750,7 +755,7 @@ Relation * Algorithm::runBinary(Relation * left, Relation * right, MainMemory & 
 	   cout<<join_schema<<endl;
 	   print(idx_map[0]);
 	   print(idx_map[1]);
-	 */
+	   */
 
 	string new_relation_name = left->getRelationName() + "_" + right->getRelationName() + to_string(_g_relation_counter++);
 	Relation * join_relation = schema_mgr.createRelation(new_relation_name, join_schema);
