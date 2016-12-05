@@ -37,12 +37,70 @@ void Insert(vector<string> &words, string &line, SchemaManager &schema_manager, 
 	// with SELECT
 	else{
 		vector<string> SFW(it, words.end());	
-		Select(SFW, schema_manager, mem);
+		Relation* new_relation = Select(SFW, schema_manager, mem);
+		assert(new_relation);
+
+		vector<string> new_field_names = nakedFieldNames(new_relation);
+		vector<string> field_names = nakedFieldNames(relation_ptr);
+
+		// mapping: index of new_field_names to field_names 
+		vector<int> mapping(new_field_names.size(), -1);
+		for (int i = 0; i < new_field_names.size(); i++){
+			for (int j = 0; j < field_names.size(); j++){
+				if (new_field_names[i] == field_names[j]){
+					mapping[i] = j;
+					break;
+				}
+			}
+		}
+
+		int new_field_size = new_relation->getSchema().getNumOfFields();
+
+		// warning: new_relation and relation_ptr might be the same!
+		// get all tuples from the new_relation in one run
+		vector<Tuple> new_tuples;
+		for (int i = 0; i < new_relation->getNumOfBlocks(); i++){
+
+			assert(!free_blocks.empty());
+			int memory_block_index = free_blocks.front();
+			free_blocks.pop();
+
+			// read the relation block by block
+			new_relation->getBlock(i, memory_block_index);
+			Block* block_ptr = mem.getBlock(memory_block_index);
+			assert(block_ptr);
+			vector<Tuple> block_tuples = block_ptr->getTuples();
+			new_tuples.insert(new_tuples.end(), block_tuples.begin(), block_tuples.end());
+			if(new_tuples.empty()){
+				cerr<<"Warning: Insert from SFW, No tuples in the current mem block!"<<endl;
+			}
+			free_blocks.push(memory_block_index);
+		}
+
+		for (int j = 0; j < new_tuples.size(); j++){
+			Tuple tuple = relation_ptr->createTuple();
+			for (int k = 0; k < new_field_size; k++){
+				if (mapping[k] != -1){
+					int idx = mapping[k];
+					assert(idx < relation_ptr->getSchema().getNumOfFields() && idx >= 0);
+					if (tuple.getSchema().getFieldType(idx) == INT){
+						int val = new_tuples[j].getField(k).integer;
+						tuple.setField(field_names[idx], val);
+					}
+					else{
+						string *str = new_tuples[j].getField(k).str;
+						tuple.setField(field_names[idx], *str);
+					}
+				}
+			}
+			appendTupleToRelation(relation_ptr, mem, tuple);
+		}
+		cout<<*relation_ptr<<endl;
 	}
 }
 
 void Delete(vector<string> &words, SchemaManager &schema_manager, MainMemory &mem){
-	
+
 	Relation* relation_ptr = schema_manager.getRelation(words[2]);
 	vector<string>::iterator it = find(words.begin(), words.end(), "SELECT");
 	// no WHERE, delete everything
@@ -58,7 +116,7 @@ void Delete(vector<string> &words, SchemaManager &schema_manager, MainMemory &me
 
 }
 
-void Select(vector<string> &words, SchemaManager &schema_manager, MainMemory &mem){
+Relation* Select(vector<string> &words, SchemaManager &schema_manager, MainMemory &mem){
 	vector<string> select_list, from_list, where_list, order_list;
 	bool has_distinct = false, has_where = false, has_orderby = false;
 	int i = 1;
@@ -98,12 +156,13 @@ void Select(vector<string> &words, SchemaManager &schema_manager, MainMemory &me
 	preProcess(from_list, where_list, schema_manager);
 	preProcess(from_list, order_list, schema_manager);
 	/*
-	print(select_list);
-	print(from_list);
-	print(where_list);
-	print(order_list);
-	*/
-	generateLQP(has_distinct, select_list, from_list, where_list, order_list, schema_manager, mem);
+	   print(select_list);
+	   print(from_list);
+	   print(where_list);
+	   print(order_list);
+	   */
+	return generateLQP(has_distinct, select_list, from_list, where_list, order_list, schema_manager, mem);
+
 }
 
 void preProcess(const vector<string> &tables, vector<string> &words, SchemaManager &schema_manager){

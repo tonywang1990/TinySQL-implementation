@@ -134,27 +134,40 @@ void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple
 	free_blocks.push(memory_block_index);
 };
 
-bool compareTuples(const Tuple& l, const Tuple& r){
-  if(l.getNumOfFields() != r.getNumOfFields()) return false;
-  string s1, s2;
-  for(int i = 0; i < l.getNumOfFields(); i++){
-    union Field f1 = l.getField(i);
-    union Field f2 = r.getField(i);
+vector<string> nakedFieldNames(Relation* relation_ptr){
+	vector<string> field_names = relation_ptr->getSchema().getFieldNames();
+	// strip table name from field name of 
+	for (int i = 0; i < field_names.size(); i++){
+		vector<string> names = splitBy(field_names[i], ".");
+		if (names.size() == 2){
+			field_names[i] = names[1];
+		}
+	}
+	return field_names;
+}
 
-    if(l.getSchema().getFieldType(i) != r.getSchema().getFieldType(i)){
-      cerr<<"Fatal error! tuples with different schema!!"<<endl;
-      exit(EXIT_FAILURE);
-    }
-    if(l.getSchema().getFieldType(i) == 0){
-      s1 += to_string(f1.integer);
-      s2 += to_string(f2.integer);
-    }
-    else{
-      s1 += *f1.str;
-      s2 += *f2.str;
-    }
-  }
-  return s1 == s2;
+
+bool compareTuples(const Tuple& l, const Tuple& r){
+	if(l.getNumOfFields() != r.getNumOfFields()) return false;
+	string s1, s2;
+	for(int i = 0; i < l.getNumOfFields(); i++){
+		union Field f1 = l.getField(i);
+		union Field f2 = r.getField(i);
+
+		if(l.getSchema().getFieldType(i) != r.getSchema().getFieldType(i)){
+			cerr<<"Fatal error! tuples with different schema!!"<<endl;
+			exit(EXIT_FAILURE);
+		}
+		if(l.getSchema().getFieldType(i) == 0){
+			s1 += to_string(f1.integer);
+			s2 += to_string(f2.integer);
+		}
+		else{
+			s1 += *f1.str;
+			s2 += *f2.str;
+		}
+	}
+	return s1 == s2;
 
 }
 

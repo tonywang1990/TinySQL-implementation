@@ -30,8 +30,8 @@ int main(){
 	//=======================Read Input=========================
 	string line;
 	vector<string> words;
-	ifstream input("TinySQL_linux_updated.txt");
-	//ifstream input("test.txt");
+	//ifstream input("TinySQL_linux_updated.txt");
+	ifstream input("test.txt");
 	//ifstream input("test_large.txt");
 	if (input.is_open()){
 		// for each command line

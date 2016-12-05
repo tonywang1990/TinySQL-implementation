@@ -88,6 +88,8 @@ void resetFreeBlocks();
 
 void appendTupleToRelation(Relation* relation_ptr, MainMemory& mem, Tuple& tuple);
 
+vector<string> nakedFieldNames(Relation* relation_ptr);
+
 bool compareTuples(const Tuple& l, const Tuple& r);
 
 // wrapper for the operation evaluation 
