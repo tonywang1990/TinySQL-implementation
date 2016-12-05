@@ -74,12 +74,10 @@ int main(){
 			else if (words[0] == "INSERT"){
 				Insert(words, line, schema_manager, mem);
 			//	cout<< *(schema_manager.getRelation(relation_name))<<endl;
-
 			}
 			else if (words[0] == "DELETE"){
 				Delete(words, schema_manager, mem);
 			}
-
 			else if (words[0] == "SELECT"){
 				Select(words, schema_manager, mem);
 			}
