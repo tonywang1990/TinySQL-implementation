@@ -1,0 +1,1789 @@
+0	Robert Balog	Advanced Energy Systems
+1	Robert Balog	Distributed dc power systems with emphasis on local/distributed control
+2	Robert Balog	Low cost inverter system for use with alternative fuel sources (ex, Fuel Cell)
+3	Robert Balog	Auto-tuning coupled inductor filters
+4	Robert Balog	High quality PWM amplifiers with focus on application as an audio amplifiers
+5	Robert Balog	Battery life management
+6	Robert Balog	Non-linear control techniques
+7	Miroslav M. Begovic	His research interests lie in wide area monitoring, protection and emergency control using smart grid apparatus; sustainable and resilient energy infrastructures; and managing large assets in energy infrastructure.
+8	Shankar P. Bhattacharyya 	Automatic Control SystemsMultivariable Control System Analysis and DesignComputer Aided Control System Design (CACSD)Robust Stability and Control Theory and Applications
+9	Ulisses Braga Neto 	Optimal State and Parameter Estimation for Boolean Dynamical Systems
+10	Ulisses Braga Neto 	Discrete Prediction and Inference of Regulatory Networks
+11	Ulisses Braga Neto 	Small-Sample Classification and Error Estimation
+12	Ulisses Braga Neto 	Applications in Cancer Proteomic Biomarker Discovery and Validation
+13	Ulisses Braga Neto 	Applications in Modeling Infectious Disease Processes
+14	Karen Butler-Purry 	Computer and Intelligent Systems Application to Power Distribution
+15	Karen Butler-Purry 	Systems, Distribution Automation and Management, Fault Diagnosis
+16	Karen Butler-Purry 	Estimation of Remaining Life of Transformers, Intelligent Reconfiguration
+17	Karen Butler-Purry 	System Modeling and Simulation for Hybrid Vehicles
+18	Pierce Cantrell, Jr. 	Computer networking
+19	Jean-Francois Chamberland	Probability theory, statistical methods and their applications to control and communication systems excitation
+20	Kai Chang	Microwave/Millimeter-Wave Circuits and Devices
+21	Kai Chang	Microwave Integrated Circuits
+22	Kai Chang	Antennas and Phased Arrays
+23	Kai Chang	Active Antennas and Power Combining
+24	Kai Chang	Microwave Power Transmission
+25	Kai Chang	Wireless Communications
+26	Kai Chang	Microwave Systems
+27	Kai Chang	Microwave-Optical Interactions
+28	Kai Chang	Electromagnetic Field Theory
+29	Kai Chang	Solid-State Oscillators, Amplifiers, Transmitters, and Receivers
+30	Gwan Choi	Fault-tolerance
+31	Gwan Choi	Verification simulation
+32	Gwan Choi	High-performance VLSI circuits
+33	Gwan Choi	Radiation testing
+34	Gwan Choi	Design for dependability
+35	Gwan Choi	Software engineering
+36	Edward R. Dougherty	Genomic Signal Processing:
+37	Edward R. Dougherty	Image Analysis:
+38	Edward R. Dougherty	Gene-Expression-Based Cancer Classification
+39	Edward R. Dougherty	Genetic Regulatory Networks
+40	Edward R. Dougherty	Microarray Analysis
+41	Edward R. Dougherty	Small-Sample Classification and Error Estimation
+42	Edward R. Dougherty	Mathematical Morphology
+43	Edward R. Dougherty	Nonlinear Signal Processing
+44	Edward R. Dougherty	Statistical Filter Design
+45	Edward R. Dougherty	Granulometries and Image Texture
+46	Nick Duffield	My research focuses on data and network science, particularly applications of probability, statistics, algorithms and machine learning to the acquisition, management and analysis of large datasets in communications networks and beyond. 
+47	Mehrdad Ehsani 	Sustainable Power and Energy Systems
+48	Mehrdad Ehsani 	Power Electronics, Motor Drives
+49	Mehrdad Ehsani 	Electric and Hybrid Vehicles
+50	Mehrdad Ehsani 	Superconductive Magnetic Storage (SMES)
+51	Mehrdad Ehsani 	Aerospace Power Systems, Specialized Power Systems
+52	Mehrdad Ehsani 	Control Systems
+53	Mehrdad Ehsani 	Energy Storage Systems
+54	Mehrdad Ehsani 	High Voltage Direct Current (HVDC) Power Transmission
+55	Mehrdad Ehsani 	Applications of Microcomputers to Power Control
+56	Mehrdad Ehsani 	Pulsed Power Systems
+57	Mehrdad Ehsani 	High Voltage Engineering and Electrical failures and Hazards
+58	Ohannes Eknoyan 	Integrated Optics/Solid State
+59	Prasad Enjeti 	Advance power electronic converters for utility interface of solar-pv/wind/fuel-cell/battery-energy storage power systems
+60	Prasad Enjeti 	Design of high temperature power conversion systems with wide band-gap semiconductor devices.
+61	Prasad Enjeti 	New converter topologies for single/three phase solid state transformers (SSTs) with medium frequency isolation
+62	Prasad Enjeti 	Medium voltage power converters for mega-watt scale solar-pv/wind/fuel-cell energy systems, adjustable speed drives with medium frequency transformer isolation
+63	Prasad Enjeti 	Development of smart solar pv-systems for curved surfaces / BIPVs
+64	Prasad Enjeti 	Power quality enhancement for interconnected renewables
+65	Prasad Enjeti 	Advancing switching power supply designs for portable power systems and modular fuel-cell systems
+66	Kamran Entesari	Radio frequency/microwave/millimeter-wave integrated circuits and systems
+67	Kamran Entesari	Micro-electromechanical systems (MEMS) for RF/microwave applications
+68	Kamran Entesari	Microwave filters and passive components
+69	Kamran Entesari	RF/ Microwave biological/chemical sensors
+70	Kamran Entesari	Integrated RF photonics
+71	Costas N. Georghiades 	Statistical communication theory
+72	Costas N. Georghiades 	Receiver design
+73	Costas N. Georghiades 	Mobile radio (multipath/fading channels)
+74	Costas N. Georghiades 	Synchronization and equalization
+75	Costas N. Georghiades 	Distributed source coding
+76	Costas N. Georghiades 	Interference rejection techniques
+77	Costas N. Georghiades 	Multicarrier modulation
+78	Costas N. Georghiades 	Space-time coding
+79	Costas N. Georghiades 	Optical and magnetic recording channels
+80	Paul Gratz	Security, power, reliability and performance in multicore and distributed computer architectures.
+81	Paul Gratz	Processor memory systems.
+82	Paul Gratz	On-chip interconnection networks.
+83	Arum Han	Microfluidics and lab-on-a-chip systems
+84	Arum Han	High-throughput systems approach to enabling microbial bioenergy and cell-based biomanufacturing
+85	Arum Han	High-throughput systems accelerating drug/vaccine development against emerging infectious diseases
+86	Arum Han	Organ-on-a-chip & microphysiological systems (e.g., brain-on-a-chip)
+87	Arum Han	Single cell analysis microsystems for cancer analysis
+88	H. Rusty Harris	CMOS and Silicon technology
+89	H. Rusty Harris	Materials integration
+90	H. Rusty Harris	Novel electrical and physical device and materials characterization
+91	H. Rusty Harris	III-V and nanophotonics
+92	H. Rusty Harris	Self-assembled nanotechnology
+93	H. Rusty Harris	Supercritical Fluid Processing and Deposition
+94	Philip Hemmer 	Solid materials for quantum optics, especially "dark resonance" excitation
+95	Philip Hemmer 	Materials and techniques for resonant nonlinear optics
+96	Philip Hemmer 	Phase-conjugate-based turbulence aberration and compensation
+97	Philip Hemmer 	Spectral hole burning materials and techniques for ultra-dense memories and high temperature operation
+98	Philip Hemmer 	Quantum computing in solid materials
+99	Philip Hemmer 	Quantum communication and teleportation in trapped atoms
+100	Philip Hemmer 	Holographic optical memory materials
+101	Philip Hemmer 	Smart pixels devices
+102	Philip Hemmer 	Optical correlators
+103	Philip Hemmer 	Photorefractive applications
+104	Philip Hemmer 	Atomic clocks
+105	Philip Hemmer 	Laser trapping and cooling.
+106	I-Hong Hou	wireless networks
+107	I-Hong Hou	wireless sensor networks
+108	I-Hong Hou	real-time systems
+109	I-Hong Hou	distributed systems
+110	I-Hong Hou	vehicular ad hoc networks
+111	Sebastian Hoyos	Design and implementation of mixed-signal processing systems, techniques and algorithms that jointly design for analog and digital systems with the objective of reducing power consumption and complexity or enhancing performance of high-speed and high dynamic range wireline and wireless communication systems
+112	Sebastian Hoyos	Mixed-Signal Processing Solutions for High Speed, High-Bandwidth, High-Dynamic Range and Low-Power Applications
+113	Sebastian Hoyos	Communication Theory, Wireless Communications, Broadband Mobile Communications
+114	Sebastian Hoyos	Robust Signal Processing and its Applications
+115	Garng M. Huang 	Large System Theory and its Applications:
+116	Garng M. Huang 	Data Networks
+117	Garng M. Huang 	Power System
+118	Garng M. Huang 	Parallel/Distributed Computing and Control
+119	Gregory Huff	Novel high frequency antennas and other passive devices (from microwave to terahertz) for radar, sensing and communications applications
+120	Gregory Huff	Reconfigurable antennas and high performance circuits for adaptive systems, tunable devices and neural networks
+121	Gregory Huff	EMI, EMC and waveform distortion from radiating structures on fixed and portable platforms for wireless applications
+122	Jim Ji 	Constrained imaging using mathematical modeling
+123	Jim Ji 	Reconstruction algorithms in parallel imaging
+124	Jim Ji 	Cardiac imaging  and cancer imaging
+125	Jim Ji 	Image registration, segmentation and analysis
+126	Jun Kameoka	Bio-Nano Machining, Nanostructure Science and Engineering.
+127	Jun Kameoka	Nanosensors and Molecular Manipulation
+128	Jun Kameoka	Micro and Nanofluidics
+129	Jun Kameoka	Bio-Nano hybrid devices for medical applications
+130	Aydin Karsilayan 	RF and Baseband Circuits,
+131	Aydin Karsilayan 	Signal Processing and Adaptive Systems
+132	Mladen Kezunovic 	•Protective Relaying•Power Systems•Computational Intelligence•Smart Grids
+133	Mladen Kezunovic 	Director, Smart Grid Center
+134	Sunil Khatri 	Computer-aided design of Very Large Scale Integration (VLSI) ICs, including logic and physical design automation.
+135	Sunil Khatri 	VLSI design of digital and analog circuits
+136	Sunil Khatri 	don't care computation
+137	Sunil Khatri 	test generation
+138	Sunil Khatri 	leakage power analysis and reduction techniques
+139	Sunil Khatri 	clock distribution
+140	Sunil Khatri 	asynchronous circuit design
+141	Sunil Khatri 	cross-talk analysis and avoidance in VLSI design
+142	Sunil Khatri 	datapath design automation
+143	Sunil Khatri 	VLSI design for Low Density Parity Check (LDPC) codes
+144	Sunil Khatri 	Dense Wavelength-division Multiplexed (DWDM) network Routing and Wavelength Assignment (RWA) techniques
+145	Laszlo B. Kish	Noise-based logic and computing
+146	Laszlo B. Kish	Johnson-noise engines and demons
+147	Laszlo B. Kish	Unconditionally secure computers, hardware, memories and algorithms
+148	Laszlo B. Kish	Fluctuation-Enhanced Chemical Sensing
+149	Laszlo B. Kish	Heat-Speed-Error issues; Moore's law and quantum computing
+150	Laszlo B. Kish	Stealth Communication, Zero-Quantum Quantum Communication, Zero Power Classical Communication
+151	Laszlo B. Kish	Vibration-Induced Conductance Fluctuation (VICOF)Analysis of Soils
+152	Laszlo B. Kish	Weight fluctuations of memory devices during recording/deleting and after
+153	Laszlo B. Kish	Stochastic Resonance and its Neural and Nonlinear Signal Processing Aspects
+154	Laszlo B. Kish	Electronics, New Measuring Principles and New Sensors, Non-Invasive Probing
+155	Laszlo B. Kish	Noise, Quality, Ageing and Degradation of Films and Electronic Devices
+156	Laszlo B. Kish	The Constructive Role of Noise & Fluctuations
+157	P.R. Kumar	Wireless Networks, Sensor Networks, Convergence with Control
+158	P.R. Kumar	Belief Propagation/Sensor Networks
+159	P.R. Kumar	Communication Networks
+160	P.R. Kumar	Semiconductor Manufacturing
+161	P.R. Kumar	Manufacturing Systems&nbsp
+162	P.R. Kumar	Stochastic Networks
+163	P.R. Kumar	Adaptive Systems
+164	P.R. Kumar	Learning
+165	P.R. Kumar	Simulated Annealing
+166	P.R. Kumar	Function Estimation & Neural Networks
+167	P.R. Kumar	Solar Car Racing
+168	P.R. Kumar	Parallel Computation
+169	Peng Li	Integrated circuits
+170	Peng Li	Computer-aided design
+171	Peng Li	Aspects of parallel computing
+172	Peng Li	Intersections between computational neuroscience and circuits & systems
+173	Pao Tai Lin	Mid-Infrared integrated PhotonicsBiomedical sensors on a chipMultiscale fabrication technologiesReconfigurable materialsNanophotonics & metamaterials
+174	Tie Liu	Multiuser information theory
+175	Tie Liu	Wireless Communication
+176	Tie Liu	Connections between information theory and statistics
+177	Mi Lu	Parallel Computing
+178	Mi Lu	Distributed Processing
+179	Mi Lu	Computer Architectures
+180	Mi Lu	Computer Networks
+181	Mi Lu	Computer Arithmetic
+182	Mi Lu	Computational Geometry
+183	Mi Lu	VLSI Algorithms
+184	Christi K. Madsen	Photonic Signal Processing
+185	Christi K. Madsen	Integrated Optics
+186	Christi K. Madsen	Optical filters (synthesis, analysis and adaptive filters)
+187	Christi K. Madsen	Microwave Photonics
+188	Christi K. Madsen	Polarization Optics
+189	Christi K. Madsen	Optical Ring Resonators
+190	Christi K. Madsen	Dispersion and High speed optical signals
+191	Krzysztof Arkadiusz Michalski 	Electromagnetic field theory
+192	Krzysztof Arkadiusz Michalski 	Computational Electromagnetics
+193	Krzysztof Arkadiusz Michalski 	Green's function-integral equation methods
+194	Krzysztof Arkadiusz Michalski 	Microstrip antennas and circuits
+195	Krzysztof Arkadiusz Michalski 	Fields in layered media
+196	Krzysztof Arkadiusz Michalski 	Application of Genetic Algorithms in Electromagnetics
+197	Krzysztof Arkadiusz Michalski 	Array antenna design
+198	Krzysztof Arkadiusz Michalski 	Microwave Inverse Problems
+199	Krzysztof Arkadiusz Michalski 	Electromagnetic Compatibility
+200	Krzysztof Arkadiusz Michalski 	Electromagnetics of VLSI circuit interconnects
+201	Krzysztof Arkadiusz Michalski 	Electromagnetics of EUVL lithography
+202	Scott L. Miller 	\N
+203	Krishna Narayanan	The role of structured codes in multi-terminal information theory
+204	Krishna Narayanan	Joint source and channel coding for wireless communications
+205	Krishna Narayanan	Design and analysis of codes and decoders for applications in wireless communications
+206	Krishna Narayanan	Data storage and optical communications
+207	Krishna Narayanan	Information forwarding in wireless networks
+208	Krishna Narayanan	Design of message passing algorithms for solving Lagrangian dynamics problems
+209	Krishna Narayanan	The design of lattice codes
+210	Krishna Narayanan	Genomic Signal Processing (GSP), Bioinformatics, and Systems Biology
+211	Krishna Narayanan	Spatially coupled LDPC codes and graph-based codes with high throughput decoder architectures
+212	Robert D. Nevels	Electromagnetics
+213	Robert D. Nevels	Nanophotonics
+214	Robert D. Nevels	Electromagnetic Scattering
+215	Robert D. Nevels	Antennas
+216	Cam Nguyen	RF, Microwave and Millimeter-Wave Integrated Circuits, Antennas, and Communication, Radar and Sensing Systems
+217	Cam Nguyen	CMOS/BiCMOS RFICs
+218	Cam Nguyen	Ultra-Wideband (UWB) Integrated Circuits, Antennas, and Communication, Radar and Sensor Systems
+219	Cam Nguyen	RF, Electromagnetics Interconnects, Interferences and Wave Propagation
+220	Cam Nguyen	Wireless Communications
+221	Cam Nguyen	Sensors and Sensor Networks
+222	Sam Palermo	Analog and Mixed-Signal Circuits
+223	Sam Palermo	High-Speed Electrical and Optical Interconnect Circuits and Design Methodologies
+224	Sam Palermo	Design and Modeling of Clock Generation and Recovery Circuits (PLL/DLL/CDRs)
+225	Sam Palermo	Overcoming Increasing Variability in Analog Circuits with Digital Assistance
+226	Sung Park	Developing fully implantable optoelectronic stimulation and recording platforms for wireless bioelectronics.
+227	Sung Park	Analytical studies of wireless power transmission into biological tissue and developing wireless power transmission systems for implantable devices.
+228	Sung Park	Development of fully implantable, stretchable optoelectronic systems for wireless optogenetics.
+229	Sung Park	Development of photovoltaic enhanced optoelectronic systems for wireless optogenetics.
+230	Xiaoning Qian 	·  Bioinformatics:      - Analysis and intervention in biological networks;      - Functional data analysis on genomic and proteomic datasets.
+231	Xiaoning Qian 	·  Biomedical image processing and analysis:      - Image segmentation and robust boundary finding;      - Shape-based similarity retrieval in multimedia databases.
+232	Narasimha Reddy	Computer Networks
+233	Narasimha Reddy	Storage Systems
+234	Narasimha Reddy	Multimedia systems
+235	Narasimha Reddy	Computer Architecture
+236	Peter Rentzepis	Lasers and their application to science and technology
+237	Raffaella Righetti	Ultrasonic Imaging
+238	Raffaella Righetti	Ultrasound methods for imaging the mechanical behavior of soft tissues
+239	Raffaella Righetti	Medical uses of ultrasound
+240	Raffaella Righetti	Biomedical Imaging
+241	B. Don Russell 	Electric Power Engineering
+242	B. Don Russell 	Power System Protection
+243	B. Don Russell 	Control and Automation of Power Systems
+244	B. Don Russell 	Energy Systems and Energy Public Policy
+245	B. Don Russell 	Forensic Engineering
+246	B. Don Russell 	Engineering Ethics
+247	B. Don Russell 	Engineering Professionalism 
+248	Edgar Sanchez-Sinencio	•Design and implementation of mixed-signal processing circuits and systems.
+249	Edgar Sanchez-Sinencio	•Power Management, Medical and Environmental Applications. RF Communication Circuits.
+250	Serap Savari	Information theory, data compression, network coding, computing and communication systems
+251	Erchin Serpedin	Signal Processing for wireless communications
+252	Erchin Serpedin	Computational statistics
+253	Erchin Serpedin	Statistical signal processing
+254	Erchin Serpedin	Information theory
+255	Erchin Serpedin	Bioinformatics and genomics
+256	Yang Shen	Modeling, simulation, and engineering of biomolecules and biomolecular systems.• Computational Molecular Biology- Structural prediction of protein interactions - Drug design• Computational Systems Biology- Systems therapeutics - Synthetic biology• Bioinformatics • Optimization and learning• Systems and control
+257	Jose Silva-Martinez	Design and fabrication of integrated circuits for communication and biomedical applications
+258	Chanan Singh	Reliability and Security of Electric Power Systems
+259	Chanan Singh	Theory and Applications of System Reliability
+260	Chanan Singh	Production Costing
+261	Chanan Singh	Power Quality
+262	Alex Sprintson	Algorithmic and Information-theoretic aspects of networking
+263	Alex Sprintson	Network coding and its applications in communication networks
+264	Alex Sprintson	QoS routing for unicast and multicast
+265	Chin B. Su	Multipass SPR
+266	Chin B. Su	Field Assist SPR 
+267	Chin B. Su	Formulas for SPR Calculations Using Matrix Techniques 
+268	Chin B. Su	Fiber Optic Ratio Meter for Fast Measurement of Refractive Index of Liquid
+269	Chin B. Su	Surface Plasmon Modes in Nanoparticles
+270	Chin B. Su	Gold-Silica Nanoshell (doc)
+271	Hamid A. Toliyat	Novel electric machines for different applications
+272	Hamid A. Toliyat	Condition monitoring and fault diagnosis of electric machinery
+273	Hamid A. Toliyat	Electric and Hybrid Electric Vehicles
+274	Hamid A. Toliyat	Electromechanical energy storage batteries
+275	Hamid A. Toliyat	Active power filters for power systems network
+276	Hamid A. Toliyat	Fuel cell operated electric motor drives
+277	Hamid A. Toliyat	Distributed Energy Systems; Wind Mills, Microturbines, Solar Power Plants
+278	Hamid A. Toliyat	Smart Grids and their components
+279	Hamid A. Toliyat	Auxiliary power generators
+280	Hamid A. Toliyat	Power converters for electric machines including multilevels
+281	Hamid A. Toliyat	Uninterruptible power supplies (UPS)
+282	Hamid A. Toliyat	Sensors and Sensorless electric motor drive and spindle motors
+283	Hamid A. Toliyat	DSP-based power electronics systems
+284	Hamid A. Toliyat	Simulation techniques such as finite elements analysis and Pspice and Saber.
+285	Hamid A. Toliyat	Consulting in related fields and serving as an expert witness
+286	Karan L. Watson	\N
+287	Mark H. Weichold	Solid State Device Physics and Fabrication
+288	Steven M. Wright	Magnetic Resonance Imaging- Instrumentation, Methodology
+289	Steven M. Wright	Antenna Theory- Numerical Methods, Phased Arrays Electromagnetics
+290	Le Xie	Modeling and control of electric energy systems;
+291	Le Xie	Integration of renewable variable energy resources;
+292	Le Xie	Design and optimization of competitive power systems;
+293	Le Xie	Theory and application of cyber-physical energy systems.
+294	Zixiang Xiong	Network information theory, code designs and applicationsDistributed source coding of linear functionsMinimum-energy network communicationsMultiterminal source coding theory and multiterminal video codingCooperative diversityDirty-paper coding
+295	Zixiang Xiong	Distributed source coding of linear functions
+296	Zixiang Xiong	Minimum-energy network communications
+297	Zixiang Xiong	Multiterminal source coding theory and multiterminal video coding
+298	Zixiang Xiong	Cooperative diversity
+299	Zixiang Xiong	Dirty-paper coding
+300	Zixiang Xiong	Networked multimediaAudio/image/video codingSource-channel coding
+301	Zixiang Xiong	Audio/image/video coding
+302	Zixiang Xiong	Source-channel coding
+303	Zixiang Xiong	Biomedical engineeringMedical image processing
+304	Zixiang Xiong	Medical image processing
+305	Byung-Jun Yoon	Genomic Signal Processing (GSP), Bioinformatics, and Systems Biology
+306	Byung-Jun Yoon	Probabilistic Graphical Models & Algorithms, and Their Application in Computational Biology
+307	Byung-Jun Yoon	Noncoding RNA (ncRNA) Prediction, RNA Sequence Analysis
+308	Peng Yu	Bioinformatics and systems biology
+309	Peng Yu	Analysis of high throughput sequencing data
+310	Peng Yu	Transcriptional regulation, alternative splicing, nucleosome positioning and epigenetics
+311	Peng Yu	Protein structure prediction
+312	Xi Zhang	\N
+313	Jun Zou	• Micro sensors, micro actuators and microsystems• Micro optical and acoustic devices and systems for non-destructive sensing and imaging• 3D Micro and nanofabrication technologies
+314	Tanzir Ahmed	\N
+315	Nancy M. Amato	Motion planning
+316	Nancy M. Amato	Computational biology
+317	Nancy M. Amato	Robotics
+318	Nancy M. Amato	Computational geometry
+319	Nancy M. Amato	Animation
+320	Nancy M. Amato	Parallel and distributed computing
+321	Nancy M. Amato	Parallel algorithms
+322	Nancy M. Amato	Performance modeling and optimization
+323	Riccardo Bettati	Distributed real-time systems
+324	Riccardo Bettati	Scheduling algorithms
+325	Riccardo Bettati	Communication protocols
+326	Riccardo Bettati	Anonymity and privacy, computer-supported security education
+327	James Caverlee	Web-scale information management
+328	James Caverlee	Distributed data-intensive systems
+329	James Caverlee	Information retrieval
+330	James Caverlee	Databases
+331	James Caverlee	Social Computing
+332	Jinxiang Chai	Computer animation
+333	Jinxiang Chai	computer graphics
+334	Jinxiang Chai	interaction techniques for 3D graphics
+335	Jinxiang Chai	computer vision
+336	Jinxiang Chai	image-based modeling and rendering
+337	Jinxiang Chai	image and video processing
+338	Jinxiang Chai	Human motion modeling, understanding, simulation and control
+339	Jinxiang Chai	Motion capture for everyone
+340	Jinxiang Chai	Facial acquisition, modeling and animation
+341	Jinxiang Chai	hand motion acquisition, modeling and simulation
+342	Jinxiang Chai	Visual modeling and understanding
+343	Jinxiang Chai	data-driven graphics and vision
+344	Jianer Chen	Algorithms and complexity
+345	Jianer Chen	computer graphics
+346	Jianer Chen	bioinformatics
+347	Jianer Chen	computer networks
+348	Yoonsuck Choe	Brain Networks Lab
+349	Yoonsuck Choe	Neural Intelligence Lab
+350	Yoonsuck Choe	Multi-scale modeling of mouse brain networks project
+351	Yoonsuck Choe	Topographica cortical map simulator project
+352	Dilma Da Silva	Cloud computing
+353	Dilma Da Silva	Operating systems
+354	Dilma Da Silva	Distributed computing
+355	Dilma Da Silva	High-end computing
+356	Walter Daugherity	\N
+357	Tim Davis	Research Vision: High-Performance Combinatorial Scientific Computing
+358	Tim Davis	The coming decades of high-performance computational mathematics will be increasingly dominated by heterogeneous computing based on hybrid multiprocessors with of a mix of conventional CPU cores and high-throughput GPU cores.  This trend is driven by power constraints and the need for ever-increasing performance.  Although these new heterogeneous systems can deliver high performance with low energy requirements, new algorithms must be developed to exploit them.  The most challenging problems for these systems require a mix of regular and irregular computation.  My research into direct methods for sparse linear systems lies within this problem domain and is also a critical component for many applications in computational mathematics.  
+359	Tim Davis	My experience makes me well-poised for future research in GPU-based algorithms.  As a world leader in algorithmic research for sparse matrix computations, my work combines graph-theoretic methods and numerical techniques to create algorithms for solving problems in computational science that arise across a wide range of applications. I incorporate my novel theory and algorithms into robust library-quality open-source software, which is widely used in industry, academia, and government labs.  In the past decade, I have published more software in the ACM Transactions on Mathematical Software than any other author (9% of the algorithmic output of that journal).
+360	Tim Davis	A primary thrust for my current and future work focuses on creating parallel algorithms for sparse multifrontal LU, QR, and Cholesky factorization for hybrid multicore CPU/GPU multiprocessors.  The workflow in these algorithms is an irregular tree, where the nodes are the bulk of the work (regular operations on dense frontal matrices of varying sizes), and the edges are the irregular assembly of data from child to parent.  The GPUs operate on many frontal matrices at a time, and data is assembled from child to parent frontal matrix without moving it to the CPU.  No other sparse direct method employs these strategies for GPU computing.  By creating widely-used high-performance algorithms and software that encapsulate these ideas, this research will extend the capability of heterogeneous computing to a wide domain of applications in computational science and mathematics.
+361	Tim Davis	In recognition of my research efforts in high-performance computing via GPU-based algorithms, NVIDIA has designated Texas A&M as a CUDA Research Center.
+362	Tim Davis	Connections to Computer Science
+363	Tim Davis	The core of my work lies within the domain of combinatorial scientific computing, which combines combinatorial and graph-theoretic algorithms with numerical methods, and hence relies on nearly all of classical computer science.  My graph and sparse matrix algorithms are important to several core areas in computer science, including social network analysis, computer vision, computer graphics, and robotics.  For example, all of the robotics projects at OpenSLAM.org that rely on sparse matrix algorithms to solve Simultaneous Localization and Mapping problems use my software.  One application relies on my sparse Cholesky update/downdate to process a dynamic set of images collected by a swarm of robots updating a 3D model of the region under exploration.  Robotics provides a promising avenue for future research and applications of my work in applied mathematics and sparse linear algebra. 
+364	Tim Davis	Connections to Mathematics and Operations Research
+365	Tim Davis	I have a long history of creating novel algorithms for new and challenging problems in applied mathematics and optimization techniques.  Over a 16-year collaboration with Bill Hager in the Math Department at the University of Florida, I have created the only asymptotically optimal algorithms for the sparse Cholesky update/downdate problem. This problem arises in dual active set methods in optimization, where the factorization must be updated as the basis set changes. I have also developed multilevel graph partitioning algorithms based on Hager's quadratic-programming formulation.  Optimization presents unique challenges for the development of sparse matrix and combinatoric algorithms, and provides a rich source of promising problems, including low-rank update/downdate of sparse factorizations, rook pivoting, rank deficient matrices, and finding well-conditioned basis sets.
+366	Tim Davis	Connections to Industry, Open-Source Projects, and Government Labs 
+367	Tim Davis	Industry, government labs, and open source projects rely heavily on my work.  My sparse solvers appear in dozens of commercial applications from The MathWorks (x=A\b in MATLAB), Google, NVIDIA, Berkeley Design Automation, Freescale, COMSOL, MSC Software (NASTRAN), Cadence, IBM, Mathematica, ANSYS, Mentor Graphics, and many other companies.  Every photo in Google Street View, Photo Tours, and 3D Earth is placed into proper position using my software via Google's Ceres non-linear least squares solver.  The US Geological Survey uses my sparse solvers to process images of the Earth, Moon, Mercury, and other planetary bodies, cutting their time-to-solution from hours/days down to minutes.  My open-source software has been adopted by all major Linux distributions, and is also widely used in open-source packages such as GIMP (GEGL), R, Octave, FEniCS, ROS (robotics), Boost, Julia, and scilab, to name just a few.  Sandia's Xyce circuit simulation package and Berkeley's OpenSees earthquake simulator both rely on my sparse solvers.  My software consistently demonstrates the speed and reliability essential for industrial-quality software.
+368	Tim Davis	Algorithmic Artwork
+369	Tim Davis	My algorithmic artwork has appeared on billboards all over London, as the theme artwork for the London Electronic Arts Festival. To create this art, I use Fourier Transforms, graph algorithms, sparse matrices, and MATLAB to translate music into art, via mathematical rules of my creation.  For more examples, and description of how I create this art, see notesartstudio.com
+370	Anandi Dutta	\N
+371	Richard Furuta	Digital libraries
+372	Richard Furuta	hypertext systems and models
+373	Richard Furuta	computer-human interaction
+374	Richard Furuta	electronic publishing
+375	Bruce Gooch	High Throughout Phenotyping
+376	Bruce Gooch	Computer Graphics
+377	Bruce Gooch	Video Games
+378	Guofei Gu	Network and system security in general
+379	Guofei Gu	Internet malware/botnet detection, defense, and analysis
+380	Guofei Gu	Software-defined networking (SDN/NFV) security
+381	Guofei Gu	Mobile and Android security
+382	Guofei Gu	Web and social networking security
+383	Guofei Gu	Intrusion detection, anomaly detection
+384	Ricardo Gutierrez-Osuna	View the complete list of publications
+385	Ricardo Gutierrez-Osuna	Intelligent sensors
+386	Ricardo Gutierrez-Osuna	Speech processing
+387	Ricardo Gutierrez-Osuna	Face recognition
+388	Ricardo Gutierrez-Osuna	Machine olfaction
+389	Ricardo Gutierrez-Osuna	Neuromorphic computation
+390	Ricardo Gutierrez-Osuna	Mobile robotics
+391	Ricardo Gutierrez-Osuna	Pattern recognition
+392	Ricardo Gutierrez-Osuna	Machine learning
+393	Tracy Anne Hammond	Sketch recognition
+394	Tracy Anne Hammond	Perception
+395	Tracy Anne Hammond	Cognitive behavior
+396	Tracy Anne Hammond	Computer human interaction
+397	Tracy Anne Hammond	Artificial intelligence
+398	Tracy Anne Hammond	Concept learning
+399	Tracy Anne Hammond	Computer graphics
+400	Tracy Anne Hammond	Psychology
+401	Tracy Anne Hammond	Anthropology
+402	Tracy Anne Hammond	The gender gap in computer science
+403	Xia (Ben) Hu	Data Mining
+404	Xia (Ben) Hu	Machine Learning
+405	Xia (Ben) Hu	Social Computing
+406	Xia (Ben) Hu	Health Informatics
+407	Xia (Ben) Hu	Web and Social Networking Security
+408	Jeff Huang	Software Engineering
+409	Jeff Huang	Programming Languages
+410	Jeff Huang	Concurrency
+411	Jeff Huang	Runtime Verification
+412	Ruihong Huang	Natural Language Processing (NLP)
+413	Ruihong Huang	Information Extraction
+414	Ruihong Huang	Machine Learning
+415	Ruihong Huang	Artificial Intelligence
+416	Ruihong Huang	Digital Humanities
+417	Thomas R. Ioerger	Artificial intelligence
+418	Thomas R. Ioerger	Machine learning
+419	Thomas R. Ioerger	Intelligent agents
+420	Thomas R. Ioerger	Bioinformatics
+421	Roozbeh Jafari	Embedded Systems Design
+422	Roozbeh Jafari	Wearable Computing
+423	Roozbeh Jafari	Signal Processing
+424	Roozbeh Jafari	Cyber-Physical Systems
+425	Anxiao (Andrew) Jiang	Information theory
+426	Anxiao (Andrew) Jiang	Coding for flash memories
+427	Anxiao (Andrew) Jiang	Wireless and sensor networks
+428	Anxiao (Andrew) Jiang	Algorithms
+429	Daniel A. Jiménez	\N
+430	Andruid Kerne	Human-Centered Computing,  HCI
+431	Andruid Kerne	Multitouch interaction, Sensory interfaces, Pen+Touch interaction, Gesture recognition
+432	Andruid Kerne	Creativity support environments
+433	Andruid Kerne	Information visualization
+434	Andruid Kerne	Games
+435	Andruid Kerne	Ubiquitous computing, Social computing, Multimedia
+436	Andruid Kerne	Embedded systems, Software
+437	John Keyser	Robust geometric and solid modeling
+438	John Keyser	Physically-based simulation
+439	John Keyser	Brain networks
+440	John Keyser	Geometric computing
+441	John Keyser	Graphics and visualization
+442	John Keyser	Simulation and modeling
+443	John Keyser	Computer algebra
+444	Eun Jung Kim	Computer architecture
+445	Eun Jung Kim	Power efficient systems
+446	Eun Jung Kim	Parallel/distributed systems
+447	Eun Jung Kim	Cluster computing
+448	Eun Jung Kim	Performance evaluation
+449	Eun Jung Kim	Fault-tolerant computing
+450	 Andreas Klappenecker	Quantum computing
+451	 Andreas Klappenecker	Image processing
+452	 Andreas Klappenecker	Cryptography
+453	Teresa Leyk	Scientific Computations
+454	Teresa Leyk	Numerical solving of ODEs and PDEs
+455	Jyh-Charn (Steve) Liu	Real-time distributed computing systems
+456	Jyh-Charn (Steve) Liu	Behavior Modeling and Simulation
+457	Jyh-Charn (Steve) Liu	Cyber Physical Systems Security
+458	Dmitri Loguinov	Stochastic analysis of networks
+459	Dmitri Loguinov	Graph algorithms
+460	Dmitri Loguinov	Internet measurements
+461	Dmitri Loguinov	Peer-to-peer networks
+462	Dmitri Loguinov	Congestion control
+463	Dmitri Loguinov	High-performance web crawling
+464	Dmitri Loguinov	Massive-scale information retrieval
+465	Dmitri Loguinov	Topology modeling
+466	Rabi N. Mahapatra	Embedded systems
+467	Rabi N. Mahapatra	System-on-chip
+468	Rabi N. Mahapatra	Reconfigurable architectures
+469	Rabi N. Mahapatra	Real-time systems
+470	Rabi N. Mahapatra	Cyber-infrastructure
+471	Rabi N. Mahapatra	Semantic networks
+472	J. Michael Moore	Human-Computer Interaction
+473	J. Michael Moore	Software Design
+474	J. Michael Moore	Information Retrieval
+475	J. Michael Moore	Digital Libraries
+476	Robin Murphy	Artificial intelligence as applied to emergency informatics, especially tactical land, sea, and air vehicles
+477	Robin Murphy	Human-robot interaction
+478	Robin Murphy	Heterogeneous teams
+479	Robin Murphy	Victim management
+480	Robin Murphy	Perceptual directed behavior-based control
+481	Michael Quinn	\N
+482	Daniel Ragsdale	Cybersecurity
+483	Daniel Ragsdale	Vulnerability research
+484	Daniel Ragsdale	Reverse engineering
+485	Daniel Ragsdale	Computer ethics
+486	Daniel Ragsdale	Privacy
+487	Daniel Ragsdale	Retired Army Colonel with 30 years of service and leadership in a wide array of operational, educational, and research and development settings. Participated in Operations Urgent Fury (Grenada), Enduring Freedom (Afghanistan), and Iraqi Freedom (Iraq)
+488	Daniel Ragsdale	Nearly 15 years of service at the United States Military Academy, West Point, New York. Served as a leader in a variety of teaching and research roles, culminating with his service as Vice Dean for Education, the Principal Deputy to West Point's Chief Academic Officer.
+489	Daniel Ragsdale	Former DARPA Program Manager who successfully led and managed a $175M research and development portfolio of classified and unclassified cybersecurity, psychology, and educational programs
+490	Lawrence Rauchwerger	Compilers for parallel and distributed computing
+491	Lawrence Rauchwerger	Parallel and distributed C++ libraries
+492	Lawrence Rauchwerger	Adaptive runtime optimizations
+493	Lawrence Rauchwerger	Architectures for parallel computing
+494	Philip Ritchey	Computer Security and Privacy
+495	Philip Ritchey	Information Hiding
+496	Philip Ritchey	Censorship-Resistant Technologies
+497	Philip Ritchey	Multi-Agent Systems
+498	Philip Ritchey	Simulation and Modeling
+499	Vivek Sarin	Numerical methods
+500	Vivek Sarin	parallel algorithms
+501	Vivek Sarin	computational science
+502	Scott Schaefer	Computer graphics
+503	Scott Schaefer	Geometric modeling
+504	Scott Schaefer	Scientific visualization
+505	Dylan Shell	Distributed AI
+506	Dylan Shell	Biologically-inspired multi-robot systems
+507	Dylan Shell	Coordinated system
+508	Dylan Shell	Analysis of multi-agent systems
+509	Dylan Shell	Crowd Modeling
+510	Frank M. Shipman	Intelligent User Interfaces
+511	Frank M. Shipman	Hypertext
+512	Frank M. Shipman	Computers and Education
+513	Frank M. Shipman	Multimedia
+514	Frank M. Shipman	New Media
+515	Frank M. Shipman	Computers and Design
+516	Frank M. Shipman	Computer-Human Interaction
+517	Frank M. Shipman	Computer-Supported Cooperative Work
+518	Dezhen Song	Networked robotics
+519	Dezhen Song	Computer vision
+520	Dezhen Song	Multimedia
+521	Dezhen Song	Autonomous vehicle
+522	Dezhen Song	Optimization
+523	Dezhen Song	Automation
+524	Radu Stoleru	Deeply embedded wireless sensor systems
+525	Radu Stoleru	Distributed systems
+526	Radu Stoleru	Embedded and real-time computing
+527	Radu Stoleru	Computer networking
+528	Shinjiro Sueda	Computer Graphics
+529	Shinjiro Sueda	Computer Animation
+530	Shinjiro Sueda	Computational Biomechanics
+531	Shinjiro Sueda	Computational Fabrication 
+532	Sing-Hoi Sze	Bioinformatics/Computational Biology
+533	Sing-Hoi Sze	Multiple sequence alignment
+534	Sing-Hoi Sze	Motif finding with applications to predicting transcription factor binding sites
+535	Sing-Hoi Sze	Biological network analysis
+536	Sing-Hoi Sze	Identification of gene clusters within genomes
+537	Valerie E. Taylor	High performance computing
+538	Valerie E. Taylor	Performance analysis and modeling of parallel and distributed applications
+539	Aakash Tyagi 	High Performance Computing Architectures and Applications
+540	Duncan M. "Hank" Walker	Integrated circuit test
+541	Duncan M. "Hank" Walker	Defect-based test
+542	Duncan M. "Hank" Walker	Delay test
+543	Duncan M. "Hank" Walker	IDDQ test
+544	Duncan M. "Hank" Walker	Fault diagnosis
+545	Duncan M. "Hank" Walker	Realistic fault modeling
+546	Duncan M. "Hank" Walker	Parametric and functional yield prediction
+547	Zhangyang (Atlas) Wang	Machine learning
+548	Zhangyang (Atlas) Wang	Deep learning
+549	Zhangyang (Atlas) Wang	Computer vision
+550	Zhangyang (Atlas) Wang	image processing
+551	Zhangyang (Atlas) Wang	Optimization
+552	Jennifer Welch	Algorithms and lower bounds for distributed computing systems
+553	Jennifer Welch	Distributed shared objects and dynamic networks
+554	Tiffani L. Williams	Bionformatics/Computational biology
+555	Tiffani L. Williams	Phylogeny
+556	Tiffani L. Williams	High-performance computing
+557	Tiffani L. Williams	Optimization
+558	Tiffani L. Williams	Performance Analysis
+559	Meigan Aronson	Neutron scattering
+560	Meigan Aronson	Magnetic phase transitions
+561	Meigan Aronson	Electronic instabilities
+562	Meigan Aronson	Novel materials synthesis
+563	Amine Benzerga	Mechanics of Materials
+564	Amine Benzerga	High-Performance Computing
+565	Amine Benzerga	Anisotropy in Plasticity and Fracture
+566	Amine Benzerga	Ductile Fracture
+567	Amine Benzerga	Discrete Dislocation Plasticity and Dislocation Mechanics
+568	Amine Benzerga	Macromolecular Mechanics of Polymers and Their Composites
+569	Tahir Cagin	computational materials science and nanotechnology with emphasis on design
+570	Tahir Cagin	characterization and development of multifunctional nano-structured materials for device and sensor applications
+571	Tahir Cagin	fundamental studies on transport phenomena (heat, mass and momentum) at nanoscale and in confined media
+572	Tahir Cagin	thermal, mechanical, electronic and magnetic properties and phase behavior of materials
+573	Tahir Cagin	materials for thermal management, power generation and energy harvesting
+574	Tahir Cagin	development and application of multiscale simulation methods.
+575	Raymundo Case	Corrosion damage distribution model for low alloy steels is CO2/H2S containing environments
+576	Raymundo Case	Pitting a stress corrosion prediction model for stainless steels and CRA’s in CO2/H2S containing environments
+577	Raymundo Case	Study of the effect of H2S on the pit growth kinetics and passivity stability in corrosion resistant alloys (CRA)
+578	Raymundo Case	Study liquid metal embrittlement (LME) of CRA and High strength Ti by exposure to metallic Hg.
+579	Raymundo Case	Research in corrosion mechanisms and mitigation in super critical environments.
+580	Homero Castaneda	\N
+581	Terry Creasy	Polymer processing for property control
+582	Terry Creasy	Hybrid Multifunctional Materials
+583	Terry Creasy	Nastic Materials for Active Structures
+584	Terry Creasy	Nanoscale/microscale properties of Materials
+585	Terry Creasy	Equal Channel Angular Extrusion of Polymer Matrix Composites
+586	Michael J. Demkowicz	Computational materials design
+587	Michael J. Demkowicz	Fundamental physics of material behavior
+588	Michael J. Demkowicz	Mechanical behavior and radiation response of materials
+589	Karl 'Ted' Hartwig	Development of better materials (nanostructured, for low temperature use, superconductors, aluminum, normal electrical conductors, and advanced structural materials and consolidation of advanced particulates). Structure-property-processing relationships. Sever plastic deformation of materials via equal channel angular extrusion (ECAE). Applied superconductivity (composite superconductor design).
+590	Ibrahim Karaman	Deformation and annealing twinning induced grain boundary engineering in ultrafine grain and nanostructured materials including shape memory alloys and low stacking fault energy, high strength steels. 
+591	Ibrahim Karaman	Development and characterization of magnetic shape memory alloys with high actuation force. Bridging length scales in deforming single and textured polycrystals of structural magnetic shape memory alloys.
+592	Ibrahim Karaman	Novel processing and thermomechanical treatment of high-temperature shape memory alloys (HTSMAs) for obtaining nanostructured HTSMA actuators with excellent cyclic stability, fatigue and creep resistances.
+593	Ibrahim Karaman	Development of undergraduate curriculum for “Nanoscale Issues in Manufacturing”.
+594	Ibrahim Karaman	Fabrication of bulk metallic glasses (BMGs) and bulk metallic glass matrix composites via powder consolidation using equal channel angular extrusion for kinetic energy penetrators.
+595	Ibrahim Karaman	Fabrication and deformation studies of bulk nanocrystalline materials.
+596	Ibrahim Karaman	Development of a MagnetoThermoMechanical (MTM) testing system for characterization of magnetic shape memory alloys.
+597	Dimitris Lagoudas	\N
+598	Pao-Tai Lin	Mid-Infrared integrated Photonics
+599	Pao-Tai Lin	Biomedical sensors on a chip
+600	Pao-Tai Lin	Multiscale fabrication technologies
+601	Pao-Tai Lin	Reconfigurable materials
+602	Pao-Tai Lin	Nanophotonics & metamaterials
+603	Alan Needleman	\N
+604	Esad Ozmetin	Superconductivity; Vortex dynamics and pinning, magnetic and transport properties of superconductors, Superconducting / magnetic hybrid systems, device physics, Superconducting wire manufacturing (MgB2), superconducting magnet design.
+605	Esad Ozmetin	Thin films and its applications; Doped oxides, superconducting thin films, magnetic alloys, mechanical, magnetic and optical properties.
+606	Esad Ozmetin	HTC magnetic alloys, magnetic shape memory alloys.
+607	Esad Ozmetin	Scanning probe microscopy (STM, STS, AFM, MFM, SHPM).
+608	Esad Ozmetin	Halbach permanent magnet arrays, magnetic thin films and patterning, electromagnetic finite element analysis.
+609	Xiaofeng Qian	Materials Theory, Discovery, and Design for Energy Applications and Device Design Aided by High-Throughput Computing
+610	Xiaofeng Qian	Two-Dimensional Materials and Their Coupled Multi-Physical Properties and Novel Device Concepts
+611	Xiaofeng Qian	Electronic, Thermal, and Ionic Transport in Energy Materials and Electronic and Optical Devices
+612	Xiaofeng Qian	First-Principles Methodology Development towards Efficient and Accurate Prediction of Ground-state and Excited-state Properties of Materials
+613	Xiaofeng Qian	Multiscale Materials Modeling of Complex Physical and Chemical Processes
+614	Miladin Radovic	High temperature materials for energy applications
+615	Miladin Radovic	Processing of advanced ceramic materials
+616	Miladin Radovic	Characterization and modeling of mechanical properties of ceramic and metallic materials
+617	Miladin Radovic	Reliability and durability of ceramic materials and components
+618	Miladin Radovic	Processing and characterization of materials for Fuel Cells
+619	Miladin Radovic	Resonant Ultrasound Spectroscopy
+620	Patrick Shamberger	Science and engineering of phase transitions
+621	Patrick Shamberger	Functional materials
+622	Patrick Shamberger	Thermal energy storage, transport, and conversion
+623	Patrick Shamberger	Nucleation and growth; nucleation catalysts; undercooling phenomena
+624	Patrick Shamberger	Non-volatile resistance switching
+625	Patrick Shamberger	Diffraction-based materials interrogation techniques
+626	Patrick Shamberger	Thermal characterization techniques
+627	Patrick Shamberger	Numerical simulation (MATLAB, FEM)
+628	Patrick Shamberger	Undergraduate education and mentoring
+629	Ankit Srivastava	Micromechanical Modeling of Heterogeneous Materials
+630	Ankit Srivastava	Microstructure-based Crystal Plasticity Finite Element Modeling
+631	Ankit Srivastava	Phase Transformations, Statistical Fracture Modeling
+632	Ankit Srivastava	Quantifying Constitutive Behavior of Materials by Small Scale Experiments
+633	Ankit Srivastava	In-situ Mechanical Testing
+634	Ankit Srivastava	Failure Analysis
+635	Ankit Srivastava	Microstructure Design
+636	Hung-Jue Sue	To conduct research on high performance functional polymers for nanotechnology, biotechnology and micro-/nano-electronics packaging applications; surface damage phenomena of polymers; structure-property relationship in polymers, blends, polyolefin films, fiber-reinforced composites, adhesives and nanocomposites; strengthening and toughening of polymers; utilization of novel processing tools to enhance physical and mechanical properties of polymers.
+637	Svetlana A. Sukhishvili	Stimuli-responsive all-polymer and polymer nanocomposite assemblies for sensing, separation and biomedical applications
+638	Svetlana A. Sukhishvili	Structure and dynamics of polyelectrolyte assemblies
+639	Svetlana A. Sukhishvili	Materials with controllable optical, swelling and drug-release responses
+640	Svetlana A. Sukhishvili	Remote manipulation of material shape
+641	Svetlana A. Sukhishvili	Smart antibacterial materials
+642	Svetlana A. Sukhishvili	Surface modification for controlling wettability, adhesion and adsorption
+643	Ramesh Talreja	Damage
+644	Ramesh Talreja	Fatigue and Failure of Composites
+645	Ramesh Talreja	Effects of Manufacturing Defects
+646	Ramesh Talreja	Aging Aircraft
+647	Ramesh Talreja	Sustainability of aerospace vehicles
+648	Terry Alfriend	Astrodynamics
+649	Terry Alfriend	Satellite Altitude Dynamics and Control
+650	Terry Alfriend	Space Debris
+651	Terry Alfriend	Space Surveillance
+652	Terry Alfriend	Space Systems Engineering
+653	Moble Benedict	Design, development and autonomous control of high performance next generation aircraft at small (MAVs/UAVs) and full scales.
+654	Moble Benedict	Energy efficient green aviation 
+655	Moble Benedict	High efficiency vertical axis wind turbines
+656	Amine Benzerga	Mechanics of Materials
+657	Amine Benzerga	High-Performance Computing
+658	Amine Benzerga	Anisotropy in Plasticity and Fracture
+659	Amine Benzerga	Ductile Fracture
+660	Amine Benzerga	Discrete Dislocation Plasticity and Dislocation Mechanics
+661	Amine Benzerga	Macromolecular Mechanics of Polymers and Their Composites
+662	Raktim Bhattacharya	Uncertainty Quantification
+663	Raktim Bhattacharya	Robust Control
+664	Raktim Bhattacharya	Nonlinear Systems
+665	Rodney Bowersox	Gasdynamics
+666	Rodney Bowersox	Aerothermochemistry
+667	Rodney Bowersox	High-speed aerodynamics
+668	Rodney Bowersox	Hypersonics
+669	Rodney Bowersox	Unsteady aerodynamics
+670	Rodney Bowersox	Aero-propulsion
+671	Rodney Bowersox	Turbulence modeling
+672	Rodney Bowersox	Numerical simulations
+673	Rodney Bowersox	Instrumentation development
+674	Rodney Bowersox	Wind tunnel design
+675	Jim Boyd	Using MEMS to process multifunctional materials
+676	Jim Boyd	Coupled mechanical-electrical-chemical phenomena in materials
+677	Jim Boyd	Using residual stresses to self-assemble NEMS and MEMS
+678	Suman Chakravorty	Stochastic Dynamical Systems
+679	Suman Chakravorty	Robotic Mapping and Planning
+680	Suman Chakravorty	Space-based High Resolution Imaging Systems
+681	Gregory Chamitoff	\N
+682	Paul Cizmas	Propulsion
+683	Paul Cizmas	Unsteady Aerodynamics and Heat Transfer
+684	Paul Cizmas	Computational Fluid Dynamics
+685	Paul Cizmas	Aeroelasticity
+686	Diego Donzis	Large-scale high-performance computing
+687	Diego Donzis	Fluid dynamics
+688	Diego Donzis	Turbulence
+689	Diego Donzis	Turbulent mixing
+690	Sharath Girimaji	\N
+691	Kentaro Hara	Electric Propulsion
+692	Kentaro Hara	Plasma Physics and Applications
+693	Kentaro Hara	Kinetic Theory and Simulations
+694	Kentaro Hara	Computational Fluid Dynamics
+695	Darren Hartl	Constitutive behavior or active materials
+696	Darren Hartl	Computational solid mechanics
+697	Darren Hartl	Structural design and optimization methods
+698	Darren Hartl	Multifunctional structures applications
+699	John Hurtado	Theoretical Mechanics
+700	John Hurtado	Cooperative Games
+701	John Hurtado	Dynamics & Controls
+702	John Junkins	Dynamics and Control of Spacecraft
+703	John Junkins	Guidance, Navigation and Astronautics
+704	John Junkins	Analytical and Numerical Methods
+705	John Junkins	Smart Sensor Technology
+706	Ibrahim Karaman	Deformation and annealing twinning induced grain boundary engineering in ultrafine grain and nanostructured materials including shape memory alloys and low stacking fault energy, high strength steels. 
+707	Ibrahim Karaman	Development and characterization of magnetic shape memory alloys with high actuation force. Bridging length scales in deforming single and textured polycrystals of structural magnetic shape memory alloys.
+708	Ibrahim Karaman	Novel processing and thermomechanical treatment of high-temperature shape memory alloys (HTSMAs) for obtaining nanostructured HTSMA actuators with excellent cyclic stability, fatigue and creep resistances.
+709	Ibrahim Karaman	Development of undergraduate curriculum for “Nanoscale Issues in Manufacturing”.
+710	Ibrahim Karaman	Fabrication of bulk metallic glasses (BMGs) and bulk metallic glass matrix composites via powder consolidation using equal channel angular extrusion for kinetic energy penetrators.
+711	Ibrahim Karaman	Fabrication and deformation studies of bulk nanocrystalline materials.
+712	Ibrahim Karaman	Development of a MagnetoThermoMechanical (MTM) testing system for characterization of magnetic shape memory alloys.
+713	Adonios Karpetis	High-speed combustion/propulsion
+714	Adonios Karpetis	Laser diagnostics for reacting flows
+715	Adonios Karpetis	Turbulent flames
+716	Adonios Karpetis	Space weather
+717	Vikram Kinra	Solid Mechanics
+718	Vikram Kinra	Wave Propagation
+719	Vikram Kinra	Damping
+720	Vikram Kinra	Ultrasonic NDE
+721	Vikram Kinra	Experimental Methods
+722	Waruna Kulatilaka	Combustion and Energy Conversion, Optical Diagnostics and Imaging, Laser Spectroscopy, Ultrafast Lasers, Chemical Kinetics, Fluid Flow and Plasma Diagnostics, Supersonic and Hypersonic Propulsion, Gas Turbine Combustion and IC Engines.
+723	Dimitris Lagoudas	\N
+724	Reza Langari	Development of Intelligent Rollover Warning and Control Systems for Tractor-Semitrailers, TAMU-CONACyT Collaborative Program, Sept. 1, 2002 - August 31 - 2003.
+725	Reza Langari	Development of System for Identifying Road Surface Condition using Free Space Optics, Texas Transportation Institute, Sept. 1, 2002 - August 31, 2003 (with R. Lytton as Co-PI.)
+726	Reza Langari	High Availability Automation Needs Analysis and Technology Assessment for Ultradeepwater E&P Operations, Research Partnership for Secure Energy for America (RPSEA), May 1, 2003 through December 31, 2003 (with Alex Parlos as Co-PI.)
+727	Reza Langari	Condition Based Monitoring for the H-60 Aircraft, Joint Council on Aging Aircraft (JCAA), June 1, 2004 through May 31, 2005, (joint project with Georgia Institute of Technology.)
+728	Jean-Briac le Graverend	Mechanics of materials
+729	Jean-Briac le Graverend	Viscoplasticity
+730	Jean-Briac le Graverend	Constitutive modeling
+731	Jean-Briac le Graverend	Phase field modeling
+732	Jean-Briac le Graverend	Piezoelectric materials
+733	Jean-Briac le Graverend	High temperature materials
+734	Jean-Briac le Graverend	Thermo- and electro-mechanical testing
+735	Daniele Mortari	Spacecraft Attitude and Orbit Estimation
+736	Daniele Mortari	Satellite Constellations Design
+737	Daniele Mortari	Attitude Sensor Data Processing
+738	Mohammad Naraghi	- Graphitic carbon-based multifunctional nanomaterials- Fabrication and characterization of bio-inspired nanocomposites- Experimental nanomechanics- Electrospinning of polymeric nanofibers- Mechanics of polymeric and biological nanofibers
+739	Tom Pollock	Materials Properties Structural Design
+740	Alexei Poludnenko	Chemical and thermonuclear combustion
+741	Alexei Poludnenko	Turbulence in reacting and non-reacting flows
+742	Alexei Poludnenko	Computational fluid dynamics and high-performance computing
+743	Alexei Poludnenko	Space weather
+744	Alexei Poludnenko	Plasma physics and magnetohydrodynamics
+745	J. N. Reddy	Professor Reddy is well-known for his research as well as for his teaching. Professor Reddy is distinctly known for his research on mechanics of composite materials and of computational methods, which deals with theoretical formulations and numerical analysis of problems in engineering. The shear deformation plate and shell theories that he developed and bear his name are well known and finite element models have been implemented into commercial software like ABAQUS, NISA, and HYPERFORM, which are accessible to engineers around the world. Professor Reddy has also contributed significantly to the modernization of our education, since his books are used as text books in courses of Mechanical, Civil and Aerospace Engineering and Mechanics. An especially strong point of Dr. Reddy’s classroom teaching is the clarity and physical insight of explanations of even the most difficult topics through relevant engineering examples, but without compromising on the mathematical rigor.
+746	J. N. Reddy	Such an eminent record of research has earned Dr. Reddy numerous national and international awards, including the Charles Russ Richards Memorial Award and the Worcester Reed Warner Medal of the American Society of Mechanical Engineers, Nathan M. Newmark Medal from the American Society of Civil Engineers; Award for Excellence in the Field of Composites and Distinguished Research Award from the American Society for Composites, the Computational Solid Mechanics award from US Association for Computational Mechanics, and the Archie Higdon Distinguished Educator Award from the American Society of Engineering Education. Dr. Reddy presented the prestigious “The 2009 Landis-Epic Lecture” at the University of Pittsburgh, and received Honorary degrees from the Technical University of Lisbon, Portugal, and Odlar Yurdu University, Baku, Azerbaijan. Recently, he was honored as an Honorary Member of the American Society of Mechanical Engineers. Dr. Reddy is one of the very few researchers in engineering around the world, who is recognized by ISI Highly Cited Researchers (with over 10,000 citations and h-index of 50).
+747	J. N. Reddy	Professor Reddy also played active roles in professional societies as the President of USACM, founding member of the General Council of IACM, Secretary of Fellows of AAM, member of the Board of Governors of SES, Chair of the Engineering Mechanics Executive Committee, among several others. He either served or currently serving on the editorial boards of a large number of journals. In addition, he served as the Editor of Applied Mechanics Reviews, Mechanics of Advanced Materials and Structures, the International Journal of Computational Methods in Engineering Science and Mechanics, and the International Journal of Structural Stability and Dynamics.
+748	Helen Reed	Boundary-layer receptivity, stability, transition, and control
+749	Helen Reed	Hypersonics
+750	Helen Reed	Small-satellite design/build/fly
+751	Jacques Richard	MHD model of ion thruster discharge cathode assembly (DCA)
+752	Jacques Richard	Plasma jets in magnetic fields
+753	Jacques Richard	Hemodynamics (blood flow in carotid artery)s
+754	Jacques Richard	Atmospheric and oceanic wave interaction
+755	Jacques Richard	Lattice-Boltzmann methods
+756	Jacques Richard	WENO
+757	Jacques Richard	Spectral element methods
+758	William Saric	Wind-tunnel and flight experiments in the areas of boundary-layer stability and transition
+759	William Saric	Laminar flow control
+760	William Saric	Low-Reynolds-number aerodynamics
+761	William Saric	Networks
+762	William Saric	Theoretical and computational studies in hydrodynamic stability
+763	William Saric	Nonlinear waves
+764	William Saric	Stratified fluids
+765	William Saric	Taylor-Gortler vortices
+766	William Saric	Flight measurements of air quality
+767	Robert Skelton	\N
+768	Thomas Strganac	Aeroelasticity
+769	Thomas Strganac	Structural Dynamics
+770	Thomas Strganac	Nonlinear Dynamics
+771	Theofanis Strouboulis	Numerical Methods in Solid and Fluid Mechanics
+772	Theofanis Strouboulis	Computational Fluid Mechanics
+773	Theofanis Strouboulis	Finite Element Methods
+774	Ramesh Talreja	Damage
+775	Ramesh Talreja	Fatigue and Failure of Composites
+776	Ramesh Talreja	Effects of Manufacturing Defects
+777	Ramesh Talreja	Aging Aircraft
+778	Ramesh Talreja	Sustainability of aerospace vehicles
+779	Nathan Tichenor	High-speed aerodynamics
+780	Nathan Tichenor	Novel flow control approaches
+781	Nathan Tichenor	Innovative diagnostic development
+782	Nathan Tichenor	Wind tunnel design and testing
+783	Nathan Tichenor	Computational fluid dynamics
+784	Srinivas Rao Vadali	Spacecraft Dynamics and Control
+785	Srinivas Rao Vadali	Optimal Control
+786	John Valasek	Cyber-physical air, space and ground systems
+787	John Valasek	Complex Aerospace Systems Engineering (CASE)
+788	John Valasek	Vehicle management systems and control systems
+789	John Valasek	Machine learning for complex high-order systems
+790	John Valasek	Advanced cockpit systems and displays
+791	John Whitcomb	Prediction of damage initiation and growth in cryogenic composites and foams
+792	John Whitcomb	Multiscale computational mechanics from nano to macro
+793	John Whitcomb	Multifunctional materials
+794	John Whitcomb	Numerical simulation of electric double layer supercapacitor
+795	John Whitcomb	Mechanics of textile composites
+796	John Whitcomb	Mechanics of polymer film scratching
+797	John Whitcomb	Novel finite element analysis strategies
+798	Edward White	Experimental aerodynamics
+799	Edward White	Laminar-to-turbulent transition
+800	Edward White	Wind-turbine aerodynamics
+801	Edward White	Dynamic stall
+802	Edward White	Surface roughness effects
+803	Ahmad Bani Younes	Optimization, Estimation and Control Applications in Dynamical Systems
+804	Ahmad Bani Younes	Guidance, Navigation, and Astronautics
+805	Ahmad Bani Younes	Space Robotics and Computational Vision
+806	Ahmad Bani Younes	Trajectory Propagation and Uncertainty
+807	Ahmad Bani Younes	Algorithms development and Applied Mathematics
+808	Daniel L. Alge	Dr. Daniel L. Alge is assistant professor in the Department of Biomedical Engineering at Texas A&M University. His research is in biomaterials, with an emphasis on applications in tissue engineering and regenerative medicine. However, his interests span from fundamental studies on biomaterial chemistry and characterization to translational research. The goals of Dr. Alge’s research group are to understand how biomaterial properties influence biological processes and to simply engineer better biomaterials. The lab specializes in hydrogels due to their diverse biomedical applications. Current projects are focused on the chemistries used to fabricate and functionalize hydrogels and the incorporation of stimulus-responsive chemical functionalities to enable tunable, dynamic changes to the material properties. These materials are being used to engineer cellular microenvironments for musculoskeletal tissue engineering, to understand the role of microenvironmental factors in infectious disease, for drug delivery, and to develop implantable biosensors. 
+809	Brian E. Applegate	Dr. Brian E. Applegate is associate professor  in the Department of Biomedical Engineering at Texas A&M University. His research interests are broadly to develop novel biophotonic technologies and apply them to the diagnosis and monitoring of human disease as well as the basic scientific understanding of human disease.
+810	Brian E. Applegate	He is the director of the Laboratory for Optical and Molecular Imaging. Researchers in the lab work on developing novel technologies related to Optical Coherence Tomography, Photoacoustic Microscopy, Fluorescence Lifetime Imaging, and Confocal Microscopy. Diseases of the ear and atherosclerosis are two areas of particular interest to the group. The work is highly interdisciplinary and involves strong collaborations with other research groups at Texas A&M, the Department of Otolaryngology at Stanford University, and the Texas Heart Institute.
+811	Saurabh Biswas	Dr. Biswas has over 15 years of combined experience in medical technology innovation, healthcare entrepreneurship and new ventures portfolio management. His primary research interests are in applying the principles of cardiovascular mechanics in identification and subsequent design and development of medical devices to treat heart failure and similar complex pathologies of cardiovascular system. As Entrepreneur-in-residence he plays a critical role in identification of research & technology platforms with disruptive potential and execute strategies to accelerate commercialization. To enhance hands-on entrepreneurship training and education, he plays a key role in both mentoring and bringing NSF I-corps programs to students and faculties across A&M.
+812	Saurabh Biswas	Prior to joining Texas A&M Engineering, Dr. Biswas was the Director of New Ventures at Texas A&M University System and was directly involved in venture creation, portfolio management and start-up investments. In that capacity, he led all aspects of divisional operations, due diligence, venture formation, and equity investments. During his tenure over 60 start-up companies were created that raised more than $150M of outside capital. He has also led multinational teams to facilitate very large strategic initiatives across Texas A&M University System where over $350M in funding has been successfully obtained through public-private partnership creating a global leadership position in vaccine and therapeutic manufacturing. Dr. Biswas is an innovator and entrepreneur with extensive experience building venture funded technology based companies from conceptual stages. He has co-founded three healthcare companies; CorInnova (cardiac assist device), Shape Memory Medical (shape memory foam based devices) and Cologenomics (cancer biomarker). He has been involved from founding stages either as an inventor or key management developing strategies with hands-on involvement in all aspects of team & venture development, product roadmaps, regulatory strategy, IP and capital raising process. 
+813	Saurabh Biswas	Dr. Biswas’s innovation and entrepreneurial efforts have been recognized by multiple awards in academic and global business forums. He was the recipient of the Michael E. DeBakey scholarship in cardiovascular sciences and co-inventor of a novel adjustable cardiac support and recoil device for treating systolic and diastolic heart failure. The invention presently being commercialized has resulted in multiple issued and pending patents in US, Japan and Europe.  
+814	Alan Brewer	Alan Brewer is a professor of practice in Biomedical Engineering at Texas A&M University since January 2014. Mr. Brewer focuses on teaching about Medical Device regulations and how these are employed to optimize the path to market for new technologies. He has recently become more involved with the Department’s ‘Capstone Design’ courses.   
+815	Alan Brewer	Before joining Texas A&M, Brewer served as assistant director of the Center for Technology and Innovation at the Texas Heart Institute (Houston, TX) where he managed two teams of physician-led-researchers pursuing novel concepts across an array of device technologies in cardiovascular medicine. In this role, he supported these teams by acting as a bioengineering resource contributing to their engineering efforts, directing the patenting of inventions coming from these project teams; proposing new studies for sponsorship; managing  the negotiation of sponsored research agreements; creating research budgets and protocols;  monitoring each team’s progress against its research goals, and reporting to various grant agencies and sponsors.  Alan managed and assisted the publication activities resulting from this research and maintained compliance of each team’s various studies with institutional and governmental regulations. He has contributed to more than 45 abstracts and publications in his field. 
+816	Alan Brewer	Brewer holds four patents on medical devices and cardiac pacing products. Brewer also has held leadership and management positions for more than 25 years with several large medical device firms, specializing in cardiac rhythm management devices, ambulatory heart monitors, bedside monitors, and in-vitro diagnostics analyzers. When Brewer was responsible for strategic marketing at Intermedics, the company successfully increased both sales and profits for seven consecutive years, achieving successive new records for both financial measures. Marketing initiatives designed and managed by Brewer have captured annual ‘IR top 100’ awards and annual corporate marketing creativity awards.
+817	Elizabeth Cosgriff-Hernandez	Dr. Elizabeth Cosgriff-Hernandez is associate professor in the Department of Biomedical Engineering at Texas A&M University. Her laboratory specializes in the development of polymeric biomaterial scaffolds for tissue engineering applications.
+818	Elizabeth Cosgriff-Hernandez	Biomaterial synthesis is complemented by the development of new fabrication strategies that improve the ability to manipulate 3D scaffold architecture. In addition to providing improved scaffolds for tissue repair, these innovative biomaterials and fabrication strategies provide new tools to probe the complex process of tissue remodeling in order to enhance the rational design of biomaterial scaffolds and guide tissue regeneration strategies.
+819	Gerard L. Coté	The research is multidisciplinary and involves several investigators from across the world including medical doctors, life science faculty, faculty from other engineering disciplines, national laboratory staff and industry personnel.
+820	John C. Criscione	Dr. John C. Criscione is associate professor in the Department of Biomedical Engineering at Texas A&M University. Dr. Criscione’s research focuses on how mechanics – the study of force and motion in matter – applies to the biology of the heart and how to utilize such knowledge to obtain better clinical outcomes. Toward this end, state-of-the-art modeling tools are essential for representing the mechanical behavior of biological tissues, and Dr. Criscione has made fundamental contributions to the non-linear field theories of mechanics.
+821	John C. Criscione	In order to translate research discoveries into therapies for heart failure, Dr. Criscione is an active inventor and entrepreneur. As a founder of CorInnova, an early stage medical device company, he has firsthand knowledge of the medical device industry – experiences that he uses to guide his research and teaching in the research, development, design and regulation of medical technologies.
+822	Akhilesh K. Gaharwar	Dr. Akhilesh K. Gaharwar is assistant professor in the Department of Biomedical Engineering at Texas A&M University. His “Inspired Nanomaterials and Tissue Engineering (iNanoTE) Laboratory” focuses on designing, developing and integrating biomimetic nanostructures and stem cells for functional tissue engineering that have potential for clinical translation.
+823	Akhilesh K. Gaharwar	His research spans diverse fields, including materials science, chemistry, stem cells biology and microfabrication of polymeric biomaterials and nanocomposites. Specifically, his laboratory is developing biomimetic nanomaterials with native interface tissue-like gradient in physical and chemical properties; integrating advanced micro- and nano- fabrication technologies to mimic native interface tissue architecture; and directing stem cell behavior to obtain regionalized tissue constructs in vitro and in vivo. This integrated approach brings together a range of seemingly disparate disciplines that will address some of the complexity associated with engineering functional tissue interfaces in a manner that is otherwise not possible.
+824	Akhilesh K. Gaharwar	Current projects are focused on designing “bioactive” nanomaterials for regenerating damaged tissue interfaces; developing vascularized network; and devising new therapeutic strategies, especially in musculoskeletal applications.
+825	Melissa A. Grunlan	Dr. Melissa A. Grunlan is associate professor and director of undergraduate programs in the Department of Biomedical Engineering at Texas A&M University. Her laboratory focuses on developing new polymeric biomaterials for medical devices and regenerative therapies (i.e. tissue engineering).
+826	Melissa A. Grunlan	“Hybrid” systems based on combining inorganic and organic polymers are produced as coatings, hydrogels, elastomers and porous foams. Chemical, surface, mechanical and thermal properties are evaluated with a variety of techniques.
+827	Melissa A. Grunlan	Current projects are focused on developing self-cleaning membranes for implanted biosensors, clot-resistant coatings for blood-contacting devices and scaffolds for bone repair and for the regeneration of osteochondral interfaces.
+828	Anthony Guiseppi-Elie	Persistence and perseverance, vim and verve
+829	Anthony Guiseppi-Elie	Bioelectronics and Organic Electronics: The synthesis and characterization of chemically and biologically responsive materials such as CNT-Enzyme supramolecular conjugates, CNT-conductive electroactive polymer (CEP) composites and their integration with CMOS technology such as in Enzyme-FETS and chemoresistors used in multi-element arrays such as electronic tongue and electronic nose.
+830	Anthony Guiseppi-Elie	Biochips and Biofuel Cells: The development of implantable biochips for physiologic status monitoring. Research aims to integrate biotransducers, mixed signal electronics, low power devices and wireless communications into clinically relevant systems for monitoring during trauma and surgery and for monitoring in the intensive care unit (ICU).
+831	Anthony Guiseppi-Elie	Nano and Microfabrication and BioMEMS: Design and fabrication of interdigitated arrays, microdisc arrays and arrays of arrays for biological detection. Integration of arrays into biomedical diagnostic devices. The use of under potential electrodeposition to control the nanotopography, catalytic properties and interfacial impedance properties of metal/tissue interfaces.
+832	Anthony Guiseppi-Elie	Transdisciplinary research is along a continuum from fundamental investigations of length-scale influences of biomaterials properties through preclinical testing of diagnostic devices in piglets. Collaborations are with the Tripler Army Medical Research Center (Honolulu) and the Medical University of South Carolina.
+833	Balakrishna Haridas	During his career, Dr. Haridas has raised and directed more than $70 Million in funding for product R&D and commercialization from industry, government (NSF/NIH) and venture capital sources. He is a member of multiple societies, has served as editor and reviewer for many journals and won several academic awards at the University of Cincinnati. He also is a juror for the prestigious Medical Design Excellence Awards, holds several patents, has published a number of peer-reviewed articles and given dozens of conference and keynote presentations.
+834	Wonmuk Hwang	Dr. Wonmuk Hwang is an associate professor in the Department of Biomedical Engineering at Texas A&M University. Dr. Hwang studies dynamics of biomolecules that carry out essential functions in the human body, for which he uses computer simulation and theoretical analysis as main research modality. Biomolecular simulation utilizing supercomputers plays an increasingly important role in frontier biomedical research.
+835	Wonmuk Hwang	Dr. Hwang explores a wide range of problems including: motor proteins that carry out intracellular transport and cell division; mechanics of biofilament assemblies; molecular basis for the adaptive immune system; and automated bioimage analysis and model building. With strong collaboration with experimentalists, Dr. Hwang advances fundamental knowledge in biology and biophysics that in turn may lead to novel therapeutics and biotechnology applications.
+836	William A. Hyman	Dr. William A. Hyman is emeritus professor in the Department of Biomedical Engineering at Texas A&M University. His research and professional activity focus on medical device design; medical device system safety and human factors; and clinical engineering.
+837	Roozbeh Jafari	Roozbeh Jafari is associate professor in the departments of Biomedical Engineering, Computer Science and Engineering and Electrical and Computer Engineering at Texas A&M University. He also is a researcher in the Center for Remote Health Technologies and Systems. His research focuses on wearable computer design and signal processing with applications in health care, wellness and enhancing productivity and safety of the users. His research has been funded by the National Science Foundation, National Institutes of Health, the U.S. Army's Telemedicine & Advanced Technology Research Center, the U.S. Air Force Research Laboratory, the Air Force Office of Scientific Research, The Defense Advanced Research Projects Agency, SRC and industry (Texas Instruments, Tektronix, Samsung & Telecom Italia). He has published more than 100 papers in refereed journals and conferences and served as general chair and technical program committee chair for several flagship conferences in the area of wearable computers, including the Association for Computing Machinery Wireless Health 2012 and 2013, International Conference on Body Sensor Networks 2011 and International Conference on Body Area Networks 2011.
+838	Abhishek Jain	Dr. Jain directs the Bioinspired Translational Microsystems (BioinSyst) lab that specializes in making patient-specific and digital microengineered models of cardiovascular and hematologic diseases for enabling basic discovery and advancing smart analytical technologies for precision and personalized healthcare.
+839	Abhishek Jain	The overarching theme of Dr. Jain’s interdisciplinary lab is to harness the basic knowledge and tools offered by cell and molecular biology, biomechanics, microfabrication technology, biomaterials, and mathematics, in order to reconstruct the in vivo functionality of human tissues and organs in microfluidic devices (organs-on-chip), where the solid and fluid forces can be reconstituted at physiological spatial and temporal scales. Importantly, the observations made by analyzing the complex intercellular signaling are digitized so that these synthetic organs are transformed into automated sensors and actuators for translational applications.
+840	Abhishek Jain	The BioinSyst lab is currently specifically focused in the hemodynamics within organs-on-chip and reproduce pathophysiological interactions between the blood cells and the vessel wall (endothelium) under flow to derive a systems biology perspective of the vascular system. These efforts are leading to the development of novel diagnostic and clinically-relevant microsystems that assess vascular and platelet function, hemostasis and thrombosis.
+841	Javier Jo	Dr. Javier Jo is associate professor in the Department of Biomedical Engineering at Texas A&M University. The overall mission of his laboratory is to develop technologies that could aid in the understanding of the underlying physiology and biology of various pathological conditions, and to translate such technologies into the clinical arena.
+842	Javier Jo	The focus of the Jo laboratory is to develop optical spectroscopy and imaging technologies and related signal and image processing tools for quantifying nondestructively the morphology, molecular composition, and physiological state of biological tissues with both macroscopic and microscopic resolutions.
+843	Javier Jo	Early tissue pathological transformation are accompanied by subtle changes in tissue microstructure, biochemical composition and physiological regulations. Thus, the laboratory hopes that some of its developing technologies will help to clinically detect diseases during their early stages as well as to guide, monitor and personalize clinical interventions.
+844	Javier Jo	Current projects in Dr. Jo’s lab are mainly focused on developing multimodal rigid and flexible endoscopes for molecular and structural imaging of oral epithelial pre-cancer and cancer, and coronary atherosclerotic plaques.
+845	Roland R. Kaunas	Dr. Roland Kaunas is associate professor in the Department of Biomedical Engineering at Texas A&M University. His laboratory focuses on the engineering of micro-tissues containing mesenchymal stem cells as vehicles for regenerating musculoskeletal tissues and as cell-based models for studying bone tumor biology. This work employs sophisticated microfluidic platforms, custom bioreactors, and novel scaffolding strategies involving composites of natural and synthetic polymers.
+846	Roland R. Kaunas	Dr. Kaunas’ group also studies how mechanical stresses and strains, such as tensile stretch and fluid shear stress, regulate cell function in vascular tissues including arteries, capillaries and lymphatics. This work involves integration of experiments and theory to elucidate the roles of intracellular contractility, applied forces and scaffold material properties on cell architecture and transduction of mechanical stimuli into intracellular signals leading to changes in cell behavior.
+847	Michael L. Madigan	Dr. Michael L. Madigan is professor in the Department of Biomedical Engineering at Texas A&M University. In a broad sense, Dr. Madigan and his group study the dynamics and neuromuscular control of human movement. Both human subject experimentation and computer modeling are used to address their research goals.
+848	Kristen Maitland	Dr. Kristen Maitland is associate professor and associate head in the Department of Biomedical Engineering at Texas A&M University. Her research focuses on the development of optical instrumentation for improved detection and diagnosis of disease, primarily cancer and bacterial infection.
+849	Kristen Maitland	To improve detection of early cancer, Dr. Maitland’s lab has developed a multi-scale multi-modal optical imaging system currently being evaluated in a clinical trial. Fluorescence lifetime imaging is used for macroscopic guidance, followed by reflectance confocal microscopic detection of cellular changes associated with precancer development. Technical advances focus on miniaturization of the device and increased scanning speed using a tunable focus lens or spectral encoding of depth.
+850	Kristen Maitland	Dr. Maitland is developing optical sensing and imaging technologies to enable rapid diagnosis of bacterial infection, specifically tuberculosis. Optical fibers are used to excite fluorescence of novel near-infrared optical reporters inside the lung to detect and measure levels of bacterial infection. Fluorescence signal can either be detected from outside the body in small animals or through an optical fiber or fiber microendoscope.
+851	Mary P. McDougall	Dr. Mary Preston McDougall is associate professor in the Department of Biomedical Engineering at Texas A&M University. Her research is dedicated to creating hardware-based solutions to extend the capabilities of magnetic resonance imaging & spectroscopy (MRI/MRS), providing previously inaccessible approaches to understanding disease.
+852	Mary P. McDougall	Dr. McDougall’s group is working to develop hardware and techniques for imaging and spectroscopy of humans at high magnetic fields, where the increased signal offers access to previously unexplored aspects of disease, but where it becomes challenging to work with the associated higher frequencies in the human body. 
+853	Mary P. McDougall	Her lab also applies parallel imaging technology to increase the sensitivity of imaging and spectroscopy experiments. This increase can be used to explore low-abundance chemicals in the body to characterize disease, or it can be used to speed the acquisition time of MR imaging in order to extend MRI into areas where it has previously been too slow to have an impact.
+854	Mike McShane	Dr. Mike McShane is professor and director of graduate programs in the Department of Biomedical Engineering at Texas A&M University. His laboratory focuses on the modeling, design, fabrication and testing of small-scale analytical devices, particularly photoluminescent biosensors.
+855	Mike McShane	Dr. McShane’s research and educational activities cover many areas of biomedical engineering, including biomaterials, molecular biology, biomedical optics, biotransport, bioinstrumentation, signal processing and medical device design.
+856	Raimund J. Ober	Dr. Raimund J. Ober is professor in the Department of Biomedical Engineering and the Department of Molecular and Cellular Medicine at Texas A&M University. His research interests relate to the development and application of engineering principles to problems in molecular/cellular biology, cancer therapeutics and immunology. 
+857	Raimund J. Ober	Of particular interest is the development of new microscopy techniques and, more specifically, single molecule microscopy approaches. His theoretical and experimental investigations of the classical resolution problem showed that there is no resolution limit in a microscope, but that distances well below those estimated by Rayleigh’s criterion can be resolved.
+858	Raimund J. Ober	He has pioneered the development of a new microscopy modality, multifocal plane microscopy, to enable the study of fast cellular transport processes in three dimensions. Using microscopy and other techniques, his research group and collaborators investigate the dynamics and transport of new therapeutics and their interactions with their target proteins in a cellular context; for example, engineered antibodies that target tumor cells. The main areas of application are cancer biology and immunology, autoimmunity, etc. They also have studied the molecular basis for the transport of therapeutic agents to specific subcellular compartment and related questions in pharmacokinetics.
+859	Vladislav V. Yakovlev	Dr. Vladislav V. Yakovlev is professor in the Department of Biomedical Engineering at Texas A&M University and Fellow of the Optical Society of America, the American Institute of Medical and Biological Engineering and the International Society for Optics and Photonics.
+860	Alvin T. Yeh	Dr. Alvin T. Yeh is associate professor in the Department of Biomedical Engineering at Texas A&M University. His research primarily focuses on development of novel microscopies based on ultrashort optical pulses and coupling these microscopies with enabling tools and reagents to better understand regenerative tissue engineering and vertebrate neural development.
+861	Alvin T. Yeh	Unique to Dr. Yeh’s research efforts is the utilization of femtosecond laser pulses that are one hundred-thousandth of one billionth of a (10-14) second in duration. Properties of optical pulses of such short duration are exploited to enhance signal generation for imaging, develop multimodal microscopy with complementary contrast mechanisms, and perform live cell multimolecular imaging of complex biological systems. For tissue engineering, these capabilities are integrated with custom bioreactors to better understand the development of tissue properties at the molecular and cellular level in response to mechanical and chemical culture environments.
+862	Alvin T. Yeh	Ultrashort optical pulses are utilized also in the development of novel microscopy platforms to study neural development in vertebrate embryos. In the developing central nervous system, progenitor cell populations are partitioned into compartments and gradually refined into functional sub-domains. The unique capabilities of ultrashort pulse microscopy are used to identify and understand how distinct progenitor populations interact to form functional units of the brain.
+863	Mustafa Akbulut	The Akbulut Lab is involved in research in various areas of nanotechnology, surface and interface science, with a special focus on the areas of drug delivery, biomedical interfaces, tribology, surface and intermolecular forces, colloidal stabilization, and crystallization.
+864	Perla Balbuena	Catalysis on metal nanoparticles for fuel cell electrocatalysts
+865	Perla Balbuena	Catalyzed growth of single-walled carbon nanotubes
+866	Perla Balbuena	Gas separation and storage in metal organic frameworks
+867	Perla Balbuena	Solid-electrolyte interphase layer nucleation and growth in Si and carbon anodes of Li-ion batteries
+868	Dragomir Bukur	chemical reaction engineering and catalysis
+869	Dragomir Bukur	Conversion of coal (or natural gas) derived synthesis gas to transportation fuels and chemical feedstocks via Fischer - Tropsch synthesis
+870	Dragomir Bukur	catalyst synthesis
+871	Dragomir Bukur	catalyst testing in fixed bed and stirred tank slurry reactors
+872	Dragomir Bukur	kinetic and reactor modeling
+873	Dragomir Bukur	catalyst characterization by a variety of physico-chemical methods
+874	Zhengdong Cheng	Nucleation
+875	Zhengdong Cheng	NIPAM Crystal
+876	Zhengdong Cheng	NIPAM Gel
+877	Zhengdong Cheng	Electrospray
+878	Zhengdong Cheng	Wax Rods
+879	Zhengdong Cheng	Cell Encapsulation
+880	Zhengdong Cheng	Simulation
+881	Zhengdong Cheng	Electro-Microfluidics
+882	Zhengdong Cheng	BZ Reactions
+883	Zhengdong Cheng	Laser Tweezer
+884	Yossef Elabd	Electrochemical Energy (Fuel Cells, Capacitors, Batteries)
+885	Yossef Elabd	Polymers (Ionic Polymers, Block Copolymers, Polymer Membranes, Polymer Nanofibers, Transport and Thermodynamics in Polymers)
+886	Mahmoud El-Halwagi	Process synthesis, simulation, design, operation, integration, optimization and product design.
+887	Mahmoud El-Halwagi	Development of systematic methodologies that enable chemical engineers to identify optimum, sustainable and creative strategies that lead to productivity enhancement, yield improvement, debottlenecking, pollution prevention and energy conservation.
+888	Mahmoud El-Halwagi	Sustainable design of integrated biorefineries, oil and gas processes, and chemical process industries.
+889	Charles Glover	Asphalt materials rheological properties, oxidation kinetics, and developing a thermal and oxygen transport model for the oxidation of asphalt binders in pavements.
+890	Charles Glover	Effects of binder oxidation on pavement performance such as age-related fatigue cracking, aggravated by binder oxidation.
+891	James Harris	\N
+892	M. M. Faruque Hasan	We are interested in developing application-oriented theory, computational tools, algorithms, and optimization methods for complex and multi-scale systems. The methodologies and tools that we develop are applied to the design and discovery of advanced materials and processes for sustainable fuels and chemicals, carbon capture, oil & gas processing, and shale gas utilization, among others.
+893	M. M. Faruque Hasan	Multi-scale Systems Engineering for Energy and the Environment
+894	M. M. Faruque Hasan	Often the discovery and design of novel pathways depend on addressing systems which are complex and vary across different time- and length-scales. Trade-offs between various competing objectives (eg., selectivity vs. product purity vs. process cost) can be properly elucidated through multi-scale systems engineering. We develop methods to simultaneously address multiple and often contradicting factors at materials, process and supply chain levels.
+895	M. M. Faruque Hasan	Modeling and Optimization of Complex Systems
+896	M. M. Faruque Hasan	Complex systems can be chemical, biochemical or biological. Examples of complex systems vary from enzyme complexes to biological cells to process plants to supply networks. Compared to conventional process systems engineering, where systems are often considered to be well-described using suitable models and mathematical programs, complex systems are difficult to optimize due to their complexity, uncertainty, and the inability to generate accurate data using physical and/or computational experiments in reasonable time. Many fundamental challenges need to be resolved for accurate model prediction, control and optimization. We are currently working on developing theoretical, computational and algorithmic frameworks for complex systems optimization.
+897	M. M. Faruque Hasan	CO2 Capture, Utilization, and Storage (CCUS)
+898	M. M. Faruque Hasan	CCUS is an enabling technology toward clean energy from fossil fuels. While material selection is crucial for CO2 capture, the industrial scale deployment of CCUS requires material-, process- and supply chain network-level developments. Our work in CCUS extends across all three levels. Our aim is to design and discover materials and processes to reduce CO2 emissions in the most cost-effective manner.
+899	M. M. Faruque Hasan	Modeling and optimization of complex systems
+900	M. M. Faruque Hasan	Multi-scale systems engineering for energy and the environment
+901	M. M. Faruque Hasan	CO2 capture, utilization and storage
+902	M. M. Faruque Hasan	Grey-box and black-box systems
+903	M. M. Faruque Hasan	Nonlinear and nonconvex optimization, discrete/continuous optimization
+904	James Holste	correlations for thermodynamic properties and thermocatalytic process for chemical feedstocks using large hydrocarbons.
+905	Mark Holtzapple	Bio-based fuels and chemicals, food and feed processing, water desalination, air conditioning, high-efficiency engines, jet engines and vertical-lift aircraft. 
+906	Mark Holtzapple	Developed a wide variety of technologies, including conversion of alcohol fuels from biodegradable wastes and protein sugar recovery from energy cane. In addition, he has developed the StarRotor engine, which is three times more efficient than the conventional internal combustion engine.
+907	Mark Holtzapple	The MixAlco Process™ – A lignocelluloses route to chemicals and fuels
+908	Mark Holtzapple	SoluPro™ – Converts waste protein into adhesives and feed additives
+909	Mark Holtzapple	AdVE™ – An Advanced Vapor-compression and Evaporation technology used for desalinating brackish and salt water into potable water.
+910	Arul Jayaraman	Molecular systems biotechnology, specifically on using integrated experimental and modeling approaches for investigating problems in human health and medicine
+911	Arul Jayaraman	Systems biology of cytokine signaling in inflammatory diseases
+912	Arul Jayaraman	Inter-kingdom signaling interactions between bacteria and human cells in GI tract infections
+913	Arul Jayaraman	Development of microfluidic model systems for combinatorial drug screening and vascular tissue engineering
+914	Hae-Kwon Jeong	Development of novel methodologies to design, modify, deposit and microfabricate nanostructured materials and to build them into hierarchical structures and complex forms for wide ranges of applications including separation membranes, selective catalysts, adsorbents as well as micro systmes, fuel cells, bio-separation, micro photonics, etc.
+915	Katy Kao	Dr. Kao's research focuses on genomics, systems biology and biotechnology. Her laboratory is interested in using genomic and system biological tools to study microbial adaptation in various environments. Specifically, Kao is focusing on evolving microorganisms such as yeast and E. coli for enhanced tolerance to the toxicity of desired bioproducts such as biofuels. She also is utilizing ultra-high throughput sequencing technology along with related tools to study the transcriptome and the metabolism in an effort to identify the cellular components responsible for the selected traits.
+916	M. Nazmul Karim	Advanced Data Analysis
+917	M. Nazmul Karim	Control & Optimization of Chemical and Bio-Processes
+918	M. Nazmul Karim	Bio-Fuels Production Using Recombinant Microorganisms
+919	M. Nazmul Karim	Metabolic Engineering
+920	M. Nazmul Karim	Design & Production of Glycol-Proteins in CHO Cell Culture
+921	M. Nazmul Karim	Diabetic & Cardiovascular Diseases
+922	Homa Khosravian	Biosynthesis of nanomaterials
+923	Homa Khosravian	Environmental health and safety of engineered nanomaterials
+924	Homa Khosravian	Heterogeneous Catalysis
+925	Costas Kravaris	Nonlinear Systams and Process Control
+926	Yue Kuo	Nano and microelectronics with special interests in semiconductor materials, processes and devices as well as thin films and plasma technology.
+927	Yue Kuo	New materials, novel processes and advanced devices with the ultimate goal of creating high-performance, highly reliable, manufacturable devices for current and future applications.
+928	Yue Kuo	Devices under studies are TFTs, ULSIC, SSI-LEDs, solar cells, bio and optical sensors, etc.
+929	Joseph Sang-II Kwon	Dr. Kwon’s research focuses on the development of techniques for the modeling, simulation, and control of multiscale processes which are characterized by highly coupled phenomena occurring at disparate spatial and temporal scales. Specifically, Dr. Kwon is applying these techniques to crystallization, chemical vapor deposition, and hydraulic fracturing processes leading to new insights and addressing industrial concerns.
+930	Pushkar Lele	About Pushkar Lele Research Group:
+931	Pushkar Lele	We combine sensitive biophysical techniques such as single-molecule fluorescence and force-spectroscopy with mechanistic modeling and molecular genetics to study bacterial motility, adaptability and antibiotic resistance.
+932	Pushkar Lele	Cell Mechanics
+933	Pushkar Lele	We are studying the physics underlying mechanical triggering of cell-development by mechanosensitive enzymes. Our recent work identified the enzymes responsible for detecting mechanical signals in transmembrane macromolecules (Lele et al., PNAS 2013). Currently, we focus on determining how individual cells engineer systems that are responsive to mechanical forces, and regulate biochemical signaling networks. These projects are crucial in developing counters against colonization and infections.
+934	Pushkar Lele	For these projects, we employ novel approaches based on optical-tweezers, laser dark-field microscopy and fluorescence microscopy to probe the dynamics of function, as well as structure, in individual molecular motors (please visit group page).
+935	Pushkar Lele	Biofluid Dynamics and Antibiotic Resistance
+936	Pushkar Lele	Bacteria possess well-known abilities to respond to environmental signals and rapidly adapt. Motility or cell-swimming helps bacteria respond to chemical signals in their native environment through a process known as chemotaxis.
+937	Pushkar Lele	In our recent work, we have uncovered a paradox associated with cell-motility (Lele et al., Nature Physics,2015). In cells carrying single flagella (helical filaments that linearly couple flagellar-motor rotation to the cell's translational motion), motors exhibit torque-anisotropy with respect to direction. However, corresponding swimming-speed data appear inconsistent with time-reversibility of Stoke's equations, which form the cornerstone of current understanding of motion at low-Reynolds numbers. To understand the basis for such differences, we are investigating how biopolymer properties govern motile responses. Other projects focus on the rise of antibiotic resistance through cell-cell hydrodynamic interactions.
+938	Pushkar Lele	Biological/Soft-Matter Assembly
+939	Pushkar Lele	Self-assembly drives the formation of all biological systems, including a variety of nano-devices within living cells. Bacteria are colloids and brilliant nanotechnologists! One of the significant problems we are interested in solving are the unknown mechanisms underlying rapid self-assembly, in live cells, which govern short-time cell-adaptation. Lessons learnt from nature will be extended to develop new nanotechnologies for building synthetic bio-sensors and actuators, as well as drug delivery systems.
+940	M. Sam Mannan	Abnormal situation management
+941	M. Sam Mannan	Aerosol research
+942	M. Sam Mannan	Inherently safer design
+943	M. Sam Mannan	Quantitative risk assessment
+944	M. Sam Mannan	Reactive chemicals
+945	M. Sam Mannan	Modeling of silane releases
+946	M. Sam Mannan	LNG safety and design
+947	M. Sam Mannan	Flammability research
+948	Chad Mashuga	Flammability – new experimental methods capable of producing quality flammability data for the development of predictive models at industrially relevant temperature, pressure, composition and turbulence. Includes methods for minimum ignition energy testing and its modeling. Applications results in energy and waste reduction, enhanced production and a realistic safety understanding. Application to traditional industrial flammability concerns as well as future applications including hydrogen.
+949	Chad Mashuga	Dust Explosions – advance current experimental methods capable of producing quality explosion data for dust and hybrid dust/flammable mixtures at industrially relevant temperature, pressure, composition and turbulence. Includes hybrid dust explosions and minimum ignition energy study. Utilize high quality data for development of predictive models to determine true dust hazards. Applications results in energy and waste reduction with enhanced production and safety.
+950	Chad Mashuga	o Flexible testing capabilities for high energy materials and high risk reactions
+951	Chad Mashuga	o Develop large scale equipment for the fundamental modeling of blast effects and overpressures on complex industrial structures, equipment & personnel
+952	Chad Mashuga	o Large scale aerosol flammability testing
+953	Chad Mashuga	o DOT & UN package classification testing
+954	Chad Mashuga	Calorimetry – develop new commercial calorimeters capable of fast, bench top or portable chemical compatibility testing. Develop new commercial calorimeter which has a combination of features not found in any current system. Develop new experimental methods and predictions capable of improving safe storage and aging dynamics and better models of lithium-ion cell safety & design
+955	Chad Mashuga	Internal Combustion – integration of hydrogen and other fuels in traditional and modified internal combustion engines. Safety and performance of blended fuels including bio-diesel and ethanol.
+956	Efstratios Pistikopoulos	The objective of my research programme is to develop fundamental theory and optimization based methodologies and computational tools that enable process engineers to analyze, design and evaluate process manufacturing systems which are economically attractive, energy efficient and environmentally benign, while at the same time exhibit good performance characteristics like flexibility, controllability, robustness, reliability and safety. Our research involves three main strands:
+957	Efstratios Pistikopoulos	Process synthesis and the environment: Here we are concerned with the development of process integration and pollution prevention strategies for the design and operation of plant-wide sustainable processes. Novel process synthesis modelling concepts are explored together with life-cycle and environmental impact assessment aspects, leading to new designs which feature step-change improvements in energy efficiency, waste minimization and process sustainability.
+958	Efstratios Pistikopoulos	Integration of operability objectives in process design and operation: Our work here has centered on the development and implementation of novel analytical tools to simultaneously assess process flexibility, controllability, robustness, reliability and availability of complex process manufacturing systems and the systematic incorporation of these tools at the design and operational level.
+959	Efstratios Pistikopoulos	Process optimization under uncertainty - theory, algorithms and applications: Here we develop the fundamental underlying mathematical theory, numerical algorithms and efficient computational tools for the solution of multi-parametric and stochastic mixed integer optimization problems, which arise in the context of the work described in the other two research strands.
+960	Jorge Seminario	nanotechnology
+961	Jorge Seminario	analysis, design and simulation of systems and materials of nanometer dimensions, especially those for the development of nanosensors and molecular electronics
+962	Jorge Seminario	design smaller electronic devices and other systems in order to increase their efficiency, speed and energy savings, as well as reduce their costs.
+963	Jorge Seminario	Has developed new scenarios for molecular devices and systems using molecular potentials and molecular vibrations for processing and transport of information at nanometer scales.
+964	Phanourios Tamamis	Computational methods, including molecular dynamics (MD) simulations and free energy calculations, are increasingly becoming powerful tools in the fields of protein structure prediction and de novo protein design. Despite the continuous advancement of experimental methods, computational tools have proved to be of utmost importance to fill crucial “gaps”, obtain information that is not accessible from experiments, and lead to the discovery of novel biomaterials and therapeutics.
+965	Phanourios Tamamis	Through the development of novel multidisciplinary computational strategies, combining biophysical-chemistry and engineering principles, our research primarily focuses on the elucidation of the structures of key biomolecular complexes associated with specific diseases including cancer, Alzheimer’s and diabetes and the design of novel compounds that can potentially serve as therapeutics. In addition, our research deals with the design of novel biomaterials with advanced medical or technological applications
+966	Phanourios Tamamis	Designing amyloid formation inhibitors to treat amyloid diseases:
+967	Phanourios Tamamis	Amyloid deposition in human tissue is associated with a number of diseases including all common dementias and type II diabetes. A critical initial step to prevent amyloid fibril formation is to delineate the self-assembly properties and provide insights into the structure of amyloid fibrils of the associated peptide or protein in each disease. Our research aims at (i) elucidating the amyloid structures formed by amyloidogenic peptides and proteins, and (ii) designing peptidic and non-peptidic inhibotors of amyloid formation, as potential therapeutics for amyloid diseases, including Alzheimer’s, Parkinson’s and diabetes diseases.
+968	Phanourios Tamamis	Engineering novel peptide self-assembled bio-nanomaterials with promising applications in biomedicine and nanotechnology:
+969	Phanourios Tamamis	Computational methods possess the capacity to provide atomic-level insights into the β-sheet structural organization of amyloid-forming self-assembled peptides, and peptide-based nanostructures. Our research aims at exploiting the self-assembly properties of self-assembling peptides and proteins to engineer novel peptide self-assembled bio-nanomaterials with promising biomedical or nanotechnological applications.
+970	Phanourios Tamamis	Designing novel peptide inhibitors to dissociate key protein complexes involved in tumor-associated pathways:
+971	Phanourios Tamamis	Targeting protein axes which constitute convergent nodes in pathways selectively activated in pathological angiogenesis and tumor cells may prove equivalent to a combination of drugs blocking multiple receptors involved in cancer. Our research aims at designing novel peptidic and non-peptidic inhibitors that bind to key proteins and may potentially serve as novel promising tumor therapeutics.
+972	Phanourios Tamamis	Designing amyloid formation inhibitors to treat amyloid diseases
+973	Phanourios Tamamis	Engineering novel peptide self-assembled bio-nanomaterials with promising applications in biomedicine and nanotechnology
+974	Phanourios Tamamis	Designing novel peptide inhibitors to dissociate key protein complexes involved in tumor-associated pathways
+975	Victor Ugaz	• Learning how to control transport of charged biomolecules (DNA,  proteins) in micro- and nano-scale surroundings to achieve faster and more efficient separations
+976	Victor Ugaz	• Harnessing microscale convective flow fields to execute thermally driven biochemical reactions such as the polymerase chain reaction (PCR) in a faster and more efficient manner
+977	Victor Ugaz	• Designing novel geometries to mix chemical species in microchannels by exploiting secondary flow phenomena
+978	Victor Ugaz	• Developing new techniques that help understand how to manipulate and tailor the bulk properties of hydrogels by controlling their nanoporous morphology
+979	Victor Ugaz	• Constructing 3D vascular networks for biomedical applications using novel manufacturing methods
+980	Sreeram Vaddiraju	Development of novel vapor phase techniques for the synthesis of organic and inorganic nanostructures and the development and implementation of novel in-situ and ex-situ schemes for the large-scale integration of these nanostructures into energy conversion devices (e.g., solar cells, thermoelectric devices).
+981	Benjamin Wilhite	Understanding and manipulating interactions between chemical kinetics and transport processes for process intensification
+982	Benjamin Wilhite	Areas of investigation include the design of multilayer catalytic and/or permselective membranes for hydrogen extraction, synthesis of electroceramic membrane materials for hydrogen and/or oxygen separation under reactive conditions and identifying optimal integration strategies in microchemical / portable chemistry systems.
+983	Stuart Anderson	Project development (project economics)
+984	Stuart Anderson	Conceptual estimating
+985	Stuart Anderson	Risk analysis and technical planning
+986	Stuart Anderson	Advanced project management (construction engineering systems)
+987	Stuart Anderson	Project planning and estimating
+988	Stuart Anderson	Modeling and improving project management processes
+989	Stuart Anderson	Early estimating and cost management
+990	Stuart Anderson	Leading indicators to project outcomes
+991	Stuart Anderson	Innovative project delivery and contracting systems
+992	Stuart Anderson	Project process improvement through constructability and accelerated construction process strategies and techniques
+993	Stuart Anderson	The role of owners and contractors in capital projects
+994	Stuart Anderson	Front-end planning
+995	Stuart Anderson	Impact of organizational change on project development and execution processes
+996	Charles Aubeny	Foundations and anchors for offshore structures
+997	Charles Aubeny	Offshore risers and pipelines
+998	Charles Aubeny	Slopes and retaining walls
+999	Charles Aubeny	Dams and levees
+1000	Charles Aubeny	Expansive soils
+1001	Charles Aubeny	In situ testing
+1002	Charles Aubeny	Numerical methods in geotechnical engineering
+1003	Robin Autenrieth	Biodegradation and bioremediation of selected xenobiotic compounds
+1004	Robin Autenrieth	Military wastes and petroleum products
+1005	Robin Autenrieth	Bioavailability of contaminants in aqueous and soil environments
+1006	M. Katherine Banks	Applied microbial systems
+1007	M. Katherine Banks	Biofilm processes
+1008	M. Katherine Banks	Wastewater treatment and reuse
+1009	M. Katherine Banks	Phytoremediation Bioremediation
+1010	Luciana Barroso	Structural Control
+1011	Luciana Barroso	Linear and Nonlinear Dynamics of Structures
+1012	Luciana Barroso	Earthquake Engineering
+1013	Luciana Barroso	Finite Element Modeling
+1014	Luciana Barroso	Probabilistic Hazard Analysis
+1015	Luciana Barroso	Structural Health Monitoring
+1016	Bill Batchelor	Simulation, design, and operation of systems for treating water, wastewater, and hazardous wastes
+1017	Bill Batchelor	Water reuse
+1018	Bill Batchelor	Water in energy systems
+1019	Bill Batchelor	Efficient desalination and cooling water systems
+1020	Lynn Beason	Structural engineering
+1021	Lynn Beason	Research, analysis and design
+1022	Lynn Beason	Structural materials
+1023	Lynn Beason	Probabilistic design methods for structures
+1024	Lynn Beason	Wind loads on structures
+1025	Lynn Beason	Dynamic loads and structural behavior
+1026	Lynn Beason	Cladding design
+1027	Anna Birely	Reinforced concrete structures
+1028	Anna Birely	Earthquake engineering
+1029	Anna Birely	Performance-based design
+1030	Anna Birely	Fire resistance of structures
+1031	Bjorn Birgisson	\N
+1032	Joseph Bracci	Behavior
+1033	Joseph Bracci	Adequacy
+1034	Joseph Bracci	Preservation
+1035	Joseph Bracci	Sustainability of building and bridge infrastructure that are exposed to a variety of slow-forming degrading material mechanisms and also to rapid-forming hazardous environmental loading
+1036	Jean-Louis Briaud	Soil mechanics
+1037	Jean-Louis Briaud	Retaining walls
+1038	Jean-Louis Briaud	Slope stability
+1039	Jean-Louis Briaud	Pavements
+1040	Jean-Louis Briaud	Geoenvironmental engineering
+1041	Jean-Louis Briaud	Field testing
+1042	Jean-Louis Briaud	Scour around bridges
+1043	Jean-Louis Briaud	Expansive clays
+1044	Kelly Brumbelow	Water resources planning and management
+1045	Kelly Brumbelow	Agricultural water resources systems
+1046	Kelly Brumbelow	Decision support systems
+1047	Kelly Brumbelow	Climate variability and climate change effects
+1048	Kelly Brumbelow	Assessment of water resources policy
+1049	Mark Burris	Impact of pricing on travel behavior
+1050	Mark Burris	Variable/value pricing for highways
+1051	Mark Burris	Price elasticity of travel demand
+1052	Mark Burris	HOT lanes
+1053	Mark Burris	Value of travel time, benefit-cost analysis
+1054	Anthony Cahill	Hydrometeorology
+1055	Anthony Cahill	Land atmosphere interactions
+1056	Anthony Cahill	Atmospheric boundary layer
+1057	Anthony Cahill	Remote sensing, hydrology, and stochastic hydrology
+1058	Minsu Cha	Experimental geotechnics
+1059	Minsu Cha	Geophysical characterization
+1060	Minsu Cha	Sediment dissolution and erosion
+1061	Minsu Cha	Energy geotechnics
+1062	Minsu Cha	Thermal fracturing for underground resources
+1063	Minsu Cha	Natural hazard prevention/mitigation
+1064	Minsu Cha	Particulate discrete element modeling
+1065	Minsu Cha	Soil behavior
+1066	Kuang-An Chang	Wave breaking processes
+1067	Kuang-An Chang	Wave-structure interactions
+1068	Kuang-An Chang	Sediment dynamics
+1069	Kuang-An Chang	Environmental fluid mechanics
+1070	Kuang-An Chang	Non-intrusive quantitative measurement techniques
+1071	Shankar Chellam	Research interests: 
+1072	Hamn-Ching Chen	Computational fluid dynamics
+1073	Hamn-Ching Chen	Turbulence modeling
+1074	Hamn-Ching Chen	Nonlinear wave-current-body interactions
+1075	Hamn-Ching Chen	Violent free surface flows
+1076	Hamn-Ching Chen	Ship motion and multiple-ship interactions
+1077	Hamn-Ching Chen	Vortex-induced vibration of deepwater risers
+1078	Hamn-Ching Chen	Greenwater and hurricane wave loads on offshore structures
+1079	Kung-Hui Chu	Biodegradation and bioremediation
+1080	Kung-Hui Chu	Wastewater treatment and reuse
+1081	Kung-Hui Chu	Strom water runoff management
+1082	Kung-Hui Chu	Pathogen tracking and sensing
+1083	Kung-Hui Chu	Bioenergy production
+1084	Ivan Damnjanovic	Management of project development
+1085	Ivan Damnjanovic	Project finance
+1086	Ivan Damnjanovic	Construction management
+1087	Ivan Damnjanovic	Transportation infrastructure
+1088	Ivan Damnjanovic	Dynamics of reconstruction
+1089	Amy Epps Martin	Pavement materials
+1090	Amy Epps Martin	Performance and specifications
+1091	Amy Epps Martin	Sustainable pavement materials
+1092	David Ford	Sustainability in built infrastructure
+1093	David Ford	Managerial real options
+1094	David Ford	Construction as a product development process
+1095	David Ford	Project management process design
+1096	David Ford	System dynamics
+1097	Huilin Gao	Hydrometeorology
+1098	Huilin Gao	Hydroclimatology
+1099	Huilin Gao	Hydrological modeling
+1100	Huilin Gao	Remote sensing
+1101	Huilin Gao	Water resources management
+1102	Nasir Gharaibeh	Infrastructure condition assessment and deterioration modeling
+1103	Nasir Gharaibeh	Infrastructure management decision support systems
+1104	Nasir Gharaibeh	Infrastructure lifecycle analysis
+1105	Nasir Gharaibeh	Quality assurance systems for infrastructure construction and maintenance
+1106	Nasir Gharaibeh	Pavement design, preservation, and management
+1107	Zachary Grasley	Behavior and modeling of porous materials
+1108	Zachary Grasley	Durability and sustainability of cementitious materials
+1109	Zachary Grasley	Mechanics and thermodynamics of concrete
+1110	Gene Hawkins	Traffic control infrastructure.
+1111	Gene Hawkins	Retroreflectivity and visibility of traffic signs and pavement markings.
+1112	Gene Hawkins	Driver response to traffic control devices.
+1113	Gene Hawkins	Traffic engineering policy, standards, and guidelines.
+1114	Gene Hawkins	Traffic signal design.
+1115	Gene Hawkins	Work zone traffic control.
+1116	Gene Hawkins	Freeway operations.
+1117	Gene Hawkins	Historical aspects of transportation engineering.
+1118	Mary Beth Hueste	Earthquake resistant design of reinforced concrete structures
+1119	Mary Beth Hueste	Structural rehabilitation and repair including seismic retrofitting
+1120	Mary Beth Hueste	Performance-based seismic design
+1121	Mary Beth Hueste	Probabilistic assessment of structural performance
+1122	Mary Beth Hueste	Design and evaluation of prestressed concrete bridge structures
+1123	Stefan Hurlebaus	Smart Structures
+1124	Stefan Hurlebaus	Structural Health Monitoring
+1125	Stefan Hurlebaus	Nondestructive Testing
+1126	Stefan Hurlebaus	Laser Ultrasonics
+1127	Stefan Hurlebaus	Active Vibration Control
+1128	Stefan Hurlebaus	Semi-active Damping
+1129	Stefan Hurlebaus	Active Vibration Isolation
+1130	Stefan Hurlebaus	Wave Propagation in Elastic Solids
+1131	Stefan Hurlebaus	Vibrations
+1132	Ray James	Loading and durability of highway bridges and culverts
+1133	Ray James	Barriers for high-speed rail and freight rail shared rights-of-way
+1134	Ray James	Experimental mechanics
+1135	Harry Jones	Structural mechanics
+1136	Harry Jones	Optimization theory
+1137	Harry Jones	Application of operations research methodology to civil engineering systems
+1138	James Kaihatu	Ocean wave propagation
+1139	James Kaihatu	Nearshore nonlinear wave dynamics
+1140	James Kaihatu	Breaking waves
+1141	James Kaihatu	Nearshore circulation
+1142	James Kaihatu	Cohesive sediments
+1143	James Kaihatu	Data assimilation
+1144	Peter Keating	Fatigue and fracture of welded structures
+1145	Peter Keating	Structural analysis and design
+1146	Peter Keating	Experimental stress analysis
+1147	Dallas Little	Material science and engineering
+1148	Dallas Little	Asphalt technology
+1149	Dallas Little	Pavement design
+1150	Dallas Little	Soil stabilization
+1151	Dallas Little	Fracture mechanics
+1152	Dallas Little	Soil mechanics
+1153	Dallas Little	Foundation engineering
+1154	Dominique Lord	Fundamental work in traffic safety
+1155	Dominique Lord	Statistical modeling
+1156	Dominique Lord	Evaluation of Countermeasures
+1157	Dominique Lord	Crash risk
+1158	Dominique Lord	Human Factors
+1159	Dominique Lord	Transportation Policy
+1160	Dominique Lord	Crash Data Analysis
+1161	Dominique Lord	Statistical Modeling
+1162	Lee Lowery	Structural failure analysis
+1163	Lee Lowery	Structural design and analysis
+1164	Lee Lowery	Offshore and coastal structures
+1165	Lee Lowery	Instrumentation and experimental testing
+1166	Lee Lowery	Structural foundations
+1167	Lee Lowery	Computer programming and engineering applications
+1168	Robert Lytton	Expansive clay theory and design
+1169	Robert Lytton	Soil mechanics
+1170	Robert Lytton	Soil-structure interaction
+1171	Robert Lytton	Soil dynamics
+1172	Robert Lytton	Continuum mechanics
+1173	Robert Lytton	Fracture mechanic
+1174	Robert Lytton	Pavement analysis, design, and management
+1175	Robert Lytton	Nondestructive testing
+1176	Xingmao "Samuel" Ma	Environmental health and safety of engineered nanomaterials
+1177	Xingmao "Samuel" Ma	Biogeochemistry of emerging contaminants
+1178	Xingmao "Samuel" Ma	Phytoremediation 
+1179	Xingmao "Samuel" Ma	Ecosystem restoration
+1180	Xingmao "Samuel" Ma	Water reuse
+1181	John Mander	Reinforced, pre-stressed and structural concrete
+1182	John Mander	Earthquake engineering and structural dynamics
+1183	John Mander	blast resistant design
+1184	John Mander	Bridge engineering
+1185	John Mander	Hazard analysis and financial loss estimation and mitigation
+1186	John Mander	Railroad engineering
+1187	John Mander	Construction and design integration
+1188	Eyad Masad	Constitutive modeling of asphalt mixtures
+1189	Eyad Masad	Asphalt pavements performance
+1190	Eyad Masad	Transport in porous media
+1191	Eyad Masad	Granular mechanics
+1192	Eyad Masad	Microstructure characterization of materials
+1193	Eyad Masad	Image analysis techniques
+1194	Zenon Medina-Cetina	Stochastic Geomechanics
+1195	Zenon Medina-Cetina	Risk, Reliability and Sensibility Analysis
+1196	Zenon Medina-Cetina	Uncertainty Identification, Characterization and Propagation
+1197	Zenon Medina-Cetina	Optimal Modeling and Simulation of Structures and Processes
+1198	Zenon Medina-Cetina	Stochastic Design of Early Warning Systems
+1199	Richard Mercier	Experimental and numerical hydrodynamics
+1200	Richard Mercier	Global design and analysis of offshore structures
+1201	Richard Mercier	Dynamics of deepwater mooring systems
+1202	Richard Mercier	Scale model testing of floating structures
+1203	Gretchen Miller	groundwater hydrology
+1204	Gretchen Miller	ecohydrology
+1205	Gretchen Miller	critical zone hydrology
+1206	Gretchen Miller	groundwater-soil-plant-atmosphere interactions
+1207	Gretchen Miller	quifer storage and recovery
+1208	Gretchen Miller	Earth system modeling
+1209	Ali Mostafavi	Complex System-of-Systems ModelingResilience of Interdependent Infrastructure Disaster Resilience and Climate Change AdaptationNetwork Dynamics in Project Systems Water-Energy Nexus in Civil SystemsDecision-Making under Deep Uncertainty
+1210	John Niedzwecki	Structural dynamics
+1211	John Niedzwecki	Probabilistic methods
+1212	John Niedzwecki	Structural reliability
+1213	John Niedzwecki	Physical modeling
+1214	John Niedzwecki	Analysis and design of deepwater and coastal structures
+1215	Francisco Olivera	Application of geographic information systems (GIS) to water resources engineering
+1216	Stephanie Paal	Infrastructure inspectionStructural/safety assessmentMachine visionStructural health monitoringReinforced concrete structures
+1217	Philip Park	Multifunctional High Performance Fiber Reinforced Asphalt Concrete (M-HPFRAC)
+1218	Philip Park	Nonlinear viscoelastic constitutive modeling
+1219	Philip Park	Improvement of bridge asphalt plug joint performance
+1220	Philip Park	Non-destructive test method and sensing techniques for structural health monitoring
+1221	Philip Park	Fatigue and fracture of civil engineering materials
+1222	Luca Quadrifoglio	Modeling, Design and Optimization of Demand Responsive Services, such as Feeders, ADA Paratransit, Innovative Transit/Logistic Services and Port Operations
+1223	Luca Quadrifoglio	Analytics and Continuous Approximation Models
+1224	Luca Quadrifoglio	Valid Inequalities and Logic Constraints
+1225	Luca Quadrifoglio	Scheduling Algorithms
+1226	Luca Quadrifoglio	Multi-Objective Decision Analysis
+1227	Maryam Sakhaeifar	Bituminous Materials Characterization
+1228	Maryam Sakhaeifar	Pavement Design and Management
+1229	Maryam Sakhaeifar	Pavement Preservation
+1230	Maryam Sakhaeifar	Nondestructive Evaluation of Pavements
+1231	Maryam Sakhaeifar	Tire-Pavement Noise
+1232	Marcelo Sanchez	Soil Mechanics
+1233	Marcelo Sanchez	Coupled THMG (Thermo-Hydro-Mechanical & Geochemical) Analysis in Geomechanics
+1234	Marcelo Sanchez	Unsaturated Soils
+1235	Marcelo Sanchez	Expansive Clays
+1236	Marcelo Sanchez	Numerical Modeling in Geomechanics
+1237	Marcelo Sanchez	Constitutive Modeling of Soils & Rocks
+1238	Marcelo Sanchez	Nuclear Waste Disposal
+1239	Marcelo Sanchez	Hydrate Bearing Sediments
+1240	Marcelo Sanchez	Soil Cracking; C02 Sequestration
+1241	Marcelo Sanchez	Stochastic Analysis
+1242	Scott Socolofsky	Direct ocean carbon sequestration
+1243	Scott Socolofsky	Dynamics of subsea oil spills
+1244	Scott Socolofsky	Shallow flow stability
+1245	Scott Socolofsky	Mixing at tidal inlets
+1246	Scott Socolofsky	Coastal oceanography
+1247	Alireza Talebpour	Connected and Automated Vehicles
+1248	Alireza Talebpour	Traffic Flow Theory
+1249	Alireza Talebpour	Driver Behavior
+1250	Alireza Talebpour	Intelligent Transportation Systems
+1251	Alireza Talebpour	Electrical Vehicles
+1252	John Tracy	\N
+1253	Bruce Wang	Stochastic Modeling and Network Optimization with Applications in Multimodal Transportation, Freight Logistics, Intelligent Transportation Systems (ITS) and Other Areas, including Vehicle Routing/Scheduling, Revenue Management, Auction of Transportation Services, and Telematics.
+1254	Ralph Wurbs	Water resources planning and management
+1255	Ralph Wurbs	Hydraulics
+1256	Ralph Wurbs	Hydrology
+1257	Ralph Wurbs	Water resources systems analysis
+1258	Qi Ying	Atmospheric physics and chemistry
+1259	Qi Ying	Urban and regional scale air quality modeling
+1260	Qi Ying	Aerosol source apportionment
+1261	Qi Ying	Emission control strategies
+1262	Qi Ying	Atmospheric radiative transfer
+1263	Yunlong Zhang	Traffic Operations
+1264	Yunlong Zhang	Transportation Modeling and Simulation
+1265	Yunlong Zhang	Intelligent Transportation Systems
+1266	Yunlong Zhang	Computer Applications in Transportation
+1267	Yunlong Zhang	Operations Research Applications in Transportation
+1268	Dan Zollinger	Pavement design, behavior, and performance
+1269	Dan Zollinger	Material properties of concrete
+1270	Dan Zollinger	Non-destructive testing of pavement
+1271	Dan Zollinger	Fracture and damage mechanics
+1272	Jorge Alvarado	Experimental and Computational Convective Heat Transfer
+1273	Jorge Alvarado	Electronic Cooling
+1274	Jorge Alvarado	Energy Management and Conservation in Buildings
+1275	Jorge Alvarado	Renewable Energy
+1276	Jorge Alvarado	Alternative Energy Fuels
+1277	Jorge Alvarado	Mechanical and Thermal Analysis of Amorphous Metallic Alloys
+1278	Robert M. Borsh, Jr.	Teamwork within Industrial Manufacturing and Distribution Organizations
+1279	Robert M. Borsh, Jr.	Leadership Within Organizational Structures
+1280	Walter Buchanan	Computer Applications
+1281	Walter Buchanan	Pedagogy
+1282	Walter Buchanan	Professional and Academic Issues
+1283	Ismail Capar	Inventory and Transportation Coordination
+1284	Ismail Capar	Distribution and Logistics Management
+1285	Ismail Capar	Warehouse Design and Optimization
+1286	Ismail Capar	Supply Chain Network Optimization
+1287	Ismail Capar	Supply Chain Management
+1288	Ismail Capar	Supply Chain Crisis Management
+1289	Ismail Capar	Transportation Issues During Incidents of National Significance
+1290	Ismail Capar	Joint Facility Location and Pricing Decisions
+1291	Ismail Capar	Location/Pricing Decisions for Alternative Fuel Vehicles
+1292	Norm Clark	Solution-Based Selling Process
+1293	Norm Clark	Sales Force Metrics and Evaluation
+1294	Norm Clark	Coaching and Development of the Sales Force
+1295	Norm Clark	Behavioral Types and Generational Differences
+1296	Norm Clark	Workforce Adaptation and Organizational Socialization
+1297	Norm Clark	Manufacturer-Distributor Relationships
+1298	Alex (Gwo-Ping) Fang	Applications of Multi-Objective Optimization
+1299	Alex (Gwo-Ping) Fang	Genetic Algorithm
+1300	Alex (Gwo-Ping) Fang	Acoustic Noise Reduction
+1301	Alex (Gwo-Ping) Fang	Acoustic Damping Materials
+1302	Alex (Gwo-Ping) Fang	Nondestructive Testing
+1303	Alex (Gwo-Ping) Fang	Grinding, Lapping, and Polishing processes
+1304	Rainer Fink	Analog Electronics
+1305	Rainer Fink	Semiconductor Testing
+1306	Rainer Fink	Medical Device Design and Testing
+1307	Rainer Fink	Product Development
+1308	Rainer Fink	Entrepreneurship
+1309	Ana Goulart	Internet telephony (VoIP) applications and signaling protocols
+1310	Ana Goulart	IP-based emergency communications (NG-9-1-1)
+1311	Ana Goulart	Session Initiation Protocol (SIP) and Location to Service Translation Protocol (LoST)
+1312	Ana Goulart	Communications networks testbeds and performance measurements
+1313	Ana Goulart	Last mile communication solutions for the Smartgrid
+1314	Ana Goulart	Engineering education, including active learning and undergraduate research.
+1315	Sheng-Jen "Tony" Hsieh	Automation, system integration, and tele-control/diagnosis
+1316	Sheng-Jen "Tony" Hsieh	Cognitive task analysis and development of system integration expertise
+1317	Sheng-Jen "Tony" Hsieh	Virtual instrumentation and intelligent tutoring systems
+1318	Sheng-Jen "Tony" Hsieh	Infrared imaging and stress failure prediction
+1319	Sheng-Jen "Tony" Hsieh	Nanotubes, nanosensors, and devices
+1320	Wayne Hung	Micro/Nano Fabrication
+1321	Wayne Hung	Synthesize and characterize of advanced materials
+1322	Byul Hur	Mixed-signal/RF Circuit Design and Wireless System Development
+1323	Byul Hur	RF Test and Measurement Automation
+1324	Byul Hur	Environmental and Biomedical Data Measurement and Analysis
+1325	Eleftherios Iakovou	Supply Chain Management
+1326	Eleftherios Iakovou	Inventory Management
+1327	Eleftherios Iakovou	Intermodal & Maritime Logistics
+1328	Eleftherios Iakovou	Green Logistics – Sustainability
+1329	Eleftherios Iakovou	Port Management
+1330	Eleftherios Iakovou	Global Logistics & Free Trade Facilitation
+1331	Eleftherios Iakovou	Manufacturing & Production Systems
+1332	Eleftherios Iakovou	Humanitarian Logistics
+1333	Eleftherios Iakovou	Emergency Response Management
+1334	Eleftherios Iakovou	Innovation, Policy-Making & Strategy Development
+1335	Mark Johnson	\N
+1336	Mathew A. Kuttolamadom 	Materials
+1337	Mathew A. Kuttolamadom 	Manufacturing
+1338	Mathew A. Kuttolamadom 	Surface Metrology
+1339	Mathew A. Kuttolamadom 	Tribology / Modeling
+1340	Mathew A. Kuttolamadom 	Machining / Titanium Alloys
+1341	Reza Langari	Development of Intelligent Rollover Warning and Control Systems for Tractor-Semitrailers, TAMU-CONACyT Collaborative Program, Sept. 1, 2002 - August 31 - 2003.
+1342	Reza Langari	Development of System for Identifying Road Surface Condition using Free Space Optics, Texas Transportation Institute, Sept. 1, 2002 - August 31, 2003 (with R. Lytton as Co-PI.)
+1343	Reza Langari	High Availability Automation Needs Analysis and Technology Assessment for Ultradeepwater E&P Operations, Research Partnership for Secure Energy for America (RPSEA), May 1, 2003 through December 31, 2003 (with Alex Parlos as Co-PI.)
+1344	Reza Langari	Condition Based Monitoring for the H-60 Aircraft, Joint Council on Aging Aircraft (JCAA), June 1, 2004 through May 31, 2005, (joint project with Georgia Institute of Technology.)
+1345	F. Barry Lawrence 	Supply chain management
+1346	F. Barry Lawrence 	Inventory and management asset optimization
+1347	F. Barry Lawrence 	Industrial Distribution systems
+1348	F. Barry Lawrence 	ERP systems
+1349	F. Barry Lawrence 	Software and Strategy
+1350	F. Barry Lawrence 	Distribution process matching to information technology
+1351	F. Barry Lawrence 	E-Business implementation
+1352	F. Barry Lawrence 	Pricing optimization
+1353	F. Barry Lawrence 	Global supply chain throughput
+1354	F. Barry Lawrence 	Globalization
+1355	Chao Ma	Additive Manufacturing
+1356	Chao Ma	Laser Manufacturing
+1357	Chao Ma	Nanocomposites
+1358	Chao Ma	Modeling of Manufacturing Processes
+1359	Malini Natarajarathinam 	Coordinated Decision Making in Stochastic Supply Chains
+1360	Malini Natarajarathinam 	Handing Supply Chains During Times of Crisis
+1361	Malini Natarajarathinam 	Optimizing Global Supply Chains
+1362	Malini Natarajarathinam 	Effect of Good Supply Chain Practices on Company Financial Health
+1363	Malini Natarajarathinam 	Logistics and Inventory Management
+1364	Malini Natarajarathinam 	Simulation and Empirical Studies
+1365	Bimal Nepal	New Product development
+1366	Bimal Nepal	Supply Chain Configurations
+1367	Bimal Nepal	Distribution Management
+1368	Bimal Nepal	Strategic Sourcing
+1369	Bimal Nepal	Risk Analysis
+1370	Bimal Nepal	Multiple Criteria Decision Modeling
+1371	Bimal Nepal	Optimization
+1372	Bimal Nepal	Quality and Applied Statistics
+1373	Bimal Nepal	Reliability Analysis
+1374	Bimal Nepal	Fuzzy Theory
+1375	Suleiman Obeidat	CAD/CAM Applications
+1376	Suleiman Obeidat	CAD Directed Inspection
+1377	Suleiman Obeidat	CAD Tissue Engineering
+1378	Suleiman Obeidat	Mathematical Modeling of Manufacturing Processes
+1379	Suleiman Obeidat	Materials Science and Engineering
+1380	Suleiman Obeidat	Lean/Six Sigma
+1381	Suleiman Obeidat	Maintenance Management
+1382	Suleiman Obeidat	Finite Element Analysis
+1383	Suleiman Obeidat	Engineering Education
+1384	Jay Porter	Analog and RF Electronics
+1385	Jay Porter	Instrumentation and Measurement
+1386	Jay Porter	Virtual Instrumentation Development
+1387	Jay Porter	Mixed Signal Integrated Circuit Test and Characterization
+1388	Jay Porter	Magnetic Resonance Imaging
+1389	Angie Hill Price	Welding processes and troubleshooting
+1390	Angie Hill Price	Welding metallurgy
+1391	Angie Hill Price	Thermal damage from grinding of precision gears
+1392	Angie Hill Price	Weld overlay systems
+1393	Esther Rodriguez Silva	Recent Significant Research and Teaching Activities:
+1394	Xingyong Song	Dynamic System and Control Theory
+1395	Xingyong Song	Unconventional Oil and Gas Production System Automation and Control
+1396	Xingyong Song	Mechatronic System/Fluid Power System Design
+1397	Xingyong Song	Renewable Energy Production/Extraction Enabled by Advanced Control
+1398	Manoj Vanajakumari	Logistics and Supply Chain Management
+1399	Manoj Vanajakumari	Robotic Arm Scheduling
+1400	Manoj Vanajakumari	Humanitarian Logistics
+1401	Manoj Vanajakumari	Transfer Pricing
+1402	Manoj Vanajakumari	Social Data Analytics
+1403	Jyhwen Wang	Manufacturing science and engineering with focus in the area of material deformation processesMechanical designMaterial processing technology
+1404	Wei Zhan	Dynamical control systems design/modeling/analysis/simulation
+1405	Wei Zhan	Nonlinear control
+1406	Wei Zhan	Adaptive control
+1407	Wei Zhan	Robust design
+1408	Wei Zhan	System engineering
+1409	Wei Zhan	Optimization
+1410	Wei Zhan	System identification
+1411	Wei Zhan	Model-based industrial control problems
+1412	Wei Zhan	Robot dynamics and control
+1413	Wei Zhan	Vehicle systems, testing and validation
+1414	Wei Zhan	Quality control
+1415	Wei Zhan	Process control
+1416	Wei Zhan	Wireless communication
+1417	Behbood B. Zoghi	RFID/Sensor System Application
+1418	Behbood B. Zoghi	Emotional Intelligence
+1419	Amarnath Banerjee	Dr. Banerjee’s research interests are in modeling, simulation and visualization, with applications in health care systems, information systems and manufacturing systems. He serves on the leadership team of the multidisciplinary Texas A&M Health Regional Extension Center at RCHI. He teaches courses in simulation, health care systems and industrial engineering design.
+1420	G. Kemble Bennett	Dr. Bennett's research interests are related to manufacturing, maintainability, reliability, logistics and quality engineering. He is the U.S. Technical Representative for Maintainability and writes engineering standards that govern the international trade of electronic and mechanical equipment and components. He has been named an Eminent Scholar by Tau Beta Pi and a Fellow by IIE and by the Society of Logistics Engineers. 
+1421	Satish T.S. Bukkapatnam	\N
+1422	Guy L. Curry	Dr. Curry specializes in the application of operations research techniques to the design and analysis of manufacturing systems. Current research emphasizes the development of analytical and simulation tools for the evaluation of semiconductor manufacturing and packaging systems. He teaches courses in optimization and production systems.
+1423	Yu Ding	Systems informatics
+1424	Yu Ding	Quality/reliability engineering
+1425	Yu Ding	Wind energy and nano-imaging/nano-informatics
+1426	Alaa Elwany	Dr. Alaa Elwany is an assistant professor at the Department of Industrial & Systems Engineering at Texas A&M. He acquired his Ph.D. from the H. Milton Stewart School of Industrial & Systems Engineering, Georgia Institute of Technology in 2009, and his B.Sc. and M.Sc. in Production and Manufacturing Engineering from Alexandria University, Egypt in 2002 and 2004, respectively.
+1427	Alaa Elwany	After finishing his Ph.D., Dr. Elwany worked as an assistant professor at the Department of Industrial Engineering & Innovation Sciences at Eindhoven University of Technology, the Netherlands, where he also served as a senior fellow in the European Institute for Statistics, Probability, Stochastic Operations Research and their Applications. Next, he moved back to the US to work as a research scientist at the Manufacturing Systems Research Laboratory, General Motors R&D, where he led advanced technical projects to improve the performance and sustainability of manufacturing operations and plants. In 2013, he joined the Industrial & Systems Engineering Department at Texas A&M to participate in establishing the research area in Next-Generation Manufacturing.
+1428	Madhav Erraguntla	Dr. Madhav Erraguntla P.E. works as a senior research scientist at Knowledge Based Systems Inc. and was principal data scientist at AT&T. He has over 20 years’ experience in data mining, knowledge based systems, machine learning, optimization, simulation and scheduling. 
+1429	Madhav Erraguntla	He was the principal investigator for multiple Small Business Innovative Research (SBIR) Phase I, II and III projects from the Department of Defense, the Department of Health and Humans Services (HHS) and NASA. He is hosting two national level surveillance systems for HHS on blood inventory management and donor hemovigilance. 
+1430	Madhav Erraguntla	At AT&T, he worked on developing analytics to support activities of daily life in smart homes. At i2 Technologies, he developed analytics to facilitate point of sale data (POS) analysis and customer relationship management (CRM) for a major retailor. 
+1431	Richard M. Feldman	Rich Feldman specializes in simulation, applied probability, and operations research. Some of his recent research has involved simulation, queueing analysis, and software development for biological models.  He teaches the operations research courses, stochastic processes, simulation, and queueing theory. For teaching simulation, he uses Simio simulation software under a grant from Simio LLC (www.simio.com).
+1432	Natarajan Gautam	Energy conservation and efficiency
+1433	Natarajan Gautam	Computer, communication and information networks
+1434	Mike Graul	\N
+1435	Andrew L. Johnson	Performance Assessment
+1436	Andrew L. Johnson	Productivity and Efficiency Analysis
+1437	Andrew L. Johnson	Healthcare
+1438	Andrew L. Johnson	Warehousing and Material Handling
+1439	Andrew L. Johnson	Manufacturing
+1440	Andrew L. Johnson	Energy and Environmental Regulation
+1441	Andrew L. Johnson	Systems Engineering
+1442	Kiavash Kianfar	Dr. Kianfar is the director of the  Mathematical Optimization and Data Analysis Lab (MODAL)  located in 3017 ETB. The research in this lab is on theory, computation, and application of mathematical optimization, network problems, and big data analysis. Several applications ranging from bioinformatics to transportation are studied. Developing faster algorithms for optimization problems and novel applications of optimization/network modeling/statistics in big data analysis are the major research thrusts in this lab.
+1443	Kiavash Kianfar	  Theory and Computation of Mixed Integer Programming and Combinatorial Optimization
+1444	Kiavash Kianfar	 New classes of complex integer rounding cuts for mixed integer programs
+1445	Kiavash Kianfar	 Computations of cutting planes in solving lot-sizing, facility location, and network-design problems
+1446	Kiavash Kianfar	Bioinformatics Modeling and Algorithms
+1447	Kiavash Kianfar	 Cutting-edge big-data/optimization/network problems in microarray and next-generation sequencing data analysis
+1448	Kiavash Kianfar	  Mathematical Optimization in Emerging Areas
+1449	Kiavash Kianfar	 Sensor network reliability analysis by measuring redundancy in large-scale systems
+1450	Kiavash Kianfar	 Optimal deployment of emission reduction technologies (ERTs)
+1451	Kiavash Kianfar	 Optimization in health care systems by reducing medication errors
+1452	P.R. Kumar	\N
+1453	Mark Lawley	Mark Lawley is TEES* Research Professor in the Departments of Industrial & Systems Engineering, Biomedical Engineering, and Epidemiology and Biostatistics at Texas A&M University. His research interests are in healthcare delivery systems with emphasis on population health and chronic disease. He serves as Deputy Director of the Center for Remote Health Technologies and Systems, which focuses on developing breakthrough health care devices, technologies, and systems for disease prevention, diagnosis, and management in the global health setting. Before joining Texas A&M in 2014, he served for seventeen years on the faculty at Purdue University, and, previous to that, two years on the faculty at the University of Alabama. He has also held engineering positions with Emerson Electric Company and Westinghouse Corporation, has done extensive consulting, and is a registered Professional Engineer in the State of Texas.
+1454	Mark Lawley	BS in Industrial Engineering, 1982 Tennessee Technological University
+1455	V. Jorge Leon	Dr. Leon's teaching interests are in the areas of operations and capacity management, production scheduling, quality assurance, design of experiments, manufacturing systems modeling and analysis, electronics manufacturing, and semiconductor packaging.  Dr. Leon's research work is in the areas of capacity and inventory management, finite-capacity resource planning and scheduling, applications of combinatorial optimization, and heuristic search.  Recent work involves the study of collaborative distributed production systems and global manufacturing.
+1456	V. Jorge Leon	View the complete list of publications
+1457	César O. Malavé	\N
+1458	Ranjana Mehta	Research in the NeuroErgonomics Lab utilizes theories, methods, and techniques from physiology, biomechanics, neuroscience, psychology, and public health to better understand operator behavior and capabilities when interacting with simple and complex work systems.  HF/E investigations involve examining multifactorial causes and consequences of operator stress and fatigue, brain-behavior relationships with changing workforce demographics (aging, obesity), and development of HF/E tools to assess operator health and performance in hazardous work environments.
+1459	Lewis Ntaimo	Stochastic programming
+1460	Lewis Ntaimo	Systems modeling and engineering processes
+1461	Lewis Ntaimo	Discrete event modeling and simulation
+1462	Hamid R. Parsaei	Dr. Parsaei previously served as the Associate Dean for Academic Affairs at Texas A&M University at Qatar as well as professor and chair of the Department of Industrial Engineering at the University of Houston for over nine years. Within the Institute of Industrial Engineers (IIE), he was the director of the Engineering Economy Division, senior vice president-at-large (international) and a member of the board of trustees. He is also a fellow of IIE and the American Society for Engineering Education. He has acted as principal or co-principal investigator on projects sponsored by the National Science Foundation, U.S. Department of Homeland Security, Qatar National Research Fund and Texas Department of Transportation, among many others. 
+1463	Farzan Sasangohar	Dr. Sasangohar’s research interests are centered around understanding and improving human decision-making and performance in multi-task, safety-critical work settings using a wide range of analytical techniques and technological innovations. He is interested and has experience in designing, implementing, and testing systems that improve human-systems performance in socio-technical domains such as healthcare, air-traffic control, command and control, process control, and surface transportation. Dr. Sasangohar is also interested in developing novel human factors engineering methods to explore error risk factors in safety-critical domains.
+1464	Farzan Sasangohar	Natural Sciences and Engineering Research Council (NSERC) PDF, 2015-2017
+1465	Farzan Sasangohar	Canadian Institute of Health Care Research (CIHR) Strategic Research Fellowship in Healthcare, Technology, and Place, 2013-2015
+1466	Farzan Sasangohar	NSERC Postgraduate Fellowship, 2012-2015
+1467	Farzan Sasangohar	University of Toronto, Faculty of Applied Sciences and Engineering Teaching Excellence Award, 2014
+1468	Farzan Sasangohar	Human Factors and Ergonomics Society Student Member With Honors, 2014
+1469	Farzan Sasangohar	Ontario Graduate Scholarship, 2009-2010; 2012-2013
+1470	Farzan Sasangohar	York University Graduate with Distinction Award, 2009
+1471	Farzan Sasangohar	PhD, Industrial Engineering (Human Factors Engineering), University of Toronto, 2015
+1472	Farzan Sasangohar	SM, Human-Systems Engineering, Massachusetts Institute of Technology, 2011
+1473	Farzan Sasangohar	MASc, Systems Design Engineering, University of Waterloo, 2010
+1474	Farzan Sasangohar	BA, Information Technology (Technology and Society), York University, 2009
+1475	Farzan Sasangohar	BCS, Computer Science, University of Waterloo, 2007
+1476	Donald R. Smith	Large systems database design
+1477	Donald R. Smith	Highway segment data collection and analysis
+1478	Donald R. Smith	Systems simulation
+1479	Donald R. Smith	Cost modeling for advanced manufacturing systems
+1480	Ciriaco Valdez-Flores	\N
+1481	Jose Vazquez	Writing Pedagogies
+1482	Jose Vazquez	Teaching Pedagogies
+1483	Jose Vazquez	Leadership
+1484	Shiren Wang	Biomedical manufacturing and drug delivery
+1485	Shiren Wang	Design & manufacturing of organic electronic materials and devices
+1486	Shiren Wang	NanoManufacturing and hierarchical nanostructures
+1487	Shiren Wang	Nanomaterial synthesis, processing and characterization
+1488	Shiren Wang	Nanotechnology-enhanced energy conversion and storage
+1489	Li Zeng	Dr. Zeng’s research develops new data-driven methodologies for process control and quality improvement in complex systems. She has expertise in statistics and data mining. She has conducted research in various applications, particularly in complex manufacturing systems and healthcare delivery systems. Her research is supported by NSF, Airforce, UT system and American Heart Association.
+1490	Marvin L. Adams	Groups: 
+1491	Marvin L. Adams	Computational transport theory
+1492	Marvin L. Adams	Efficient algorithms for massively parallel scientific and engineering calculations
+1493	Marvin L. Adams	Quantification of uncertainties in predictive science and engineering
+1494	Marvin L. Adams	Computational Methods Development
+1495	Gamal Akabani	Groups: 
+1496	Gamal Akabani	Medical Sciences
+1497	Gamal Akabani	Biomedical Engineering
+1498	Gamal Akabani	Nuclear Medicine Imaging
+1499	Gamal Akabani	Radiation and Nuclear Oncology
+1500	Gamal Akabani	Radiation Monte Carlo Transport
+1501	Gamal Akabani	Radiotherapy Physics
+1502	Gamal Akabani	Radiobiology
+1503	Gamal Akabani	PK/PD & PBPK Modeling
+1504	Gamal Akabani	Basic Immunology
+1505	Gamal Akabani	Radiopharmaceutical Research
+1506	Gamal Akabani	Health Physics, Radiation Biology & Medical Physics
+1507	Sunil S. Chirayath	Groups: 
+1508	Sunil S. Chirayath	Monte Carlo Transport Methods in Reactor Physics & Radiation Shielding
+1509	Sunil S. Chirayath	Fast Breeder Reactor (FBR) Core Physics Simulations
+1510	Sunil S. Chirayath	Safeguards Approaches & Analysis for FBR Fuel Cycles
+1511	Sunil S. Chirayath	Nuclear Security & Nonproliferation
+1512	John Ford	Research Groups: 
+1513	John Ford	Health Physics, Radiation Biology & Medical Physics Research Group
+1514	Yassin A. Hassan	Groups: 
+1515	Yassin A. Hassan	Computational & Experimental Thermal Hydraulics
+1516	Yassin A. Hassan	Reactor Safety
+1517	Yassin A. Hassan	Fluid Mechanics
+1518	Yassin A. Hassan	Two-Phase Flow
+1519	Yassin A. Hassan	Turbulence & Laser Velocimetry
+1520	Yassin A. Hassan	Imaging Techniques
+1521	Yassin A. Hassan	Thermal-Hydraulics
+1522	Yassin A. Hassan	Nuclear Power Engineering
+1523	Yassin A. Hassan	Laser Diagnostics Multiphase Flow Laboratory
+1524	Ernie Kee	Applied probabilistic risk assessment and reliability engineering in commercial power reactor settings.
+1525	Mark Kimber	Experimental and Computational Thermal Hydraulics, Uncertainty Quantification in Isothermal and Non-isothermal Turbulent Flows and Two Phase Heat Transport.
+1526	Cable Kurwitz	Groups: 
+1527	Cable Kurwitz	Reduced Gravity Thermal Management
+1528	Cable Kurwitz	Modeling of High Dimensional Data
+1529	Cable Kurwitz	Data Classification & Model Validation
+1530	Cable Kurwitz	Nuclear Power Systems
+1531	Cable Kurwitz	Nuclear Power Engineering
+1532	Cable Kurwitz	Interphase Transport Phenomena (ITP) Laboratory 
+1533	Craig Marianno	Groups: 
+1534	Craig Marianno	Nuclear Counter Terrorism
+1535	Craig Marianno	Nuclear Instrumentation Development
+1536	Craig Marianno	Exercise Development
+1537	Craig Marianno	Radiological Consequence Management
+1538	Craig Marianno	Environmental Health Physics
+1539	Craig Marianno	Nuclear Security & Nonproliferation
+1540	Ryan G. McClarren	Groups: 
+1541	Ryan G. McClarren	Uncertainty Quantification
+1542	Ryan G. McClarren	Numerical Methods for Radiation Transport
+1543	Ryan G. McClarren	Multiphysics Simulation
+1544	Ryan G. McClarren	High Performance Computing
+1545	Ryan G. McClarren	Computational Methods Development
+1546	Sean M. McDeavitt	Groups: 
+1547	Sean M. McDeavitt	Nuclear Materials Science
+1548	Sean M. McDeavitt	Nuclear Fuel Behavior & Processing
+1549	Sean M. McDeavitt	Materials Processing in the Nuclear Fuel Cycle
+1550	Sean M. McDeavitt	High Temperature Materials Science
+1551	Sean M. McDeavitt	Nuclear Materials & Fuel Cycles
+1552	Warren "Pete" Miller	\N
+1553	Jim E. Morel	Groups: 
+1554	Jim E. Morel	Monte Carlo Methods
+1555	Jim E. Morel	Hybrid Deterministic/Monte Carlo Methods
+1556	Jim E. Morel	Discretization & Solution Techniques for Multiphysics Calculations
+1557	Jim E. Morel	Computational Methods Development
+1558	Thien Nguyen 	Computational & Experimental Fluid Dynamics.
+1559	Thien Nguyen 	Thermal Hydraulics.
+1560	Thien Nguyen 	Optical measurement techniques.
+1561	Thien Nguyen 	Reactor Cavity Cooling System (RCCS), fuel bundles, sub-cooled boiling channel.
+1562	Natela Ostrovskaya	Mathematical & Computer Modeling of Radiation Response of Human Tissues
+1563	Natela Ostrovskaya	Predicting Changes Occurring in Tissues Following Radiation Insult
+1564	Kenneth L. Peddicord	Groups: 
+1565	Kenneth L. Peddicord	Behavior of Nuclear Fuels
+1566	Kenneth L. Peddicord	Reactor Systems & Design
+1567	Kenneth L. Peddicord	Fissile Materials Disposition
+1568	Kenneth L. Peddicord	MOX Fuels
+1569	Kenneth L. Peddicord	Generation IV Nuclear Power Systems
+1570	Kenneth L. Peddicord	Nuclear Generated Hydrogen
+1571	Kenneth L. Peddicord	Hydrogen Economy
+1572	Kenneth L. Peddicord	Nuclear Workforce
+1573	Kenneth L. Peddicord	Nuclear Materials & Fuel Cycles
+1574	John W. Poston Sr.	Groups: 
+1575	John W. Poston Sr.	External & Internal Dosimetry
+1576	John W. Poston Sr.	Health Physics, Radiation Biology & Medical Physics
+1577	Jean C. Ragusa	Groups: 
+1578	Jean C. Ragusa	Numerical Methods for Multiphysics Simulations
+1579	Jean C. Ragusa	Computational Techniques for Neutral Particle & Electron Transport
+1580	Jean C. Ragusa	Nuclear Fuel Assembly & Reactor Design
+1581	Jean C. Ragusa	Computational Methods Development
+1582	Richard Schultz	\N
+1583	Lin Shao	Groups: 
+1584	Lin Shao	Materials Science & Nanotechnology
+1585	Lin Shao	Radiation Effects in Nuclear & Electronic Materials
+1586	Lin Shao	Ion Beam Analysis
+1587	Lin Shao	Nuclear Materials & Fuel Cycles
+1588	Pavel V. Tsvetkov	Groups: 
+1589	Pavel V. Tsvetkov	System Analysis & Optimization Methods
+1590	Pavel V. Tsvetkov	Complex Engineered Systems
+1591	Pavel V. Tsvetkov	System Design
+1592	Pavel V. Tsvetkov	Symbiotic Nuclear Energy Systems
+1593	Pavel V. Tsvetkov	Waste Minimization
+1594	Pavel V. Tsvetkov	Sustainability
+1595	Pavel V. Tsvetkov	High Temperature Gas Reactors (HTGRs) & Co-Generation Systems
+1596	Pavel V. Tsvetkov	Direct Nuclear Energy Conversion Systems
+1597	Pavel V. Tsvetkov	Nuclear Power Engineering
+1598	Galina V. Tsvetkova	Reactor Physics
+1599	Galina V. Tsvetkova	Small Nuclear Power & Co-Generation Applications
+1600	Galina V. Tsvetkova	Nuclear Data Management Systems
+1601	Galina V. Tsvetkova	Isotope Separations
+1602	Galina V. Tsvetkova	Molecular Dynamics & Separations Phenomena
+1603	Rodolfo Vaghetto	Experimental and computational aspects  involving High Temperature Gas-Cooled Reactors.
+1604	Rodolfo Vaghetto	Computational thermal-hydraulics applied to existing Light Water Reactors (LWR) and Generation IV reactors
+1605	Karen Vierow	Research Groups: 
+1606	Karen Vierow	Thermal Hydraulics
+1607	Karen Vierow	Multiphase Flow
+1608	Karen Vierow	Condensation Heat Transfer
+1609	Karen Vierow	Reactor Safety
+1610	Karen Vierow	Severe Accident Analysis
+1611	Karen Vierow	Reactor Design
+1612	Karen Vierow	Nuclear Power Engineering Research Group
+1613	Kuang-An Chang	Wave breaking processes
+1614	Kuang-An Chang	Wave-structure interactions
+1615	Kuang-An Chang	Sediment dynamics
+1616	Kuang-An Chang	Environmental fluid mechanics
+1617	Kuang-An Chang	Non-intrusive quantitative measurement techniques
+1618	Hamn-Ching Chen	Computational fluid dynamics
+1619	Hamn-Ching Chen	Turbulence modeling
+1620	Hamn-Ching Chen	Wave-current-structure interactions
+1621	Hamn-Ching Chen	Ship motion and multiple ship interactions
+1622	Hamn-Ching Chen	Vortex-induced vibrations of marine risers and pipelines
+1623	Hamn-Ching Chen	Vortex-induced motions of offshore structures
+1624	Hamn-Ching Chen	Green water and hurricane wave load on offshore structures
+1625	Jeffrey Falzarano	Ship and Offshore Platforms Hydrodynamics and Dynamic Stability
+1626	Jeffrey Falzarano	System Identification of Marine Dynamical Systems, Ship Roll Damping
+1627	Jeffrey Falzarano	Wave Structure Interaction, Optimization of Hull-forms for Design
+1628	Jeffrey Falzarano	Nonlinear and Random Vibrations, Long-term Prediction of Design Extreme Loading
+1629	Jens Figlus	The recovery of beaches after severe storms including detailed hydrodynamics, sediment transport and morphodynamics of ridge-runnel systems
+1630	Jens Figlus	Vegetated coastal dunes and their resilience against erosion, overtopping and overwash
+1631	Jens Figlus	Hybrid coastal storm surge protection systems (i.e. core-enhanced coastal dunes)
+1632	Jens Figlus	Innovative coastal protection schemes for eroding coastlines
+1633	Jens Figlus	Wave – structure – sediment interaction
+1634	Jens Figlus	Wave – vegetation – sediment interaction
+1635	Sharath Girimaji	\N
+1636	Robert Gordon	\N
+1637	Barton D. Grasso	\N
+1638	Matthew Greer	\N
+1639	Masoud Hayatdavoodi	The Green-Naghdi Equations
+1640	Masoud Hayatdavoodi	Water Wave Theories
+1641	Masoud Hayatdavoodi	Fluid-Structure Interaction
+1642	Masoud Hayatdavoodi	Analytical and Computational Hydrodynamics
+1643	Masoud Hayatdavoodi	Naval Architecture
+1644	Juan J. Horrillo	\N
+1645	Jun Jin	Theoretical and computational analysis of the loads generated by natural hazards (e.g. earthquakes and hurricanes) and man-made hazards (e.g. blast and impact)
+1646	Jun Jin	Prediction of dynamic response of structures (e.g. buildings, bridges and offshore platforms) to these loads
+1647	Jun Jin	Parametric studies on key design parameters for development of practical design guidelines for mitigation of hazards.
+1648	Moo-Hyun Kim	Floating Offshore Wind Turbines
+1649	Moo-Hyun Kim	Nonlinear dynamics of offshore platforms
+1650	Moo-Hyun Kim	Vessel/riser/mooring coupled dynamic analysis
+1651	Moo-Hyun Kim	Wave mechanics and free-surface flows
+1652	Moo-Hyun Kim	Numerical wave tank; LNG tank sloshing
+1653	Moo-Hyun Kim	Computational fluid dynamics
+1654	Moo-Hyun Kim	Wind, Current, and Wave Energy Conversion (Ocean Renewable Energy) Hydroelasticity of VLFS (very large floating structures)
+1655	Moo-Hyun Kim	Interaction of waves with porous or flexible membrane
+1656	Moo-Hyun Kim	Smart offshore platforms/active control
+1657	Paul Koola	\N
+1658	Chan Kyu Yang	\N
+1659	John Niedzwecki	Structural dynamics
+1660	John Niedzwecki	Probabilistic methods
+1661	John Niedzwecki	Structural reliability
+1662	John Niedzwecki	Physical modeling
+1663	John Niedzwecki	Analysis and design of deepwater and coastal structures
+1664	Vijay Panchang	\N
+1665	Robert Randall	Ocean Engineering
+1666	Robert Randall	Dredging and Dredged Material Placement
+1667	Robert Randall	Coastal Engineering
+1668	Robert Randall	Offshore Measurements
+1669	Robert Randall	Underwater and Moored Systems
+1670	Robert Randall	Undersea Acoustics
+1671	Robert Randall	Brine Diffusion Processes
+1672	Robert Randall	Capping of Dredged Material
+1673	Robert Randall	Laboratory Physical Modeling.
+1674	Ignacio Rodriguez-Iturbe	Coastal Ecosystems
+1675	Ignacio Rodriguez-Iturbe	Hydrogeomorphology
+1676	Ignacio Rodriguez-Iturbe	Ecohydrology
+1677	Ignacio Rodriguez-Iturbe	River Basin Functioning and Organization
+1678	Ignacio Rodriguez-Iturbe	Stochastic Modelling of Natural Phenomena
+1679	Surupa Shaw	\N
+1680	Robert Skelton	\N
+1681	John A. "Bert" Sweetman	Development of new methods to apply random vibration theory to better understand vortex induced vibration of marine risers
+1682	John A. "Bert" Sweetman	New structural health monitoring methodologies
+1683	John A. "Bert" Sweetman	Statistical prediction of extreme values in non-linear dynamic systems subject to these random processes
+1684	Amanda L. Wood	\N
+1685	Sara Abedi	Experimental and Theoretical Microporomechanics
+1686	Sara Abedi	Nano-Chemomechanics of Geomaterials
+1687	Sara Abedi	Multi-scale Modeling
+1688	Sara Abedi	Granular Material Failure and Flow and Granular Physics
+1689	Sara Abedi	Geomechanics
+1690	I. Yucel Akkutlu 	Phase behavior of multi-component fluids in nanoporous materials
+1691	I. Yucel Akkutlu 	Shale gas and oil resource assessment and characterization
+1692	I. Yucel Akkutlu 	CO2-enhanced shale gas and oil recovery
+1693	I. Yucel Akkutlu 	Transport and reactions in porous media
+1694	Maria A. Barrufet	Thermodynamic and Transport Phenomena applied to improved oil/gas recovery processes, CO2 sequestration and natural gas storage
+1695	Maria A. Barrufet	Compositional reservoir simulation coupled with surface facilities
+1696	Maria A. Barrufet	Equation of state modeling, gas hydrates, and asphaltene precipitation
+1697	Maria A. Barrufet	Heavy oil recovery and upgrading
+1698	Maria A. Barrufet	Reverse osmosis and desalination technologies toprocess oilfield brines
+1699	Thomas A. Blasingame	Unconventional reservoirs
+1700	Thomas A. Blasingame	Production data analysis
+1701	Thomas A. Blasingame	Pressure transient data analysis
+1702	Thomas A. Blasingame	Petroleum reservoir engineering
+1703	Thomas A. Blasingame	Technical mathematics
+1704	Thomas A. Blasingame	Well testing/analysis of reservoir performance
+1705	Thomas A. Blasingame	Specialized analysis techniques for well test and production data
+1706	Thomas A. Blasingame	Model-based analysis of production data
+1707	Thomas A. Blasingame	Software for the analysis, interpretation, and modeling of well test and production data
+1708	Thomas A. Blasingame	Rate-time (decline curve) analysis for unconventional reservoir systems
+1709	Thomas A. Blasingame	Rate-time-pressure analysis for unconventional reservoir systems
+1710	Thomas A. Blasingame	Modeling of ultra-low permeability reservoirs
+1711	Thomas A. Blasingame	Performance analysis of tight gas/shale gas reservoir systems
+1712	Thomas A. Blasingame	Completion production correlation studies (correlation of performance with completion parameters)
+1713	Akhil Datta-Gupta	Dr. Datta-Gupta has research interests in rapid flow simulation techniques, reservoir optimization, large-scale parameter estimation via inverse methods and uncertainty quantification/ assessments.
+1714	Akhil Datta-Gupta	Streamline simulation and applications
+1715	Akhil Datta-Gupta	Inverse modeling and multi-scale data integration
+1716	Akhil Datta-Gupta	Geostatistics and stochastic reservoir characterization
+1717	Akhil Datta-Gupta	Modeling and scale-up of enhanced oil recovery
+1718	Eduardo Gildin 	Dr. Gildin has research interests in reservoir  modeling and optimization for the oil and gas industry using concepts from mathematical modeling using discretization of pde’s (finite difference, finite element methods, and finite volumes), systems and control theory and model reduction of large scale dynamical systems. In particular, Dr. Gildin is interested in closed-loop reservoir management.
+1719	Eduardo Gildin 	Model reduction of large scale dynamical systems
+1720	Eduardo Gildin 	Control and optimization of large scale dynamical systems
+1721	Eduardo Gildin 	Reservoir modeling and simulation
+1722	A. Rashid Hasan	Wellbore Heat transfer.Systematic modeling of heat transfer in wellbores. Current work plan is to develop heat transfer models for subsea completion in deep water settings.
+1723	A. Rashid Hasan	Wellbore/Reservoir Fluid FlowMany processes require an integrated approach to modeling fluid flow and pressure drop in both the reservoir and the wellbore. We are using such an approach to better understand the process of liquid loading of gas wells and well blow out.Wellbore Heat transfer.Systematic modeling of heat transfer in wellbores. Current work plan is to develop heat transfer models for subsea completion in deep water settings.
+1724	Berna Hascakir 	Heavy Oil and Oil Shale Recovery with Enhanced Oil Recovery Methods
+1725	Berna Hascakir 	In-Situ Combustion
+1726	Berna Hascakir 	Hot Fluid Injection; Steam/hot water/hot gas Flooding, Steam Assisted Gravity Drainage (SAGD), Cyclic Steam Injection (CC)
+1727	Berna Hascakir 	Diagnostic Studies on Reservoir Rock and Fluids
+1728	Berna Hascakir 	X-Ray computed tomography, X-Ray diffraction (XRD), Fourier transform infrared (FTIR), Scanning electron microscopy (SEM), and X-Ray photoelectron spectroscopy (XPS)
+1729	Berna Hascakir 	Analyze reaction kinetics with thermogravimetric analysis (TGA) and differential scanning calorimetry (DSC)
+1730	Berna Hascakir 	Produced Water Management
+1731	A. Daniel Hill	Dr. Hill has five (5) patents in oil recovery and well injection processes, and is recognized as an industry expert in the areas of production engineering, well completions, well stimulation, production logging, and complex well performance (horizontal and multilateral wells). He has presented lectures and courses and consulted on these topics throughout the world.
+1732	Stephen A. Holditch	\N
+1733	John Killough	Reservoir Simulation and High Performance Computing
+1734	John Killough	Coupled Surface/Subsurface Reservoir Models
+1735	John Killough	Upscaling and Multiscale Reservoir Simulation
+1736	John Killough	Contaminant Transport in Aquifers
+1737	John Killough	Hysteresis and Relative Permeability
+1738	Jihoon Kim	Coupled flow and geomechanics in hydrate, shale and tight gas, and geothermal reservoirs
+1739	Jihoon Kim	Hydraulic fracturing, Hydro-shearing, Coupled geomechanic-geophysical modeling
+1740	Jihoon Kim	Reservoir simulation, Computational geomechanics
+1741	Michael King	3D Reservoir modeling and characterization
+1742	Michael King	Upscaling of geologic models for flow simulation
+1743	Michael King	Streamline-based simulation and flow analysis
+1744	John Lee	\N
+1745	Jenn-Tai Liang	Using nano drug delivery technologies for transport and controlled release of oilfield chemicals
+1746	Jenn-Tai Liang	Hydraulic fracturing fluid cleanup
+1747	Jenn-Tai Liang	Microbial enhanced oil recovery
+1748	Jenn-Tai Liang	Scale, wax, and asphaltene inhibition
+1749	Jenn-Tai Liang	In-depth conformance control
+1750	Jenn-Tai Liang	CO2 injection for carbon sequestration and improved oil recovery
+1751	Duane A. McVay	Reservoir simulation
+1752	Duane A. McVay	Uncertainty quantification
+1753	Duane A. McVay	Integrated reservoir characterization and management
+1754	Duane A. McVay	Project evaluation
+1755	Duane A. McVay	Unconventional resources
+1756	Hadi Nasrabadi	Compositional Modeling of Multiphase/Multicomponent Fluid Flow in Porous Media
+1757	Hadi Nasrabadi	Enhanced Oil Recovery and Sequestration
+1758	Hadi Nasrabadi	Phase Behavior of Reservoir Fluids
+1759	Hadi Nasrabadi	Modeling asphaltene precipitation in porous media
+1760	Hadi Nasrabadi	Shale gas and oil recovery
+1761	Hisham Nasr-El-Din	\N
+1762	Sam Noynaert	Horizontal/deviated drilling
+1763	Sam Noynaert	Automation and optimization of the drilling process
+1764	Sam Noynaert	Oilfield tubular design and issues
+1765	Sam Noynaert	Solutions to drilling-related problems in unconventional reservoirs
+1766	David Schechter	Spraberry Trend Area
+1767	David Schechter	Geological and Petrophysical Analysis
+1768	David Schechter	Wettability Determination and Imbibition Experiments
+1769	David Schechter	Numerical Modeling
+1770	David Schechter	Reservoir Simulation
+1771	David Schechter	CO2 Flooding and Gas Injection
+1772	Jerome Schubert	Drilling
+1773	Jerome Schubert	Well control
+1774	Jerome Schubert	HPHT Cementing
+1775	Jerome Schubert	HPHT Rheology
+1776	Jerome Schubert	Deepwater Drilling
+1777	Jerome Schubert	Dual Gradient Drilling
+1778	Jerome Schubert	Managed Pressure Drilling
+1779	Peter Valkó	Performance of stimulated wells
+1780	Peter Valkó	Design and analysis of hydraulic fracturing treatments
+1781	Peter Valkó	Numerical inversion of the Laplace transform
+1782	Ruud Weijermars	Petroleum economics and energy strategy
+1783	Ruud Weijermars	Structural geology and rock mechanics
+1784	Kan Wu	Modeling of complex hydraulic fracture development in unconventional reservoirs
+1785	Kan Wu	Interaction analysis of hydraulic fractures with natural fractures
+1786	Kan Wu	Coupled geomechanics/fluid flow modeling
+1787	Kan Wu	Analysis of wellbore strengthening
+1788	Kan Wu	Evaluation of well performance from unconventional gas and oil reservoirs

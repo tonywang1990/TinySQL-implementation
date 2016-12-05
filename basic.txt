@@ -1,0 +1,437 @@
+0	Robert Balog	Electrical and Computer Engineering	Associate Professor	205D WEB	979.862.4985	rbalog@tamu.edu	http://engineering.tamu.edu/media/456090/balog.jpg
+1	Miroslav M. Begovic	Electrical and Computer Engineering	Carolyn S. & Tommie E. Lohman ‘59 Professor	301I WEB	979.862.1553	begovic@tamu.edu	http://engineering.tamu.edu/media/2062653/begovic_210x316.jpg
+2	Shankar P. Bhattacharyya 	Electrical and Computer Engineering	Robert M. Kennedy '26 Professor I	244C WEB	979.845.7484	spb@tamu.edu	http://engineering.tamu.edu/media/1462022/bhattacharyya-mug.jpg
+3	Ulisses Braga Neto 	Electrical and Computer Engineering	Associate Professor	236B WEB	979.862.6441 	ulisses@tamu.edu	http://engineering.tamu.edu/media/446093/braganeto.jpg
+4	Karen Butler-Purry 	Electrical and Computer Engineering	Professor	302 J. K. Williams Admin Bldg 	979.845.3631 	klbutler@tamu.edu	http://engineering.tamu.edu/media/4008702/butler.jpg
+5	Pierce Cantrell, Jr. 	Electrical and Computer Engineering	Associate Professor	333D WEB	979.845.3179	p-cantrell@tamu.edu	http://engineering.tamu.edu/media/445995/cantrell2.jpg
+6	Jean-Francois Chamberland	Electrical and Computer Engineering	Associate Professor	301RA WEB	979.845.6204 	chmbrlnd@tamu.edu	http://engineering.tamu.edu/media/446678/chamberland.jpg
+7	Kai Chang	Electrical and Computer Engineering	TI Endowed Analog Chair Professor	205C WEB	979.845.5285 	kaichang@tamu.edu	http://engineering.tamu.edu/media/957997/chang_mug.jpg
+8	Gwan Choi	Electrical and Computer Engineering	Associate Professor 	333G WEB	979.845.7486	gwanchoi@tamu.edu	http://engineering.tamu.edu/media/958086/choi.jpg
+9	Aniruddha Datta 	Electrical and Computer Engineering	J.W. Runyon, Jr. '35 Professor II 	212F WEB	979.845.5917 	a-datta@tamu.edu	http://engineering.tamu.edu/media/1492772/datta_2014.jpg
+10	Edward R. Dougherty	Electrical and Computer Engineering	Robert M. Kennedy ’26 Chair Professor 	214G WEB	979.862.8154	e-dougherty@tamu.edu	http://engineering.tamu.edu/media/448655/dougherty.jpg
+11	Nick Duffield	Electrical and Computer Engineering	Professor	332D WEB	979.845.7328	duffieldng@tamu.edu	http://engineering.tamu.edu/media/1652295/duffield.jpg
+12	Mehrdad Ehsani 	Electrical and Computer Engineering	Robert M. Kennedy '26 Professor II	205N WEB	979.845.7582 	m-ehsani@tamu.edu	http://engineering.tamu.edu/media/958176/ehsani.jpg
+13	Ohannes Eknoyan 	Electrical and Computer Engineering	Professor 	244D WEB	979.845.7441	eknoyan@tamu.edu	http://engineering.tamu.edu/media/1462024/eknoyan.jpg
+14	Prasad Enjeti 	Electrical and Computer Engineering	TI Professor III in Analog Engineering	EABB	979.862.3243	enjeti@tamu.edu	http://engineering.tamu.edu/media/449178/enjeti2.jpg
+15	Kamran Entesari	Electrical and Computer Engineering	Associate Professor	315C WEB	979.845.9586 	kentesar@tamu.edu	http://engineering.tamu.edu/media/452177/entesari.jpg
+16	Costas N. Georghiades 	Electrical and Computer Engineering	Delbert A. Whitaker Endowed Chair Professor  	312ADMN/ 301S WEB	979.845.7408 	georghiades@tamu.edu	http://engineering.tamu.edu/media/452294/cgeorghiades.jpg
+17	Paul Gratz	Electrical and Computer Engineering	Associate Professor	333M WEB	979.488.4551	pgratz@tamu.edu	http://engineering.tamu.edu/media/958206/gratz.jpg
+18	Arum Han	Electrical and Computer Engineering	Professor 	309C WEB &amp; 237 GERB	979.845.9686 	arum.han@tamu.edu	http://engineering.tamu.edu/media/452352/ahan.jpg
+19	H. Rusty Harris	Electrical and Computer Engineering	Associate Professor	205M WEB	979.845.4217	rusty.harris@tamu.edu	http://engineering.tamu.edu/media/452652/rustyharris.jpg
+20	Philip Hemmer 	Electrical and Computer Engineering	Professor 	235G WEB	979.845.8932 	prhemmer@tamu.edu	http://engineering.tamu.edu/media/452407/hemmer.jpg
+21	I-Hong Hou	Electrical and Computer Engineering	Assistant Professor	334C WEB	979.862.1092	ihou@tamu.edu	http://engineering.tamu.edu/media/1462020/hou.jpg
+22	Sebastian Hoyos	Electrical and Computer Engineering	Associate Professor	315D WEB	979.862.4253	hoyos@tamu.edu	http://engineering.tamu.edu/media/452555/hoyostamu.jpg
+23	Jiang Hu	Electrical and Computer Engineering	Professor	333L WEB	979.847.8768	jianghu@tamu.edu	http://engineering.tamu.edu/media/1302856/hu.jpg
+24	Garng M. Huang 	Electrical and Computer Engineering	Professor 	320E WEB	979.845.7476	ghuang@tamu.edu	http://engineering.tamu.edu/media/958236/huang.jpg
+25	Gregory Huff	Electrical and Computer Engineering	Associate Professor	301R WEB	979.862.4161	ghuff@tamu.edu 	http://engineering.tamu.edu/media/1611763/prof-ghuff.jpg
+26	Jim Ji 	Electrical and Computer Engineering	Associate Professor 	309E WEB	979.458.1468 	jimji@tamu.edu	http://engineering.tamu.edu/media/511945/image-of-jim-ji.jpg
+27	Jun Kameoka	Electrical and Computer Engineering	Associate Professor 	205F WEB 	979.845.7564 	kameoka@tamu.edu	http://engineering.tamu.edu/media/453662/kameoka.jpg
+28	Aydin Karsilayan 	Electrical and Computer Engineering	Associate Professor 	318C WEB	979.458.3555 	karsilay@tamu.edu	http://engineering.tamu.edu/media/511905/image-of-aydin-karsilayan.jpg
+29	Mladen Kezunovic 	Electrical and Computer Engineering	Eugene E. Webb Professor	323C WEB	979.845.7509	kezunov@ece.tamu.edu	http://engineering.tamu.edu/media/453849/mkezunovic.jpg
+30	Sunil Khatri 	Electrical and Computer Engineering	Professor 	333F WEB	979.845.8371 	sunilkhatri@tamu.edu	http://engineering.tamu.edu/media/512015/image-of-sunil-khatri.jpg
+31	Laszlo B. Kish	Electrical and Computer Engineering	Professor	235E WEB	979.847.9071 	laszlokish@tamu.edu	http://engineering.tamu.edu/media/1153041/kish-2014.jpg
+32	P.R. Kumar	Electrical and Computer Engineering	Distinguished Professor	331E WEB	979.862.3376 	prk@tamu.edu	http://engineering.tamu.edu/media/511995/image-of-pr-kumar.jpg
+33	Peng Li	Electrical and Computer Engineering	Professor	334J WEB	979.845.1612	pli@tamu.edu	http://engineering.tamu.edu/media/1462021/li.jpg
+34	Pao Tai Lin	Electrical and Computer Engineering	Assistant Professor	214F WEB	979.458.8223	paolin@ece.tamu.edu 	http://engineering.tamu.edu/media/2877196/paolin.jpg
+35	Tie Liu	Electrical and Computer Engineering	Associate Professor	301FA WEB	979.862.2392	tieliu@tamu.edu	http://engineering.tamu.edu/media/958690/liu_mug3.jpg
+36	Mi Lu	Electrical and Computer Engineering	Professor	332E WEB	979.845.3749	mlu@ece.tamu.edu	http://engineering.tamu.edu/media/511980/image-of-mi-lu.jpg
+37	Christi K. Madsen	Electrical and Computer Engineering	Professor	728 JEB	979.845.4935	cmadsen@tamu.edu 	http://engineering.tamu.edu/media/458876/madsen.jpg
+38	Krzysztof Arkadiusz Michalski 	Electrical and Computer Engineering	Associate Professor 	205H WEB	979.845.5203 	k-michalski@tamu.edu	http://engineering.tamu.edu/media/1302857/michalski-new.jpg
+39	Scott L. Miller 	Electrical and Computer Engineering	Debbie and Dennis Segers '75 Professor	310B WEB	979.862.8744	smiller@tamu.edu	http://engineering.tamu.edu/media/459159/miller-mug1.jpg
+40	Krishna Narayanan	Electrical and Computer Engineering	Eric D. Rubin ’06 Professor	334K WEB	979.862.2691	krn@tamu.edu	http://engineering.tamu.edu/media/958779/narayanan_mug_new.jpg
+41	Robert D. Nevels	Electrical and Computer Engineering	Professor	205K WEB	979.845.7591	r-nevels@tamu.edu	http://engineering.tamu.edu/media/512005/image-of-robert-nevels.jpg
+42	Cam Nguyen	Electrical and Computer Engineering	TI Professor II in Analog Engineering	212E WEB	979.845.7469	cnguyen@tamu.edu	http://engineering.tamu.edu/media/452060/nguyen.jpg
+43	Sam Palermo	Electrical and Computer Engineering	Associate Professor	315E WEB	979.458.4114	spalermo@tamu.edu	http://engineering.tamu.edu/media/452417/sam_palermo.jpg
+44	Sung Park	Electrical and Computer Engineering	Assistant Professor	223G WEB and 207 GERB	979.458.8579	\N	\N
+45	Xiaoning Qian 	Electrical and Computer Engineering	Assistant Professor	205J WEB	979.845.6268	xqian@tamu.edu	http://engineering.tamu.edu/media/1302860/qian.jpg
+46	Narasimha Reddy	Electrical and Computer Engineering	J.W. Runyon, Jr. '35 Professor  I	333J WEB	979.845.7598	reddy@tamu.edu	http://engineering.tamu.edu/media/511985/image-of-narasimha-reddy.jpg
+47	Peter Rentzepis	Electrical and Computer Engineering	TEES Distinguished Research Professorship	235C WEB	979.845.7250	prentzepis@tamu.edu	http://engineering.tamu.edu/media/1594598/011rentsepis.jpg
+48	Raffaella Righetti	Electrical and Computer Engineering	Associate Professor	309D WEB	979.862.8586	rrighetti@tamu.edu	http://engineering.tamu.edu/media/455323/raffaella-righetti.jpg
+49	B. Don Russell 	Electrical and Computer Engineering	Harry E. Bovay, Jr. Chair Professor	238 WEB	979.845.7912	bdrussell@tamu.edu	http://engineering.tamu.edu/media/455520/bdrussell.jpg
+50	Edgar Sanchez-Sinencio	Electrical and Computer Engineering	TI Jack Kilby Chair Professor	318E WEB	979.845.7498	s-sanchez@tamu.edu	http://engineering.tamu.edu/media/1462017/sanchez-new.jpg
+51	Serap Savari	Electrical and Computer Engineering	Associate Professor	308G WEB	979.845.6824	savari@tamu.edu	http://engineering.tamu.edu/media/459164/savari.jpg
+52	Erchin Serpedin	Electrical and Computer Engineering	Professor	310MC&amp;B WEB	979.458.2287	eserpedin@tamu.edu	http://engineering.tamu.edu/media/458936/serpedin.jpg
+53	Srinivas Shakkottai	Electrical and Computer Engineering	Associate Professor	332C WEB	979.458.0094	sshakkot@tamu.edu	http://engineering.tamu.edu/media/456085/shakkottai.jpg
+54	Yang Shen	Electrical and Computer Engineering	Assistant Professor	223A WEB	979.862.1694	yshen@tamu.edu	http://engineering.tamu.edu/media/2062656/shen_medium.jpg
+55	Weiping Shi	Electrical and Computer Engineering	Professor	333K WEB	979.845.3820	wshi@tamu.edu	http://engineering.tamu.edu/media/1462026/shi.jpg
+56	Jose Silva-Martinez	Electrical and Computer Engineering	TI Professorship I in Analog Engineering	318B WEB	979.845.7477	jose-silva-martinez@tamu.edu	http://engineering.tamu.edu/media/511955/image-of-jose-silva.jpg
+57	Chanan Singh	Electrical and Computer Engineering	Regents Professor & Irma Runyon Chair Professor	320C WEB	979.845.7589	singh@ece.tamu.edu	http://engineering.tamu.edu/media/455750/singh1.jpg
+58	Alex Sprintson	Electrical and Computer Engineering	Professor	334G WEB	979.458.0092	spalex@ece.tamu.edu	http://engineering.tamu.edu/media/1462027/sprintson.jpg
+59	Chin B. Su	Electrical and Computer Engineering	Professor	205G WEB	979.845.7584	c-su4831@tamu.edu	http://engineering.tamu.edu/media/511915/image-of-chin-su.jpg
+60	Hamid A. Toliyat	Electrical and Computer Engineering	Raytheon Endowed Professor	237C WEB	979.862.3034	toliyat@tamu.edu	http://engineering.tamu.edu/media/1302852/toliyat.jpg
+61	Karan L. Watson	Electrical and Computer Engineering	Professor 	9th Floor Rudder	979.845.4016	watson@tamu.edu	http://engineering.tamu.edu/media/511960/image-of-karan-watson.jpg
+62	Mark H. Weichold	Electrical and Computer Engineering	Regents Professor 	104 Engineering Activities Building A	979.862.8456	m-weichold@tamu.edu	http://engineering.tamu.edu/media/511975/image-of-mark-weichold.jpg
+63	Steven M. Wright	Electrical and Computer Engineering	Royce E. Wisenbaker Professor II	310D WEB	979.845.9413	smwright@tamu.edu	http://engineering.tamu.edu/media/830318/SWright.jpg
+64	Le Xie	Electrical and Computer Engineering	Associate Professor	301H WEB	979.845.7563	le.xie@tamu.edu	http://engineering.tamu.edu/media/448297/xie.jpg
+65	Zixiang Xiong	Electrical and Computer Engineering	Professor	334H WEB	979.862.8683	zixiang-xiong@tamu.edu	http://engineering.tamu.edu/media/512030/image-of-zixiang-xiong.jpg
+66	Byung-Jun Yoon	Electrical and Computer Engineering	Associate Professor	205L WEB	979.845.6942	bjyoon@tamu.edu	http://engineering.tamu.edu/media/443461/bjyoon.jpg
+67	Peng Yu	Electrical and Computer Engineering	Assistant Professor	215F WEB	979.320-9822	pengy@tamu.edu	http://engineering.tamu.edu/media/1296869/yu.jpg
+68	Xi Zhang	Electrical and Computer Engineering	Professor	331D WEB	979.458.1416	xizhang@tamu.edu	http://engineering.tamu.edu/media/512025/image-of-xi-zhang.jpg
+69	Jun Zou	Electrical and Computer Engineering	Associate Professor 	205I WEB 	979.862.1640 	junzou@tamu.edu	http://engineering.tamu.edu/media/858283/jun-zou.jpg
+70	Tanzir Ahmed	Computer Science and Engineering	Visiting Assistant Professor	205 HRBB	979.845.4908	tanzir@tamu.edu	http://engineering.tamu.edu/media/4121366/image-of-tanzir-ahmed.jpg
+71	Nancy M. Amato	Computer Science and Engineering	Unocal Professor, Regents Professor	425H HRBB	979.862.2275	amato@cse.tamu.edu	http://engineering.tamu.edu/media/553160/image-of-nancy-amato.jpg
+72	Riccardo Bettati	Computer Science and Engineering	Professor	509C HRBB	979.845.5469	bettati@cse.tamu.edu	http://faculty.cse.tamu.edu/bettati/bettati.gif
+73	James Caverlee	Computer Science and Engineering	Associate Professor	403 HRBB	979.845.0537	caverlee@cse.tamu.edu	http://engineering.tamu.edu/media/552793/caverlee.jpg
+74	Jinxiang Chai	Computer Science and Engineering	Associate Professor	527A HRBB	979.845.3510	jchai@tamu.edu	http://engineering.tamu.edu/media/552883/image-of-jinxiang-chai.jpg
+75	Jianer Chen	Computer Science and Engineering	Professor	315C HRBB	979.845.4259	chen@cse.tamu.edu	http://engineering.tamu.edu/media/552853/image-of-jianer-chen.jpg
+76	Yoonsuck Choe	Computer Science and Engineering	Professor	322B HRBB	979.845.5466	choe@cse.tamu.edu	http://engineering.tamu.edu/media/4033004/Image of Yoonsuck Choe.jpg
+77	Dilma Da Silva	Computer Science and Engineering	Department Head, Professor and Holder of the Ford Motor Company Design Professorship II 	305B HRBB	\N	dilma@cse.tamu.edu	http://engineering.tamu.edu/media/3049600/dilmadasilva.png
+78	Walter Daugherity	Computer Science and Engineering	Senior Lecturer	319A TEAG	979.845.1308	daugher@tamu.edu	http://engineering.tamu.edu/media/554627/image-of-walter-daugherty.jpg
+79	Tim Davis	Computer Science and Engineering	Professor	425E HRBB	979.845.4094	davis@tamu.edu	http://engineering.tamu.edu/media/1462015/Image-of-Tim-Davis.jpg
+80	Anandi Dutta	Computer Science and Engineering	Lecturer	211 HRBB	979.862.2016	anandixd@tamu.edu	http://engineering.tamu.edu/media/4121365/image-of-anandi-dutta.jpg
+81	Richard Furuta	Computer Science and Engineering	Professor and Undergraduate Advisor	402C HRBB	979.845.3839	furuta@cse.tamu.edu	http://engineering.tamu.edu/media/554087/image-of-richard-furuta.jpg
+82	Bruce Gooch	Computer Science and Engineering	Associate Professor	2028 ETB	979.845.5534	gooch@cse.tamu.edu	http://engineering.tamu.edu/media/1462025/Image-of-Bruce-Gooch.jpg
+83	Guofei Gu	Computer Science and Engineering	Associate Professor	HRBB 502C	979.845.2475	guofei@cse.tamu.edu	\N
+84	Ricardo Gutierrez-Osuna	Computer Science and Engineering	Professor	506A HRBB	979.845.2942	rgutier@cse.tamu.edu	http://engineering.tamu.edu/media/4022682/gutierrez-osuna.jpg
+85	Tracy Anne Hammond	Computer Science and Engineering	Professor	414C HRBB	979.862.4284	hammond@cse.tamu.edu	http://engineering.tamu.edu/media/1091964/hammond-img.jpg
+86	Xia (Ben) Hu	Computer Science and Engineering	Assistant Professor	330B HRBB	979.845.8873	hu@cse.tamu.edu	\N
+87	Jeff Huang	Computer Science and Engineering	Assistant Professor	427C HRBB	979.845.5485	jeff@cse.tamu.edu	http://engineering.tamu.edu/media/1462018/jeffhuang-tamu-web.jpg
+88	Ruihong Huang	Computer Science and Engineering	Assistant Professor	402B HRBB	979.862.2908	huangrh@tamu.edu	http://engineering.tamu.edu/media/1559108/image-of-ruihong-huang.jpg
+89	Thomas R. Ioerger	Computer Science and Engineering	Associate Professor	322C HRBB	979.458-5518	ioerger@cse.tamu.edu	http://engineering.tamu.edu/media/554487/image-of-thomas-ioerger.jpg
+90	Roozbeh Jafari	Computer Science and Engineering	Associate Professor	5010 ETB	979.862.8098	rjafari@tamu.edu	http://engineering.tamu.edu/media/2714445/jafari.jpg
+91	Anxiao (Andrew) Jiang	Computer Science and Engineering	Associate Professor	309B HRBB	979.845.7983	ajiang@cse.tamu.edu	http://engineering.tamu.edu/media/552232/image-of-anxiao-jiang.jpg
+92	Daniel A. Jiménez	Computer Science and Engineering	Professor	509D HRBB	979.845.2434	djimenez@cse.tamu.edu	http://engineering.tamu.edu/media/552380/jimenez.jpg
+93	Andruid Kerne	Computer Science and Engineering	Professor	225B TEAG	979.458.0024	andruid@cse.tamu.edu	http://engineering.tamu.edu/media/552227/image-of-andruid-kerne.jpg
+94	John Keyser	Computer Science and Engineering	Professor and Associate Head for Academics	304A HRBB	979.458.0167	keyser@cse.tamu.edu	\N
+95	Eun Jung Kim	Computer Science and Engineering	Associate Professor	338B HRBB	979.845.3660	ejkim@cse.tamu.edu	http://engineering.tamu.edu/media/552584/image-of-eun-jung-kim.jpg
+96	 Andreas Klappenecker	Computer Science and Engineering	Professor 	509B HRBB	979.458.0608	klappi@cse.tamu.edu	http://engineering.tamu.edu/media/552222/image-of-andreas-klappenecker.jpg
+97	Hyunyoung Lee	Computer Science and Engineering	TEES Research Associate Professor and Senior Lecturer	410B HRBB	979.845.2490	hlee@cse.tamu.edu	http://engineering.tamu.edu/media/527953/image-of-hyunyoung-lee.jpg
+98	Teresa Leyk	Computer Science and Engineering	Senior Lecturer	317B TEAG	979.845.4456	teresa@cse.tamu.edu	\N
+99	Jyh-Charn (Steve) Liu	Computer Science and Engineering	Professor	502B HRBB	979.845.8739	liu@cse.tamu.edu	http://engineering.tamu.edu/media/4022713/image-of-steve-liu.jpg
+100	Dmitri Loguinov	Computer Science and Engineering	Professor	515C HRBB	979.845.0512	dmitri@cse.tamu.edu	http://engineering.tamu.edu/media/552494/dmitri.jpg
+101	Rabi N. Mahapatra	Computer Science and Engineering	Professor and Head of Graduate Admissions	520B HRBB	979.845.5787	rabi@cse.tamu.edu	http://engineering.tamu.edu/media/553200/image-of-rabi-mahapatra.jpg
+102	J. Michael Moore	Computer Science and Engineering	Instructional Assistant Professor	325 HRBB	979.845.5475	jmichael@cse.tamu.edu	http://engineering.tamu.edu/media/1670343/jm_moore.jpg
+103	Robin Murphy	Computer Science and Engineering	Raytheon Professor	333 HRBB	979.845.8737	murphy@cse.tamu.edu	http://engineering.tamu.edu/media/554172/image-of-robin-murphy.jpg
+104	Michael Quinn	Computer Science and Engineering	Associate Professor of Practice	527C HRBB	979.862.4673	m.d.quinn@tamu.edu	\N
+105	Daniel Ragsdale	Computer Science and Engineering	Professor of Practice	200 Discovery Drive, Suite 105	979.845.7398	rags@cse.tamu.edu	\N
+106	Lawrence Rauchwerger	Computer Science and Engineering	Eppright Professor	417A HRBB	979.845.8872	rwerger@cse.tamu.edu	http://engineering.tamu.edu/media/553130/image-of-lawrence-rauschwerger.jpg
+107	Philip Ritchey	Computer Science and Engineering	Instructional Assistant Professor	326 HRBB	979.862.6476	ritchey@cse.tamu.edu	http://engineering.tamu.edu/media/2126566/p_ritchey.jpg
+108	Vivek Sarin	Computer Science and Engineering	Associate Professor and Undergraduate Advisor	309C HRBB	979.458.2214	sarin@cse.tamu.edu	http://engineering.tamu.edu/media/554597/image-of-vivek-sarin.jpg
+109	Scott Schaefer	Computer Science and Engineering	Professor	527B HRBB	979.862.4251	schaefer@cse.tamu.edu	http://engineering.tamu.edu/media/554252/image-of-scott-schaefer.jpg
+110	Dylan Shell	Computer Science and Engineering	Associate Professor	333B HRBB	979.845.2369	dshell@cse.tamu.edu	\N
+111	Frank M. Shipman	Computer Science and Engineering	Professor	404 HRBB	979.862.3216	shipman@cse.tamu.edu	\N
+112	Dezhen Song	Computer Science and Engineering	Professor	311B HRBB	979.845.5464	dzsong@cse.tamu.edu	\N
+113	Radu Stoleru	Computer Science and Engineering	Associate Professor	311C HRBB	979.862.8349	stoleru@cse.tamu.edu	http://engineering.tamu.edu/media/553250/image-of-radu-stoleru.jpg
+114	Shinjiro Sueda	Computer Science and Engineering	Assistant Professor	527D HRBB	979.845.4893	sueda@tamu.edu	http://engineering.tamu.edu/media/4040796/sueda-shinjiro.jpg
+115	Sing-Hoi Sze	Computer Science and Engineering	Associate Professor	328B HRBB	979.845.5009	shsze@cse.tamu.edu	http://engineering.tamu.edu/media/553065/image-ofj-sing-hoi-sze.jpg
+116	Valerie E. Taylor	Computer Science and Engineering	Senior Associate Dean for Academic Affairs and Royce E. Wisenbaker Professor	517 HRBB	979.845.2497	taylor@cse.tamu.edu	http://engineering.tamu.edu/media/1091966/taylor.jpg
+117	Aakash Tyagi 	Computer Science and Engineering	Professor of Practice	515A HRBB	979.845.5480	tyagi@cse.tamu.edu	http://engineering.tamu.edu/media/1559112/tyagi.jpg
+118	Duncan M. "Hank" Walker	Computer Science and Engineering	Professor and Graduate Advisor	515B HRBB	979.862.4387	walker@cse.tamu.edu	http://engineering.tamu.edu/media/552524/dmwwebpage.jpg
+119	Zhangyang (Atlas) Wang	Computer Science and Engineering	Assistant Professor	\N	\N	atlaswang@tamu.edu	http://engineering.tamu.edu/media/3810754/image_atlas_wang.jpg
+120	Jennifer Welch	Computer Science and Engineering	Chevron Professor II, Regents Professor	425G HRBB	979.845.5076	welch@cse.tamu.edu	http://engineering.tamu.edu/media/2030248/welch.jpg
+121	Tiffani L. Williams	Computer Science and Engineering	Associate Professor	328C HRBB	979.845.7977	tlw@cse.tamu.edu	http://engineering.tamu.edu/media/554542/image-of-tiffani-williams.jpg
+122	Meigan Aronson	Material Science and Engineering	Professor	MPHY 405	979.845.2629	maronson@physics.tamu.edu	http://engineering.tamu.edu/media/2990011/aronson.jpg
+123	Amine Benzerga	Material Science and Engineering	Professor	HRBB 736C 	979.845.1602	benzerga@tamu.edu	http://engineering.tamu.edu/media/2997356/amine-benzerga.jpg
+124	Tahir Cagin	Material Science and Engineering	Professor	RDMC 217	979.862.2416	tcagin@tamu.edu	http://engineering.tamu.edu/media/1121942/dsc_2853.jpg
+125	Raymundo Case	Material Science and Engineering	Professor of Practice	RDMC 210	979.458.1090	raymundo.case@tamu.edu	\N
+126	Homero Castaneda	Material Science and Engineering	Associate Professor	RDMC 228	979.458.9844	hcastaneda@tamu.edu	http://engineering.tamu.edu/media/2478774/castaneda.jpg
+127	Terry Creasy	Material Science and Engineering	Associate Professor	RDMC 214	979.458.0118	tcreasy@tamu.edu 	http://engineering.tamu.edu/media/846058/creasy2013.jpg
+128	Michael J. Demkowicz	Material Science and Engineering	Associate Professor	RDMC 212	979.458.9845	demkowicz@tamu.edu	\N
+129	Karl 'Ted' Hartwig	Material Science and Engineering	Professor 	RDMC 218	979.845.1585	thartwig@tamu.edu	http://engineering.tamu.edu/media/3069045/hartwig-ted.jpg
+130	Ibrahim Karaman	Material Science and Engineering	Professor	RDMC 242	979.862.3923	ikaraman@tamu.edu	http://engineering.tamu.edu/media/1121943/karaman.jpg
+131	Dimitris Lagoudas	Material Science and Engineering	Professor	WERC 237C	979.845.1604	d-lagoudas@tamu.edu	http://engineering.tamu.edu/media/2997357/image-of-dimitris-lagoudas.jpg
+132	Pao-Tai Lin	Material Science and Engineering	Assistant Professor	WERC 214F 	979.458.8223	paolin@tamu.edu	http://engineering.tamu.edu/media/2877244/paolin.jpg
+133	Alan Needleman	Material Science and Engineering	Professor	RDMC 226	979.862.2021	needle@tamu.edu	http://engineering.tamu.edu/media/1138469/004mod.jpg
+134	Esad Ozmetin	Material Science and Engineering	Research Assistant Professor	\N	\N	eozmetin@tamu.edu	http://engineering.tamu.edu/media/2478776/005-ozmetin.jpg
+135	Xiaofeng Qian	Material Science and Engineering	Assistant Professor	RDMC 224	979.458.9843	feng@tamu.edu	http://engineering.tamu.edu/media/2478775/qian-xieofeng-001.jpg
+136	Miladin Radovic	Material Science and Engineering	Associate Professor	RDMC 213	979.845.5114	mradovic@tamu.edu	http://engineering.tamu.edu/media/1121940/radovic.jpg
+137	Patrick Shamberger	Material Science and Engineering	Assistant Professor	RDMC 227	979.458.1086	patrick.shamberger@tamu.edu	http://engineering.tamu.edu/media/1115223/dsc_2370mod.jpg
+138	Ankit Srivastava	Material Science and Engineering	Assistant Professor	RDMC 211	979.458.9841	ankit.sri@tamu.edu	\N
+139	Hung-Jue Sue	Material Science and Engineering	Professor	RDMC 220	979.845.5024	hjsue@tamu.edu	http://engineering.tamu.edu/media/379136/hjsue.jpg
+140	Svetlana A. Sukhishvili	Material Science and Engineering	Professor	RDMC 219	979.458.9840	svetlana@tamu.edu	http://engineering.tamu.edu/media/2588988/svetlana_sukhishvili-copy.jpg
+141	Ramesh Talreja	Material Science and Engineering	Professor	HRBB 736A 	979.458.3256	talreja@tamu.edu	http://engineering.tamu.edu/media/2997370/ramesh-talreja.jpg
+142	Terry Alfriend	Aerospace Engineering	Professor	HRBB 727A 	831.648.1772	alfriend@tamu.edu	http://engineering.tamu.edu/media/564049/image-of-terry-alfriend.jpg
+143	Mark Avnet	Aerospace Engineering	Joint Faculty - Assistant Professor, Industrial & Systems Engineering	ETB 4075 	979.458.2339	avnet@tamu.edu	http://engineering.tamu.edu/media/1780502/avnet.png
+144	Moble Benedict	Aerospace Engineering	Assistant Professor	HRBB 746A 	979.458.2705	benedict@tamu.edu	http://engineering.tamu.edu/media/2357500/Moble-Benedict.jpg
+145	Amine Benzerga	Aerospace Engineering	Professor	HRBB 736C  	979.845.1602	benzerga@tamu.edu	http://engineering.tamu.edu/media/2357484/Amine-Benzerga.jpg
+146	Raktim Bhattacharya	Aerospace Engineering	Associate Professor	HRBB 727C 	979.862.2914	raktim@tamu.edu	http://engineering.tamu.edu/media/2357504/Raktim-Bhattacharya.jpg
+147	Rodney Bowersox	Aerospace Engineering	Professor	HRBB  710 	979.845.4184	bowersox@tamu.edu	http://engineering.tamu.edu/media/3186509/Bowersox.jpg
+148	Jim Boyd	Aerospace Engineering	Associate Professor	HRBB 707 	979.220.1211	jgboyd@tamu.edu	http://engineering.tamu.edu/media/2357494/Jim-Boyd.jpg
+149	Suman Chakravorty	Aerospace Engineering	Associate Professor	HRBB 741A 	979.458.0064	schakrav@tamu.edu	http://engineering.tamu.edu/media/2357509/Suman-Chakravorty.jpg
+150	Gregory Chamitoff	Aerospace Engineering	Professor of Engineering Practice	HRBB 746B 	979.862.3413	chamitoff@tamu.edu	http://engineering.tamu.edu/media/1685514/Image-of-Chamitoff.jpg
+151	Paul Cizmas	Aerospace Engineering	Professor	HRBB 631B 	979.845.5952	cizmas@tamu.edu	http://engineering.tamu.edu/media/2357503/Paul-Cizmas.jpg
+152	Diego Donzis	Aerospace Engineering	Associate Professor	HRBB 605 	979.862.2427	donzis@tamu.edu	http://engineering.tamu.edu/media/2357488/Diego-Donzis.jpg
+153	Sharath Girimaji	Aerospace Engineering	General Dynamics Professor of Aerospace Engineering	HRBB 607B 	979.845.1674	girimaji@tamu.edu	http://engineering.tamu.edu/media/2357508/Sharath-Girimaji.jpg
+154	Kentaro Hara	Aerospace Engineering	Assistant Professor	HRBB 607A	979.862.1660	khara@tamu.edu	http://engineering.tamu.edu/media/3999354/Ken-Hara-web.jpg
+155	Darren Hartl	Aerospace Engineering	Assistant Professor 	HRBB 745 	979.862.7087	darren.hartl@tamu.edu	http://engineering.tamu.edu/media/3867365/Hartl-web.jpg
+156	John Hurtado	Aerospace Engineering	Professor	HRBB 722A 	979.845.1659	jehurtado@tamu.edu	http://engineering.tamu.edu/media/2357495/John-Hurtado.jpg
+157	John Junkins	Aerospace Engineering	Distinguished Professor of Aerospace Engineering	HRBB 727D 	979.845.3912	junkins@tamu.edu	http://engineering.tamu.edu/media/563680/image-of-john-junkins.jpg
+158	Ibrahim Karaman	Aerospace Engineering	Chevron Professor I	MEOB 503 	979.862.3923	ikaraman@tamu.edu	http://engineering.tamu.edu/media/1769218/karaman.jpg
+159	Adonios Karpetis	Aerospace Engineering	Associate Professor	HRBB 607C 	979.458.4301	karpetis@tamu.edu	http://engineering.tamu.edu/media/2357483/Adonios-Karpetis.jpg
+160	Vikram Kinra	Aerospace Engineering	Professor	HRBB 739 	979.845.1667	kinra@tamu.edu	http://engineering.tamu.edu/media/2357513/Vikram-Kinra.jpg
+161	Waruna Kulatilaka	Aerospace Engineering	Associate Professor	MEOB 407	979.458.2885	 waruna.kulatilaka@tamu.edu	http://engineering.tamu.edu/media/3731950/Kulatilaka_300.jpg
+162	Dimitris Lagoudas	Aerospace Engineering	Professor	HRBB 602B 	979.458.1378	d-lagoudas@tamu.edu	http://engineering.tamu.edu/media/563567/image-of-dimitris-lagoudas.jpg
+163	Reza Langari	Aerospace Engineering	Professor	FERM 107 	979.862.4945	rlangari@tamu.edu	http://engineering.tamu.edu/media/1769219/Image-of-Reza-Langari.jpg
+164	Jean-Briac le Graverend	Aerospace Engineering	Assistant Professor	HRBB 743D 	979.845.1703	jblegraverend@tamu.edu	http://engineering.tamu.edu/media/2357493/Jean-Briac-le-Graverend.jpg
+165	Daniele Mortari	Aerospace Engineering	Professor	HRBB 746C 	979.845.0734	mortari@tamu.edu	http://engineering.tamu.edu/media/563511/image-of-daneile-mortari.jpg
+166	Mohammad Naraghi	Aerospace Engineering	Assistant Professor	HRBB 743B 	979.862.3323	Naraghi@tamu.edu	http://engineering.tamu.edu/media/2357501/Mohammad-Naraghi.jpg
+167	Tom Pollock	Aerospace Engineering	Associate Professor	HRBB 741B 	979.845.1686	pollock@tamu.edu	http://engineering.tamu.edu/media/569120/image-of-thomas-pollock.jpg
+168	Alexei Poludnenko	Aerospace Engineering	Associate Professor	HRBB 616B	979.245.4891	apoludn@tamu.edu	http://engineering.tamu.edu/media/4057354/Poludnenko-web.jpg
+169	J. N. Reddy	Aerospace Engineering	Regents Professor	MEOB 404 	979.862.2417	jnreddy@tamu.edu	http://engineering.tamu.edu/media/1769220/reddy.jpg
+170	Helen Reed	Aerospace Engineering	Professor and Holder of the Edward "Pete" Aldridge '60 Professorship	HRBB 611B	979.845.7178	helen.reed@tamu.edu	http://engineering.tamu.edu/media/563621/image-of-helen-reed.jpg
+171	Jacques Richard	Aerospace Engineering	Senior Lecturer	HRBB 744C  	979.845.3916	richard@tamu.edu	http://engineering.tamu.edu/media/2357492/Jacques-Richard.jpg
+172	William Saric	Aerospace Engineering	Distinguished Professor of Aerospace Engineering	HRBB 602C 	979.862.1749	saric@tamu.edu	http://engineering.tamu.edu/media/2357516/William-Saric.jpg
+173	Marlan Scully	Aerospace Engineering	Joint Faculty - Distinguished Professor, Physics and Astronomy	MPHY 566 	979.862.2333	scully@tamu.edu	\N
+174	Robert Skelton	Aerospace Engineering	TEES Distinguished Research Professor	HRBB 722B	979.845.3947	bobskelton@tamu.edu	http://engineering.tamu.edu/media/3048459/Skelton-web.jpg
+175	Thomas Strganac	Aerospace Engineering	Professor	HRBB 743C 	979.845.1694	strag@tamu.edu	http://engineering.tamu.edu/media/2357512/Thomas-Strganac.jpg
+176	Theofanis Strouboulis	Aerospace Engineering	Professor	HRBB 736B  	979.845.1676	strouboulis@tamu.edu	http://engineering.tamu.edu/media/2357511/Thoefanis-Strouboulis.jpg
+177	Ramesh Talreja	Aerospace Engineering	Tenneco Professor	HRBB 736A 	979.458.3256	talreja@tamu.edu	http://engineering.tamu.edu/media/2357505/Ramesh-Talreja.jpg
+178	Nathan Tichenor	Aerospace Engineering	Research Assistant Professor	HRBB 616A	979.845.4938	ntichenor@tamu.edu	http://engineering.tamu.edu/media/4057388/Tichenor-web.jpg
+179	Srinivas Rao Vadali	Aerospace Engineering	Professor	HRBB 727B 	979.845.3918	svadali@tamu.edu	http://engineering.tamu.edu/media/2357506/Rao-Vadali.jpg
+180	John Valasek	Aerospace Engineering	Professor and Holder of the Thaman Professorship	HRBB 719C   	979.845.1685	valasek@tamu.edu	http://engineering.tamu.edu/media/4103427/Valasek08_updated14-web.jpg
+181	John Whitcomb	Aerospace Engineering	Professor	HRBB 724 	979.845.4006	jdw@tamu.edu	http://engineering.tamu.edu/media/2357498/John-Whitcomb.jpg
+182	Edward White	Aerospace Engineering	Associate Professor	HRBB 706  	979.862.6446	ebw@tamu.edu	http://engineering.tamu.edu/media/2357489/Ed-White.jpg
+183	Ahmad Bani Younes	Aerospace Engineering	Adjunct Faculty - Assistant Professor	PO Box 127788, Abu Dhabi, UAE	971 (02) 447.2442	olalahmad_1@tamu.edu	http://engineering.tamu.edu/media/3847610/dr-ahmadbaniyounes-new.jpg
+184	Daniel L. Alge	Biomedical Engineering	Assistant Professor	5028 ETB	979.458.9248	dalge@tamu.edu	http://engineering.tamu.edu/media/1405330/alge-use-web.jpg
+185	Brian E. Applegate	Biomedical Engineering	Associate Professor	5059 ETB	979.862.6521	apple@tamu.edu	http://engineering.tamu.edu/media/284429/applegate__b.jpg
+186	Corey J. Bishop	Biomedical Engineering	Assistant Professor	5016 ETB	979.458.3126	cbishop@tamu.edu	http://engineering.tamu.edu/media/3985284/Bishop_CoreyJ_2016.jpg
+187	Saurabh Biswas	Biomedical Engineering	Associate Professor of Practice	5018 ETB	979.458.2321	saurabh_biswas@tamu.edu	http://engineering.tamu.edu/media/3981256/Biswas_Saurabh_2016.jpg
+188	Alan Brewer	Biomedical Engineering	Professor of Practice	5032 ETB	979.845.5540	mabrewer@tamu.edu	http://engineering.tamu.edu/media/1144229/brewer-10020-portrait-4x5-thi_2621.jpg
+189	Elizabeth Cosgriff-Hernandez	Biomedical Engineering	Associate Professor	5033 ETB	979.845.1771	cosgriff.hernandez@tamu.edu	http://engineering.tamu.edu/media/284782/cosgriff-hernandez-use.jpg
+190	Gerard L. Coté	Biomedical Engineering	Holder of the Charles H. and Bettye Barclay Professorship	1041 ETB	979.845.4196	gcote@tamu.edu	http://engineering.tamu.edu/media/285170/cote_web.jpg
+191	John C. Criscione	Biomedical Engineering	Professor	5064 ETB	979.845.5428	jccriscione@tamu.edu	http://engineering.tamu.edu/media/285304/criscone_web.jpg
+192	Akhilesh K. Gaharwar	Biomedical Engineering	Assistant Professor	5024 ETB	979.458.5540	gaharwar@tamu.edu	http://engineering.tamu.edu/media/830464/gaharwar__akhilesh_web.jpg
+193	Melissa A. Grunlan	Biomedical Engineering	Associate Professor	5030 ETB	979.845.2406	mgrunlan@tamu.edu	http://engineering.tamu.edu/media/285309/grunlan-use-1.jpg
+194	Anthony Guiseppi-Elie	Biomedical Engineering	TEES Professor	5002D ETB	979.458.1239	guiseppi@tamu.edu	http://engineering.tamu.edu/media/2506325/guiseppi-elie-web.jpg
+195	Balakrishna Haridas	Biomedical Engineering	Professor of Practice	5014 ETB	979.845.3348	bharidas@tamu.edu	http://engineering.tamu.edu/media/2551742/haridas-bala.jpg
+196	Wonmuk Hwang	Biomedical Engineering	Associate Professor	5060 ETB	979.458.0178	hwm@tamu.edu	http://engineering.tamu.edu/media/285314/hwang_web.jpg
+197	William A. Hyman	Biomedical Engineering	Emeritus Professor	\N	212.877.0720	w-hyman@tamu.edu	http://engineering.tamu.edu/media/989345/hyman.jpg
+198	Roozbeh Jafari	Biomedical Engineering	Associate Professor	5010 ETB	979.862.8098	rjafari@tamu.edu	http://engineering.tamu.edu/media/2714472/011-jafari.jpg
+199	Abhishek Jain	Biomedical Engineering	Assistant Professor	5008 ETB	979.458.8494	a.jain@tamu.edu	http://engineering.tamu.edu/media/3981257/Jain_Abhishek_2016.jpg
+200	Javier Jo	Biomedical Engineering	Associate Professor	5062 ETB	979.458.3335	javierjo@tamu.edu	http://engineering.tamu.edu/media/285319/jo_web.jpg
+201	Roland R. Kaunas	Biomedical Engineering	Associate Professor	5020 ETB	979.845.2412	rkaunas@tamu.edu	http://engineering.tamu.edu/media/285324/kaunas_web.jpg
+202	Michael L. Madigan	Biomedical Engineering	Professor	5063 ETB	979.862.1214	mlm@tamu.edu	http://engineering.tamu.edu/media/1594530/madigan.jpg
+203	Duncan J. Maitland	Biomedical Engineering	Professor	5057 ETB	979.458.3471	djmaitland@tamu.edu	http://engineering.tamu.edu/media/285329/maitland-d-web-use.jpg
+204	Kristen Maitland	Biomedical Engineering	Associate Professor	5016 ETB	979.845.1864	kmaitland@tamu.edu	http://engineering.tamu.edu/media/285334/maitland-k-web-use.jpg
+205	Mary P. McDougall	Biomedical Engineering	Associate Professor	5026 ETB	979.845.2421	mpmcdougall@tamu.edu	http://engineering.tamu.edu/media/3425391/mcdougall-use.jpg
+206	Mike McShane	Biomedical Engineering	Professor	5065 ETB	979.845.7941	mcshane@tamu.edu	http://engineering.tamu.edu/media/3425392/mcshane-2015.jpg
+207	Raimund J. Ober	Biomedical Engineering	Professor of Biomedical Engineering and Molecular and Cellular Medicine	5012 ETB	979.458.9197	raimund.ober@tamu.edu	http://engineering.tamu.edu/media/1594532/ober.jpg
+208	Vladislav V. Yakovlev	Biomedical Engineering	Professor	5025 ETB	979.458.2326	yakovlev@tamu.edu	http://engineering.tamu.edu/media/285364/yakovlev_web.jpg
+209	Alvin T. Yeh	Biomedical Engineering	Associate Professor	5022 ETB	979.845.5468	ayeh@tamu.edu	http://engineering.tamu.edu/media/285369/yeh_web.jpg
+210	Mustafa Akbulut	Chemial Engineering	Associate Professor	230 CHEN	979.847.8766	makbulut@tamu.edu	http://engineering.tamu.edu/media/2233884/akbulut_web.jpg
+211	Perla Balbuena	Chemial Engineering	Professor	240 CHEN	979.845.3375	balbuena@tamu.edu	http://engineering.tamu.edu/media/1535798/Balbuena_Web.jpg
+212	Dragomir Bukur	Chemial Engineering	Professor	217 CHEN	979.845.3401 	d-bukur@tamu.edu	http://engineering.tamu.edu/media/520574/image-of-dragomir-bukur.jpg
+213	Zhengdong Cheng	Chemial Engineering	Associate Professor	220 CHEN	979.845.3413 	zcheng@tamu.edu	http://engineering.tamu.edu/media/2142404/cheng_2015_web.jpg
+214	Yossef Elabd	Chemial Engineering	Professor	214 CHEN	979.845.7506	 elabd@tamu.edu	http://engineering.tamu.edu/media/2158137/elabd_web.jpg
+215	Mahmoud El-Halwagi	Chemial Engineering	Professor	229 CHEN	979.845.3484	el-halwagi@tamu.edu	http://engineering.tamu.edu/media/2142405/el-halwagi_web.jpg
+216	Christodoulos A. Floudas	Chemial Engineering	Erle Nye ’59 Chair Professor for Engineering Excellence	332 CHEN	979.458.0253	floudas@tamu.edu	http://engineering.tamu.edu/media/2213490/floudas_web_2015.jpg
+217	Charles Glover	Chemial Engineering	Professor	232 CHEN	979.845.3389	c-glover@tamu.edu	http://engineering.tamu.edu/media/520489/image-of-charles-glover.jpg
+218	Micah Green	Chemial Engineering	Associate Professor	202 CHEN	979.862.1588	 micah.green@tamu.edu	http://engineering.tamu.edumgreen_2012.jpg
+219	James Harris	Chemial Engineering	Professor of Practice	208 CHEN	979.845.9803	jim.harris@tamu.edu	http://engineering.tamu.edu/media/2830035/harris_web2015.jpg
+220	M. M. Faruque Hasan	Chemial Engineering	Assistant Professor	333 ERB	979.862.1449	hasan@tamu.edu	http://engineering.tamu.edu/media/2258922/hasan_web_2015.jpg
+221	James Holste	Chemial Engineering	Professor	210 CHEN	979.845.3384 	j-holste@tamu.edu	http://engineering.tamu.edu/media/520664/image-of-james-holste.jpg
+222	Mark Holtzapple	Chemial Engineering	Professor	231 CHEN	979.845.9708 	m-holtzapple@tamu.edu	http://engineering.tamu.edu/media/521047/image-of-mark-holtzapple.jpg
+223	Arul Jayaraman	Chemial Engineering	Professor	222 CHEN	979.845.3306	arulj@tamu.edu	http://engineering.tamu.edu/media/2158147/jayaraman_web.jpg
+224	Hae-Kwon Jeong	Chemial Engineering	Associate Professor	233 CHEN	979.862.4850 	hjeong7@tamu.edu	http://engineering.tamu.edu/media/2121019/jeong_2015_web.jpg
+225	Katy Kao	Chemial Engineering	Associate Professor	212 CHEN	979.845.5571	kao.katy@gmail.com	http://engineering.tamu.edu/media/520823/image-of-katy-kao.jpg
+226	M. Nazmul Karim	Chemial Engineering	Department Head - Professor	255 CHEN	979.845.9806 	nazkarim@tamu.edu	http://engineering.tamu.edu/media/2417842/karim_web_2015.jpg
+227	Homa Khosravian	Chemial Engineering	Research Assistant Professor	203 CHEN	979.845.3357	hkhosravian@tamu.edu	http://engineering.tamu.edu/media/2795913/khonsravian_web2015.png
+228	Costas Kravaris	Chemial Engineering	Professor	236 CHEN	979.458.4514	kravaris@tamu.edu	http://engineering.tamu.edu/media/1685498/kravaris.jpg
+229	Yue Kuo	Chemial Engineering	Professor	235 CHEN	979.845.9807 	yuekuo@tamu.edu	http://engineering.tamu.edu/media/4093796/kuo_web.jpg
+230	Joseph Sang-II Kwon	Chemial Engineering	Assistant Professor	331 ERB	979.962.5930	kwonx075@tamu.edu	http://engineering.tamu.edu/media/2795908/kwon_web.jpg
+231	Pushkar Lele	Chemial Engineering	Assistant Professor	241 CHEN	979.458.2790	plele@tamu.edu	http://engineering.tamu.edu/media/2830046/lele_web2015.jpg
+232	Jodie Lutkenhaus	Chemial Engineering	Associate Professor	218 CHEN	979.845.2682	jodie.lutkenhaus@tamu.edu	http://engineering.tamu.edu/media/2158146/lutkenhaus_web.jpg
+233	M. Sam Mannan	Chemial Engineering	Professor	246 CHEN	979.862.3985	mannan@tamu.edu	http://engineering.tamu.edu/media/2877263/web.jpg
+234	Chad Mashuga	Chemial Engineering	Assistant Professor	205 CHEN	979.845.3339	mashuga@tamu.edu	http://engineering.tamu.edu/media/2258925/mashuga_web_2015.jpg
+235	Efstratios Pistikopoulos	Chemial Engineering	TEES Distinguished Research Professor	335 CHEN	979.458.0259	stratos@tamu.edu	http://engineering.tamu.edu/media/2062647/pistikopoulos_web.jpg
+236	Jorge Seminario	Chemial Engineering	Professor	239 CHEN	979.845.3301 	seminario@tamu.edu	http://engineering.tamu.edu/media/2233885/seminario_2014.jpg
+237	Phanourios Tamamis	Chemial Engineering	Assistant Professor	330 GERB	979.862.1610	tamamis@tamu.edu	http://engineering.tamu.edu/media/2062641/tamamis_web.jpg
+238	Victor Ugaz	Chemial Engineering	Professor	224 CHEN	979.458.1002 	ugaz@tamu.edu	http://engineering.tamu.edu/media/1535802/Ugaz_Web.jpg
+239	Sreeram Vaddiraju	Chemial Engineering	Associate Professor	237 CHEN	979.862.1615 	sreeram.vaddiraju@tamu.edu	http://engineering.tamu.edu/media/2126560/vaddiraju_web.jpg
+240	Benjamin Wilhite	Chemial Engineering	Associate Professor	226 CHEN	979.845.0406 	benjaminwilhite@exchange.tamu.edu	http://engineering.tamu.edu/media/2258926/wilhite_web_2015.jpg
+241	Hung-Jen Wu	Chemial Engineering	Assistant Professor	227 CHEN	979.862.1454	hjwu@tamu.edu	http://engineering.tamu.edu/media/2394336/wu_web_2014.jpg
+242	Stuart Anderson	Civil Engineering	\N	710E CEOB	979.845.2407	stuarta@civil.tamu.edu	http://engineering.tamu.edu/media/559149/image-of-stuart-anderson.jpg
+243	Charles Aubeny	Civil Engineering	Professor	808P CEOB	979.845.4478	caubeny@civil.tamu.edu	http://engineering.tamu.edu/media/556114/aubeny-chuck-2014.png
+244	Robin Autenrieth	Civil Engineering	A.P. and Florence Wiley Professor III	201 CEOB	979.845.2438	rautenrieth@civil.tamu.edu	http://engineering.tamu.edu/media/1773519/robin-autenrieth-2014.png
+245	M. Katherine Banks	Civil Engineering	Harold J. Haynes Dean’s Chair Professor	312 ADMN	979.845.1321	k-banks@tamu.edu	http://engineering.tamu.edu/media/2542219/mkb.jpg
+246	Luciana Barroso	Civil Engineering	Associate Professor	705D  CEOB	979.845.0290	lbarroso@civil.tamu.edu	http://engineering.tamu.edu/media/557937/image-of-luciana-barroso.jpg
+247	Bill Batchelor	Civil Engineering	Senior Professor	404D CEOB	979.845.1304	bill-batchelor@tamu.edu	http://engineering.tamu.edu/media/556054/image-of-bill-batchelor.jpg
+248	Lynn Beason	Civil Engineering	Associate Professor	701C CEOB	979.845.4469	lbeason@civil.tamu.edu	http://engineering.tamu.edu/media/557967/image-of-lynn-beason.jpg
+249	Anna Birely	Civil Engineering	Assistant Professor	710B CEOB	979.862.6603	abirely@civil.tamu.edu	http://engineering.tamu.edu/media/555994/image-of-anna-birely.jpg
+250	Bjorn Birgisson	Civil Engineering	TEES Distinguished Research Professor	201J CEOB	979.845.6039	bjorn.birgisson@tamu.edu	http://engineering.tamu.edu/media/3930672/birgisson-web.jpg
+251	Joseph Bracci	Civil Engineering	Professor	702B CEOB	979.845.3750	bracci@civil.tamu.edu	http://engineering.tamu.edu/media/2850958/bracci.jpg
+252	Jean-Louis Briaud	Civil Engineering	Distinguished Professor	808Q CEOB	979.845.3795	briaud@tamu.edu	http://engineering.tamu.edu/media/557285/briaud-jl.png
+253	Kelly Brumbelow	Civil Engineering	Associate Professor	201G CEOB	979.862.7633	kbrumbelow@civil.tamu.edu	http://engineering.tamu.edu/media/557763/brumbelow__kelly.png
+254	Mark Burris	Civil Engineering	Herbert D. Kelleher Professor	301B CEOB	979.845.9875	mburris@tamu.edu	http://engineering.tamu.edu/media/1473866/burris-mark.png
+255	Anthony Cahill	Civil Engineering	Associate Professor	410E CEOB	979.862.3858	tcahill@civil.tamu.edu	http://engineering.tamu.edu/media/543415/image-of-anthony-cahill.jpg
+256	Minsu Cha	Civil Engineering	Assistant Professor	808W CEOB	979.862.5660	mcha@civil.tamu.edu	http://engineering.tamu.edu/media/2877194/cha.jpg
+257	Kuang-An Chang	Civil Engineering	Professor	802C CEOB	979.845.4504	kchang@civil.tamu.edu	http://engineering.tamu.edu/media/559789/kchang.jpg
+258	Shankar Chellam	Civil Engineering	J. Walter “Deak” Porter ’22 & James W. “Bud” Porter ’51 Professor	402E CEOB	979.458.5914	chellam@tamu.edu	http://engineering.tamu.edu/media/2714448/schellamweb.jpg
+259	Hamn-Ching Chen	Civil Engineering	A.P. and Florence Wiley Professor I	808K CEOB	979.847.9468	hcchen@civil.tamu.edu	http://engineering.tamu.edu/media/556614/image-of-hamn-ching-chen.jpg
+260	Kung-Hui Chu	Civil Engineering	Associate Professor	402A CEOB	979.845.1403	kchu@civil.tamu.edu	http://engineering.tamu.edu/media/543936/image-of-kung-hui-chu.jpg
+261	Ivan Damnjanovic	Civil Engineering	Associate Professor	705E CEOB	979.862.6616	idamnjanovic@civil.tamu.edu	http://engineering.tamu.edu/media/556674/image-of-ivan-damnjanovic.jpg
+262	Amy Epps Martin	Civil Engineering	Professor	310D CEOB	979.862.1750	a-eppsmartin@tamu.edu	http://engineering.tamu.edu/media/2850954/epps-martin.jpg
+263	David Ford	Civil Engineering	Professor	702D CEOB	979.845.3759	dford@civil.tamu.edu	http://engineering.tamu.edu/media/556285/ford-david-2014.png
+264	Huilin Gao	Civil Engineering	Assistant Professor	410A CEOB	979.845.2875	hgao@civil.tamu.edu	http://engineering.tamu.edu/media/821744/gao-huilin-2014.png
+265	Nasir Gharaibeh	Civil Engineering	Associate Professor	503E CEOB	979.845.3362	ngharaibeh@civil.tamu.edu	http://engineering.tamu.edu/media/544116/ngharaibeh.jpg
+266	Zachary Grasley	Civil Engineering	Associate Professor	503B CEOB	979.845.9965	zgrasley@civil.tamu.edu	http://engineering.tamu.edu/media/1621568/grasley-zach-2014.png
+267	Gene Hawkins	Civil Engineering	Professor	301C CEOB	979.845.9946	gene.hawkins@tamu.edu	http://engineering.tamu.edu/media/544699/hawkins-gene-2014.png
+268	Mary Beth Hueste	Civil Engineering	Professor	705H CEOB	979.845.1940	mhueste@tamu.edu	http://engineering.tamu.edu/media/1583205/mary-beth-hueste.png
+269	Stefan Hurlebaus	Civil Engineering	Professor	705L CEOB	979.845.9570	shurlebaus@civil.tamu.edu	http://engineering.tamu.edu/media/559084/shurlebaus.jpg
+270	Ray James	Civil Engineering	Associate Professor	201 CEOB	979.845.1353	r-james@tamu.edu	http://engineering.tamu.edu/media/558849/image-of-ray-james.jpg
+271	Harry Jones	Civil Engineering	Associate Professor	701B CEOB	979.845.4304	h-jones@tamu.edu	http://engineering.tamu.edu/media/556644/jones-harry-2014.png
+272	James Kaihatu	Civil Engineering	Associate Professor	808D CEOB	979.862.3511	jkaihatu@civil.tamu.edu	http://engineering.tamu.edu/media/556813/kaihatu-jim-2014.png
+273	Peter Keating	Civil Engineering	Associate Professor	710C CEOB	979.845.9969	keating@civil.tamu.edu	http://engineering.tamu.edu/media/3250989/keating.jpg
+274	Dallas Little	Civil Engineering	Snead Chair Professor and Regents Professor	603E CEOB	979.845.9847	d-little@tamu.edu	http://engineering.tamu.edu/media/556195/little-dallas.png
+275	Dominique Lord	Civil Engineering	Professor	301A CEOB	979.458.3949	d-lord@tamu.edu	http://engineering.tamu.edu/media/1942657/lord-dom-2014.png
+276	Lee Lowery	Civil Engineering	Professor	705C CEOB	979.845.4395	lowery@civil.tamu.edu	http://engineering.tamu.edu/media/557848/image-of-lee-lowery.jpg
+277	Robert Lytton	Civil Engineering	Benson Chair Professor	503A CEOB	979.845.9964	r-lytton@civil.tamu.edu	http://engineering.tamu.edu/media/2850963/lytton.jpg
+278	Xingmao "Samuel" Ma	Civil Engineering	Associate Professor	405F CEOB	979.862.1772	xma@civil.tamu.edu	http://engineering.tamu.edu/media/2850964/ma.jpg
+279	John Mander	Civil Engineering	Zachry Professor in Design and Construction Integration I	701A CEOB	979.862.8078	jmander@civil.tamu.edu	http://engineering.tamu.edu/media/557420/image-of-john-mander.jpg
+280	Eyad Masad	Civil Engineering	Zachry Professor in Design and Construction Integration II	508J CEOB	979.845.8308	emasad@civil.tamu.edu	http://engineering.tamu.edu/media/3049568/masad.jpg
+281	Zenon Medina-Cetina	Civil Engineering	Associate Professor	808S CEOB	979.845.6567	zmedina@civil.tamu.edu	http://engineering.tamu.edu/media/559285/image-of-zenon-medina-cetina.jpg
+282	Richard Mercier	Civil Engineering	Professor	802D CEOB	979.845.6000	rsmercier@tamu.edu	http://engineering.tamu.edu/media/1942658/mercier-rick-2014.png
+283	Gretchen Miller	Civil Engineering	Associate Professor	402D CEOB	979.862.2581	gmiller@civil.tamu.edu	http://engineering.tamu.edu/media/546314/image-of-gretchen-miller.jpg
+284	Ali Mostafavi	Civil Engineering	Assistant Professor	709C CEOB	979.845.4856	amostafavi@civil.tamu.edu	http://engineering.tamu.edu/media/3930670/ali-m-photo.jpg
+285	John Niedzwecki	Civil Engineering	Regents Professor	709A CEOB	979.845.4707	j-niedzwecki@tamu.edu	http://engineering.tamu.edu/media/557505/image-of-john-niedzwecki.jpg
+286	Francisco Olivera	Civil Engineering	Associate Professor	404F CEOB	979.845.1404	folivera@civil.tamu.edu	http://engineering.tamu.edu/media/546590/image-of-francisco-olivera.jpg
+287	Stephanie Paal	Civil Engineering	Assistant Professor	710A CEOB	979.845.4394	spaal@civil.tamu.edu	http://engineering.tamu.edu/media/3930691/paal-web-photo.jpg
+288	Philip Park	Civil Engineering	Assistant Professor	503G CEOB	979.847.5690	ppark@civil.tamu.edu	http://engineering.tamu.edu/media/2850966/park.jpg
+289	Luca Quadrifoglio	Civil Engineering	Associate Professor	301I CEOB	979.458.4171	lquadrifoglio@civil.tamu.edu	http://engineering.tamu.edu/media/557907/lquadrifoglio.png
+290	Maryam Sakhaeifar	Civil Engineering	Assistant Professor	501E CEOB	979.845.9961	msakhaeifar@civil.tamu.edu	http://engineering.tamu.edu/media/558077/image-of-maryam-sakhaeifar.jpg
+291	Marcelo Sanchez	Civil Engineering	Associate Professor	808U CEOB	979.862.6604	msanchez@civil.tamu.edu	http://engineering.tamu.edu/media/558022/sanchez-marcelo-2014.png
+292	Scott Socolofsky	Civil Engineering	Professor	802B CEOB	979.845.4517	socolofsky@tamu.edu	http://engineering.tamu.edu/media/542336/image-of-scott-socolofsky.jpg
+293	Alireza Talebpour	Civil Engineering	Assistant Professor	301E CEOB	979.845.0875	atalebpour@tamu.edu	http://engineering.tamu.edu/media/2850968/talebpour.jpg
+294	John Tracy	Civil Engineering	Professor	\N	\N	\N	http://engineering.tamu.edu/media/3309306/tracy.jpg
+295	Bruce Wang	Civil Engineering	Associate Professor	301F CEOB	979.845.9901	bwang@civil.tamu.edu	http://engineering.tamu.edu/media/556084/wang-bruce-2014.png
+296	Ralph Wurbs	Civil Engineering	Arthur McFarland Professor	410B CEOB	979.845.3079	r-wurbs@tamu.edu	http://engineering.tamu.edu/media/558746/rwurbs.jpg
+297	Qi Ying	Civil Engineering	Associate Professor	411B CEOB	979.845.9709	qying@civil.tamu.edu	http://engineering.tamu.edu/media/558615/image-of-qi-ying.jpg
+298	Yunlong Zhang	Civil Engineering	Professor	301G CEOB	979.845.9902 	yzhang@civil.tamu.edu	http://engineering.tamu.edu/media/2850969/zhang.jpg
+299	Dan Zollinger	Civil Engineering	Professor	501D CEOB	979.845.9918	d-zollinger@tamu.edu	http://engineering.tamu.edu/media/2850970/zollinger.jpg
+300	Jorge Alvarado	Engineering Technology and Industrial Distribution	Professor	117E Thompson	979.458.1900	jorge.alvarado@tamu.edu	http://engineering.tamu.edu/media/2938719/JORGE-ALVARADO_SUMMER-2014.jpg
+301	Robert M. Borsh, Jr.	Engineering Technology and Industrial Distribution	Associate Professor of Practice	304C Fermier	979.862.7225	bob.borsh@tamu.edu	\N
+302	Walter Buchanan	Engineering Technology and Industrial Distribution	Professor	304D Fermier	979.862.4945	buchananw@tamu.edu	http://engineering.tamu.edu/media/3353919/walter-buchanan_fall-2015.jpg
+303	Ismail Capar	Engineering Technology and Industrial Distribution	Associate Professor	203G Fermier	979.862.8312	capar@tamu.edu	http://engineering.tamu.edu/media/3353920/ismail-capar_fall-2015.jpg
+304	Norm Clark	Engineering Technology and Industrial Distribution	Instructional Associate Professor	205C Fermier	979.847.9076	nclark@tamu.edu	http://engineering.tamu.edu/media/2938693/NORMAN-CLARK_FALL-2015.jpg
+305	Alex (Gwo-Ping) Fang	Engineering Technology and Industrial Distribution	Associate Professor	118D Thompson	979.845.4967	gpafang@tamu.edu	http://engineering.tamu.edu/media/3362931/alex-fang_summer-2014.jpg
+306	Rainer Fink	Engineering Technology and Industrial Distribution	Associate Professor	106 Fermier	979.845.5150	fink@tamu.edu	http://engineering.tamu.edu/media/2938697/RAINER-FINK_FALL-2015.jpg
+307	Ana Goulart	Engineering Technology and Industrial Distribution	Assistant Professor	011 Fermier	979.845.4948	goulart@tamu.edu	\N
+308	Sheng-Jen "Tony" Hsieh	Engineering Technology and Industrial Distribution	Professor	223 Thompson	979.845.4985	hsieh@tamu.edu	http://engineering.tamu.edu/media/2938723/SHEN-JEN-TONY-HSIEH_SUMMER-2014.jpg
+309	Wayne Hung	Engineering Technology and Industrial Distribution	Associate Professor	117D Thompson	979.845.4989	hung@tamu.edu	http://engineering.tamu.edu/media/3353921/wanye-hung_fall-2015.jpg
+310	Byul Hur	Engineering Technology and Industrial Distribution	Assistant Professor	008A Fermier	979.845.5195	byulmail@tamu.edu	http://engineering.tamu.edu/media/4057372/hur.jpg
+311	Eleftherios Iakovou	Engineering Technology and Industrial Distribution	Professor	304C Fermier	979.458.1097	eiakovou@tamu.edu	http://engineering.tamu.edu/media/3362932/eleftherios-iakovou_fall-2015.jpg
+312	Daniel Jennings	Engineering Technology and Industrial Distribution	I. Andrew Rader Professor	204B Fermier	979.845.4972	djennings@tamu.edu	http://engineering.tamu.edu/media/2938717/DAN-JENNINGS_SUMMER-2014.jpg
+313	Mark Johnson	Engineering Technology and Industrial Distribution	Associate Professor of Practice	204C Fermier	979.862.7092	johnson78@tamu.edu	http://engineering.tamu.edu/media/2938690/MARK-JOHNSON_FALL-2015.jpg
+314	Michael Johnson	Engineering Technology and Industrial Distribution	Associate Professor	118B Thompson	979.845.4902	mdjohnson@tamu.edu	http://engineering.tamu.edu/media/2938721/MICHAEL-JOHNSON_SUMMER-2014.jpg
+315	Mathew A. Kuttolamadom 	Engineering Technology and Industrial Distribution	Assistant Professor	117E Thompson	979.862.8472	mathew@tamu.edu	http://engineering.tamu.edu/media/3362935/matt-kuttolamadom_fall-2015.jpg
+316	Reza Langari	Engineering Technology and Industrial Distribution	Professor	107 Fermier	979.862.4945	rlangari@tamu.edu	http://engineering.tamu.edu/media/3362937/reza-langari_fall-2015.jpg
+317	F. Barry Lawrence 	Engineering Technology and Industrial Distribution	Leonard and Valerie Bruce Professor	205G Fermier	979.845.1463	fb-lawrence@tamu.edu	http://engineering.tamu.edu/media/3362936/barry-lawrence_fall-2015.jpg
+318	Jorge Leon	Engineering Technology and Industrial Distribution	Allen Bradley Professor	117G Thompson	979.845.4993	jleon@tamu.edu	http://engineering.tamu.edu/media/3362938/jorge-leon_fall-2015.jpg
+319	Chao Ma	Engineering Technology and Industrial Distribution	Assistant Professor	117H Thompson	979.845.4509	cma@tamu.edu	\N
+320	Joseph A. Morgan 	Engineering Technology and Industrial Distribution	Professor	111B Fermier	979.575.0128	j-morgan@tamu.edu	http://engineering.tamu.edu/media/2938686/JOSEPH-MORGAN_FALL-2015.jpg
+321	Malini Natarajarathinam 	Engineering Technology and Industrial Distribution	Associate Professor	203D Fermier	979.845.6766	malini@tamu.edu	http://engineering.tamu.edu/media/2938720/MALINI-NATARAJARATHINAM_SUMMER-2014.jpg
+322	Bimal Nepal	Engineering Technology and Industrial Distribution	Associate Professor	205C Fermier	979.845.2230	nepal@tamu.edu	http://engineering.tamu.edunepal_bimal.jpg
+323	Suleiman Obeidat	Engineering Technology and Industrial Distribution	Instructional Assistant Professor	118E Thompson	979.845.4953	sobeidat@tamu.edu	\N
+324	Jay Porter	Engineering Technology and Industrial Distribution	Professor	008 Fermier	979.845.1459	jporter@tamu.edu	http://engineering.tamu.edu/media/2938684/JAY-PORTER_FALL-2015.jpg
+325	Angie Hill Price	Engineering Technology and Industrial Distribution	Associate Professor	118A Thompson	979.845.4966	price@tamu.edu	http://engineering.tamu.edu/media/2938736/ANGIE-PRICE_FALL-2015.jpg
+326	Esther Rodriguez Silva	Engineering Technology and Industrial Distribution	TEES Research Assistant Professor	118F Sbisa	979.845.3146	estherrsilva@tamu.edu	http://engineering.tamu.edu/media/2938726/ESTHER-RODRIGUEZ-SILVA_FALL-2015.jpg
+327	Xingyong Song	Engineering Technology and Industrial Distribution	Assistant Professor	005A Fermier	979.458.1206	songxy@tamu.edu	http://engineering.tamu.edu/media/2938712/XINGYONG-SONG_FALL-2015.jpg
+328	Manoj Vanajakumari	Engineering Technology and Industrial Distribution	Associate Professor	203C Fermier	979.458.1197	manojuv@tamu.edu	http://engineering.tamu.edu/media/2938688/MANOJ-VANAJAKUMARI_FALL-2015.jpg
+329	Jyhwen Wang	Engineering Technology and Industrial Distribution	Professor	118G Thompson	979.845.4903	jwang@tamu.edu	http://engineering.tamu.edu/media/2938728/JYHWEN-WANG_FALL-2015.jpg
+330	Wei Zhan	Engineering Technology and Industrial Distribution	Associate Professor	111A Fermier	979.862.4342	wei.zhan@tamu.edu	http://engineering.tamu.edu/media/2938709/WEI-ZHAN_FALL-2015.jpg
+331	Behbood B. Zoghi	Engineering Technology and Industrial Distribution	Victor H. Thompson Professor	012 Fermier	979.676.3533	zoghi@tamu.edu	http://engineering.tamu.edu/media/2938673/BEN-ZOGHI_FALL-2015.jpg
+332	Amarnath Banerjee	Industrial and Systems Engineering	Professor	4041 ETB	979.458.2341	Banerjee@tamu.edu	http://engineering.tamu.edu/media/581403/image-of-amarnath-banerjee.jpg
+333	Mark Benden	Industrial and Systems Engineering	Associate Professor (Courtesy Appointment)	212 Adriance Lab Rd.	979.436.9334	mbenden@sph.tamhsc.edu	http://engineering.tamu.edu/media/3425402/benden-website.jpg
+334	G. Kemble Bennett	Industrial and Systems Engineering	Senior Professor	4007 ETB	979.458.2364	kem-bennett@tamu.edu	http://engineering.tamu.edu/media/582466/image-of-kemble-bennett.jpg
+335	Satish T.S. Bukkapatnam	Industrial and Systems Engineering	Professor	4046 ETB	979.458.2348	satish@tamu.edu	http://engineering.tamu.edu/media/3427397/bukkapatnam-s_175x240.jpg
+336	Sergiy Butenko	Industrial and Systems Engineering	Professor 	4037 ETB	979.458.2333	butenko@tamu.edu	\N
+337	Guy L. Curry	Industrial and Systems Engineering	Professor Emeritus	4009 ETB	979.845.5576	g-curry@tamu.edu	http://engineering.tamu.edu/media/581843/image-of-guy-curry.jpg
+338	Yu Ding	Industrial and Systems Engineering	Mike and Sugar Barnes Professor	4016 ETB 	979.458.2343	yuding@tamu.edu	http://engineering.tamu.edu/media/4057326/yu-ding-web.jpg
+339	Alaa Elwany	Industrial and Systems Engineering	Assistant Professor	4045 ETB	979.458.2365	elwany@tamu.edu	\N
+340	Madhav Erraguntla	Industrial and Systems Engineering	Associate Professor of Engineering Practice	4042 ETB	979.458.2336	merraguntla@tamu.edu	http://engineering.tamu.edu/media/3674828/erraguntla-web.jpg
+341	Richard M. Feldman	Industrial and Systems Engineering	Professor Emeritus	4072 ETB	979.845.5585	richf@tamu.edu	http://engineering.tamu.edu/media/582666/image-of-richard-feldman.jpg
+342	Thomas Ferris	Industrial and Systems Engineering	Assistant Professor 	4081 ETB 	979.458.2340	tFerris@tamu.edu	http://engineering.tamu.edu/media/582806/image-of-thomas-ferris.jpg
+343	Natarajan Gautam	Industrial and Systems Engineering	Professor 	4012 ETB	979.458.2345	Gautam@tamu.edu	http://engineering.tamu.edu/media/4093799/img_0609-web.jpg
+344	Mike Graul	Industrial and Systems Engineering	Associate Professor of Practice	4017 ETB	979.458.2367	mgraul@kbsi.com	http://engineering.tamu.eduGraul.jpg
+345	Andrew L. Johnson	Industrial and Systems Engineering	Associate Professor	4033 ETB	979.458.2356	ajohnson@tamu.edu	http://engineering.tamu.edu/media/581433/mypic.png
+346	Kiavash Kianfar	Industrial and Systems Engineering	Associate Professor 	4014 ETB	979.458.2362	Kianfar@tamu.edu	http://engineering.tamu.edu/media/582521/image-of-kiavash-kianfar.jpg
+347	P.R. Kumar	Industrial and Systems Engineering	Professor (Courtesy Appointment)	4013 ETB	979.492.1645	prk@tamu.edu	http://engineering.tamu.eduKumar.jpg
+348	Mark Lawley	Industrial and Systems Engineering	TEES Research Professor	4024 ETB	979.458.2368	malawley@tamu.edu	http://engineering.tamu.edu/media/3674802/website.jpg
+349	V. Jorge Leon	Industrial and Systems Engineering	Professor (Courtesy Appointment)	117-E Thompson Hall 	979.845.4993	jleon@tamu.edu	http://engineering.tamu.edu/media/582378/image-of-jorge-leon.jpg
+350	César O. Malavé	Industrial and Systems Engineering	Professor	Qatar	\N	malave@tamu.edu	http://engineering.tamu.edu/media/3443042/dr-malave-website.jpg
+351	M. Sam Mannan	Industrial and Systems Engineering	Professor (Courtesy Appointment)	246 Brown Engineering	979.862.3985	mannan@tamu.edu	http://engineering.tamu.eduMannan.png
+352	Ranjana Mehta	Industrial and Systems Engineering	Assistant Professor (Courtesy Appointment)	\N	979.436.9327	rmehta@sph.tamhsc.edu	http://engineering.tamu.edu/media/3930650/mehta.jpg
+353	Erick Moreno-Centeno	Industrial and Systems Engineering	Assistant Professor	4034 ETB	979.458.2335	e.moreno@tamu.edu	http://engineering.tamu.edu/media/581833/image-of-erick-moreno-centeno.jpg
+354	Lewis Ntaimo	Industrial and Systems Engineering	Associate Professor	4008 ETB	979.458.2360	Ntaimo@tamu.edu	http://engineering.tamu.edu/media/582601/image-of-lewis-ntaimo.jpg
+355	Hamid R. Parsaei	Industrial and Systems Engineering	Professor	Qatar	\N	hamid.parsaei@qatar.tamu.edu	\N
+356	Zhijian (ZJ) Pei	Industrial and Systems Engineering	Professor	4006 ETB	979.458.2334	zjpei@tamu.edu	\N
+357	Dinakar Sagapuram	Industrial and Systems Engineering	Assistant Professor	4068 ETB	979.458.2370	dinakar@tamu.edu	http://engineering.tamu.edu/media/3472805/saggapuram.jpg
+358	Farzan Sasangohar	Industrial and Systems Engineering	Assistant Professor	4079 ETB	979.458.2337	sasangohar@tamu.edu	http://engineering.tamu.edu/media/3867349/headshot-farzan-315x220.jpg
+359	Donald R. Smith	Industrial and Systems Engineering	Associate Professor	4068 ETB	979.458.2346	dr-smith@tamu.edu	http://engineering.tamu.edu/media/581748/image-of-donal-smith.jpg
+360	Ciriaco Valdez-Flores	Industrial and Systems Engineering	Professor of Practice	4073 ETB	979.458.2385	ciriacov@tamu.edu	http://engineering.tamu.edu/media/900928/Valdez-Flores.jpg
+361	Jose Vazquez	Industrial and Systems Engineering	Lecturer	3030 ETB	979.458.2385	vazquez@tamu.edu	http://engineering.tamu.edu/media/1473643/jose_st.jpg
+362	Shiren Wang	Industrial and Systems Engineering	Associate Professor	4039 ETB	979.458.2357	s.wang@tamu.edu	\N
+363	Li Zeng	Industrial and Systems Engineering	Assistant Professor	4044 ETB	979.458.2352	lizeng@tamu.edu	http://engineering.tamu.edu/media/3674830/li-zeng_184x242.jpg
+364	Na Zou	Industrial and Systems Engineering	Instructional Assistant Professor	4018 ETB	979.458.2347	nzou1@tamu.edu	http://engineering.tamu.edu/media/4008701/nazou.jpg
+365	Marvin L. Adams	Nuclear Engineering	HTRI Professor	AI Engineering Building 303	979.845.4198	mladams@tamu.edu	http://engineering.tamu.edu/media/403692/adams.jpg
+366	Gamal Akabani	Nuclear Engineering	Associate Professor	TIPS	979.458.1699	akabani@tamu.edu	http://engineering.tamu.edu/media/403613/akabani.jpg
+367	Sunil S. Chirayath	Nuclear Engineering	Research Assistant Professor	AI Engineering Building 312B	979.862.2616	sunilsc@tamu.edu	http://engineering.tamu.edu/media/1858807/sunil-chirayath.jpg
+368	John Ford	Nuclear Engineering	Associate Professor	AI Engineering Building 410	979.845.6271	thasl@tamu.edu	\N
+369	Yassin A. Hassan	Nuclear Engineering	Sallie & Don Davis '61 Professor in Nuclear Engineering	AI Engineering Building 210F	979.845.7090	y-hassan@tamu.edu	http://engineering.tamu.edu/media/3337643/dr-hassan-lt_profile.png
+370	Ernie Kee	Nuclear Engineering	Associate Professor of Practice	\N	\N	erniekee@tamu.edu	http://engineering.tamu.edu/media/2288165/kee.png
+371	Mark Kimber	Nuclear Engineering	Assistant Professor	AI Engineering Building 205D	 979-458-3952	mark.kimber@tamu.edu	http://engineering.tamu.edu/media/2684372/mark-kimber.jpg
+372	Cable Kurwitz	Nuclear Engineering	Senior Lecturer	AI Engineering Building 402	979.845.6126	kurwitz@tamu.edu	http://engineering.tamu.edu/media/403750/kurwitz.jpg
+373	Craig Marianno	Nuclear Engineering	Assistant Professor	AI Engineering Building 310	979.845.6093	marianno@tamu.edu	http://engineering.tamu.edu/media/403755/marianno.jpg
+374	Ryan G. McClarren	Nuclear Engineering	Assistant Professor	AI Engineering Building 302C	979.862.1779	rgm@tamu.edu	http://engineering.tamu.edu/media/403765/mcclarren.jpg
+375	Sean M. McDeavitt	Nuclear Engineering	Associate Professor	AI Engineering Building 205A	979.862.1745	mcdeavitt@tamu.edu	http://engineering.tamu.edu/media/403770/mcdeavitt.jpg
+376	Warren "Pete" Miller	Nuclear Engineering	TEES Distinguished Research Professor	\N	979.847.6192	wmiller@tamu.edu	http://engineering.tamu.edu/media/840464/miller-site_photo.jpg
+377	Jim E. Morel	Nuclear Engineering	Professor	AI Engineering Building 306	979.845.6072	morel@tamu.edu	http://engineering.tamu.edu/media/403780/morel.jpg
+378	Thien Nguyen 	Nuclear Engineering	Research Assistant Professor	USB, Room 102B	979-845-4109	thien.duy.ng@tamu.edu	http://engineering.tamu.edu/media/3068958/thien-nguyen.png
+379	Natela Ostrovskaya	Nuclear Engineering	Senior Lecturer	AI Engineering Building Annex 250	979.862.4409	natela@tamu.edu	http://engineering.tamu.edu/media/403790/ostrovskaya.jpg
+380	Kenneth L. Peddicord	Nuclear Engineering	Professor	AI Engineering Building 314B	979.845.5802	k-peddicord@tamu.edu	http://engineering.tamu.edu/media/403800/peddicord.jpg
+381	John W. Poston Sr.	Nuclear Engineering	Professor	AI Engineering Building 314A	979.845.4175	j-poston@tamu.edu	http://engineering.tamu.edu/media/403805/poston.jpg
+382	Jean C. Ragusa	Nuclear Engineering	Professor	AI Engineering Building 305	979.862.2033	jean.ragusa@tamu.edu	http://engineering.tamu.edu/media/403810/ragusa.jpg
+383	Richard Schultz	Nuclear Engineering	Professor of Practice	\N	979.847.6191	rschultz@tamu.edu	http://engineering.tamu.edu/media/403820/schultz.jpg
+384	Lin Shao	Nuclear Engineering	Associate Professor	AI Engineering Building 205E	979.845.4107	lshao@tamu.edu	http://engineering.tamu.edu/media/403825/shao_jpg.jpg
+385	Pavel V. Tsvetkov	Nuclear Engineering	Associate Professor	AI Engineering Building 205B	979.845.7078	tsvetkov@tamu.edu	http://engineering.tamu.edu/media/403830/tsvetkov.jpg
+386	Galina V. Tsvetkova	Nuclear Engineering	Lecturer	TEES Headquarters	979.845.4162	tsvetkovag@tamu.edu	http://engineering.tamu.edu/media/403835/tsvetkova.jpg
+387	Rodolfo Vaghetto	Nuclear Engineering	Research Assistant Professor	AI Engineering Building 206A/ USB 127	979.845.5791	r.vaghetto@tamu.edu	http://engineering.tamu.edu/media/1755539/rv.jpg
+388	Karen Vierow	Nuclear Engineering	Associate Professor	AI Engineering Building 204	979.458.0600	vierow@tamu.edu	http://engineering.tamu.edu/media/403840/vierow.jpg
+389	Kuang-An Chang	Ocean Engineering	Professor	CEOB 802C	979.845.4504	kchang@civil.tamu.edu	http://engineering.tamu.edu/media/2734646/kchang.jpg
+390	Hamn-Ching Chen	Ocean Engineering	Professor	CEOB 808K 	979.847.9468	hcchen@civil.tamu.edu	http://engineering.tamu.edu/media/2734647/image-of-hamn-ching-chen.jpg
+391	Jeffrey Falzarano	Ocean Engineering	Professor	CEOB 801D 	979.862.7942	jfalzarano@civil.tamu.edu	http://engineering.tamu.edu/media/2734650/image-of-jeffrey-falzarano.jpg
+392	Jens Figlus	Ocean Engineering	Assistant Professor	PMEC 218 (Galveston)	409.741.4317	 figlusj@tamug.edu	http://engineering.tamu.edu/media/2734656/figlus-galveston.png
+393	Sharath Girimaji	Ocean Engineering	General Dynamics Professor of Aerospace Engineering	CEOB 801B | HRBB 607B	979.845.1674	girimaji@tamu.edu	http://engineering.tamu.edu/media/2734643/sharath-girimaji.jpg
+394	Robert Gordon	Ocean Engineering	Senior Lecturer	\N	\N	bob@oceanengineering.us	http://engineering.tamu.edu/media/2825643/portrait-placeholder.jpg
+395	Barton D. Grasso	Ocean Engineering	Lecturer	\N	\N	grassob@tamu.edu	http://engineering.tamu.edu/media/2623677/portrait-placeholder.jpg
+396	Matthew Greer	Ocean Engineering	Senior Lecturer	\N	409-740-4555	mngreer@tamu.edu	http://engineering.tamu.edu/media/2825643/portrait-placeholder.jpg
+397	Masoud Hayatdavoodi	Ocean Engineering	Instructional Assistant Professor	PMEC 117 (Galveston)	409.740.4486	masoud@tamu.edu	http://engineering.tamu.edu/media/2734657/hayatdavoodi.png
+398	Juan J. Horrillo	Ocean Engineering	Associate Professor	PMEC 217 (Galveston)	409.740 .4465	horrillj@tamug.edu	http://engineering.tamu.edu/media/2734658/horrillo-galveston.png
+399	Jun Jin	Ocean Engineering	Lecturer	409.740.4878	\N	jinj@tamu.edu	\N
+400	Moo-Hyun Kim	Ocean Engineering	Professor	CEOB 808E 	979.847.8710	m-kim3@tamu.edu	http://engineering.tamu.edu/media/2734652/image-of-moo-hyun-kim.jpg
+401	Paul Koola	Ocean Engineering	Professor of Practice	\N	\N	paulmkoola@tamu.edu	http://engineering.tamu.edu/media/2825643/portrait-placeholder.jpg
+402	Chan Kyu Yang	Ocean Engineering	Lecturer	\N	\N	chankyang@gmail.com	http://engineering.tamu.edu/media/2825643/portrait-placeholder.jpg
+403	John Niedzwecki	Ocean Engineering	Regents Professor	CEOB 709A	979.845.4707	j-niedzwecki@tamu.edu	http://engineering.tamu.edu/media/3639250/image-of-john-niedzwecki.jpg
+404	Vijay Panchang	Ocean Engineering	Regents Professor & Powell Chair	\N	\N	panchanv@tamug.edu	http://engineering.tamu.edu/media/2734659/panchang.png
+405	Robert Randall	Ocean Engineering	W. H. Bauer Professor in Dredging Engineering	CEOB 808I 	979.845.4568	r-randall@tamu.edu	http://engineering.tamu.edu/media/2734654/image-of-robert-randall.jpg
+406	Ignacio Rodriguez-Iturbe	Ocean Engineering	Distinguished University Professor	 CEOB 802A	\N	irodriguez@ocen.tamu.edu	\N
+407	Surupa Shaw	Ocean Engineering	Lecturer	\N	\N	surupa.2503@gmail.com	http://engineering.tamu.edu/media/2825643/portrait-placeholder.jpg
+408	Robert Skelton	Ocean Engineering	TEES Distinguished Research Professor	HRBB 722B	979.845.3947	bobskelton@tamu.edu	http://engineering.tamu.edu/media/3930690/skelton-web.jpg
+409	John A. "Bert" Sweetman	Ocean Engineering	Associate Professor	PMEC 216 (Galveston)	409.740.4834	sweetman@tamu.edu	http://engineering.tamu.edu/media/2734660/sweetman.png
+410	Amanda L. Wood	Ocean Engineering	Instructional Assistant Professor	PMEC 222 (Galveston)	409.741.4015	wooda@tamug.edu	http://engineering.tamu.edu/media/2734661/wood.png
+411	Sara Abedi	Petroleum Engineering	Assistant Professor	RICH 401L	979.845.2920	sara.abedi@tamu.edu	http://engineering.tamu.edu/media/2062654/abedi_sara_01-2015.jpg
+412	I. Yucel Akkutlu 	Petroleum Engineering	Associate Professor	RICH 619	979.845.4069	akkutlu@tamu.edu	http://engineering.tamu.edu/media/876161/akkutlu_yucel_06-2013.jpg
+413	Maria A. Barrufet	Petroleum Engineering	Professor	RICH 407C	979.845.0314 	barrufet@tamu.edu	http://engineering.tamu.edu/media/577919/barrufet_maria_2011.jpg
+414	Thomas A. Blasingame	Petroleum Engineering	Professor 	RICH 821A	979.845.2292	t-blasingame@tamu.edu	http://engineering.tamu.edu/media/577924/blasingame_thomas_2012a.jpg
+415	Akhil Datta-Gupta	Petroleum Engineering	University Distinguished Professor	RICH 401G	979.847.9030 	datta-gupta@tamu.edu	http://engineering.tamu.edu/media/577934/datta-gupta_akhil_2012a.jpg
+416	Eduardo Gildin 	Petroleum Engineering	Associate Professor 	RICH 401J	979.862.4578	egildin@tamu.edu	http://engineering.tamu.edu/media/577949/gildin_eduardo_2011.jpg
+417	A. Rashid Hasan	Petroleum Engineering	Professor	RICH 501E	979.847.8564	rhasan@tamu.edu	http://engineering.tamu.edu/media/876473/hasan_rashid_09-2013.jpg
+418	Berna Hascakir 	Petroleum Engineering	Assistant Professor	RICH 401N	979.845.6614	hascakir@tamu.edu	http://engineering.tamu.edu/media/577954/hascakir_berna_09-2013.jpg
+419	A. Daniel Hill	Petroleum Engineering	Professor	RICH 507	979.845.2244	danhill@tamu.edu	http://engineering.tamu.edu/media/812868/hill_dan_08-2013.jpg
+420	Stephen A. Holditch	Petroleum Engineering	Professor	RICH 916D	979.845.2255	holditch@tamu.edu	http://engineering.tamu.edu/media/1121932/holditch_stephen_2010.jpg
+421	John Killough	Petroleum Engineering	Professor	RICH 401K	979.862.6416	jkillough@tamu.edu	http://engineering.tamu.edu/media/876216/killough_john_09-2013.jpg
+422	Jihoon Kim	Petroleum Engineering	Assistant Professor	RICH 407K	979.845.2205	jihoon.kim@tamu.edu	http://engineering.tamu.edu/media/1594528/kim-jihoon_07-2014.jpg
+423	Michael King	Petroleum Engineering	Professor	RICH 401E	979.845.1488	mike.king@tamu.edu	http://engineering.tamu.edu/media/578032/king_michael_04-2011.jpg
+424	John Lee	Petroleum Engineering	Professor	RICH 401P	979.845.2208	john-lee@tamu.edu	http://engineering.tamu.edu/media/2795933/lee_john_2012.jpg
+425	Jenn-Tai Liang	Petroleum Engineering	Professor	RICH 401T	979.845.0173	jenn-tai.liang@tamu.edu	http://engineering.tamu.edu/media/1594562/liang_jenn-tai_08-2014.jpg
+426	Duane A. McVay	Petroleum Engineering	Professor	RICH 407B	979.862.8466	mcvay@tamu.edu	http://engineering.tamu.edu/media/578062/mcvay_duane_09-2013.jpg
+427	Nobuo Morita	Petroleum Engineering	Professor	RICH 501P	979.458.3273	nobuo.morita@tamu.edu	http://engineering.tamu.edu/media/2348066/morita_nobuo_04-2015.jpg
+428	Hadi Nasrabadi	Petroleum Engineering	Assistant Professor	RICH 401Q	979.862.6483	hadi.nasrabadi@tamu.edu	http://engineering.tamu.edu/media/876578/nasrabadi_hadi_09-2013.jpg
+429	Hisham Nasr-El-Din	Petroleum Engineering	Professor	RICH 710BA	979.862.1473	hisham.nasreldin@tamu.edu	http://engineering.tamu.edu/media/599851/nasr-el-din_hisham_01-2008.jpg
+430	Sam Noynaert	Petroleum Engineering	Assistant Professor	RICH 501J	979.845.6164	noynaert@tamu.edu	http://engineering.tamu.edu/media/578077/noynaert_sam_09-2013.jpg
+431	David Schechter	Petroleum Engineering	Associate Professor	RICH 610	979.845.2275	david-s-schechter@tamu.edu	http://engineering.tamu.edu/media/578087/schechter_david_04-2006.jpg
+432	Jerome Schubert	Petroleum Engineering	Associate Professor	RICH 501K	979.862.1195	jschubert@tamu.edu	http://engineering.tamu.edu/media/876393/schubert_jerome_09-2013.jpg
+433	Peter Valkó	Petroleum Engineering	Professor	RICH 709	979.862.2757	p-valko@tamu.edu	http://engineering.tamu.edu/media/579509/valko_peter_09-2013.jpg
+434	Ruud Weijermars	Petroleum Engineering	Professor	RICH 501M	979.845.4067	r.weijermars@tamu.edu	http://engineering.tamu.edu/media/1927294/weijermars_ruud_2014.jpg
+435	Kan Wu	Petroleum Engineering	Assistant Professor	RICH 501Q	979.862.7654	kan.wu@tamu.edu	http://engineering.tamu.edu/media/2088472/wu_kan_01-2015.jpg
+436	Ding Zhu	Petroleum Engineering	Professor	RICH 501F	979.458.4522	dingzhu@tamu.edu	http://engineering.tamu.edu/media/876275/zhu_ding_11-2013.jpg
