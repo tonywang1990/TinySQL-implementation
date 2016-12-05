@@ -117,11 +117,17 @@ class Algorithm{
 		void sortOnePass(Relation * oldR, Relation * newR, MainMemory & mem);
 		void sortTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem, SchemaManager & schema_mgr);
 
+		// for join
 		Relation * runBinary(Relation * left, Relation * right, MainMemory & mem, SchemaManager & schema_mgr, bool left_is_leaf, bool right_is_leaf);
 
-		map<string, int> findJoinField();
-		set<string> findDupField(vector<Relation*> relations);
-		Schema getJoinSchema(Relation *left, Relation *right, bool left_is_leaf, bool right_is_leaf, vector<vector<int> > &mapping);
 		void join1Pass(Relation *left, Relation *right, vector<int> left_map, vector<int> right_map, Relation *join, MainMemory& mem);
+		// only for natrual join
+		void join2Pass(Relation *old_left, Relation *old_right, vector<int> left_map, vector<int> right_map, Relation *join, MainMemory& mem, SchemaManager & schema_mgr);
+
+		// helper functions for binary operations
+		map<string, int> findJoinField(); 
+		set<string> findDupField(vector<Relation*> relations);
+		Schema getJoinSchema(Relation *left, Relation *right, bool left_is_leaf, bool right_is_leaf, vector<vector<int> > &mapping, bool &is_natural);
+		vector<int> subSortForJoin(Relation* oldR, Relation* &newR, MainMemory &mem, SchemaManager & schema_mgr, vector<int> indices);
 };
 #endif

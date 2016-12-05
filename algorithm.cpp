@@ -117,7 +117,7 @@ int HeapManager::size(){
 }
 
 vector<Tuple> HeapManager::popTopMins(MainMemory & mem){
-  if(this->empty())  vector<Tuple>();
+  if(this->empty())  return vector<Tuple>();
 
   vector<Tuple> tuples(1, this->top());
   this->pop(mem);
@@ -386,17 +386,18 @@ void Algorithm::distinctTwoPass(Relation * oldR, Relation * & newR, MainMemory &
 		cnt = sortByChunkWB(oldR, newR, mem, start, inds);
 		sublists++;
 	}
-	cout<<"Now have you have "<<sublists<<" sublists to merge for distinct"<<endl;
-	cout<<*newR<<endl;
+	//cout<<"Now have you have "<<sublists<<" sublists to merge for distinct"<<endl;
+	//cout<<*newR<<endl;
 
 	// second pass, merge the sorted sublists:
 	string table_name = oldR->getRelationName(); 
 	Relation * newRR = schema_mgr.createRelation(table_name+"DISTINCT", newR->getSchema());
 	
 	// handle exception 2 in lpq that is if sort exists, stick with the same order
+	// inds is expected to be empty there is some condition
 
 	// to be careful about deleting the relations!
-	inds.push_back(getNeededOrder(newR));
+	if(inds.empty())  inds.push_back(getNeededOrder(newR));
 	
 	// @param1:relation ptr, @param2: mem, @param3: head of the sublists, 
 	// @param4: the vector of multiple/single target sort column
@@ -540,8 +541,8 @@ void Algorithm::sortTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem,
 		cnt = sortByChunkWB(oldR, newR, mem, start, vector<int>());
 		sublists++;
 	}
-	cout<<"Now have you have "<<sublists<<" sublists to merge "<<endl;
-	cout<<*newR<<endl;
+	//cout<<"Now have you have "<<sublists<<" sublists to merge "<<endl;
+	//cout<<*newR<<endl;
 
 	// second pass, merge the sorted sublists, note that the to-be-merged one is in the newR  
 	int indField = getNeededOrder(oldR); // is supposed to ordered by this field!
@@ -623,12 +624,13 @@ set<string> Algorithm::findDupField(vector<Relation*> relations){
 }
 
 // get the new schema for Binary Op
-Schema Algorithm::getJoinSchema(Relation *left, Relation *right, bool left_is_leaf, bool right_is_leaf, vector<vector<int> > &mapping){
+Schema Algorithm::getJoinSchema(Relation *left, Relation *right, bool left_is_leaf, bool right_is_leaf, vector<vector<int> > &mapping, bool &is_natural){
 	vector<pair<Relation*, bool> > relations;
 	relations.push_back(make_pair(left, left_is_leaf));
 	relations.push_back(make_pair(right, right_is_leaf));
 
 	map<string, int> join_field = findJoinField();
+	is_natural = !join_field.empty();
 	//set<string> dup_field = findDupField(relations);
 
 	int size = left->getSchema().getNumOfFields() + right->getSchema().getNumOfFields() - join_field.size();
@@ -712,17 +714,109 @@ Relation * Algorithm::runBinary(Relation * left, Relation * right, MainMemory & 
 	assert(left_size <= right_size);
 
 	vector<vector<int> > idx_map(2);
-	Schema join_schema = getJoinSchema(left, right, left_is_leaf, right_is_leaf, idx_map);
+	bool is_natural = false;
+	Schema join_schema = getJoinSchema(left, right, left_is_leaf, right_is_leaf, idx_map, is_natural);
+	/*
 	cout<<join_schema<<endl;
 	print(idx_map[0]);
 	print(idx_map[1]);
+	*/
 
 	string new_relation_name = left->getRelationName() + "_" + left->getRelationName() + to_string(_g_relation_counter++);
 	Relation * join_relation = schema_mgr.createRelation(new_relation_name, join_schema);
 
-	join1Pass(left, right, idx_map[0], idx_map[1], join_relation, mem);
+	int cost1pass = ( left_size / num_blocks ) * right_size + left_size;
+	int cost2pass = 3 * (left_size + right_size); 
+	if (is_natural && cost2pass < cost1pass){
+		//cout<<"Using 2 pass join!"<<endl;
+		join2Pass(left, right, idx_map[0], idx_map[1], join_relation, mem, schema_mgr);
+	}
 
+	else{
+		//cout<<"Using 1 pass join!"<<endl;
+		join1Pass(left, right, idx_map[0], idx_map[1], join_relation, mem);
+	}
 	return join_relation;
+}
+
+vector<int> Algorithm::subSortForJoin(Relation* oldR, Relation* &newR, MainMemory &mem, SchemaManager &schema_mgr, vector<int> indices){
+
+	string new_relation_name = oldR->getRelationName() + to_string(_g_relation_counter++);
+	newR  = schema_mgr.createRelation(new_relation_name, getNewSchema(oldR, false));
+
+	int dBlocks= oldR->getNumOfBlocks();
+	int sublists = 0;
+	vector<int> subHeads;
+	// first pass, make sorted sublists:
+	int cnt = 0, start = 0;
+	for(int start = 0; start < dBlocks; start += cnt){
+		subHeads.push_back(start);
+		// sort the subchunk first and write back
+		cnt = sortByChunkWB(oldR, newR, mem, start, indices);
+		sublists++;
+	}
+	//cout<<"relation has "<<sublists<<" sublists to merge. "<<endl;
+	//cout<<*newR<<endl;
+	return subHeads;
+}
+
+void Algorithm::join2Pass(Relation *old_left, Relation *old_right, vector<int> left_map, vector<int> right_map, Relation *join, MainMemory& mem, SchemaManager &schema_mgr){
+	int dBlocks= old_left->getNumOfBlocks() + old_right-> getNumOfBlocks();
+	const int mSize = mem.getMemorySize();
+	if(sqrt(dBlocks) > double(mSize)){
+		cerr<<"Fatal Error: The memory condition: M >= sqrt(B(R)) is not satisfied!! Cannot use the two-passed algorithms!"<<endl;
+		return;
+	}
+
+	//find joint field index in left and right relation
+	vector<int> join_field_left, join_field_right;
+	for (int i = 0; i < left_map.size(); i++){
+		for (int j = 0; j < right_map.size(); j++){
+			if (left_map[i] == right_map[j]){
+				join_field_left.push_back(i);
+				join_field_right.push_back(j);
+			}
+		}
+	}
+
+	Relation* new_left, *new_right;
+	// first pass
+	vector<int> leftHeads = subSortForJoin(old_left, new_left, mem, schema_mgr, join_field_left);
+	vector<int> rightHeads = subSortForJoin(old_right, new_right, mem, schema_mgr, join_field_right);
+
+
+	// second pass, merge the sorted sublists, note that the to-be-merged one is in the newR  
+	// @param1:relation ptr, @param2: mem, @param3: head of the sublists, 
+	// @param4: the vector of multiple/single target sort column
+	HeapManager leftHMgr(new_left, mem, leftHeads, join_field_left);
+	HeapManager rightHMgr(new_right, mem, rightHeads, join_field_right);
+
+	while(!leftHMgr.empty() || !rightHMgr.empty()){
+		vector<Tuple> left_tuples = leftHMgr.popTopMins(mem);
+		vector<Tuple> right_tuples = rightHMgr.popTopMins(mem);
+		for(int i = 0; i < left_tuples.size(); ++i){
+			Tuple left_tuple = left_tuples[i];
+			for (int j = 0; j < right_tuples.size(); ++j){
+				Tuple right_tuple = right_tuples[i];
+				// here we have left_tuple and right_tuple that can be natrual join
+				Tuple join_tuple = join->createTuple();
+				// write into join_tuple
+				for (int li = 0; li < left_map.size(); li++){
+					if (join_tuple.getSchema().getFieldType(left_map[li]) == INT)	
+						join_tuple.setField(left_map[li], left_tuple.getField(li).integer);
+					else 
+						join_tuple.setField(left_map[li], *(left_tuple.getField(li).str));
+				}
+				for (int ri = 0; ri < right_map.size(); ri++){
+					if (join_tuple.getSchema().getFieldType(right_map[ri]) == INT)	
+						join_tuple.setField(right_map[ri], right_tuple.getField(ri).integer);
+					else 
+						join_tuple.setField(right_map[ri], *(right_tuple.getField(ri).str));
+				}
+				appendTupleToRelation(join, mem, join_tuple);
+			}
+		}
+	}
 }
 
 void Algorithm::join1Pass(Relation *left, Relation *right, vector<int> left_map, vector<int> right_map, Relation *join, MainMemory& mem){
@@ -730,7 +824,7 @@ void Algorithm::join1Pass(Relation *left, Relation *right, vector<int> left_map,
 	int left_size =  left->getNumOfBlocks();
 	int p_left_size = num_blocks - 2;
 	int right_size =  right->getNumOfBlocks();
-	assert(left_size <= right_size && left_size < num_blocks);
+	assert(left_size <= right_size);
 
 	// chekcout free mem blocks
 	vector<int> p_left;
@@ -773,7 +867,9 @@ void Algorithm::join1Pass(Relation *left, Relation *right, vector<int> left_map,
 								join_tuple.setField(left_map[li], *(left_tuple.getField(li).str));
 						}
 						for (int ri = 0; ri < right_map.size(); ri++){
-							// collision: check is valid natural join tuple
+							// fount collision: check if the value written by right is the same as left
+							// if yes, it is valid natural join tuple
+							// if no, it is invalid natural join tuple
 							if (is_written[right_map[ri]] == true){
 								if (join_tuple.getSchema().getFieldType(right_map[ri]) == INT){
 									if (join_tuple.getField(right_map[ri]).integer != right_tuple.getField(ri).integer){

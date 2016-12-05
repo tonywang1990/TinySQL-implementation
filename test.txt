@@ -1,12 +1,12 @@
 
 CREATE TABLE course1 (sid INT, homework INT, project INT, exam INT, grade STR20)
-INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "A")
+INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "F")
 INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "B")
-INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (2, 0, 100, 100, "E")
+INSERT INTO course1 (sid, homework, project, exam, grade) VALUES (2, 0, 100, 100, "A")
 INSERT INTO course1 (sid, grade, exam, project, homework) VALUES (3, "F", 100, 100, 100)
 
 CREATE TABLE course2 (sid INT, exam INT, grade STR20)
-INSERT INTO course2 (sid, exam, grade) VALUES (1, 100, "A")
+INSERT INTO course2 (sid, exam, grade) VALUES (1, 100, "B")
 INSERT INTO course2 (sid, exam, grade) VALUES (2, 25, "E")
 INSERT INTO course2 (sid, exam, grade) VALUES (17, 0, "A")
 
@@ -29,7 +29,7 @@ INSERT INTO t (a, c) VALUES (0, 101)
 INSERT INTO t (a, c) VALUES (1, 101)
 INSERT INTO t (a, c) VALUES (2, 102)
 
-SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
+#SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
 
 SELECT DISTINCT FROM course1, course2 WHERE course1.grade = course2.grade
 #SELECT DISTINCT * FROM course1, course2, course3 WHERE course1.course2.grade = course3.grade

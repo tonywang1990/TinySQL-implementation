@@ -18,7 +18,7 @@ void generatePQP(Node * head, SchemaManager& schema_manager, MainMemory& mem){
 		return;
 	}
 	reverse_postorder_traverse(head, schema_manager, mem);
-
+	cout<<*(head->view)<<endl;
 }
 
 
@@ -53,9 +53,9 @@ void reverse_postorder_traverse(Node * N, SchemaManager& schema_manager, MainMem
 		cerr<<"You want to do the reverse_post_order but the children's relation ptr is not set!!"<<endl;
 		exit(EXIT_FAILURE);
 	}
-	cout<<T[N->type]<<endl;
+	//cout<<T[N->type]<<endl;
 
-	cout<<*(N->view)<<endl;
+	//cout<<*(N->view)<<endl;
 
 }
 

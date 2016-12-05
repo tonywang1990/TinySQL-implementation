@@ -15,7 +15,7 @@ int main(){
 	MainMemory mem;
 	Disk disk;
 	cout << "The memory contains " << mem.getMemorySize() << " blocks" << endl;
-	cout << mem << endl << endl;
+	//cout << mem << endl << endl;
 	SchemaManager schema_manager(&mem,&disk);
 
 	disk.resetDiskIOs();
@@ -30,7 +30,8 @@ int main(){
 	//=======================Read Input=========================
 	string line;
 	vector<string> words;
-	ifstream input("test.txt");
+	ifstream input("TinySQL_linux_updated.txt");
+	//ifstream input("test.txt");
 	//ifstream input("test_large.txt");
 	if (input.is_open()){
 		// for each command line
@@ -38,7 +39,7 @@ int main(){
 			//istringstream iss(line);
 			if(line[0] == '#')	continue;
 			if(line.size() == 0)	continue;
-			
+			cout<<line<<endl;	
 			// extract each word into vector words
 			words = splitBy(line," ");
 
@@ -63,7 +64,7 @@ int main(){
 				Schema schema(field_names,field_types); 
 
 				Relation* relation_ptr=schema_manager.createRelation(relation_name,schema);
-				cout << schema_manager << endl << endl;
+				//cout << schema_manager << endl << endl;
 
 			}
 			else if (words[0] == "DROP"){

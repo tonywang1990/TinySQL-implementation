@@ -60,16 +60,16 @@ void generateLQP(bool has_distinct, vector<string> select_list, vector<string> f
 	Node* head = dummy->children[0];
 	assert(head);
 
-	cout<<"LQP tree:"<<endl;
-	printLQP(head);
+	//cout<<"LQP tree:"<<endl;
+	//printLQP(head);
 
-	cout<<"after optimize tree:"<<endl;
+	//cout<<"after optimize tree:"<<endl;
 	optimizeLQP(head);
-	printLQP(head);
+	//printLQP(head);
 
-	cout<<"after postfix:"<<endl;
+	//cout<<"after postfix:"<<endl;
 	postfixLQP(head);
-	printLQP(head);
+	//printLQP(head);
 
 	generatePQP(head, schema_manager, mem);
 }
