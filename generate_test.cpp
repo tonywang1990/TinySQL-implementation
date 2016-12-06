@@ -50,10 +50,6 @@ void append_3rd_table(ofstream& f_out){
 	f_out<<"SELECT professor.name score FROM professor WHERE score > 50"<<endl;
 	f_out<<"# Test natural join"<<endl;
 	f_out<<"SELECT professor.name score area FROM professor, research WHERE professor.name = research.name"<<endl;
-	f_out<<"# Test theta join might break the code"<<endl;
-	f_out<<"#SELECT professor.name score website FROM professor, research, academic WHERE professor.name = research.name AND score > 50 OR professor.name = \"Robert Balog\""<<endl;
-	f_out<<"# Test theta join"<<endl;
-	f_out<<"SELECT professor.name score website FROM professor, research, academic WHERE professor.name = research.name AND score > 50"<<endl;
 	f_out<<"# Test sorting"<<endl;
 	f_out<<"SELECT professor.name score, website FROM professor, academic WHERE score > 50 ORDER BY score"<<endl;
 	f_out<<"# Add distinct case manually!"<<endl;
