@@ -67,8 +67,8 @@ int main(int argc, char ** argv){
 	unordered_set<int> hash;
 	hash.insert(20); 
 	hash.insert(50); 
-	hash.insert(100); 
-	hash.insert(200); 
+	hash.insert(60); 
+	hash.insert(80); 
 	hash.insert(400); 
 	if(f_in_p.is_open() && f_in_a.is_open()){
 		int cnt_line = 0;
