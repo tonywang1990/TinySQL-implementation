@@ -53,19 +53,19 @@ INSERT INTO research (name, area) VALUES ("Miroslav M. Begovic", "His research 
 INSERT INTO research (name, area) VALUES ("Shankar P. Bhattacharyya", "Automatic Control SystemsMultivariable Control System Analysis and DesignComputer Aided Control System Design (CACSD)Robust Stability and Control Theory and Applications")
 INSERT INTO research (name, area) VALUES ("Ulisses Braga Neto", "Optimal State and Parameter Estimation for Boolean Dynamical Systems")
 # Test cross product first
-#SELECT * FROM research, professor
+SELECT * FROM research, professor
 # Test select and project
-#SELECT pid, professor.name FROM professor
+SELECT pid, professor.name FROM professor
 # Test select from where
-#SELECT professor.name score FROM professor WHERE score > 50
+SELECT professor.name score FROM professor WHERE score > 50
 # Test natural join
-#SELECT professor.name score area FROM professor, research WHERE professor.name = research.name 
+SELECT professor.name score area FROM professor, research WHERE professor.name = research.name 
 # Test theta join might break the code
 SELECT professor.name score website FROM professor, research, academic WHERE professor.name = research.name AND score > 50 OR professor.name = "Robert Balog"
 # Test theta join
-#SELECT professor.name score website FROM professor, research, academic WHERE professor.name = research.name AND score > 50
-#SELECT * FROM professor, research, academic WHERE professor.name = research.name AND academic.name = research.name AND academic.pid + professor.pid < 20
+SELECT professor.name score website FROM professor, research, academic WHERE professor.name = research.name AND score > 50
+SELECT * FROM professor, research, academic WHERE professor.name = research.name AND academic.name = research.name AND academic.pid + professor.pid < 20
 # Test sorting
-#SELECT professor.name score, website FROM professor, academic WHERE score > 50 ORDER BY score
+SELECT professor.name score, website FROM professor, academic WHERE score > 50 ORDER BY score
 # Add distinct case manually!
 DROP TABLE research

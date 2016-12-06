@@ -104,13 +104,11 @@ INSERT INTO academic (pid, name, website) VALUES (49, "B. Don Russell", "http://
 
 INSERT INTO research (name, area) VALUES ("Robert Balog", "Advanced Energy Systems")
 INSERT INTO research (name, area) VALUES ("Robert Balog", "Distributed dc power systems with emphasis on local/distributed control")
-INSERT INTO research (name, area) VALUES ("Robert Balog", "Low cost inverter system for use with alternative fuel sources (ex Fuel Cell)")
 INSERT INTO research (name, area) VALUES ("Robert Balog", "Auto-tuning coupled inductor filters")
 INSERT INTO research (name, area) VALUES ("Robert Balog", "High quality PWM amplifiers with focus on application as an audio amplifiers")
 INSERT INTO research (name, area) VALUES ("Robert Balog", "Battery life management")
 INSERT INTO research (name, area) VALUES ("Robert Balog", "Non-linear control techniques")
 INSERT INTO research (name, area) VALUES ("Miroslav M. Begovic", "His research interests lie in wide area monitoring protection and emergency control using smart grid apparatus; sustainable and resilient energy infrastructures; and managing large assets in energy infrastructure.")
-INSERT INTO research (name, area) VALUES ("Shankar P. Bhattacharyya", "Automatic Control SystemsMultivariable Control System Analysis and DesignComputer Aided Control System Design (CACSD)Robust Stability and Control Theory and Applications")
 INSERT INTO research (name, area) VALUES ("Ulisses Braga Neto", "Optimal State and Parameter Estimation for Boolean Dynamical Systems")
 # Test cross product first
 SELECT * FROM research, professor

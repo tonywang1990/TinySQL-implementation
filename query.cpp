@@ -26,7 +26,7 @@ Relation* Create(vector<string> &words, SchemaManager &schema_manager, MainMemor
 
 	Relation* relation_ptr=schema_manager.createRelation(relation_name,schema);
 
-	cout<< relation_ptr <<endl;
+	cout<< *relation_ptr <<endl;
 
 	return relation_ptr;
 }
@@ -42,7 +42,7 @@ Relation* Insert(vector<string> &words, string &line, SchemaManager &schema_mana
 		vector<string> fields = splitBy(content[1], ", ");
 		vector<string> vals = splitBy(content[3], ",");
 		//preProcess(vector<string>(1, words[2]), fields, schema_manager);
-		//preProcess(vector<string>(1, words[2]), vals, schema_manager);
+		preProcess(vector<string>(1, words[2]), vals, schema_manager);
 
 		assert(fields.size() == vals.size());
 
@@ -129,8 +129,8 @@ Relation* Insert(vector<string> &words, string &line, SchemaManager &schema_mana
 			}
 			appendTupleToRelation(relation_ptr, mem, tuple);
 		}
+		cout<<*relation_ptr<<endl;
 	}
-	cout<<*relation_ptr<<endl;
 	return relation_ptr;
 }
 
@@ -238,30 +238,30 @@ void preProcess(const vector<string> &tables, vector<string> &words, SchemaManag
 	for (int i = 0; i < words.size(); i++){
 		bool is_column = false;
 		// has no "."
-		if (words[i].find('.') == string::npos){
-			for (int j = 0; j < tables.size(); j++){
+		for (int j = 0; j < tables.size(); j++){
+			if (words[i].find('.') == string::npos){
 				if (schema_manager.getSchema(tables[j]).fieldNameExists(words[i])){
 					words[i] = tables[j] + "." + words[i];
 					is_column = true;
 					break;
 				}
-				// term or value
-				if (!is_column){
-					string legal_word;
-					// removing tailing and head spaces for our custom test case
-					string::iterator it = words[i].begin();
-					while(it != words[i].end() && *it == ' ') words[i].erase(it++);
-					reverse(words[i].begin(), words[i].end());
-					it = words[i].begin();
-					reverse(words[i].begin(), words[i].end());
-					while(it != words[i].end() && *it == ' ') words[i].erase(it++);
-					for (int k = 0; k < words[i].size(); k++){
-						if (words[i][k] != '"'){
-							legal_word.push_back(words[i][k]);
-						}
+			}
+			// term or value
+			if (!is_column){
+				string legal_word;
+				// removing tailing and head spaces for our custom test case
+				string::iterator it = words[i].begin();
+				while(it != words[i].end() && *it == ' ') words[i].erase(it++);
+				reverse(words[i].begin(), words[i].end());
+				it = words[i].begin();
+				while(it != words[i].end() && *it == ' ') words[i].erase(it++);
+				reverse(words[i].begin(), words[i].end());
+				for (int k = 0; k < words[i].size(); k++){
+					if (words[i][k] != '"'){
+						legal_word.push_back(words[i][k]);
 					}
-					words[i] = legal_word;
 				}
+				words[i] = legal_word;
 			}
 		}
 	}

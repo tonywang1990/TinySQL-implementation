@@ -1,0 +1,2333 @@
+
+                   =============================================
+
+                   Welcome to TinySQL Database Management System
+
+                   Develped by Jimmy Jin & Tony Wang, 12/6/2016
+
+                   =============================================
+
+CREATE TABLE course (sid INT, homework INT, project INT, exam INT, grade STR20)
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "A")
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+SELECT * FROM course
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 1	99	100	100	A	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (2, 0, 100, 100, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+SELECT * FROM course
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 1	99	100	100	A	
+1: 2	0	100	100	E	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+INSERT INTO course (sid, grade, exam, project, homework) VALUES (3, "E", 100, 100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+SELECT * FROM course
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 1	99	100	100	A	
+1: 2	0	100	100	E	
+2: 3	100	100	100	E	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+INSERT INTO course (sid, homework, project, exam, grade) SELECT * FROM course
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 1	99	100	100	A	
+1: 2	0	100	100	E	
+2: 3	100	100	100	E	
+******RELATION DUMP END******
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 1	99	100	100	A	
+1: 2	0	100	100	E	
+2: 3	100	100	100	E	
+3: 1	99	100	100	A	
+4: 2	0	100	100	E	
+5: 3	100	100	100	E	
+******RELATION DUMP END******
+Elapse time = 671.67 ms
+Disk I/Os = 9
+
+SELECT * FROM course
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 1	99	100	100	A	
+1: 2	0	100	100	E	
+2: 3	100	100	100	E	
+3: 1	99	100	100	A	
+4: 2	0	100	100	E	
+5: 3	100	100	100	E	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DELETE FROM course WHERE grade = "E"
+0x7ffe6fa03030
+Elapse time = 1044.82 ms
+Disk I/Os = 14
+
+SELECT * FROM course
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	
+0: 1	99	100	100	A	
+1: 1	99	100	100	A	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (4, 99, 100, 100, "B")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+SELECT * FROM course
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	
+0: 1	99	100	100	A	
+1: 1	99	100	100	A	
+2: 4	99	100	100	B	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DELETE FROM course
+0x7ffe6fa03030
+Elapse time = 0 ms
+Disk I/Os = 0
+
+SELECT * FROM course
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DROP TABLE course
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE course (sid INT, homework INT, project INT, exam INT, grade STR20)
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (1, 99, 100, 100, "A")
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (3, 100, 100, 98, "C")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (3, 100, 69, 64, "C")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (15, 100, 50, 90, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (15, 100, 99, 100, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (17, 100, 100, 100, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (2, 100, 100, 99, "B")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (4, 100, 100, 97, "D")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (5, 100, 100, 66, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (6, 100, 100, 65, "B")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (7, 100, 50, 73, "C")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (8, 50, 50, 62, "C")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (9, 50, 50, 61, "D")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (10, 50, 70, 70, "C")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (11, 50, 50, 59, "D")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (12, 0, 70, 58, "C")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (13, 0, 50, 77, "C")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (14, 50, 50, 56, "D")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (16, 0, 0, 0, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course (sid, homework, project, exam, grade) VALUES (17, 100, 100, 100, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+SELECT * FROM course
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 1	99	100	100	A	
+1: 3	100	100	98	C	
+2: 3	100	69	64	C	
+3: 15	100	50	90	E	
+4: 15	100	99	100	E	
+5: 17	100	100	100	A	
+6: 2	100	100	99	B	
+7: 4	100	100	97	D	
+8: 5	100	100	66	A	
+9: 6	100	100	65	B	
+10: 7	100	50	73	C	
+11: 8	50	50	62	C	
+12: 9	50	50	61	D	
+13: 10	50	70	70	C	
+14: 11	50	50	59	D	
+15: 12	0	70	58	C	
+16: 13	0	50	77	C	
+17: 14	50	50	56	D	
+18: 16	0	0	0	E	
+19: 16	0	0	0	E	
+20: 16	0	0	0	E	
+21: 16	0	0	0	E	
+22: 16	0	0	0	E	
+23: 16	0	0	0	E	
+24: 16	0	0	0	E	
+25: 16	0	0	0	E	
+26: 16	0	0	0	E	
+27: 16	0	0	0	E	
+28: 16	0	0	0	E	
+29: 16	0	0	0	E	
+30: 16	0	0	0	E	
+31: 16	0	0	0	E	
+32: 16	0	0	0	E	
+33: 16	0	0	0	E	
+34: 16	0	0	0	E	
+35: 16	0	0	0	E	
+36: 16	0	0	0	E	
+37: 16	0	0	0	E	
+38: 16	0	0	0	E	
+39: 16	0	0	0	E	
+40: 16	0	0	0	E	
+41: 16	0	0	0	E	
+42: 16	0	0	0	E	
+43: 16	0	0	0	E	
+44: 16	0	0	0	E	
+45: 16	0	0	0	E	
+46: 16	0	0	0	E	
+47: 16	0	0	0	E	
+48: 16	0	0	0	E	
+49: 16	0	0	0	E	
+50: 16	0	0	0	E	
+51: 16	0	0	0	E	
+52: 16	0	0	0	E	
+53: 16	0	0	0	E	
+54: 16	0	0	0	E	
+55: 16	0	0	0	E	
+56: 16	0	0	0	E	
+57: 16	0	0	0	E	
+58: 16	0	0	0	E	
+59: 17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+SELECT sid, grade FROM course
+******RELATION DUMP BEGIN******
+sid	grade	
+0: 1	A	
+3	C	
+3	C	
+15	E	
+1: 15	E	
+17	A	
+2	B	
+4	D	
+2: 5	A	
+6	B	
+7	C	
+8	C	
+3: 9	D	
+10	C	
+11	D	
+12	C	
+4: 13	C	
+14	D	
+16	E	
+16	E	
+5: 16	E	
+16	E	
+16	E	
+16	E	
+6: 16	E	
+16	E	
+16	E	
+16	E	
+7: 16	E	
+16	E	
+16	E	
+16	E	
+8: 16	E	
+16	E	
+16	E	
+16	E	
+9: 16	E	
+16	E	
+16	E	
+16	E	
+10: 16	E	
+16	E	
+16	E	
+16	E	
+11: 16	E	
+16	E	
+16	E	
+16	E	
+12: 16	E	
+16	E	
+16	E	
+16	E	
+13: 16	E	
+16	E	
+16	E	
+16	E	
+14: 16	E	
+16	E	
+16	E	
+17	A	
+******RELATION DUMP END******
+Elapse time = 13358.8 ms
+Disk I/Os = 179
+
+SELECT sid, course.grade FROM course
+******RELATION DUMP BEGIN******
+sid	grade	
+0: 1	A	
+3	C	
+3	C	
+15	E	
+1: 15	E	
+17	A	
+2	B	
+4	D	
+2: 5	A	
+6	B	
+7	C	
+8	C	
+3: 9	D	
+10	C	
+11	D	
+12	C	
+4: 13	C	
+14	D	
+16	E	
+16	E	
+5: 16	E	
+16	E	
+16	E	
+16	E	
+6: 16	E	
+16	E	
+16	E	
+16	E	
+7: 16	E	
+16	E	
+16	E	
+16	E	
+8: 16	E	
+16	E	
+16	E	
+16	E	
+9: 16	E	
+16	E	
+16	E	
+16	E	
+10: 16	E	
+16	E	
+16	E	
+16	E	
+11: 16	E	
+16	E	
+16	E	
+16	E	
+12: 16	E	
+16	E	
+16	E	
+16	E	
+13: 16	E	
+16	E	
+16	E	
+16	E	
+14: 16	E	
+16	E	
+16	E	
+17	A	
+******RELATION DUMP END******
+Elapse time = 13358.8 ms
+Disk I/Os = 179
+
+SELECT DISTINCT grade FROM course
+******RELATION DUMP BEGIN******
+grade	
+0: A	
+C	
+E	
+B	
+D	
+******RELATION DUMP END******
+Elapse time = 14627.5 ms
+Disk I/Os = 196
+
+SELECT DISTINCT * FROM course
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 10	50	70	70	C	
+1: 11	50	50	59	D	
+2: 12	0	70	58	C	
+3: 13	0	50	77	C	
+4: 14	50	50	56	D	
+5: 15	100	50	90	E	
+6: 15	100	99	100	E	
+7: 16	0	0	0	E	
+8: 17	100	100	100	A	
+9: 1	99	100	100	A	
+10: 2	100	100	99	B	
+11: 3	100	100	98	C	
+12: 3	100	69	64	C	
+13: 4	100	100	97	D	
+14: 5	100	100	66	A	
+15: 6	100	100	65	B	
+16: 7	100	50	73	C	
+17: 8	50	50	62	C	
+18: 9	50	50	61	D	
+******RELATION DUMP END******
+Elapse time = 20597.9 ms
+Disk I/Os = 276
+
+SELECT * FROM course ORDER BY exam
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 16	0	0	0	E	
+1: 16	0	0	0	E	
+2: 16	0	0	0	E	
+3: 16	0	0	0	E	
+4: 16	0	0	0	E	
+5: 16	0	0	0	E	
+6: 16	0	0	0	E	
+7: 16	0	0	0	E	
+8: 16	0	0	0	E	
+9: 16	0	0	0	E	
+10: 16	0	0	0	E	
+11: 16	0	0	0	E	
+12: 16	0	0	0	E	
+13: 16	0	0	0	E	
+14: 16	0	0	0	E	
+15: 16	0	0	0	E	
+16: 16	0	0	0	E	
+17: 16	0	0	0	E	
+18: 16	0	0	0	E	
+19: 16	0	0	0	E	
+20: 16	0	0	0	E	
+21: 16	0	0	0	E	
+22: 16	0	0	0	E	
+23: 16	0	0	0	E	
+24: 16	0	0	0	E	
+25: 16	0	0	0	E	
+26: 16	0	0	0	E	
+27: 16	0	0	0	E	
+28: 16	0	0	0	E	
+29: 16	0	0	0	E	
+30: 16	0	0	0	E	
+31: 16	0	0	0	E	
+32: 16	0	0	0	E	
+33: 16	0	0	0	E	
+34: 16	0	0	0	E	
+35: 16	0	0	0	E	
+36: 16	0	0	0	E	
+37: 16	0	0	0	E	
+38: 16	0	0	0	E	
+39: 16	0	0	0	E	
+40: 16	0	0	0	E	
+41: 14	50	50	56	D	
+42: 12	0	70	58	C	
+43: 11	50	50	59	D	
+44: 9	50	50	61	D	
+45: 8	50	50	62	C	
+46: 3	100	69	64	C	
+47: 6	100	100	65	B	
+48: 5	100	100	66	A	
+49: 10	50	70	70	C	
+50: 7	100	50	73	C	
+51: 13	0	50	77	C	
+52: 15	100	50	90	E	
+53: 4	100	100	97	D	
+54: 3	100	100	98	C	
+55: 2	100	100	99	B	
+56: 17	100	100	100	A	
+57: 1	99	100	100	A	
+58: 15	100	99	100	E	
+59: 17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 26717.5 ms
+Disk I/Os = 358
+
+SELECT * FROM course WHERE exam = 100
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	
+0: 1	99	100	100	A	
+1: 15	100	99	100	E	
+2: 17	100	100	100	A	
+3: 17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 5000.21 ms
+Disk I/Os = 67
+
+SELECT * FROM course WHERE grade = "A"
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	
+0: 1	99	100	100	A	
+1: 17	100	100	100	A	
+2: 5	100	100	66	A	
+3: 17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 5000.21 ms
+Disk I/Os = 67
+
+SELECT * FROM course WHERE exam = 100 AND project = 100
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	
+0: 1	99	100	100	A	
+1: 17	100	100	100	A	
+2: 17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 4850.95 ms
+Disk I/Os = 65
+
+SELECT * FROM course WHERE exam = 100 OR exam = 99
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	
+0: 1	99	100	100	A	
+1: 15	100	99	100	E	
+2: 17	100	100	100	A	
+3: 2	100	100	99	B	
+4: 17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 5149.47 ms
+Disk I/Os = 69
+
+SELECT * FROM course WHERE exam > 70
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	
+0: 1	99	100	100	A	
+1: 3	100	100	98	C	
+2: 15	100	50	90	E	
+3: 15	100	99	100	E	
+4: 17	100	100	100	A	
+5: 2	100	100	99	B	
+6: 4	100	100	97	D	
+7: 7	100	50	73	C	
+8: 13	0	50	77	C	
+9: 17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 5895.77 ms
+Disk I/Os = 79
+
+SELECT * FROM course WHERE exam = 100 OR homework = 100 AND project = 100
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	
+0: 1	99	100	100	A	
+1: 3	100	100	98	C	
+2: 15	100	99	100	E	
+3: 17	100	100	100	A	
+4: 2	100	100	99	B	
+5: 4	100	100	97	D	
+6: 5	100	100	66	A	
+7: 6	100	100	65	B	
+8: 17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 5746.51 ms
+Disk I/Os = 77
+
+SELECT * FROM course WHERE (exam + homework) = 200
+******RELATION DUMP BEGIN******
+sid	homework	project	exam	grade	
+0: 1	99	100	100	A	
+1: 3	100	100	98	C	
+2: 3	100	69	64	C	
+3: 15	100	50	90	E	
+4: 15	100	99	100	E	
+5: 17	100	100	100	A	
+6: 2	100	100	99	B	
+7: 4	100	100	97	D	
+8: 5	100	100	66	A	
+9: 6	100	100	65	B	
+10: 7	100	50	73	C	
+11: 8	50	50	62	C	
+12: 9	50	50	61	D	
+13: 10	50	70	70	C	
+14: 11	50	50	59	D	
+15: 12	0	70	58	C	
+16: 13	0	50	77	C	
+17: 14	50	50	56	D	
+18: 16	0	0	0	E	
+19: 16	0	0	0	E	
+20: 16	0	0	0	E	
+21: 16	0	0	0	E	
+22: 16	0	0	0	E	
+23: 16	0	0	0	E	
+24: 16	0	0	0	E	
+25: 16	0	0	0	E	
+26: 16	0	0	0	E	
+27: 16	0	0	0	E	
+28: 16	0	0	0	E	
+29: 16	0	0	0	E	
+30: 16	0	0	0	E	
+31: 16	0	0	0	E	
+32: 16	0	0	0	E	
+33: 16	0	0	0	E	
+34: 16	0	0	0	E	
+35: 16	0	0	0	E	
+36: 16	0	0	0	E	
+37: 16	0	0	0	E	
+38: 16	0	0	0	E	
+39: 16	0	0	0	E	
+40: 16	0	0	0	E	
+41: 16	0	0	0	E	
+42: 16	0	0	0	E	
+43: 16	0	0	0	E	
+44: 16	0	0	0	E	
+45: 16	0	0	0	E	
+46: 16	0	0	0	E	
+47: 16	0	0	0	E	
+48: 16	0	0	0	E	
+49: 16	0	0	0	E	
+50: 16	0	0	0	E	
+51: 16	0	0	0	E	
+52: 16	0	0	0	E	
+53: 16	0	0	0	E	
+54: 16	0	0	0	E	
+55: 16	0	0	0	E	
+56: 16	0	0	0	E	
+57: 16	0	0	0	E	
+58: 16	0	0	0	E	
+59: 17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE course2 (sid INT, exam INT, grade STR20)
+******RELATION DUMP BEGIN******
+sid	exam	grade	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+INSERT INTO course2 (sid, exam, grade) VALUES (1, 100, "A")
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO course2 (sid, exam, grade) VALUES (16, 25, "E")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (17, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+SELECT * FROM course, course2
+******RELATION DUMP BEGIN******
+course2.sid	course2.exam	course2.grade	course.sid	course.homework	course.project	course.exam	course.grade	
+0: 1	100	A	1	99	100	100	A	
+1: 16	25	E	1	99	100	100	A	
+2: 17	0	A	1	99	100	100	A	
+3: 1	100	A	3	100	100	98	C	
+4: 16	25	E	3	100	100	98	C	
+5: 17	0	A	3	100	100	98	C	
+6: 1	100	A	3	100	69	64	C	
+7: 16	25	E	3	100	69	64	C	
+8: 17	0	A	3	100	69	64	C	
+9: 1	100	A	15	100	50	90	E	
+10: 16	25	E	15	100	50	90	E	
+11: 17	0	A	15	100	50	90	E	
+12: 1	100	A	15	100	99	100	E	
+13: 16	25	E	15	100	99	100	E	
+14: 17	0	A	15	100	99	100	E	
+15: 1	100	A	17	100	100	100	A	
+16: 16	25	E	17	100	100	100	A	
+17: 17	0	A	17	100	100	100	A	
+18: 1	100	A	2	100	100	99	B	
+19: 16	25	E	2	100	100	99	B	
+20: 17	0	A	2	100	100	99	B	
+21: 1	100	A	4	100	100	97	D	
+22: 16	25	E	4	100	100	97	D	
+23: 17	0	A	4	100	100	97	D	
+24: 1	100	A	5	100	100	66	A	
+25: 16	25	E	5	100	100	66	A	
+26: 17	0	A	5	100	100	66	A	
+27: 1	100	A	6	100	100	65	B	
+28: 16	25	E	6	100	100	65	B	
+29: 17	0	A	6	100	100	65	B	
+30: 1	100	A	7	100	50	73	C	
+31: 16	25	E	7	100	50	73	C	
+32: 17	0	A	7	100	50	73	C	
+33: 1	100	A	8	50	50	62	C	
+34: 16	25	E	8	50	50	62	C	
+35: 17	0	A	8	50	50	62	C	
+36: 1	100	A	9	50	50	61	D	
+37: 16	25	E	9	50	50	61	D	
+38: 17	0	A	9	50	50	61	D	
+39: 1	100	A	10	50	70	70	C	
+40: 16	25	E	10	50	70	70	C	
+41: 17	0	A	10	50	70	70	C	
+42: 1	100	A	11	50	50	59	D	
+43: 16	25	E	11	50	50	59	D	
+44: 17	0	A	11	50	50	59	D	
+45: 1	100	A	12	0	70	58	C	
+46: 16	25	E	12	0	70	58	C	
+47: 17	0	A	12	0	70	58	C	
+48: 1	100	A	13	0	50	77	C	
+49: 16	25	E	13	0	50	77	C	
+50: 17	0	A	13	0	50	77	C	
+51: 1	100	A	14	50	50	56	D	
+52: 16	25	E	14	50	50	56	D	
+53: 17	0	A	14	50	50	56	D	
+54: 1	100	A	16	0	0	0	E	
+55: 16	25	E	16	0	0	0	E	
+56: 17	0	A	16	0	0	0	E	
+57: 1	100	A	16	0	0	0	E	
+58: 16	25	E	16	0	0	0	E	
+59: 17	0	A	16	0	0	0	E	
+60: 1	100	A	16	0	0	0	E	
+61: 16	25	E	16	0	0	0	E	
+62: 17	0	A	16	0	0	0	E	
+63: 1	100	A	16	0	0	0	E	
+64: 16	25	E	16	0	0	0	E	
+65: 17	0	A	16	0	0	0	E	
+66: 1	100	A	16	0	0	0	E	
+67: 16	25	E	16	0	0	0	E	
+68: 17	0	A	16	0	0	0	E	
+69: 1	100	A	16	0	0	0	E	
+70: 16	25	E	16	0	0	0	E	
+71: 17	0	A	16	0	0	0	E	
+72: 1	100	A	16	0	0	0	E	
+73: 16	25	E	16	0	0	0	E	
+74: 17	0	A	16	0	0	0	E	
+75: 1	100	A	16	0	0	0	E	
+76: 16	25	E	16	0	0	0	E	
+77: 17	0	A	16	0	0	0	E	
+78: 1	100	A	16	0	0	0	E	
+79: 16	25	E	16	0	0	0	E	
+80: 17	0	A	16	0	0	0	E	
+81: 1	100	A	16	0	0	0	E	
+82: 16	25	E	16	0	0	0	E	
+83: 17	0	A	16	0	0	0	E	
+84: 1	100	A	16	0	0	0	E	
+85: 16	25	E	16	0	0	0	E	
+86: 17	0	A	16	0	0	0	E	
+87: 1	100	A	16	0	0	0	E	
+88: 16	25	E	16	0	0	0	E	
+89: 17	0	A	16	0	0	0	E	
+90: 1	100	A	16	0	0	0	E	
+91: 16	25	E	16	0	0	0	E	
+92: 17	0	A	16	0	0	0	E	
+93: 1	100	A	16	0	0	0	E	
+94: 16	25	E	16	0	0	0	E	
+95: 17	0	A	16	0	0	0	E	
+96: 1	100	A	16	0	0	0	E	
+97: 16	25	E	16	0	0	0	E	
+98: 17	0	A	16	0	0	0	E	
+99: 1	100	A	16	0	0	0	E	
+100: 16	25	E	16	0	0	0	E	
+101: 17	0	A	16	0	0	0	E	
+102: 1	100	A	16	0	0	0	E	
+103: 16	25	E	16	0	0	0	E	
+104: 17	0	A	16	0	0	0	E	
+105: 1	100	A	16	0	0	0	E	
+106: 16	25	E	16	0	0	0	E	
+107: 17	0	A	16	0	0	0	E	
+108: 1	100	A	16	0	0	0	E	
+109: 16	25	E	16	0	0	0	E	
+110: 17	0	A	16	0	0	0	E	
+111: 1	100	A	16	0	0	0	E	
+112: 16	25	E	16	0	0	0	E	
+113: 17	0	A	16	0	0	0	E	
+114: 1	100	A	16	0	0	0	E	
+115: 16	25	E	16	0	0	0	E	
+116: 17	0	A	16	0	0	0	E	
+117: 1	100	A	16	0	0	0	E	
+118: 16	25	E	16	0	0	0	E	
+119: 17	0	A	16	0	0	0	E	
+120: 1	100	A	16	0	0	0	E	
+121: 16	25	E	16	0	0	0	E	
+122: 17	0	A	16	0	0	0	E	
+123: 1	100	A	16	0	0	0	E	
+124: 16	25	E	16	0	0	0	E	
+125: 17	0	A	16	0	0	0	E	
+126: 1	100	A	16	0	0	0	E	
+127: 16	25	E	16	0	0	0	E	
+128: 17	0	A	16	0	0	0	E	
+129: 1	100	A	16	0	0	0	E	
+130: 16	25	E	16	0	0	0	E	
+131: 17	0	A	16	0	0	0	E	
+132: 1	100	A	16	0	0	0	E	
+133: 16	25	E	16	0	0	0	E	
+134: 17	0	A	16	0	0	0	E	
+135: 1	100	A	16	0	0	0	E	
+136: 16	25	E	16	0	0	0	E	
+137: 17	0	A	16	0	0	0	E	
+138: 1	100	A	16	0	0	0	E	
+139: 16	25	E	16	0	0	0	E	
+140: 17	0	A	16	0	0	0	E	
+141: 1	100	A	16	0	0	0	E	
+142: 16	25	E	16	0	0	0	E	
+143: 17	0	A	16	0	0	0	E	
+144: 1	100	A	16	0	0	0	E	
+145: 16	25	E	16	0	0	0	E	
+146: 17	0	A	16	0	0	0	E	
+147: 1	100	A	16	0	0	0	E	
+148: 16	25	E	16	0	0	0	E	
+149: 17	0	A	16	0	0	0	E	
+150: 1	100	A	16	0	0	0	E	
+151: 16	25	E	16	0	0	0	E	
+152: 17	0	A	16	0	0	0	E	
+153: 1	100	A	16	0	0	0	E	
+154: 16	25	E	16	0	0	0	E	
+155: 17	0	A	16	0	0	0	E	
+156: 1	100	A	16	0	0	0	E	
+157: 16	25	E	16	0	0	0	E	
+158: 17	0	A	16	0	0	0	E	
+159: 1	100	A	16	0	0	0	E	
+160: 16	25	E	16	0	0	0	E	
+161: 17	0	A	16	0	0	0	E	
+162: 1	100	A	16	0	0	0	E	
+163: 16	25	E	16	0	0	0	E	
+164: 17	0	A	16	0	0	0	E	
+165: 1	100	A	16	0	0	0	E	
+166: 16	25	E	16	0	0	0	E	
+167: 17	0	A	16	0	0	0	E	
+168: 1	100	A	16	0	0	0	E	
+169: 16	25	E	16	0	0	0	E	
+170: 17	0	A	16	0	0	0	E	
+171: 1	100	A	16	0	0	0	E	
+172: 16	25	E	16	0	0	0	E	
+173: 17	0	A	16	0	0	0	E	
+174: 1	100	A	16	0	0	0	E	
+175: 16	25	E	16	0	0	0	E	
+176: 17	0	A	16	0	0	0	E	
+177: 1	100	A	17	100	100	100	A	
+178: 16	25	E	17	100	100	100	A	
+179: 17	0	A	17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 31419.2 ms
+Disk I/Os = 421
+
+INSERT INTO course2 (sid, exam, grade) VALUES (2, 99, "B")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (3, 98, "C")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (4, 97, "D")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (5, 66, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (6, 65, "B")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO course2 (sid, exam, grade) VALUES (18, 0, "A")
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+SELECT course.sid, course.grade, course2.grade FROM course, course2 WHERE course.sid = course2.sid
+******RELATION DUMP BEGIN******
+sid	course.grade	course2.grade	
+0: 1	A	A	
+3	C	C	
+1: 3	C	C	
+17	A	A	
+2: 2	B	B	
+4	D	D	
+3: 5	A	A	
+6	B	B	
+4: 16	E	E	
+16	E	E	
+5: 16	E	E	
+16	E	E	
+6: 16	E	E	
+16	E	E	
+7: 16	E	E	
+16	E	E	
+8: 16	E	E	
+16	E	E	
+9: 16	E	E	
+16	E	E	
+10: 16	E	E	
+16	E	E	
+11: 16	E	E	
+16	E	E	
+12: 16	E	E	
+16	E	E	
+13: 16	E	E	
+16	E	E	
+14: 16	E	E	
+16	E	E	
+15: 16	E	E	
+16	E	E	
+16: 16	E	E	
+16	E	E	
+17: 16	E	E	
+16	E	E	
+18: 16	E	E	
+16	E	E	
+19: 16	E	E	
+16	E	E	
+20: 16	E	E	
+16	E	E	
+21: 16	E	E	
+16	E	E	
+22: 16	E	E	
+16	E	E	
+23: 16	E	E	
+16	E	E	
+24: 16	E	E	
+17	A	A	
+******RELATION DUMP END******
+Elapse time = 28359.4 ms
+Disk I/Os = 380
+
+SELECT DISTINCT course.grade, course2.grade FROM course, course2 WHERE course.sid = course2.sid
+******RELATION DUMP BEGIN******
+course.grade	course2.grade	
+0: A	A	
+B	B	
+C	C	
+D	D	
+1: E	E	
+******RELATION DUMP END******
+Elapse time = 38359.8 ms
+Disk I/Os = 514
+
+SELECT * FROM course, course2 WHERE course.sid = course2.sid ORDER BY course.exam
+******RELATION DUMP BEGIN******
+sid	course2.exam	course2.grade	course.homework	course.project	course.exam	course.grade	
+0: 16	25	E	0	0	0	E	
+1: 16	25	E	0	0	0	E	
+2: 16	25	E	0	0	0	E	
+3: 16	25	E	0	0	0	E	
+4: 16	25	E	0	0	0	E	
+5: 16	25	E	0	0	0	E	
+6: 16	25	E	0	0	0	E	
+7: 16	25	E	0	0	0	E	
+8: 16	25	E	0	0	0	E	
+9: 16	25	E	0	0	0	E	
+10: 16	25	E	0	0	0	E	
+11: 16	25	E	0	0	0	E	
+12: 16	25	E	0	0	0	E	
+13: 16	25	E	0	0	0	E	
+14: 16	25	E	0	0	0	E	
+15: 16	25	E	0	0	0	E	
+16: 16	25	E	0	0	0	E	
+17: 16	25	E	0	0	0	E	
+18: 16	25	E	0	0	0	E	
+19: 16	25	E	0	0	0	E	
+20: 16	25	E	0	0	0	E	
+21: 16	25	E	0	0	0	E	
+22: 16	25	E	0	0	0	E	
+23: 16	25	E	0	0	0	E	
+24: 16	25	E	0	0	0	E	
+25: 16	25	E	0	0	0	E	
+26: 16	25	E	0	0	0	E	
+27: 16	25	E	0	0	0	E	
+28: 16	25	E	0	0	0	E	
+29: 16	25	E	0	0	0	E	
+30: 16	25	E	0	0	0	E	
+31: 16	25	E	0	0	0	E	
+32: 16	25	E	0	0	0	E	
+33: 16	25	E	0	0	0	E	
+34: 16	25	E	0	0	0	E	
+35: 16	25	E	0	0	0	E	
+36: 16	25	E	0	0	0	E	
+37: 16	25	E	0	0	0	E	
+38: 16	25	E	0	0	0	E	
+39: 16	25	E	0	0	0	E	
+40: 16	25	E	0	0	0	E	
+41: 3	98	C	100	69	64	C	
+42: 6	65	B	100	100	65	B	
+43: 5	66	A	100	100	66	A	
+44: 4	97	D	100	100	97	D	
+45: 3	98	C	100	100	98	C	
+46: 2	99	B	100	100	99	B	
+47: 17	0	A	100	100	100	A	
+48: 1	100	A	99	100	100	A	
+49: 17	0	A	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 39479.3 ms
+Disk I/Os = 529
+
+SELECT * FROM course, course2 WHERE course.sid = course2.sid AND course.exam = 100 AND course2.exam = 100
+******RELATION DUMP BEGIN******
+sid	course2.exam	course2.grade	course.homework	course.project	course.exam	course.grade	
+0: 1	100	A	99	100	100	A	
+******RELATION DUMP END******
+Elapse time = 6418.18 ms
+Disk I/Os = 86
+
+SELECT * FROM course, course2 WHERE course.sid = course2.sid AND course.exam > course2.exam
+******RELATION DUMP BEGIN******
+course2.sid	course2.exam	course2.grade	course.sid	course.homework	course.project	course.exam	course.grade	
+0: 17	0	A	17	100	100	100	A	
+1: 17	0	A	17	100	100	100	A	
+******RELATION DUMP END******
+Elapse time = 10075.1 ms
+Disk I/Os = 135
+
+SELECT * FROM course, course2 WHERE course.sid = course2.sid AND course.exam > course2.exam AND course.homework = 100
+******RELATION DUMP BEGIN******
+course.sid	course.homework	course.project	course.exam	course.grade	course2.sid	course2.exam	course2.grade	
+0: 17	100	100	100	A	17	0	A	
+1: 17	100	100	100	A	17	0	A	
+******RELATION DUMP END******
+Elapse time = 8880.97 ms
+Disk I/Os = 119
+
+SELECT DISTINCT course.grade, course2.grade FROM course, course2 WHERE course.sid = course2.sid AND course.grade = "A" AND course2.grade = "A" ORDER BY course.exam
+******RELATION DUMP BEGIN******
+course.grade	course2.grade	
+0: A	A	
+******RELATION DUMP END******
+Elapse time = 12015.4 ms
+Disk I/Os = 161
+
+DROP TABLE course
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DROP TABLE course2
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE r (a INT, b INT)
+******RELATION DUMP BEGIN******
+a	b	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE s (b INT, c INT)
+******RELATION DUMP BEGIN******
+b	c	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE t (a INT, c INT)
+******RELATION DUMP BEGIN******
+a	c	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+INSERT INTO r (a, b) VALUES (0, 0)
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO r (a, b) VALUES (1, 1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (1, 1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (2, 2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (3, 3)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (0, 0)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (1, 1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (2, 2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO r (a, b) VALUES (100, 100)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (0, 0)
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO s (b, c) VALUES (2, 2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (3, 3)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (0, 0)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (0, 0)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (1, 1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (1, 1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (2, 2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (2, 2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (3, 3)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (3, 3)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (3, 3)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO s (b, c) VALUES (101, 101)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (0, 0)
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO t (a, c) VALUES (1, 1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (2, 2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (0, 0)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (1, 1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (1, 1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (2, 2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (3, 3)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t (a, c) VALUES (102, 102)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+SELECT * FROM r, s, t WHERE r.a = t.a AND r.b = s.b AND s.c = t.c
+******RELATION DUMP BEGIN******
+a	b	c	
+0: 0	0	0	
+0	0	0	
+1: 0	0	0	
+0	0	0	
+2: 0	0	0	
+0	0	0	
+3: 1	1	1	
+1	1	1	
+4: 1	1	1	
+1	1	1	
+5: 1	1	1	
+1	1	1	
+6: 2	2	2	
+2	2	2	
+7: 2	2	2	
+2	2	2	
+8: 2	2	2	
+2	2	2	
+9: 0	0	0	
+0	0	0	
+10: 0	0	0	
+0	0	0	
+11: 0	0	0	
+0	0	0	
+12: 1	1	1	
+1	1	1	
+13: 1	1	1	
+1	1	1	
+14: 1	1	1	
+1	1	1	
+15: 1	1	1	
+1	1	1	
+16: 1	1	1	
+1	1	1	
+17: 1	1	1	
+1	1	1	
+18: 2	2	2	
+2	2	2	
+19: 2	2	2	
+2	2	2	
+20: 2	2	2	
+2	2	2	
+21: 3	3	3	
+3	3	3	
+22: 3	3	3	
+3	3	3	
+******RELATION DUMP END******
+Elapse time = 14926 ms
+Disk I/Os = 200
+
+DROP TABLE r
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DROP TABLE s
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DROP TABLE t
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE t1 (c INT)
+******RELATION DUMP BEGIN******
+c	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE t2 (c INT)
+******RELATION DUMP BEGIN******
+c	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE t3 (c INT)
+******RELATION DUMP BEGIN******
+c	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE t4 (c INT)
+******RELATION DUMP BEGIN******
+c	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE t5 (c INT)
+******RELATION DUMP BEGIN******
+c	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+CREATE TABLE t6 (c INT)
+******RELATION DUMP BEGIN******
+c	
+******RELATION DUMP END******
+Elapse time = 0 ms
+Disk I/Os = 0
+
+INSERT INTO t1 (c) VALUES (0)
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO t1 (c) VALUES (1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t1 (c) VALUES (2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t1 (c) VALUES (3)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t1 (c) VALUES (4)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t2 (c) VALUES (0)
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO t2 (c) VALUES (1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t2 (c) VALUES (2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t2 (c) VALUES (3)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t3 (c) VALUES (0)
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO t3 (c) VALUES (1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t3 (c) VALUES (2)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t3 (c) VALUES (3)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t4 (c) VALUES (0)
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO t4 (c) VALUES (1)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t5 (c) VALUES (0)
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+INSERT INTO t5 (c) VALUES (0)
+Elapse time = 149.26 ms
+Disk I/Os = 2
+
+INSERT INTO t6 (c) VALUES (0)
+Elapse time = 74.63 ms
+Disk I/Os = 1
+
+SELECT * FROM t1, t2, t3, t4, t5, t6
+******RELATION DUMP BEGIN******
+t1.c	t2.c	t3.c	t4.c	t5.c	t6.c	
+0: 0	0	0	0	0	0	
+1: 1	0	0	0	0	0	
+2: 2	0	0	0	0	0	
+3: 3	0	0	0	0	0	
+4: 4	0	0	0	0	0	
+5: 0	1	0	0	0	0	
+6: 1	1	0	0	0	0	
+7: 2	1	0	0	0	0	
+8: 3	1	0	0	0	0	
+9: 4	1	0	0	0	0	
+10: 0	2	0	0	0	0	
+11: 1	2	0	0	0	0	
+12: 2	2	0	0	0	0	
+13: 3	2	0	0	0	0	
+14: 4	2	0	0	0	0	
+15: 0	3	0	0	0	0	
+16: 1	3	0	0	0	0	
+17: 2	3	0	0	0	0	
+18: 3	3	0	0	0	0	
+19: 4	3	0	0	0	0	
+20: 0	0	1	0	0	0	
+21: 1	0	1	0	0	0	
+22: 2	0	1	0	0	0	
+23: 3	0	1	0	0	0	
+24: 4	0	1	0	0	0	
+25: 0	1	1	0	0	0	
+26: 1	1	1	0	0	0	
+27: 2	1	1	0	0	0	
+28: 3	1	1	0	0	0	
+29: 4	1	1	0	0	0	
+30: 0	2	1	0	0	0	
+31: 1	2	1	0	0	0	
+32: 2	2	1	0	0	0	
+33: 3	2	1	0	0	0	
+34: 4	2	1	0	0	0	
+35: 0	3	1	0	0	0	
+36: 1	3	1	0	0	0	
+37: 2	3	1	0	0	0	
+38: 3	3	1	0	0	0	
+39: 4	3	1	0	0	0	
+40: 0	0	2	0	0	0	
+41: 1	0	2	0	0	0	
+42: 2	0	2	0	0	0	
+43: 3	0	2	0	0	0	
+44: 4	0	2	0	0	0	
+45: 0	1	2	0	0	0	
+46: 1	1	2	0	0	0	
+47: 2	1	2	0	0	0	
+48: 3	1	2	0	0	0	
+49: 4	1	2	0	0	0	
+50: 0	2	2	0	0	0	
+51: 1	2	2	0	0	0	
+52: 2	2	2	0	0	0	
+53: 3	2	2	0	0	0	
+54: 4	2	2	0	0	0	
+55: 0	3	2	0	0	0	
+56: 1	3	2	0	0	0	
+57: 2	3	2	0	0	0	
+58: 3	3	2	0	0	0	
+59: 4	3	2	0	0	0	
+60: 0	0	3	0	0	0	
+61: 1	0	3	0	0	0	
+62: 2	0	3	0	0	0	
+63: 3	0	3	0	0	0	
+64: 4	0	3	0	0	0	
+65: 0	1	3	0	0	0	
+66: 1	1	3	0	0	0	
+67: 2	1	3	0	0	0	
+68: 3	1	3	0	0	0	
+69: 4	1	3	0	0	0	
+70: 0	2	3	0	0	0	
+71: 1	2	3	0	0	0	
+72: 2	2	3	0	0	0	
+73: 3	2	3	0	0	0	
+74: 4	2	3	0	0	0	
+75: 0	3	3	0	0	0	
+76: 1	3	3	0	0	0	
+77: 2	3	3	0	0	0	
+78: 3	3	3	0	0	0	
+79: 4	3	3	0	0	0	
+80: 0	0	0	1	0	0	
+81: 1	0	0	1	0	0	
+82: 2	0	0	1	0	0	
+83: 3	0	0	1	0	0	
+84: 4	0	0	1	0	0	
+85: 0	1	0	1	0	0	
+86: 1	1	0	1	0	0	
+87: 2	1	0	1	0	0	
+88: 3	1	0	1	0	0	
+89: 4	1	0	1	0	0	
+90: 0	2	0	1	0	0	
+91: 1	2	0	1	0	0	
+92: 2	2	0	1	0	0	
+93: 3	2	0	1	0	0	
+94: 4	2	0	1	0	0	
+95: 0	3	0	1	0	0	
+96: 1	3	0	1	0	0	
+97: 2	3	0	1	0	0	
+98: 3	3	0	1	0	0	
+99: 4	3	0	1	0	0	
+100: 0	0	1	1	0	0	
+101: 1	0	1	1	0	0	
+102: 2	0	1	1	0	0	
+103: 3	0	1	1	0	0	
+104: 4	0	1	1	0	0	
+105: 0	1	1	1	0	0	
+106: 1	1	1	1	0	0	
+107: 2	1	1	1	0	0	
+108: 3	1	1	1	0	0	
+109: 4	1	1	1	0	0	
+110: 0	2	1	1	0	0	
+111: 1	2	1	1	0	0	
+112: 2	2	1	1	0	0	
+113: 3	2	1	1	0	0	
+114: 4	2	1	1	0	0	
+115: 0	3	1	1	0	0	
+116: 1	3	1	1	0	0	
+117: 2	3	1	1	0	0	
+118: 3	3	1	1	0	0	
+119: 4	3	1	1	0	0	
+120: 0	0	2	1	0	0	
+121: 1	0	2	1	0	0	
+122: 2	0	2	1	0	0	
+123: 3	0	2	1	0	0	
+124: 4	0	2	1	0	0	
+125: 0	1	2	1	0	0	
+126: 1	1	2	1	0	0	
+127: 2	1	2	1	0	0	
+128: 3	1	2	1	0	0	
+129: 4	1	2	1	0	0	
+130: 0	2	2	1	0	0	
+131: 1	2	2	1	0	0	
+132: 2	2	2	1	0	0	
+133: 3	2	2	1	0	0	
+134: 4	2	2	1	0	0	
+135: 0	3	2	1	0	0	
+136: 1	3	2	1	0	0	
+137: 2	3	2	1	0	0	
+138: 3	3	2	1	0	0	
+139: 4	3	2	1	0	0	
+140: 0	0	3	1	0	0	
+141: 1	0	3	1	0	0	
+142: 2	0	3	1	0	0	
+143: 3	0	3	1	0	0	
+144: 4	0	3	1	0	0	
+145: 0	1	3	1	0	0	
+146: 1	1	3	1	0	0	
+147: 2	1	3	1	0	0	
+148: 3	1	3	1	0	0	
+149: 4	1	3	1	0	0	
+150: 0	2	3	1	0	0	
+151: 1	2	3	1	0	0	
+152: 2	2	3	1	0	0	
+153: 3	2	3	1	0	0	
+154: 4	2	3	1	0	0	
+155: 0	3	3	1	0	0	
+156: 1	3	3	1	0	0	
+157: 2	3	3	1	0	0	
+158: 3	3	3	1	0	0	
+159: 4	3	3	1	0	0	
+160: 0	0	0	0	0	0	
+161: 1	0	0	0	0	0	
+162: 2	0	0	0	0	0	
+163: 3	0	0	0	0	0	
+164: 4	0	0	0	0	0	
+165: 0	1	0	0	0	0	
+166: 1	1	0	0	0	0	
+167: 2	1	0	0	0	0	
+168: 3	1	0	0	0	0	
+169: 4	1	0	0	0	0	
+170: 0	2	0	0	0	0	
+171: 1	2	0	0	0	0	
+172: 2	2	0	0	0	0	
+173: 3	2	0	0	0	0	
+174: 4	2	0	0	0	0	
+175: 0	3	0	0	0	0	
+176: 1	3	0	0	0	0	
+177: 2	3	0	0	0	0	
+178: 3	3	0	0	0	0	
+179: 4	3	0	0	0	0	
+180: 0	0	1	0	0	0	
+181: 1	0	1	0	0	0	
+182: 2	0	1	0	0	0	
+183: 3	0	1	0	0	0	
+184: 4	0	1	0	0	0	
+185: 0	1	1	0	0	0	
+186: 1	1	1	0	0	0	
+187: 2	1	1	0	0	0	
+188: 3	1	1	0	0	0	
+189: 4	1	1	0	0	0	
+190: 0	2	1	0	0	0	
+191: 1	2	1	0	0	0	
+192: 2	2	1	0	0	0	
+193: 3	2	1	0	0	0	
+194: 4	2	1	0	0	0	
+195: 0	3	1	0	0	0	
+196: 1	3	1	0	0	0	
+197: 2	3	1	0	0	0	
+198: 3	3	1	0	0	0	
+199: 4	3	1	0	0	0	
+200: 0	0	2	0	0	0	
+201: 1	0	2	0	0	0	
+202: 2	0	2	0	0	0	
+203: 3	0	2	0	0	0	
+204: 4	0	2	0	0	0	
+205: 0	1	2	0	0	0	
+206: 1	1	2	0	0	0	
+207: 2	1	2	0	0	0	
+208: 3	1	2	0	0	0	
+209: 4	1	2	0	0	0	
+210: 0	2	2	0	0	0	
+211: 1	2	2	0	0	0	
+212: 2	2	2	0	0	0	
+213: 3	2	2	0	0	0	
+214: 4	2	2	0	0	0	
+215: 0	3	2	0	0	0	
+216: 1	3	2	0	0	0	
+217: 2	3	2	0	0	0	
+218: 3	3	2	0	0	0	
+219: 4	3	2	0	0	0	
+220: 0	0	3	0	0	0	
+221: 1	0	3	0	0	0	
+222: 2	0	3	0	0	0	
+223: 3	0	3	0	0	0	
+224: 4	0	3	0	0	0	
+225: 0	1	3	0	0	0	
+226: 1	1	3	0	0	0	
+227: 2	1	3	0	0	0	
+228: 3	1	3	0	0	0	
+229: 4	1	3	0	0	0	
+230: 0	2	3	0	0	0	
+231: 1	2	3	0	0	0	
+232: 2	2	3	0	0	0	
+233: 3	2	3	0	0	0	
+234: 4	2	3	0	0	0	
+235: 0	3	3	0	0	0	
+236: 1	3	3	0	0	0	
+237: 2	3	3	0	0	0	
+238: 3	3	3	0	0	0	
+239: 4	3	3	0	0	0	
+240: 0	0	0	1	0	0	
+241: 1	0	0	1	0	0	
+242: 2	0	0	1	0	0	
+243: 3	0	0	1	0	0	
+244: 4	0	0	1	0	0	
+245: 0	1	0	1	0	0	
+246: 1	1	0	1	0	0	
+247: 2	1	0	1	0	0	
+248: 3	1	0	1	0	0	
+249: 4	1	0	1	0	0	
+250: 0	2	0	1	0	0	
+251: 1	2	0	1	0	0	
+252: 2	2	0	1	0	0	
+253: 3	2	0	1	0	0	
+254: 4	2	0	1	0	0	
+255: 0	3	0	1	0	0	
+256: 1	3	0	1	0	0	
+257: 2	3	0	1	0	0	
+258: 3	3	0	1	0	0	
+259: 4	3	0	1	0	0	
+260: 0	0	1	1	0	0	
+261: 1	0	1	1	0	0	
+262: 2	0	1	1	0	0	
+263: 3	0	1	1	0	0	
+264: 4	0	1	1	0	0	
+265: 0	1	1	1	0	0	
+266: 1	1	1	1	0	0	
+267: 2	1	1	1	0	0	
+268: 3	1	1	1	0	0	
+269: 4	1	1	1	0	0	
+270: 0	2	1	1	0	0	
+271: 1	2	1	1	0	0	
+272: 2	2	1	1	0	0	
+273: 3	2	1	1	0	0	
+274: 4	2	1	1	0	0	
+275: 0	3	1	1	0	0	
+276: 1	3	1	1	0	0	
+277: 2	3	1	1	0	0	
+278: 3	3	1	1	0	0	
+279: 4	3	1	1	0	0	
+280: 0	0	2	1	0	0	
+281: 1	0	2	1	0	0	
+282: 2	0	2	1	0	0	
+283: 3	0	2	1	0	0	
+284: 4	0	2	1	0	0	
+285: 0	1	2	1	0	0	
+286: 1	1	2	1	0	0	
+287: 2	1	2	1	0	0	
+288: 3	1	2	1	0	0	
+289: 4	1	2	1	0	0	
+290: 0	2	2	1	0	0	
+291: 1	2	2	1	0	0	
+292: 2	2	2	1	0	0	
+293: 3	2	2	1	0	0	
+294: 4	2	2	1	0	0	
+295: 0	3	2	1	0	0	
+296: 1	3	2	1	0	0	
+297: 2	3	2	1	0	0	
+298: 3	3	2	1	0	0	
+299: 4	3	2	1	0	0	
+300: 0	0	3	1	0	0	
+301: 1	0	3	1	0	0	
+302: 2	0	3	1	0	0	
+303: 3	0	3	1	0	0	
+304: 4	0	3	1	0	0	
+305: 0	1	3	1	0	0	
+306: 1	1	3	1	0	0	
+307: 2	1	3	1	0	0	
+308: 3	1	3	1	0	0	
+309: 4	1	3	1	0	0	
+310: 0	2	3	1	0	0	
+311: 1	2	3	1	0	0	
+312: 2	2	3	1	0	0	
+313: 3	2	3	1	0	0	
+314: 4	2	3	1	0	0	
+315: 0	3	3	1	0	0	
+316: 1	3	3	1	0	0	
+317: 2	3	3	1	0	0	
+318: 3	3	3	1	0	0	
+319: 4	3	3	1	0	0	
+******RELATION DUMP END******
+Elapse time = 66271.4 ms
+Disk I/Os = 888
+
+DROP TABLE t1
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DROP TABLE t2
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DROP TABLE t3
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DROP TABLE t4
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DROP TABLE t5
+Elapse time = 0 ms
+Disk I/Os = 0
+
+DROP TABLE t6
+Elapse time = 0 ms
+Disk I/Os = 0
+
+==== End of inputs ==== 
+Total elapse time = 441390 ms
+Total Disk elapse time = 411510 ms
+Total Disk I/Os = 5514
