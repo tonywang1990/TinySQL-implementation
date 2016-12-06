@@ -366,7 +366,6 @@ void Algorithm::distinctOnePass(Relation * oldR, Relation * newR, MainMemory & m
 void Algorithm::distinctTwoPass(Relation * oldR, Relation * & newR, MainMemory & mem, SchemaManager & schema_mgr){  
 	int dBlocks=  oldR->getNumOfBlocks();
 	const int mSize = mem.getMemorySize();
-	assert(dBlocks > mSize); // doing one pass here!
 	if(sqrt(dBlocks) > double(mSize)){
 	        cerr<<"Fatal Error: The memory condition: M >= sqrt(B(R)) is not satisfied!! Cannot use the two-passed algorithms!"<<endl;
 		return;
@@ -528,7 +527,6 @@ void Algorithm::sortOnePass(Relation * oldR, Relation * newR, MainMemory & mem){
 void Algorithm::sortTwoPass(Relation * oldR, Relation *& newR, MainMemory & mem, SchemaManager& schema_mgr){
 	int dBlocks=  oldR->getNumOfBlocks();
 	const int mSize = mem.getMemorySize();
-	assert(dBlocks > mem.getMemorySize()); // doing one pass here!
 	if(sqrt(dBlocks) > double(mSize)){
 		cerr<<"Fatal Error: The memory condition: M >= sqrt(B(R)) is not satisfied!! Cannot use the two-passed algorithms!"<<endl;
 		return;
