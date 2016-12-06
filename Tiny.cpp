@@ -8,9 +8,6 @@ using namespace std;
 extern queue<int> free_blocks;
 
 int main(int argc, char ** argv){
-	//=======================Initialization=========================
-	cout << "=======================Initialization=========================" << endl;
-
 	// Initialize the memory, disk and the schema manager
 	MainMemory mem;
 	Disk disk;
@@ -41,7 +38,6 @@ int main(int argc, char ** argv){
 	}
 	//ifstream input("TinySQL_linux_updated.txt");
 	ifstream input(filename.c_str());
-	//ifstream input("test_large.txt");
 	if (input.is_open()){
 		// for each command line
 		while(getline(input, line)){
@@ -56,25 +52,7 @@ int main(int argc, char ** argv){
 			resetFreeBlocks();
 	
 			if (words[0] == "CREATE"){
-				string relation_name = words[2];
-				vector<string> field_names;
-				vector<enum FIELD_TYPE> field_types;
-
-				for (int i = 3; i < words.size(); i=i+2){
-					field_names.push_back(strip(words[i]));
-					if (strip(words[i+1]) == "INT"){
-						field_types.push_back(INT);
-					}
-					else{
-						field_types.push_back(STR20);
-					}
-				}
-
-				Schema schema(field_names,field_types); 
-
-				Relation* relation_ptr=schema_manager.createRelation(relation_name,schema);
-				//cout << schema_manager << endl << endl;
-
+				Create(words, schema_manager, mem);
 			}
 			else if (words[0] == "DROP"){
 				string relation_name = words[2];
